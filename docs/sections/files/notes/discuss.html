@@ -1,0 +1,898 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Frequently Asked Questions &#8212; Introduction to Git</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'sections/files/notes/discuss';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../index.html">
+                    Workshop objectives
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">To quickly get started</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../whycoding.html">Coding</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../before.html">Before you get started</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../commandline.html">Review of the Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../git-and-github.html">What are Git and GitHub?</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../after.html">Theory to Practice</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/git/issues/new?title=Issue%20on%20page%20%2Fsections/files/notes/discuss.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/sections/files/notes/discuss.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Frequently Asked Questions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Frequently Asked Questions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-git-configuration">More Advanced Git Configuration</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-git-s-log">Styling Git’s Log</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#non-text-files">Non-text Files</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-a-file">Removing a File</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-a-file-with-unix">Removing a File with Unix</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#renaming-a-file">Renaming a File</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#renaming-a-file-with-unix">Renaming a File with Unix</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#further-gitignore-concepts">Further .gitignore concepts</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="frequently-asked-questions">
+<h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">#</a></h1>
+<p>People often have questions about Git beyond the scope of the core material.
+Students who have completed the rest of the lessons might find value in looking through the following topics.</p>
+<p>Note that since this material isn’t essential for basic Git usage, it won’t be covered by the instructor.</p>
+</section>
+<section id="more-advanced-git-configuration">
+<h1>More Advanced Git Configuration<a class="headerlink" href="#more-advanced-git-configuration" title="Permalink to this headline">#</a></h1>
+<p>In <span class="xref myst">Setting Up Git</span>,
+we used <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span></code> to set some default options for Git.
+It turns out that these configuration options get stored in your home directory
+in a plain text file called <code class="docutils literal notranslate"><span class="pre">.gitconfig</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat ~/.gitconfig
+</pre></div>
+</div>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">[user]</span>
+<span class="go">	name = Vlad Dracula</span>
+<span class="go">	email = vlad@tran.sylvan.ia</span>
+<span class="go">[color]</span>
+<span class="go">	ui = true</span>
+<span class="go">[core]</span>
+<span class="go">	editor = nano</span>
+</pre></div>
+</div>
+<p>This file can be opened in your preferred text editor.
+(Note that it is recommended to continue using the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span></code> command,
+as this helps avoid introducing syntax errors.)</p>
+<p>Eventually, you will want to start customizing Git’s behaviour.
+This can be done by adding more entries to your <code class="docutils literal notranslate"><span class="pre">.gitconfig</span></code>.
+The available options are described in the manual:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git config --help
+</pre></div>
+</div>
+<p>In particular, you might find it useful to add aliases.
+These are like shortcuts for longer Git commands.
+For example, if you get sick of typing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span></code> all the time,
+you could run the command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git config --global alias.co checkout
+</pre></div>
+</div>
+<p>Now if we return to the example from <span class="xref myst">Exploring History</span> where we ran:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git checkout f22b25e mars.txt
+</pre></div>
+</div>
+<p>we could now instead type:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git co f22b25e mars.txt
+</pre></div>
+</div>
+</section>
+<section id="styling-git-s-log">
+<h1>Styling Git’s Log<a class="headerlink" href="#styling-git-s-log" title="Permalink to this headline">#</a></h1>
+<p>A good target for customization is output from the log.
+The default log is quite verbose but gives no graphical hints
+such as information about which commits were done locally
+and which were pulled from remotes.</p>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span> <span class="pre">--help</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--help</span></code> to look for different ways to change
+the log output.
+Try the following commands and see what effect they have:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git config --global alias.lg <span class="s2">&quot;log --graph&quot;</span>
+$ git config --global log.abbrevCommit <span class="nb">true</span>
+$ git config --global format.pretty oneline
+$ git lg
+</pre></div>
+</div>
+<p>If you don’t like the effects,
+you can undo them with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git config --global --unset alias.lg
+$ git config --global --unset log.abbrevCommit
+$ git config --global --unset format.pretty
+</pre></div>
+</div>
+<div class="highlight-callout notranslate"><div class="highlight"><pre><span></span>
+## Undoing Git Configuration Changes
+
+You can use the `--unset` flag to delete unwanted options from `.gitconfig`.
+Another way to roll back changes is to store your `.gitconfig` using Git.
+
+For hints on what you might want to configure,
+go to GitHub and search for &quot;gitconfig&quot;.
+You will find hundreds of repositories in which people have stored
+their own Git configuration files.
+Sort them by the number of stars and have a look at the top few.
+If you find some you like,
+please check that they&#39;re covered by an open source license before you clone them.
+
+
+</pre></div>
+</div>
+</section>
+<section id="non-text-files">
+<h1>Non-text Files<a class="headerlink" href="#non-text-files" title="Permalink to this headline">#</a></h1>
+<p>Recall when we discussed <span class="xref myst">Conflicts</span>
+there was a challenge that asked,
+“What does Git do
+when there is a conflict in an image or some other non-textual file
+that is stored in version control?”</p>
+<p>We will now revisit this in more detail.</p>
+<p>Many people want to version control non-text files, such as images, PDFs and Microsoft Office or LibreOffice documents.
+It is true that Git can handle these filetypes (which fall under the banner of “binary” file types).
+However, just because it <em>can</em> be done doesn’t mean it <em>should</em> be done.</p>
+<p>Much of Git’s magic comes from being able to do line-by-line comparisons (“diffs”) between files.
+This is generally easy for programming source code and marked up text.
+For non-text files, a diff can usually only detect that the files have changed
+but can’t say how or where.</p>
+<p>This has various impacts on Git’s performance and will make it difficult to
+compare different versions of your project.</p>
+<p>For a basic example to show the difference it makes,
+we’re going to go see what would have happened if Dracula had tried
+using outputs from a word processor instead of plain text.</p>
+<p>Create a new directory and go into it:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkdir planets-nontext
+$ <span class="nb">cd</span> planets-nontext
+</pre></div>
+</div>
+<p>Use a program such as Microsoft Word or LibreOffice Writer to create a new document.
+Enter the same text that we began with before:</p>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">Cold and dry, but everything is my favorite color</span>
+</pre></div>
+</div>
+<p>Save the document into the <code class="docutils literal notranslate"><span class="pre">planets-nontext</span></code> directory with the name of <code class="docutils literal notranslate"><span class="pre">mars.doc</span></code>.
+Back in the terminal, run the usual commands for setting up a new Git repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git init
+$ git add mars.doc
+$ git commit -m <span class="s2">&quot;Starting to think about Mars&quot;</span>
+</pre></div>
+</div>
+<p>Then make the same changes to <code class="docutils literal notranslate"><span class="pre">mars.doc</span></code> that we (or Vlad) previously made to <code class="docutils literal notranslate"><span class="pre">mars.txt</span></code>.</p>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">Cold and dry, but everything is my favorite color</span>
+<span class="go">The two moons may be a problem for Wolfman</span>
+</pre></div>
+</div>
+<p>Save and close the word processor.
+Now see what Git thinks of your changes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git diff
+</pre></div>
+</div>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">diff --git a/mars.doc b/mars.doc</span>
+<span class="go">index 53a66fd..6e988e9 100644</span>
+<span class="go">Binary files a/mars.doc and b/mars.doc differ</span>
+</pre></div>
+</div>
+<p>Compare this to the earlier <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code> obtained when using text files:</p>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">diff --git a/mars.txt b/mars.txt</span>
+<span class="go">index df0654a..315bf3a 100644</span>
+<span class="go">--- a/mars.txt</span>
+<span class="go">+++ b/mars.txt</span>
+<span class="go">@@ -1 +1,2 @@</span>
+<span class="go"> Cold and dry, but everything is my favorite color</span>
+<span class="go">+The two moons may be a problem for Wolfman</span>
+</pre></div>
+</div>
+<p>Notice how plain text files give a much more informative diff.
+You can see exactly which lines changed and what the changes were.</p>
+<p>An uninformative <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code> is not the only consequence of using Git on binary files.
+However, most of the other problems boil down to whether or not a good diff is possible.</p>
+<p>This isn’t to say you should <em>never</em> use Git on binary files.
+A rule of thumb is that it’s OK if the binary file won’t change very often,
+and if it does change, you don’t care about merging in small differences between versions.</p>
+<p>We’ve already seen how a word processed report will fail this test.
+An example that passes the test is a logo for your organization or project.
+Even though a logo will be stored in a binary format such as <code class="docutils literal notranslate"><span class="pre">jpg</span></code> or <code class="docutils literal notranslate"><span class="pre">png</span></code>,
+you can expect it will remain fairly static through the lifetime of your repository.
+On the rare occasion that branding does change,
+you will probably just want to replace the logo completely rather than merge little differences in.</p>
+</section>
+<section id="removing-a-file">
+<h1>Removing a File<a class="headerlink" href="#removing-a-file" title="Permalink to this headline">#</a></h1>
+<p>Adding and modifying files are not the only actions one might take
+when working on a project.  It might be required to remove a file
+from the repository.</p>
+<p>Create a new file for the planet Nibiru:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="s2">&quot;This is another name for fake planet X&quot;</span> &gt; nibiru.txt
+</pre></div>
+</div>
+<p>Now add to the repository like you have learned earlier:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add nibiru.txt
+$ git commit -m <span class="s1">&#39;adding info on nibiru&#39;</span>
+$ git status
+</pre></div>
+</div>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">On branch main</span>
+<span class="go">nothing to commit, working tree clean</span>
+</pre></div>
+</div>
+<p>Nibiru is not a real planet.  That was a silly idea.  Let us remove
+it from the disk and let Git know about it:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git rm nibiru.txt
+$ git status
+</pre></div>
+</div>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">On branch main</span>
+<span class="go">Changes to be committed:</span>
+<span class="go">   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)</span>
+
+<span class="go">   deleted:    nibiru.txt</span>
+</pre></div>
+</div>
+<p>The change has been staged.  Now commit the removal, and remove the
+file from the repository itself.  Note that the file will be removed
+in the new commit.  The previous commit will still
+have the file, if you were to retrieve that specific commit.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git commit -m <span class="s1">&#39;Removing info on Nibiru.  It is not a real planet!&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="removing-a-file-with-unix">
+<h1>Removing a File with Unix<a class="headerlink" href="#removing-a-file-with-unix" title="Permalink to this headline">#</a></h1>
+<p>Sometimes we might forget to remove the file through Git. If you removed the
+file with Unix <code class="docutils literal notranslate"><span class="pre">rm</span></code> instead of using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span></code>, no worries,
+Git is smart enough to notice the missing file. Let us recreate the file and
+commit it again.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="s2">&quot;This is another name for fake planet X&quot;</span> &gt; nibiru.txt
+$ git add nibiru.txt
+$ git commit -m <span class="s1">&#39;adding nibiru again&#39;</span>
+</pre></div>
+</div>
+<p>Now we remove the file with Unix <code class="docutils literal notranslate"><span class="pre">rm</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ rm nibiru.txt
+$ git status
+</pre></div>
+</div>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">On branch main</span>
+<span class="go">Changes not staged for commit:</span>
+<span class="go">   (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)</span>
+<span class="go">   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)</span>
+
+<span class="go">    deleted:    nibiru.txt</span>
+
+<span class="go">no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span>
+</pre></div>
+</div>
+<p>See how Git has noticed that the file <code class="docutils literal notranslate"><span class="pre">nibiru.txt</span></code> has been removed
+from the disk.  The next step is to “stage” the removal of the file
+from the repository.  This is done with the command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span></code> just as
+before.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git rm nibiru.txt
+$ git status
+</pre></div>
+</div>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">On branch main</span>
+<span class="go">Changes to be committed:</span>
+<span class="go">   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)</span>
+
+<span class="go">   deleted:    nibiru.txt</span>
+</pre></div>
+</div>
+<p>The change that was made in Unix has now been staged and needs to be
+committed.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git commit -m <span class="s1">&#39;Removing info on Nibiru, again!&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="renaming-a-file">
+<h1>Renaming a File<a class="headerlink" href="#renaming-a-file" title="Permalink to this headline">#</a></h1>
+<p>Another common change when working on a project is to rename a file.</p>
+<p>Create a file for the planet Krypton:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="s2">&quot;Superman&#39;s home planet&quot;</span> &gt; krypton.txt
+</pre></div>
+</div>
+<p>Add it to the repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add krypton.txt
+$ git commit -m <span class="s1">&#39;Adding planet Krypton&#39;</span>
+</pre></div>
+</div>
+<p>We all know that Superman moved to Earth.  Not that he had much
+choice.  Now his home planet is Earth.</p>
+<p>Rename the file <code class="docutils literal notranslate"><span class="pre">krypton.txt</span></code> to <code class="docutils literal notranslate"><span class="pre">earth.txt</span></code> with Git:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git mv krypton.txt earth.txt
+$ git status
+</pre></div>
+</div>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">On branch main</span>
+<span class="go">Changes to be committed:</span>
+<span class="go">  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)</span>
+
+<span class="go">	renamed:    krypton.txt -&gt; earth.txt</span>
+</pre></div>
+</div>
+<p>The final step is commit our change to the repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git commit -m &#39;Superman&#39;s home is now Earth&#39;
+</pre></div>
+</div>
+</section>
+<section id="renaming-a-file-with-unix">
+<h1>Renaming a File with Unix<a class="headerlink" href="#renaming-a-file-with-unix" title="Permalink to this headline">#</a></h1>
+<p>If you forgot to use Git and you used Unix <code class="docutils literal notranslate"><span class="pre">mv</span></code> instead
+of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">mv</span></code>, you will have a touch more work to do but Git will
+be able to deal with it. Let’s try again renaming the file,
+this time with Unix <code class="docutils literal notranslate"><span class="pre">mv</span></code>. First, we need to recreate the
+<code class="docutils literal notranslate"><span class="pre">krypton.txt</span></code> file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="s2">&quot;Superman&#39;s home planet&quot;</span> &gt; krypton.txt
+$ git add krypton.txt
+$ git commit -m <span class="s1">&#39;Adding planet Krypton again.&#39;</span>
+</pre></div>
+</div>
+<p>Let us rename the file and see what Git can figured out by itself:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mv krypton.txt earth.txt
+$ git status
+</pre></div>
+</div>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">On branch main</span>
+<span class="go">Changes not staged for commit:</span>
+<span class="go">  (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)</span>
+<span class="go">  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)</span>
+
+<span class="go">        deleted:    krypton.txt</span>
+
+<span class="go">Untracked files:</span>
+<span class="go">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span>
+
+<span class="go">    earth.txt</span>
+
+<span class="go">no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span>
+</pre></div>
+</div>
+<p>Git has noticed that the file <code class="docutils literal notranslate"><span class="pre">krypton.txt</span></code> has disappeared from the
+file system and a new file <code class="docutils literal notranslate"><span class="pre">earth.txt</span></code> has showed up.</p>
+<p>Add those changes to the staging area:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add krypton.txt earth.txt
+$ git status
+</pre></div>
+</div>
+<div class="highlight-output notranslate"><div class="highlight"><pre><span></span><span class="go">On branch main</span>
+<span class="go">Changes to be committed:</span>
+<span class="go">  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)</span>
+
+<span class="go">    renamed:    krypton.txt -&gt; earth.txt</span>
+</pre></div>
+</div>
+<p>Notice how Git has now figured out that the <code class="docutils literal notranslate"><span class="pre">krypton.txt</span></code> has not
+disappeared - it has simply been renamed.</p>
+<p>The final step, as before, is to commit our change to the repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git commit -m &#39;Superman&#39;s home is Earth, told you before.&#39;
+</pre></div>
+</div>
+</section>
+<section id="further-gitignore-concepts">
+<h1>Further .gitignore concepts<a class="headerlink" href="#further-gitignore-concepts" title="Permalink to this headline">#</a></h1>
+<p>For additional documentation on .gitignore, please reference
+<a class="reference external" href="https://git-scm.com/docs/gitignore">the official git documentation</a>.</p>
+<p>In the ignore exercise, learners were presented with two variations of ignoring
+nested files. Depending on the organization of your repository, one may suit
+your needs over another. Keep in mind that the way that Git travels along
+directory paths can be confusing.</p>
+<p>Sometimes the <code class="docutils literal notranslate"><span class="pre">**</span></code> pattern comes in handy, too, which matches multiple
+directory levels. E.g. <code class="docutils literal notranslate"><span class="pre">**/results/plots/*</span></code> would make git ignore the
+<code class="docutils literal notranslate"><span class="pre">results/plots</span></code> directory in any root directory.</p>
+<div class="highlight-challenge notranslate"><div class="highlight"><pre><span></span>
+## Ignoring Nested Files: Challenge Problem
+
+Given a directory structure that looks like:
+
+```bash
+results/data
+results/plots
+results/run001.log
+results/run002.log
+```
+
+And a .gitignore that looks like:
+
+```output
+*.dat
+```
+
+How would you track all of the contents of `results/data/`, including `*.dat`
+files, but ignore the rest of `results/`?
+
+:::::::::::::::  solution
+
+## Solution
+
+To do this, your .gitignore would look like this:
+
+```output
+*.dat                 # ignore the .dat files
+results/*             # ignore the files in the results directory
+!results/data/        # do not ignore the files in results/data
+!results/data/*       # do not ignore the .dat files in reults/data
+```
+
+:::::::::::::::::::::::::
+
+</pre></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./sections\files\notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Frequently Asked Questions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-git-configuration">More Advanced Git Configuration</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-git-s-log">Styling Git’s Log</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#non-text-files">Non-text Files</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-a-file">Removing a File</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-a-file-with-unix">Removing a File with Unix</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#renaming-a-file">Renaming a File</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#renaming-a-file-with-unix">Renaming a File with Unix</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#further-gitignore-concepts">Further .gitignore concepts</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rafia Mirza, & <a href="https://www.smu.edu/libraries/scholarship/srstudio.">Scholarship & Research Studio </a> staff.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright Creative Commons Attribution-ShareAlike 4.0 International License..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

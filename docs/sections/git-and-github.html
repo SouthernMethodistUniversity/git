@@ -1,0 +1,1045 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>What are Git and GitHub? &#8212; Introduction to Git</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'sections/git-and-github';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Theory to Practice" href="after.html" />
+    <link rel="prev" title="Review of the Command Line" href="commandline.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Workshop objectives
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">To quickly get started</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="whycoding.html">Coding</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="before.html">Before you get started</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="commandline.html">Review of the Command Line</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">What are Git and GitHub?</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="after.html">Theory to Practice</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/git/issues/new?title=Issue%20on%20page%20%2Fsections/git-and-github.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/sections/git-and-github.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>What are Git and GitHub?</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">What are Git and GitHub?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#highlighting-distinctions">Highlighting Distinctions</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-we-use-github">How We Use GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborative-writing">Collaborative Writing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#versions-across-time-version-control">Versions Across Time (Version control)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-and-attribution">Sharing and Attribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-setting-up-git">SET UP: Setting Up Git</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-your-installation">Check Your Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-more-about-setting-up-git-sub"><sub>More about setting up git</sub></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file">Creating a Syllabus File</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Creating a Syllabus file</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-syllabus-content-using-markdown">Creating Syllabus Content Using Markdown</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge">Challenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-and-committing-changes">Staging and Committing Changes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-metaphor-for-adding-and-committing">A Metaphor for Adding and Committing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-changes-with-the-add-command">Staging Changes with the <code class="docutils literal notranslate"><span class="pre">add</span></code> Command</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">Committing Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-use-the-m-flag">Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pro-tip-for-the-command-line-how-to-exit-unknown-screens">Pro-tip for the Command Line: How to exit unknown screens</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-and-forking">Cloning and Forking</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning">Cloning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forking">Forking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Challenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="what-are-git-and-github">
+<h1>What are Git and GitHub?<a class="headerlink" href="#what-are-git-and-github" title="Permalink to this headline">#</a></h1>
+<p><strong>Git</strong> is software used for version control—that is, tracking the state of files and changes you make to them over time. Git can be enabled in a folder, and then used to save the state of the contents in that folder at different points in the future, as designated by you. In the language of Git, a folder is called a <em>repository</em>. In the context of this workshop, it refers to a folder that is being tracked by Git. Using Git, you can view a log of the changes you’ve made to the files in a repository and compare changes over time. We will explore these features in the current workshop. You can also revert back to previous versions, and create “branches” of a project to explore different futures. These are advanced features, which we will provide resources for you to explore later. Git is also useful for collaboration, as a repository can be shared across computers, and its contents can be asynchronously developed and eventually merged with the main project.</p>
+<p><strong>GitHub</strong> is an online platform for hosting Git repositories. It functions for some, predominantly programmers, as a social network for sharing and collaborating on code-based projects. Users can share their own projects, as well as search for others, which they can then often work on and contribute to. Digital Humanists, librarians, and other academics are also finding ways Git and GitHub are useful in writing projects and teaching. GitHub also serves as a web-hosting platform, allowing users to create websites from their repositories.</p>
+<section id="highlighting-distinctions">
+<h2>Highlighting Distinctions<a class="headerlink" href="#highlighting-distinctions" title="Permalink to this headline">#</a></h2>
+<p>As we move forward it’s important to make sure we’re firm on the distinctions between the three different tools outlined above.</p>
+<p><strong>Git</strong> is a software that you use on your laptop, or your local computer/machine. The repository with your project’s files is stored on your hard drive. You also edit the text files on your local machine using a plain text editor, which is another software on your local computer like Visual Studio Code.</p>
+<p><strong>GitHub</strong> is a cloud-based platform that you access through your internet browser. Even though you physically are still in the same place, working on your laptop, you are no longer working on your local machine, you are on the Internet. This is a fundamentally different location than when you’re working with your Git repository and editing and creating files in your plain text editor. With GitHub, you are uploading your repository—as described above—from your local machine to this platform on the Internet to be shared more broadly. You can also create private repositories if you want to use GitHub to backup a project.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="why-use-it-what-you-can-do-with-git-and-github">
+<h1>Why use it? What You Can Do with Git and GitHub ?<a class="headerlink" href="#why-use-it-what-you-can-do-with-git-and-github" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><span class="xref myst">Link to presentation slides</span></p></li>
+</ul>
+<section id="how-we-use-github">
+<h2>How We Use GitHub<a class="headerlink" href="#how-we-use-github" title="Permalink to this headline">#</a></h2>
+<section id="collaborative-writing">
+<h3>Collaborative Writing<a class="headerlink" href="#collaborative-writing" title="Permalink to this headline">#</a></h3>
+<p>Git is also used in writing projects! <em>Version control</em> makes tracking changes trackable, especially when there are multiple authors working asynchronously. It can be an alternative to using track changes in Microsoft Word, or comments and edits in a Google Doc.</p>
+</section>
+<section id="versions-across-time-version-control">
+<h3>Versions Across Time (Version control)<a class="headerlink" href="#versions-across-time-version-control" title="Permalink to this headline">#</a></h3>
+<p>How did you initially come by the syllabus you use for your class(es), and did you develop it over time? Many professors borrow and adapt from each other, and most of us probably update our syllabi each semester, even if only a little bit.</p>
+<p>Through this process, many of us end up with a set of files that looks something like this:</p>
+<p><img alt="Example of a messy folder structure with many files named similarly" src="images/messy-file-structure.png" /></p>
+<p>While I probably can tell which version is the “final” one, I can not see what was changed along the way or how the different versions vary from each other.</p>
+<p>With Git, you would save these multiple versions over time as one file, and each version you save includes a note about what has changed so you can easily revert back to an older version if needed.</p>
+<p>By looking at the file list, you also can not tell who the syllabus originally came from, or if there were contributions from many individuals. Git and GitHub can help make attribution clear, and maintain it over time as the syllabus travels between hands.</p>
+<p><strong>Syllabi examples</strong></p>
+<ul class="simple">
+<li><p>Increasingly we see that faculty are sharing their syllabi on GitHub (example: <a class="reference external" href="https://github.com/quinnanya/dlcl204">DLCL 204: Digital Humanities Across Borders</a>). Some are even using GitPages that apply a user-friendly interface to their repository to make it easier to access and navigate for their students (example: <a class="reference external" href="https://digitalhistory.github.io/">Digital History</a>).</p></li>
+</ul>
+<p>With version control:</p>
+<ul class="simple">
+<li><p>Nothing that is committed to version control is ever lost, unless you work really, really hard at it. Since all old versions of
+files are saved, it’s always possible to go back in time to see exactly who wrote what on a particular day, or what version of a
+program was used to generate a particular set of results.</p>
+<ul>
+<li><p>Teams are not the only ones to benefit from version control: lone researchers can benefit immensely.  Keeping a record of what was
+changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later,
+when memory has faded).</p></li>
+</ul>
+</li>
+<li><p>As we have this record of who made what changes when, we know who to ask if we have questions later on, and, if needed, revert to a previous version, much like the “undo” feature in an editor.</p></li>
+<li><p>When several people collaborate in the same project, it’s possible to accidentally overlook or overwrite someone’s changes. The version control system automatically notifies users whenever there’s a conflict between one person’s work and another’s.</p></li>
+<li><p>Version control is the lab notebook of the digital world: it’s what professionals use to keep track of what they’ve done and to
+collaborate with other people.  Every large software development project relies on it, and most programmers use it for their small jobs
+as well.  And it isn’t just for software: books, papers, small data sets, and anything that changes over time or needs
+to be shared can and should be stored in a version control system.</p></li>
+</ul>
+<p><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/01-basics.html">Click here for extended explanation of: What is version control</a></sub></p>
+</section>
+<section id="sharing-and-attribution">
+<h3>Sharing and Attribution<a class="headerlink" href="#sharing-and-attribution" title="Permalink to this headline">#</a></h3>
+<p>As you can see <a class="reference external" href="https://github.com/SouthernMethodistUniversity?q=git&amp;type=all&amp;language=&amp;sort=">across these sessions, we use GitHub to host workshop curricula.</a> Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.<a class="reference external" href="https://github.com/SouthernMethodistUniversity/git#acknowledgements">As you can see in our acknowledgements</a></p>
+<ul class="simple">
+<li><p>You cna <a class="reference external" href="https://swcarpentry.github.io/git-novice/12-citation.html">add a citation file as well</a></p></li>
+</ul>
+<sub> 
+* Github & Digital Humanities: A [study of how Digital Humanists use GitHub](https://digitalscholarship.files.wordpress.com/2016/07/spirosmithdh2016githubpresentationfinal.pdf), conducted by Lisa Spiro and Sean Morey Smith, found that a wide range of users, including professors, research staff, graduate students, IT staff, and librarians commonly used the site in their DH work. They used GitHub for a diverse range of activities, such as:
+<ul class="simple">
+<li><p>Developing software</p></li>
+<li><p>Sharing data sets</p></li>
+<li><p>Creating websites</p></li>
+<li><p>Writing articles and books</p></li>
+<li><p>Collating online resources</p></li>
+<li><p>Keeping research notes</p></li>
+<li><p>Hosting syllabi and course materials
+</sub></p></li>
+</ul>
+<ul class="simple">
+<li><p>Github &amp; Open Science</p></li>
+</ul>
+<ul class="simple">
+<li><p>When version control is diligently, it acts as a shareable electronic lab notebook for computational work</p></li>
+<li><p>It helps make code citable</p></li>
+<li><p><a class="reference external" href="https://swcarpentry.github.io/git-novice/10-open.html">Open scientific work</a>
+</sub></p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="set-up-setting-up-git">
+<h1>SET UP: Setting Up Git<a class="headerlink" href="#set-up-setting-up-git" title="Permalink to this headline">#</a></h1>
+<p>Through this section, you’ll be checking your installation and configuring Git with your own name and information.</p>
+<section id="check-your-installation">
+<h2>Check Your Installation<a class="headerlink" href="#check-your-installation" title="Permalink to this headline">#</a></h2>
+<p>First, let’s make sure Git has been successfully installed. In your terminal, type the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git --version
+</pre></div>
+</div>
+<p>If you see a version number, you’re all set. If not, follow the installation instructions <a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/git.md">here</a> or <a class="reference external" href="https://swcarpentry.github.io/git-novice/index.html#installing-git">here</a>.</p>
+</section>
+<section id="configuring-git-on-your-computer">
+<h2>Configuring Git on Your Computer<a class="headerlink" href="#configuring-git-on-your-computer" title="Permalink to this headline">#</a></h2>
+<p>Our first step in working with Git is letting the software know who we are so it can track our work and attribute our contributions. This information is useful because it connects identifying information with the changes you make in your repository.</p>
+<p>Type the following <em>two commands</em> into your command line, replacing the “John Doe” and “<a class="reference external" href="mailto:johndoe&#37;&#52;&#48;example&#46;com">johndoe<span>&#64;</span>example<span>&#46;</span>com</a>” with your name and email (use quotations where you see them). These do not necessarily need to be the name and email you used to sign up for GitHub. Remember, these are different spaces and different softwares.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git config --global user.name <span class="s2">&quot;John Doe&quot;</span>
+<span class="gp">$ </span>git config --global user.email johndoe@example.com
+</pre></div>
+</div>
+<p>To check your set-up, type the following command into your terminal:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git config --list
+</pre></div>
+</div>
+<p>You should get something that looks like this except with whatever information you entered previously:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="o">=</span><span class="n">Superstar</span> <span class="n">Git</span> <span class="n">User</span>
+<span class="n">user</span><span class="o">.</span><span class="n">email</span><span class="o">=</span><span class="n">gitsuperstar</span><span class="nd">@gmail</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</section>
+<section id="sub-more-about-setting-up-git-sub">
+<h2><sub><a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup.html">More about setting up git</a></sub><a class="headerlink" href="#sub-more-about-setting-up-git-sub" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="creating-a-syllabus-file">
+<h1>Creating a Syllabus File<a class="headerlink" href="#creating-a-syllabus-file" title="Permalink to this headline">#</a></h1>
+<p>The next step is to <em>initialize</em> the project folder that we want Git to track. Even though we configured Git for our computer, Git doesn’t start tracking every single file on our computer. That would turn into a headache quickly. We only want Git to track changes for files within specific folders/projects.</p>
+<p>When we initialize a folder, we are telling Git to pay attention to it. This only needs to happen once because what is actually happening through this process is Git is adding a hidden subfolder within your folder that houses the internal data structure required for version control. After initialization, Git is ready to track the files within the folder. The folder is now considered a Git <em>repository</em>.</p>
+<p>First, use <code class="docutils literal notranslate"><span class="pre">cd</span></code>, navigate to the <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder (inside <code class="docutils literal notranslate"><span class="pre">projects</span></code>). From your home directory, you can do all of them in one command by typing the following into your terminal:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> Desktop/projects/git-practice
+</pre></div>
+</div>
+<p>Next we’re going to <em>initialize</em> our repository using the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> command, which should generate the following output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git init
+<span class="go">Initialized empty Git repository in /home/&lt;your-username&gt;/projects/git/.git/</span>
+</pre></div>
+</div>
+<p>Now Git is tracking our directory. However, it has not done any versioning yet. This is because 1) we haven’t told Git to take a snapshot yet, and 2) there are no files in the folder to take a snapshot of. For now, Git knows this folder exists and is prepared to take a snapshot of the files when you tell it to.</p>
+<p>Before version control is useful, we’ll have to create a text file for Git to track. For this session, the file we will track will be a course syllabus—we’ll create that next.</p>
+<p><sub><a class="reference external" href="https://swcarpentry.github.io/git-novice/03-create.html">More about creating a repository</a></sub></p>
+<section id="id1">
+<h2>Creating a Syllabus file<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>To create a plain text file, we’re going to switch to our text editor, Visual Studio Code, to create and edit a file named <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> and save it to our <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder. The <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension indicates that it is a Markdown file, which is a special file format we will dive into in the next section.</p>
+<p>If you have not installed Visual Studio Code, review <a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">the installation instructions here</a>.</p>
+<p>In terminal, check to make sure you are in your <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder. (<em>Hint</em>: use <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to see what directory you are currently in.)</p>
+<p>Next, open the <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file in Visual Studio Code using:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>code syllabus.md
+</pre></div>
+</div>
+<p>You should see a window appear that looks similar to this:</p>
+<p><img alt="Image of what Visual Studio Code looks like when opening the syllabus.md file" src="images/vscode1.png" /></p>
+<p>If Visual Studio Code does not open when you use the <code class="docutils literal notranslate"><span class="pre">code</span></code> command in your terminal, open it using the Start Menu on Windows or Spotlight Search on macOS as you would any other software. Then click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">File</span></code> and use the dialog to navigate to the <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop/projects/git</span></code> folder and create a <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file there.</p>
+<p>We’ll be typing our markdown into this file in the Visual Studio Code window. At any time, you can save your file by hitting <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS. Alternatively, you can click the <code class="docutils literal notranslate"><span class="pre">File</span></code> menu on the top right, then select <code class="docutils literal notranslate"><span class="pre">Save</span></code> from the dropdown menu.</p>
+<p>Saving frequently is advised. When we get to the version contol functionality of Git, only changes that are saved will be preserved when a version is created.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="creating-syllabus-content-using-markdown">
+<h1>Creating Syllabus Content Using Markdown<a class="headerlink" href="#creating-syllabus-content-using-markdown" title="Permalink to this headline">#</a></h1>
+<p>We’ll be using <strong>Markdown</strong> to write a syllabus, and then using <strong>Git</strong> to track any changes we make to it. Markdown allows us to format textual features like headings, emphasis, links, and lists in a plain text file using a streamlined set of notations that humans can interpret without much training. Markdown files usually have a <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension.</p>
+<p><strong>Markdown</strong> is a markup language for formatting text. Like HTML, you add markers to plain text to style and organize the text of a document.</p>
+<p>Whereas you use HTML and CSS with WordPress, you use Markdown to render legible documents on GitHub. Markdown has fewer options for marking text than HTML. It was designed to be easier to write and edit.</p>
+<p>For comparison, you learned to create headers in HTML like this:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My Syllabus Heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>In Markdown, we insert headings with a single hash mark like this:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># My Syllabus Heading</span>
+</pre></div>
+</div>
+<p>A sub-heading (H2) heading uses two hash marks like this:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Readings</span>
+</pre></div>
+</div>
+<p>The lessons of this workshop were originally written in markdown. You can see <a class="reference external" href="https://raw.githubusercontent.com/DHRI-Curriculum/git/v2.0/lessons.md">here</a> what they look like in their raw, unrendered form.</p>
+<p>Compare that with this—the source code for this lesson’s web page, written in HTML <span class="xref myst">here</span>.</p>
+<p>Markdown is also arguably more sustainable and accessible than formats like <code class="docutils literal notranslate"><span class="pre">.docx</span></code> because of its simplicity and related ability to be read across multiple platforms. Use of Markdown is also supported by document-conversion tools like <a class="reference external" href="https://pandoc.org/">Pandoc</a> that can change a markdown file to an <code class="docutils literal notranslate"><span class="pre">.epub</span></code> with one command entered into your terminal.</p>
+<p>Here are a few more key elements to get you ready to make your own syllabus in Markdown.</p>
+<p>To provide emphasis, place asterisks around some text:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="ge">*This text will appear italicized.*</span>
+<span class="gs">**This text will appear bold.**</span>
+</pre></div>
+</div>
+<p>For emphasis, you need to mark where it should start and where it should end, so you need astrisks at the beginning and end of whatever text is being emphasized.</p>
+<p>To create a bulleted list, put a hyphen at the beginning of each list item:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">-</span> Reading one
+<span class="k">-</span> Reading two
+<span class="k">-</span> Reading three
+</pre></div>
+</div>
+<p>To create a link, put the anchor text (the text you will see) in square brackets and the URL in parentheses, directly following the anchor text in brackets. Don’t put a space between them:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>I teach at [<span class="nt">SMU</span>](<span class="na">https://www.smu.edu/</span>).
+</pre></div>
+</div>
+<p>Paragraphs of text are denoted by putting a blank line between them:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>This is a paragraph in markdown. It&#39;s separated from the paragraph below with a blank line. If you know HTML, it&#39;s kind of like the &lt;p&gt; tag. That means that there is a little space before and after the paragraph when it is rendered.
+
+This is a second paragraph in markdown, which I&#39;ll use to tell you what I like about markdown. I like markdown because it looks pretty good, if minimal, whether you&#39;re looking at the rendered or unrendered version. It&#39;s like tidy HTML.
+</pre></div>
+</div>
+<section id="challenge">
+<h2>Challenge<a class="headerlink" href="#challenge" title="Permalink to this headline">#</a></h2>
+<p>Use these five elements—headings, emphasis, lists, links, and paragraphs—to create a syllabus. Have a main heading that gives the course title (one <code class="docutils literal notranslate"><span class="pre">#</span></code>), then subheadings for, at least, course info and readings. Use emphasis (<code class="docutils literal notranslate"><span class="pre">*</span></code>) for book titles and try to get a list in there somewhere.</p>
+<p>If you want an a more advanced challenge, you can review some additional markdown elements on <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">this page</a> and add some extra features like images, blockquotes, or horizontal rules.</p>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">#</a></h2>
+<p>You can look at an example syllabus in raw text form <a class="reference external" href="https://raw.githubusercontent.com/SouthernMethodistUniversity/dhri/main/sections/data1.md">here</a>. When it’s rendered by GitHub, it looks like <a class="reference external" href="https://github.com/SouthernMethodistUniversity/dhri/blob/main/sections/data1.md">this</a>. When editing the markdown file in Visual Studio Code, it might look like this:</p>
+<p><img alt="What your markdown might look like when typed into Visual Studio Code" src="images/vscode2.png" /></p>
+</section>
+<section id="tips">
+<h2>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>Visual Studio Code also has a preview feature for your markdown. Hit the preview button on the top right while editing your markdown file:</p>
+<p><img alt="Button to hit to get a preview in Visual Studio Code" src="images/vscode3.png" /></p>
+<p>You’ll get two side-by-side panels. Your markdown file will be on the left, and your rendered preview will be on the right:</p>
+<p><img alt="Side by side markdown and preview in Visual Studio Code" src="images/vscode4.png" /></p>
+</li>
+<li><p>Remember to save your work—regularly!—with <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS.</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="staging-and-committing-changes">
+<h1>Staging and Committing Changes<a class="headerlink" href="#staging-and-committing-changes" title="Permalink to this headline">#</a></h1>
+<p>Git’s primary function is version control, or to track a project as it exists at particular points in time. Now that we have a file to track—our <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code>—let’s use Git to save the current state of the repository as it exists now.</p>
+<section id="a-metaphor-for-adding-and-committing">
+<h2>A Metaphor for Adding and Committing<a class="headerlink" href="#a-metaphor-for-adding-and-committing" title="Permalink to this headline">#</a></h2>
+<p>In Git, a <em>commit</em> is a snapshot of a repository that is entered into its permanent history. To commit a change to a repository, we take two steps:</p>
+<ol class="arabic simple">
+<li><p>Adding files to a “staging area,” meaning that we intend to commit them.</p></li>
+<li><p>Finalizing the commit.</p></li>
+</ol>
+<p>Staging a file or files is you telling Git, “Hey! Pay attention these files and the changes in them”.</p>
+<p>Making a commit is a lot like taking a photo. First, you have to decide who will be in the photo and arrange your friends or family in front of the camera (the staging process). Once everyone is present and ready, you take the picture, entering that moment into the permanent record (the commit process).</p>
+<p>Why do you need both steps? Sometimes when you’re working on a project you don’t want to pay attention to all the files you changed. Perhaps you fixed a bug in some code, but also did some work on your manuscript document. You may want to only commit the changes you made to the code because you still haven’t finished your thoughts on the manuscript. You can stage, or <code class="docutils literal notranslate"><span class="pre">add</span></code>, the code file so Git knows to only commit the changes made to that file. Later, you can stage and then commit the manuscript changes on their own once you’ve finished your thought.</p>
+</section>
+<section id="staging-changes-with-the-add-command">
+<h2>Staging Changes with the <code class="docutils literal notranslate"><span class="pre">add</span></code> Command<a class="headerlink" href="#staging-changes-with-the-add-command" title="Permalink to this headline">#</a></h2>
+<p>First, let’s see what state Git is currently in. We do that with the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> command. It’s a good idea to use this command before and after doing anything in a Git repository so you can always be on the same page as the computer.</p>
+<p>Make sure you’re in your <code class="docutils literal notranslate"><span class="pre">/home/&lt;your-name&gt;/Desktop/projects/git-practice</span></code> directory using the <code class="docutils literal notranslate"><span class="pre">pwd</span></code> command in the terminal. Once you’re there, enter <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> and you should see the following output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git status
+<span class="go">On branch main</span>
+
+<span class="go">No commits yet</span>
+
+<span class="go">Untracked files:</span>
+<span class="go">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span>
+
+<span class="go">	syllabus.md</span>
+
+<span class="go">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span>
+</pre></div>
+</div>
+<p>“Nothing added to commit” means that we have initialized our repository, but haven’t made any commits yet. <em>If you’re instead getting a message that begins with the word <code class="docutils literal notranslate"><span class="pre">fatal</span></code> when you use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>, you may be in the wrong directory or perhaps you haven’t run the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> command on your directory yet.</em></p>
+<p>Let’s follow the recommendation in the status message above and use the <code class="docutils literal notranslate"><span class="pre">add</span></code> command to stage files, making them ready to be committed.</p>
+<p>We will go ahead and add <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> by writing the following in the terminal:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git add syllabus.md
+</pre></div>
+</div>
+<p>You should see no output from the command line, which should be interpreted as a the above command succeeded. It is what we call “succeeding silently.” Let’s run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> again to have a “sanity check”—to make sure that things have changed. You should see output like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+
+	new file:   syllabus.md
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">file:</span>&#160;&#160; <span class="pre">syllabus.md</span></code> should be highlighted in green to show that it’s ready for commit.</p>
+<p>This is Git telling you, “Ok, I see the file(s) you’re talking about.”</p>
+</section>
+<section id="committing-changes">
+<h2>Committing Changes<a class="headerlink" href="#committing-changes" title="Permalink to this headline">#</a></h2>
+<p>Now that our files have been staged, let’s commit them, making them part of the permanent record of the repository. In the terminal, type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git commit -m <span class="s2">&quot;Initial commit of syllabus file&quot;</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag provides that the message following the flag (in quotation marks) along with the commit. The message will tell others—or remind a future version of yourself—what the commit was all about. Try not to type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> without the <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag—there’s a note about this below.</p>
+<p>After running the command, you should see output like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">main</span> <span class="p">(</span><span class="n">root</span><span class="o">-</span><span class="n">commit</span><span class="p">)</span> <span class="mi">8</span><span class="n">bb8306</span><span class="p">]</span> <span class="n">Initial</span> <span class="n">commit</span> <span class="n">of</span> <span class="n">syllabus</span> <span class="n">file</span>
+  <span class="mi">1</span> <span class="n">file</span> <span class="n">changed</span><span class="p">,</span> <span class="mi">0</span> <span class="n">insertions</span><span class="p">(</span><span class="o">+</span><span class="p">),</span> <span class="mi">0</span> <span class="n">deletions</span><span class="p">(</span><span class="o">-</span><span class="p">)</span>
+  <span class="n">create</span> <span class="n">mode</span> <span class="mi">100644</span> <span class="n">syllabus</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
+<p>This means you have successfully made your first commit in the repository—congratulations! There are a few things going on in this message. The relevant information for you for now is the second line, which tells you that one file was changed, and there were no insertions or deletions. You have a fresh new file!</p>
+<p>Let’s check the state of our repository after the commit by running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git status
+On branch main
+nothing to commit, working tree clean
+</pre></div>
+</div>
+<p>This means that everything in the repository is successfully committed and up-to-date. If you edit your syllabus file or create a new file in the repository, the message you get with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> will instead list files that have uncommitted changes.</p>
+<p>Let’s run one other command to see the effect our commit has had. Enter this command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git log
+</pre></div>
+</div>
+<p>You should see output similar to this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">commit</span> <span class="mi">8</span><span class="n">bb8306c1392eed52d4407eb16867a49b49a46ac</span> <span class="p">(</span><span class="n">HEAD</span> <span class="o">-&gt;</span> <span class="n">main</span><span class="p">)</span>
+<span class="n">Author</span><span class="p">:</span> <span class="n">Your</span> <span class="n">Name</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">email</span><span class="o">-</span><span class="n">here</span><span class="nd">@gmail</span><span class="o">.</span><span class="n">com</span><span class="o">&gt;</span>
+<span class="n">Date</span><span class="p">:</span>   <span class="n">Sun</span> <span class="n">May</span> <span class="mi">20</span> <span class="mi">16</span><span class="p">:</span><span class="mi">03</span><span class="p">:</span><span class="mi">39</span> <span class="mi">2018</span> <span class="o">-</span><span class="mi">0400</span>
+
+    <span class="n">Initial</span> <span class="n">commit</span> <span class="n">of</span> <span class="n">syllabus</span> <span class="n">file</span>
+</pre></div>
+</div>
+<p>This is the log of commits, comprising a history of your repository. There’s only one commit here now, though. If you don’t see a prompt (the <code class="docutils literal notranslate"><span class="pre">$</span></code>) after running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>, you may need to press the <kbd>q</kbd> key (just the <kbd>q</kbd> key by itself) to return to the command line.</p>
+</section>
+<section id="why-do-we-need-to-use-the-m-flag">
+<h2>Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?<a class="headerlink" href="#why-do-we-need-to-use-the-m-flag" title="Permalink to this headline">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag is useful for human purposes and technical purposes. For human purposes, the <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag helps you keep track of the changes you’re making. Version control is most useful when you can confidently return to a specific version. It can also help you be more structured in your approach to making changes—your notes to self are limited, so to make them clear, you might make commits after specific tasks are completed. If you update readings for the first week of classes or if you add another reading, you will want to make a commit. This can also make it easier to reverse a specific change in the future.</p>
+<p>Also, if you type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> by itself, git will open the command line’s default text editor to allow you to enter the commit message in a file-like environment. It looks something like this:</p>
+<p><img alt="Example of what the vi screen looks like" src="images/vi.png" /></p>
+<p>This unfamiliar screen is the default text editor, <code class="docutils literal notranslate"><span class="pre">vi</span></code>, and it requires some knowledge to use. We don’t teach it as part of our sessions, but if you find yourself stuck in this screen, you can try this trick to leave that environment and return to your usual command prompt. Type <code class="docutils literal notranslate"><span class="pre">:q</span></code> and then press <kbd>enter</kbd>. You should be back to the command line with a message saying:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Aborting commit due to empty commit message.</span>
+</pre></div>
+</div>
+<p>If you make a mistake where you include an opening quotation mark but forget a closing one, you might accidentally end up inside a “quote prompt.” You will know you’re there when your command prompt changes to <code class="docutils literal notranslate"><span class="pre">quote&gt;</span></code>. If this happens, you can just keep writing as much of your commit message as you want, and then end it with the same quotation mark that you opened the commit message with.</p>
+<p>Another option is to press <kbd>control</kbd> + <kbd>c</kbd> on your keyboard, which will exit the quote prompt and cancel any commits you were trying to perform.</p>
+</section>
+<section id="pro-tip-for-the-command-line-how-to-exit-unknown-screens">
+<h2>Pro-tip for the Command Line: How to exit unknown screens<a class="headerlink" href="#pro-tip-for-the-command-line-how-to-exit-unknown-screens" title="Permalink to this headline">#</a></h2>
+<p>If you’re ever stuck or “trapped” on the command line, try running through these common exit commands to return to the prompt:</p>
+<ul class="simple">
+<li><p><kbd>control</kbd> + <kbd>c</kbd></p></li>
+<li><p><kbd>control</kbd> + <kbd>d</kbd></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">q</span></code> followed by <kbd>enter</kbd></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:q</span></code> followed by <kbd>enter</kbd></p></li>
+</ul>
+<p><kbd>control</kbd> + <kbd>c</kbd> attempts to abort the current task and restore user control. <kbd>control</kbd> + <kbd>d</kbd> escapes the current shell environment—if you use it at the normal <code class="docutils literal notranslate"><span class="pre">$</span></code> prompt, it will end the current command line session. <code class="docutils literal notranslate"><span class="pre">q</span></code> is often used as a command (followed by <kbd>enter</kbd>) to escape from specific programs like <code class="docutils literal notranslate"><span class="pre">less</span></code>. <code class="docutils literal notranslate"><span class="pre">:q</span></code> is the command used in <code class="docutils literal notranslate"><span class="pre">vi</span></code> that changes the mode of interaction (<code class="docutils literal notranslate"><span class="pre">:</span></code>), allowing you to enter the <code class="docutils literal notranslate"><span class="pre">q</span></code>, a one-letter command to quit, which must be followed by <kbd>enter</kbd>. Thus, it’s a command specific to <code class="docutils literal notranslate"><span class="pre">vi</span></code>.</p>
+<p><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/04-changes.html">More about Tracking changes</a> </sub></p>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="pushing-to-github">
+<h1>Pushing to GitHub<a class="headerlink" href="#pushing-to-github" title="Permalink to this headline">#</a></h1>
+<p>Now, let’s connect the directory you made to GitHub. GitHub is a service that allows us to host files, collaborate, and find the work of others. Once our syllabus is on GitHub, it will be publicly visible.</p>
+<p>Go to GitHub in your browser and click the plus sign in the upper right hand corner.</p>
+<p><img alt="You can find the plus sign button to add a repo on the top right of github" src="images/addrepo.png" /></p>
+<p>After clicking the plus button, select <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">repository</span></code> from the dropdown menu.</p>
+<p><img alt="The dropdown menu where you select New Repository" src="images/createrepo.png" /></p>
+<p>After clicking <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">repository</span></code>, you’ll have to enter some information, including a name and description for your repository.</p>
+<p><img alt="Screen on GitHub where you enter your repository information" src="images/createrepo2.png" /></p>
+<ul class="simple">
+<li><p>Choose a name, such as <code class="docutils literal notranslate"><span class="pre">git-practice</span></code>.</p></li>
+<li><p>Enter a description, such as <code class="docutils literal notranslate"><span class="pre">Test</span> <span class="pre">syllabus</span> <span class="pre">for</span> <span class="pre">learning</span> <span class="pre">Git</span> <span class="pre">and</span> <span class="pre">GitHub</span></code>.</p></li>
+<li><p>Keep the <code class="docutils literal notranslate"><span class="pre">Public</span> <span class="pre">—</span> <span class="pre">Anyone</span> <span class="pre">can</span> <span class="pre">see</span> <span class="pre">this</span> <span class="pre">repository</span></code> selector checked.</p></li>
+<li><p>Do <em>not</em> select <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">this</span> <span class="pre">repository</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">README</span></code> since you will be importing an existing repository from your computer.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">repository</span></code>.</p></li>
+</ul>
+<p>You should end up inside your newly created git-practice repo. It will look like a set of instructions that you might want to use to connect your GitHub repository to a local repository.</p>
+<p>The instructions we want consist of three lines underneath the heading <code class="docutils literal notranslate"><span class="pre">...or</span> <span class="pre">push</span> <span class="pre">an</span> <span class="pre">existing</span> <span class="pre">repository</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">command</span> <span class="pre">line</span></code>. The arrow in this screenshot points to where these directions are on the page:</p>
+<p><img alt="The commands you need to copy from the new repo page on GitHub" src="images/connect-repo.png" /></p>
+<p>Copy out the first command and paste it in your terminal. It should look something like this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git remote add origin https://github.com/&lt;username&gt;/&lt;repository-name&gt;.git</span>
+</pre></div>
+</div>
+<p>You’ll need the command copied from your new repo, since it will contain the correct URL.</p>
+<p>Next, paste the second command. It will look exactly like this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git branch -M main</span>
+</pre></div>
+</div>
+<p>Finally, paste the third command. It will look exactly like this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git push -u origin main</span>
+</pre></div>
+</div>
+<p>If you have not used git before, you will need to authenticate with GitHub, and a window will pop up asking you to sign in. Click <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">in</span> <span class="pre">with</span> <span class="pre">your</span> <span class="pre">browser</span></code>:</p>
+<p><img alt="The window asking you to sign in to GitHub" src="images/github_authenticate.png" /></p>
+<p>Your browser should open a window asking you to “Authorize Git Credential Manager.” Click the green <code class="docutils literal notranslate"><span class="pre">Authorize</span> <span class="pre">GitCredentialManager</span></code> button:</p>
+<p><img alt="The window asking you to authorize Git Credential Manager" src="images/github_credential_manager.png" /></p>
+<p>You should see a message that authentication succeeded. If so, you may now close the browser window and return to the command line, where you should see output like this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Total 4 (delta 3), reused 0 (delta 0)</span>
+<span class="go">remote: Resolving deltas: 100% (3/3), completed with 3 local objects.</span>
+<span class="go">To github.com:&lt;repo-name&gt;/git.git</span>
+<span class="go">   916998f..9779fa7  master -&gt; master</span>
+</pre></div>
+</div>
+<p>If you see output like this, go back to your new repository page in the browser and click the <code class="docutils literal notranslate"><span class="pre">Refresh</span></code> button. You should see your <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file on GitHub! Your git credentials are also now stored locally, so you should not need to authorize the credential manager again from that computer.</p>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="cloning-and-forking">
+<h1>Cloning and Forking<a class="headerlink" href="#cloning-and-forking" title="Permalink to this headline">#</a></h1>
+<p>GitHub was built for sharing and collaborating on projects. A key advantage of the platform is that you can find lots of bits of software that do many different things—such as code for plugins for WordPress or Leaflet. Increasingly, you might find syllabi or open writing projects. If a project is public, you can save a copy of it to your local machine, work on it, save your amendations and share it on your own GitHub account. Like we’ve already mentioned, GitHub usefully helps track attribution along the way.</p>
+<p>Cloning and forking are the basic functions of this capability. Each are first explained below, and followed by an example and activity to further explain.</p>
+<section id="cloning">
+<h2>Cloning<a class="headerlink" href="#cloning" title="Permalink to this headline">#</a></h2>
+<p><strong>Cloning</strong> a repository means making a copy of a repository on GitHub, to download and work on locally—on your local machine. By entering the following code into your terminal, you can clone any public directory on GitHub:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone &lt;repository-url&gt;
+</pre></div>
+</div>
+<p>When you clone a repository from GitHub, the folder that shows up on your local machine comes built-in with a few things. First, Git is already present, so you don’t need to initialize the folder. Also, the connection between your local copy and the online repository is already made, so <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code> will work (no <code class="docutils literal notranslate"><span class="pre">-u</span></code> flag needed).</p>
+<p>For practice, let’s clone the repository for this workshop about Git and GitHub, which <span class="xref myst">lives on GitHub</span>.</p>
+<p>First, let’s navigate back to your Desktop folder.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> ~/Desktop
+</pre></div>
+</div>
+<p>Remember that the <code class="docutils literal notranslate"><span class="pre">~</span></code> refers to your home directory. Now let’s find the URL we need to clone the lesson.</p>
+<p>First, follow <a class="reference external" href="https://github.com/SouthernMethodistUniversity/git">this link to the main page of this lesson on Git and GitHub</a>.</p>
+<p>On the main page, there should be a green <code class="docutils literal notranslate"><span class="pre">Code</span></code> button on the right side:</p>
+<p><img alt="Image pointing out where the clone or download button is on GitHub" src="images/clone.png" /></p>
+<p>Click the green button and you will see a box with highlighted text under a heading that says <code class="docutils literal notranslate"><span class="pre">Clone</span> <span class="pre">with</span> <span class="pre">HTTPS</span></code>. If you instead see <code class="docutils literal notranslate"><span class="pre">Cloning</span> <span class="pre">with</span> <span class="pre">SSH</span></code>, click the small link that says <code class="docutils literal notranslate"><span class="pre">Use</span> <span class="pre">HTTPS</span></code>.</p>
+<p>Now copy out the text in the box:</p>
+<p><img alt="Image showing where the text you need to copy is located" src="images/copy-clone-text.png" /></p>
+<p>Now that you have the text copied, go back to your terminal. Remember, you should be on the <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>. (Hint: Use <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to find out what your current working directory is.)</p>
+<p>Once you are in the <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>, type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone &lt;copied-url&gt;
+</pre></div>
+</div>
+<p>If the command is successful, the full Git and GitHub workshop’s text will be replicated on your local machine. To navigate into the folder, its name is <code class="docutils literal notranslate"><span class="pre">git</span></code> and you can use the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command to access it:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> git
+</pre></div>
+</div>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command to take a look at the various files in the lesson folder.</p>
+<p>Cloning can be especially useful when you’re joining a group project that is hosted on GitHub, and you want your changes to eventually be pushed and shared with that same repository.</p>
+<p>But maybe that is not possible or ideal. Maybe you don’t want to contribute your changes to someone else’s repository. Maybe you want to make a derivative of their folder for yourself, on your GitHub account, and make changes there.</p>
+<p>Forking is the step you could take to do this.</p>
+</section>
+<section id="forking">
+<h2>Forking<a class="headerlink" href="#forking" title="Permalink to this headline">#</a></h2>
+<p><em>Forking</em> a repository means making a copy of someone else’s repository on GitHub, and saving it to your account on GitHub. This function happens within GitHub, and has nothing to do with what is happening on your local machine. Note that <em>forking</em> will not automatically make the repository appear as a folder on your computer; that’s the role of <em>cloning</em>.</p>
+<p>In order to “fork” the <code class="docutils literal notranslate"><span class="pre">git</span></code> repository into your own GitHub account, follow these steps.</p>
+<p>First, go to <a class="reference external" href="https://github.com/SouthernMethodistUniversity/git">the repository for this workshop</a> on GitHub. Note the <code class="docutils literal notranslate"><span class="pre">Fork</span></code> button in the upper right hand corner. By clicking that button, you can copy, or fork, this repository to your account.</p>
+<p><img alt="Image showing where the button to fork a repo is located" src="images/fork-button.png" /></p>
+<p>Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace <code class="docutils literal notranslate"><span class="pre">DHRI-Curriculum</span></code>, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, <code class="docutils literal notranslate"><span class="pre">DHRI-Curriculum</span></code> below after <code class="docutils literal notranslate"><span class="pre">forked</span> <span class="pre">from</span></code>, since this was the origin point of <em>your</em> fork.</p>
+<p><img alt="Image showing the changes in attribution that happen when a repo is forked" src="images/forking-attrib-chng.png" /></p>
+<p>Your local machine would come into play when you want to <em>clone</em> that repository so you can work on it locally. This also means that when you push those changes to GitHub, you would be pushing them to a forked repository associated with your own account.</p>
+<p>You might use this method if you were going to teach your own Git &amp; GitHub workshop. You could use our repository as a base for getting started, and add more examples or change some language, clarify something further, or create a connection to another workshop you are giving, etc. This allows us to continue to use the workshop as we have it as well. Also, maybe at a later time, we want to merge some of your changes with ours. We can do that too by revisiting your version history.</p>
+</section>
+<section id="id2">
+<h2>Challenge<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
+<li><p>Fork and clone <a class="reference external" href="https://github.com/SouthernMethodistUniversity/git">the repository for this workshop</a>. Note not only <em>what</em> you are doing, but also <em>where</em> you are working when completing these two different tasks.</p></li>
+<li><p>Make changes to the files on your local machine. Remember to save them!</p></li>
+<li><p>Use the 3-step process of stage, commit and push to return the amended files to the repository on GitHub.</p></li>
+</ol>
+</section>
+<section id="solution">
+<h2>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">#</a></h2>
+<p>Rather than write out the solution here, I want to encourage you to go back through the lessons as needed.</p>
+<p>You’ll know you’ve completed step one when the project folder (called <code class="docutils literal notranslate"><span class="pre">git</span></code>) shows up on your local machine.</p>
+<p>After you’ve made and saved the changes, you’ll know you’ve completed step three when your changes appear in the project folder on <em>your</em> GitHub account.</p>
+<p>Following up</p>
+<hr class="docutils" />
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="commandline.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Review of the Command Line</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="after.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Theory to Practice</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">What are Git and GitHub?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#highlighting-distinctions">Highlighting Distinctions</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-we-use-github">How We Use GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborative-writing">Collaborative Writing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#versions-across-time-version-control">Versions Across Time (Version control)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-and-attribution">Sharing and Attribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-setting-up-git">SET UP: Setting Up Git</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-your-installation">Check Your Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-more-about-setting-up-git-sub"><sub>More about setting up git</sub></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file">Creating a Syllabus File</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Creating a Syllabus file</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-syllabus-content-using-markdown">Creating Syllabus Content Using Markdown</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge">Challenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-and-committing-changes">Staging and Committing Changes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-metaphor-for-adding-and-committing">A Metaphor for Adding and Committing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-changes-with-the-add-command">Staging Changes with the <code class="docutils literal notranslate"><span class="pre">add</span></code> Command</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">Committing Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-use-the-m-flag">Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pro-tip-for-the-command-line-how-to-exit-unknown-screens">Pro-tip for the Command Line: How to exit unknown screens</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-and-forking">Cloning and Forking</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning">Cloning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forking">Forking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Challenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rafia Mirza, & <a href="https://www.smu.edu/libraries/scholarship/srstudio.">Scholarship & Research Studio </a> staff.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright Creative Commons Attribution-ShareAlike 4.0 International License..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

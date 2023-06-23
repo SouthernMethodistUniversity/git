@@ -1,0 +1,600 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Before you get started &#8212; Introduction to Git</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'sections/before';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Review of the Command Line" href="commandline.html" />
+    <link rel="prev" title="Coding" href="whycoding.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Workshop objectives
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">To quickly get started</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="whycoding.html">Coding</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Before you get started</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="commandline.html">Review of the Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git-and-github.html">What are Git and GitHub?</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="after.html">Theory to Practice</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/git/issues/new?title=Issue%20on%20page%20%2Fsections/before.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/sections/before.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Before you get started</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Before you get started</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vs-github-what-s-the-difference-required">Git vs. GitHub: What’s the difference? (required)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prior-knowledge-recommended">Prior Knowledge (recommended)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-required">Required Software or accounts (required)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contexts">Contexts</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ethical-considerations">Ethical Considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#readings-before-you-get-started-optional">Readings before you get started (optional)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projects-related-to-introduction-to-git-and-github-optional">Projects related to Introduction to Git and GitHub (optional)</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="before-you-get-started">
+<h1>Before you get started<a class="headerlink" href="#before-you-get-started" title="Permalink to this headline">#</a></h1>
+<p>In this section, we want to introduce some central steps that you want to take before you get started with this workshop. For instance, there are workshop suggestions that you may want to engage with before you start this workshop, some required or recommended software installations, some files from external sources to download, etc. :green_circle:  indicated what is <em>required</em> before the session.</p>
+<section id="git-vs-github-what-s-the-difference-required">
+<h2>Git vs. GitHub: What’s the difference? (required)<a class="headerlink" href="#git-vs-github-what-s-the-difference-required" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>:green_circle: Watch this video before the session. While watching consider: Why might using GitHub be useful even if you are not working on a development team?:green_circle:
+<a href="{https://www.youtube-nocookie.com/embed/wpISo9TNjfU}" title="Git vs. GitHub: What's the difference?"><img src="{images/gitvgithub.PNG}" alt="Git Vs. Github" /></a></p></li>
+</ul>
+</section>
+<section id="prior-knowledge-recommended">
+<h2>Prior Knowledge (recommended)<a class="headerlink" href="#prior-knowledge-recommended" title="Permalink to this headline">#</a></h2>
+<p>Having some knowledge about how to use the command line will be central for anyone who wants to learn about git and GitHub. This workshop will assume some knowledge of the command line.
+If you do not have experience or prior knowledge of the command line, you may want to review the following workshop: <a class="reference external" href="https://www.github.com/DHRI-Curriculum/command-line">Introduction to the Command Line</a></p>
+</section>
+<section id="required-software-or-accounts-required">
+<h2>Required Software or accounts (required)<a class="headerlink" href="#required-software-or-accounts-required" title="Permalink to this headline">#</a></h2>
+<p>Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.</p>
+<p>Plain Text Editor</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">Visual Studio Code</a> (recommended) You can use any plain text editor but for our purposes, Visual Studio Code (“VS Code”) will be used.</p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/">Download and install</a></p></li>
+<li><p><a class="reference external" href="https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/">Directions</a></p></li>
+<li><p>:green_circle:<a class="reference external" href="https://github.com/join">Create a GitHub account</a> (required) :green_circle:</p></li>
+<li><p>You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about here: <a class="reference external" href="https://education.github.com/pack">https://education.github.com/pack</a></p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="contexts">
+<h1>Contexts<a class="headerlink" href="#contexts" title="Permalink to this headline">#</a></h1>
+<p>Why am I learning this? Why does it matter? How will it help my project? Learning new digital skills is an investment of your valuable time, so it is reasonable to want to know—essentially—what will I get out of taking this workshop? The materials below help situate the skills you are about to learn within a larger context of how they are used, by whom, and to what ends.</p>
+<section id="ethical-considerations">
+<h2>Ethical Considerations<a class="headerlink" href="#ethical-considerations" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Digital tools and the skills required to use them are part of our culture and, therefore, never neutral. Digital humanists and social scientists consider the ethical challenges and responsibilities of the tools and methods that they use. The following materials are designed to introduce you to issues you may want to consider as you learn this new skill and decide how to integrate it into your own research and teaching.</p></li>
+<li><p>Within the nebulous open-source ecosystem, GitHub is an important place for storing and finding code. What if your open source code was used by an entity or for a purpose that did not agree with your ethics? For example, the platform received backlash from employees of GitHub and users of the platform when it was revealed that they held a contract with ICE. In this case, neither group wanted their code shared and used by ICE in detaining and deporting immigrants. <a class="reference external" href="https://www.theatlantic.com/technology/archive/2020/01/ice-contract-github-sparks-developer-protests/604339/">Read more here.</a></p></li>
+</ul>
+</section>
+<section id="readings-before-you-get-started-optional">
+<h2>Readings before you get started (optional)<a class="headerlink" href="#readings-before-you-get-started-optional" title="Permalink to this headline">#</a></h2>
+<p>-The readings listed below situate what you are about to learn in cultural contexts, such as a particular humanities or social science field, the information or computer sciences, or popular discourse. The purpose of the readings is to provide a theoretical framework you can use to contextualize how you intend to use the skill or tool introduced in this workshop.</p>
+<ul class="simple">
+<li><p>Bryan, J. (2017). <a class="reference external" href="https://doi.org/10.7287/peerj.preprints.3159v2"><em>Excuse me, do you have a moment to talk about version control?</em></a> PeerJ Preprints.</p></li>
+<li><p>Ovadia, S. (2014). <a class="reference external" href="https://academicworks.cuny.edu/lg_pubs/7/"><em>Markdown for Librarians and Academics</em></a>. Behavioral and Social Sciences Librarian, 33, 120-124.</p></li>
+<li><p>Shaffer, K. (June 4, 2013). <a class="reference external" href="https://blogs.lse.ac.uk/impactofsocialsciences/2013/06/04/github-for-academics/"><em>GitHub for Academics: The open-source way to host, create and curate knowledge</em></a> LSE Blog.</p></li>
+<li><p>Begemann, O. (2016). <a class="reference external" href="https://oleb.net/blog/2016/02/collaborative-writing-on-github/"><em>Collaborative Writing on GitHub</em></a>.</p></li>
+<li><p><a class="reference external" href="https://digitalscholarship.wordpress.com/2016/07/20/presentation-on-how-digital-humanists-use-github/"><em>How Digital Humanists Use GitHub</em></a>: A presentation from Lisa Spiro and Sean Morey-Smith on their study of how Digital Humanists use GitHub.</p></li>
+</ul>
+</section>
+<section id="projects-related-to-introduction-to-git-and-github-optional">
+<h2>Projects related to Introduction to Git and GitHub (optional)<a class="headerlink" href="#projects-related-to-introduction-to-git-and-github-optional" title="Permalink to this headline">#</a></h2>
+<p>The following are sample projects that use the skill or tool (either implicitly or explicitly) that you are about to learn. Some skills that are foundational may seem not to lead to a specific project goal that you have in mind. You might be surprised to learn that the following projects depend on the skills learned in this workshop.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/DHRI-Curriculum">GCDI’s Digital Research Institute</a> has been improved and built out over time using GitHub to store and track multiple projects that use the same base of repositories, and new versions.</p></li>
+<li><p>“F-ing Algorithm” project uses Git and GitHub to create multiple versions of their project in different languages—(<a class="reference external" href="https://github.com/labuladong/fucking-algorithm">Chinese</a> and <a class="reference external" href="https://github.com/labuladong/fucking-algorithm/tree/english">English</a>), and to create a <a class="reference external" href="https://labuladong.gitbook.io/algo-en/i.-dynamic-programming/analysisofdynamicprogramming">GitBook</a> for sharing their work.</p></li>
+<li><p>Here are two examples of using Git and GitHub for teaching—<a class="reference external" href="https://github.com/quinnanya/dlcl204">a syllabus using a GitHub repo</a> and <a class="reference external" href="https://digitalhistory.github.io/">a syllabus using a repo and GitPages</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/several27/FakeNewsCorpus">Fake New Corpus</a>, an open source dataset composed of millions of news articles mainly intended for use in training deep learning algorithms for purpose of fake news recognition. The dataset is still work in progress and for now, the public version includes only 9,408,908 articles.</p></li>
+<li><p><a class="reference external" href="https://github.com/TheFeministSoftwareFoundation/C-plus-Equality">C+=</a>, a feminist programming language, created by The Feminist Software Foundation to smash the toxic Patriarchy that is inherent in and that permeates all current computer programming languages.</p></li>
+<li><p><a class="reference external" href="https://github.com/Leaflet/Leaflet">Leaflet</a>, an open-source Javascript library for building mobile-friendly interactive maps.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="whycoding.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Coding</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="commandline.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Review of the Command Line</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Before you get started</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vs-github-what-s-the-difference-required">Git vs. GitHub: What’s the difference? (required)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prior-knowledge-recommended">Prior Knowledge (recommended)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-required">Required Software or accounts (required)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contexts">Contexts</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ethical-considerations">Ethical Considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#readings-before-you-get-started-optional">Readings before you get started (optional)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projects-related-to-introduction-to-git-and-github-optional">Projects related to Introduction to Git and GitHub (optional)</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rafia Mirza, & <a href="https://www.smu.edu/libraries/scholarship/srstudio.">Scholarship & Research Studio </a> staff.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright Creative Commons Attribution-ShareAlike 4.0 International License..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
