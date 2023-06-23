@@ -6,7 +6,7 @@ In this section, we want to introduce some central steps that you want to take b
 <a href="{https://www.youtube-nocookie.com/embed/wpISo9TNjfU}" title="Git vs. GitHub: What's the difference?"><img src="{images/gitvgithub.png}" alt="Git Vs. Github" /></a>
 
 
-[!["Git Vs. Github"](../images/gitvgithub.png)](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
+[!["Git Vs. Github"](../sections/images/gitvgithub.png)](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
 
 
 ## Prior Knowledge (recommended)
