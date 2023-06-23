@@ -3,7 +3,7 @@ In this section, we want to introduce some central steps that you want to take b
 
 ## Git vs. GitHub: What's the difference? (required)
 * Watch this video before the session. 
-[!["Git vs. GitHub: What's the difference?"](../_images/gitvgithub.png)](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
+[!["Git vs. GitHub: What's the difference?"](https://github.com/SouthernMethodistUniversity/git/blob/main/docs/_images/gitvgithub.png)](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
 * While watching consider: Why might using GitHub be useful even if you are not working on a development team? 
 
 
