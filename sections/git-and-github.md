@@ -60,7 +60,7 @@ to be shared can and should be stored in a version control system.
 ### Sharing and Attribution
 
 As you can see [across these sessions, we use GitHub to host workshop curricula.](https://github.com/SouthernMethodistUniversity?q=git&type=all&language=&sort=) Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.[As you can see in our acknowledgements](https://github.com/SouthernMethodistUniversity/git#acknowledgements)
-- You cna [add a citation file as well](https://swcarpentry.github.io/git-novice/12-citation.html)
+- You can [add a citation file as well](https://swcarpentry.github.io/git-novice/12-citation.html)
 
 
 <sub> 
@@ -73,7 +73,7 @@ As you can see [across these sessions, we use GitHub to host workshop curricula.
 - Collating online resources
 - Keeping research notes
 - Hosting syllabi and course materials
-</sub>
+
 
 * Github & Open Science
 - When version control is diligently, it acts as a shareable electronic lab notebook for computational work

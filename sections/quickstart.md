@@ -3,13 +3,13 @@
 * If you already having coding skills, are comfortable with using the command line (see [Playing with text on the command line](https://github.com/veltman/learninglunches/tree/master/commandline)) and you are just looking for quickstart to GitHub, you can use the following links: 
 
 ## Sign up for a Github account 
-- Sign up for a Github account (https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
+- Sign up for a Github account [by clicking here](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)
 - Create a 'personal account, which serves as your identity on GitHub.com. [Select free and follow the prompts.](https://github.com/pricing)
 
 
 ## SMU participates in the GitHub Campus Program
 - [SMU GitHub Campus Program](https://www.smu.edu/OIT/Services/GitHub)
-    -  GitHub Campus Program is available to all *active* faculty, staff, and students. 
+    - GitHub Campus Program is available to all *active* faculty, staff, and students. 
 - [Sign into SMU's Github Enterprise account](http://github.smu.edu/) and upload content using your web browser.
 
 # Quickstart lessons  
