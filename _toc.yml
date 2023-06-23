@@ -1,0 +1,17 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+  - file: sections/quickstart
+  - file: sections/whycoding
+  - file: sections/before
+  - file: sections/commandline
+  - file: sections/git-and-github
+  - file: sections/after
+
+
+    
+
+
