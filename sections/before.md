@@ -1,4 +1,4 @@
-# Before the workshop
+# Before the workshop (REQUIRED)
 In this section, we want to introduce some central steps that you want to take before you get started with this workshop. For instance, there are workshop suggestions that you may want to engage with before you start this workshop, some required or recommended software installations, some files from external sources to download, etc. :green_circle:  indicated what is *required* before the session. 
 
 ## Git vs. GitHub: What's the difference? (required)
@@ -6,8 +6,6 @@ In this section, we want to introduce some central steps that you want to take b
 [!["Git vs. GitHub: What's the difference?"](../sections/images/gitvgithub.png)](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
 
 * While watching consider: Why might using GitHub be useful even if you are not working on a development team? 
-
-
 
 
 ## Prior Knowledge (recommended)
@@ -23,8 +21,8 @@ Plain Text Editor
  - [Download and install](https://code.visualstudio.com/)
  - [Directions](https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/)
 
-- :green_circle:[Create a GitHub account](https://github.com/join) (required) :green_circle:
-- You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about here: https://education.github.com/pack
+- **[Create a GitHub account](https://github.com/join) (required)**
+- You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
 
 # Contexts
 Why am I learning this? Why does it matter? How will it help my project? Learning new digital skills is an investment of your valuable time, so it is reasonable to want to know—essentially—what will I get out of taking this workshop? The materials below help situate the skills you are about to learn within a larger context of how they are used, by whom, and to what ends.

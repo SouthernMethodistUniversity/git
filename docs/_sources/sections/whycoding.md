@@ -1,7 +1,8 @@
-# Coding 
+# Why Learn Coding (Optional)
+* This section is to give context to 
 
 # Computing  
-Understanding computing: This session is to familiarize you wth important foundational concepts and to give you a framework for understanding the types of computational methods you can use on a projects, including: minimal computing, tool choice or coding.  Finally, this session aims to give you language to conceptualize what is possible and to communicate more effectively with partners. 
+Understanding computing: This section is to familiarize you wth important foundational concepts and to give you a framework for understanding the types of computational methods you can use on a projects, including: minimal computing, tool choice or coding.  Finally, this session aims to give you language to conceptualize what is possible and to communicate more effectively with partners. 
 
 * Understanding the affordances and limitations of a computational approach for your project will help you better imagine, plan manage your project. Even if you are not directly involved in the coding aspect, this will give you the tools to better collaborate with those who will.
 
@@ -20,7 +21,7 @@ Understanding computing: This session is to familiarize you wth important founda
 * They may not be mutually exclusive, but you will likely still need to make choices based on your circumstances.  
 
 # Computing Environment  
-* "The computing environment involves the collection of computer machinary, data storage devices, work stations, software applications, and networks that support the processing and exchange of electronic information..." -[Computing Environment](https://www.sciencedirect.com/topics/computer-science/computing-environment) 
+* "The computing environment involves the collection of computer machinery, data storage devices, work stations, software applications, and networks that support the processing and exchange of electronic information..." -[Computing Environment](https://www.sciencedirect.com/topics/computer-science/computing-environment) 
 
 *What does this all mean?* 
 
@@ -133,9 +134,8 @@ Another way to make your computer do things: through the command line. Instead o
 
 * Can you think of something that a human is better at doing then a computer?   
 
-# Text 
+<!--- Text 
 
-* We discussed moving from GUI to a text based commands. 
 * text can be code, and text can be data. 
 * When does text become code? 
 
@@ -191,14 +191,11 @@ When it comes to editing text and writing code, you can use either a text editor
 * "TEI tags describe the characteristics of a given text. For example, TEI tags may be used to indicate paragraph and line breaks, pagination, and major divisions of a text such as volumes, chapters, and sections. In addition, tags may be placed around typographical characteristics such as text that is underlined, italicized, superscripted, etc., and around text that needs special emphasis such as foreign words, misspellings, proper names, etc." [UNL Center for Digital Research in the Humanities](https://cdrh.unl.edu/articles/basicguide/TEI) 
 * Example: ["In transcribing a manuscript, it might be desirable to distinguish among three distinct forms of the letter r."](https://quod.lib.umich.edu/cgi/t/tei/tei-idx?type=HTML&rgn=DIV1&byte=281938)
 * [Projects that use TEI.](https://tei-c.org/Activities/Projects)
-  * "Why do so many book titles have commas in them?!" Face screaming in fear- A lament brought to you by someone who wrote titles into a CSV, didn't quote values, and now has regrets."- @quinnanya <!--(https://twitter.com/quinnanya/status/1422238317878255642)!-->
+  * "Why do so many book titles have commas in them?!" Face screaming in fear- A lament brought to you by someone who wrote titles into a CSV, didn't quote values, and now has regrets."- @quinnanya (https://twitter.com/quinnanya/status/1422238317878255642)
 
 
 # What does this all mean? Why are we telling you all this? 
 
-* This is useful contextual information for you if you choose to go forward with learning programming. This is also set up for our Python session.
-
-* For this Institute, we have chosen to do our computing workshop using a cloud based environment: [ManeFrame II](https://www.smu.edu/OIT/Services/HPC). You will be set up with [M II HPRC (ManeFrame II: High-Performance Research Computing) accounts](https://www.smu.edu/OIT/Services/HPC), where we will use notebooks. 
 
 Advantages of using an cloud based M II account:
 - M II is already set up to work well on any device, and it will have software pre-installed accessible via Internet.
@@ -242,7 +239,7 @@ Advantages cloud-based notebooks give instructors:
 * [Comparing Python vs R Objectively.](https://www.dataquest.io/blog/python-vs-r/): “where Python is more object-oriented, and R is more functional.”
 * [Choosing R or Python for Data Analysis? An Infographic.](https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis) 
 * [Python vs. R for Data Science: What’s the Difference?](https://www.datacamp.com/community/blog/when-to-use-python-or-r)
-* [R vs. Python](http://www.theswarmlab.com/category/rvspython/): Compares the two in action.
+* [R vs. Python](http://www.theswarmlab.com/category/rvspython/): Compares the two in action.---> 
 
 
 # Should you learn coding or just use a tool?

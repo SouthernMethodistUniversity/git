@@ -1,6 +1,4 @@
-# Review of the Command Line
-
-
+# Review of the Command Line (Optional Review)
 
 
 During this workshop, you'll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.
