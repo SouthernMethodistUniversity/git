@@ -1,4 +1,4 @@
-# What are Git and GitHub?
+# Getting Started with Git and GitHub (workshop)
 
 **Git** is software used for version control—that is, tracking the state of files and changes you make to them over time. Git can be enabled in a folder, and then used to save the state of the contents in that folder at different points in the future, as designated by you. In the language of Git, a folder is called a _repository_. In the context of this workshop, it refers to a folder that is being tracked by Git. Using Git, you can view a log of the changes you've made to the files in a repository and compare changes over time. We will explore these features in the current workshop. You can also revert back to previous versions, and create "branches" of a project to explore different futures. These are advanced features, which we will provide resources for you to explore later. Git is also useful for collaboration, as a repository can be shared across computers, and its contents can be asynchronously developed and eventually merged with the main project.
 
@@ -30,8 +30,7 @@ How did you initially come by the syllabus you use for your class(es), and did y
 
 Through this process, many of us end up with a set of files that looks something like this:
 
-![Example of a messy folder structure with many files named similarly](../images/messy-file-structure.png)
-
+![Example of a messy folder structure with many files named similarly](../sections/images/messy-file-structure.png)
 While I probably can tell which version is the "final" one, I can not see what was changed along the way or how the different versions vary from each other.
 
 With Git, you would save these multiple versions over time as one file, and each version you save includes a note about what has changed so you can easily revert back to an older version if needed.
@@ -165,7 +164,7 @@ $ code syllabus.md
 
 You should see a window appear that looks similar to this:
 
-![Image of what Visual Studio Code looks like when opening the syllabus.md file](../images/vscode1.png)
+![Image of what Visual Studio Code looks like when opening the syllabus.md file](../sections/images/vscode1.png)
 
 If Visual Studio Code does not open when you use the `code` command in your terminal, open it using the Start Menu on Windows or Spotlight Search on macOS as you would any other software. Then click `File > Open File` and use the dialog to navigate to the `/Users/<your-name>/Desktop/projects/git` folder and create a `syllabus.md` file there.
 
@@ -249,17 +248,17 @@ If you want an a more advanced challenge, you can review some additional markdow
 
 You can look at an example syllabus in raw text form [here](https://raw.githubusercontent.com/SouthernMethodistUniversity/dhri/main/sections/data1.md). When it's rendered by GitHub, it looks like [this](https://github.com/SouthernMethodistUniversity/dhri/blob/main/sections/data1.md). When editing the markdown file in Visual Studio Code, it might look like this:
 
-![What your markdown might look like when typed into Visual Studio Code](../images/vscode2.png)
+![What your markdown might look like when typed into Visual Studio Code](../sections/images/vscode2.png)
 
 ## Tips
 
 1. Visual Studio Code also has a preview feature for your markdown. Hit the preview button on the top right while editing your markdown file:
 
-    ![Button to hit to get a preview in Visual Studio Code](../images/vscode3.png)
+    ![Button to hit to get a preview in Visual Studio Code](../sections/images/vscode3.png)
 
     You'll get two side-by-side panels. Your markdown file will be on the left, and your rendered preview will be on the right:
 
-    ![Side by side markdown and preview in Visual Studio Code](../images/vscode4.png)
+    ![Side by side markdown and preview in Visual Studio Code](../sections/images/vscode4.png)
 
 2. Remember to save your work—regularly!—with <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS.
 
@@ -384,7 +383,7 @@ The `-m` flag is useful for human purposes and technical purposes. For human pur
 
 Also, if you type `git commit` by itself, git will open the command line's default text editor to allow you to enter the commit message in a file-like environment. It looks something like this:
 
-![Example of what the vi screen looks like](../images/vi.png)
+![Example of what the vi screen looks like](../sections/images/vi.png)
 
 This unfamiliar screen is the default text editor, `vi`, and it requires some knowledge to use. We don't teach it as part of our sessions, but if you find yourself stuck in this screen, you can try this trick to leave that environment and return to your usual command prompt. Type `:q` and then press <kbd>enter</kbd>. You should be back to the command line with a message saying:
 
@@ -418,15 +417,15 @@ Now, let's connect the directory you made to GitHub. GitHub is a service that al
 
 Go to GitHub in your browser and click the plus sign in the upper right hand corner.
 
-![You can find the plus sign button to add a repo on the top right of github](../images/addrepo.png)
+![You can find the plus sign button to add a repo on the top right of github](../sections/images/addrepo.png)
 
 After clicking the plus button, select `New repository` from the dropdown menu.
 
-![The dropdown menu where you select New Repository](../images/createrepo.png)
+![The dropdown menu where you select New Repository](../sections/images/createrepo.png)
 
 After clicking `New repository`, you'll have to enter some information, including a name and description for your repository.
 
-![Screen on GitHub where you enter your repository information](../images/createrepo2.png)
+![Screen on GitHub where you enter your repository information](../sections/images/createrepo2.png)
 
 - Choose a name, such as `git-practice`.
 - Enter a description, such as `Test syllabus for learning Git and GitHub`.
@@ -438,7 +437,7 @@ You should end up inside your newly created git-practice repo. It will look like
 
 The instructions we want consist of three lines underneath the heading `...or push an existing repository from the command line`. The arrow in this screenshot points to where these directions are on the page:
 
-![The commands you need to copy from the new repo page on GitHub](../images/connect-repo.png)
+![The commands you need to copy from the new repo page on GitHub](../sections/images/connect-repo.png)
 
 Copy out the first command and paste it in your terminal. It should look something like this:
 
@@ -462,11 +461,11 @@ git push -u origin main
 
 If you have not used git before, you will need to authenticate with GitHub, and a window will pop up asking you to sign in. Click `Sign in with your browser`:
 
-![The window asking you to sign in to GitHub](../images/github_authenticate.png)
+![The window asking you to sign in to GitHub](../sections/images/github_authenticate.png)
 
 Your browser should open a window asking you to "Authorize Git Credential Manager." Click the green `Authorize GitCredentialManager` button:
 
-![The window asking you to authorize Git Credential Manager](../images/github_credential_manager.png)
+![The window asking you to authorize Git Credential Manager](../sections/images/github_credential_manager.png)
 
 You should see a message that authentication succeeded. If so, you may now close the browser window and return to the command line, where you should see output like this:
 
@@ -511,13 +510,13 @@ First, follow [this link to the main page of this lesson on Git and GitHub](http
 
 On the main page, there should be a green `Code` button on the right side:
 
-![Image pointing out where the clone or download button is on GitHub](../images/clone.png)
+![Image pointing out where the clone or download button is on GitHub](../sections/images/clone.png)
 
 Click the green button and you will see a box with highlighted text under a heading that says `Clone with HTTPS`. If you instead see `Cloning with SSH`, click the small link that says `Use HTTPS`.
 
 Now copy out the text in the box:
 
-![Image showing where the text you need to copy is located](../images/copy-clone-text.png)
+![Image showing where the text you need to copy is located](../sections/images/copy-clone-text.png)
 
 Now that you have the text copied, go back to your terminal. Remember, you should be on the `Desktop`. (Hint: Use `pwd` to find out what your current working directory is.)
 
@@ -549,11 +548,11 @@ In order to "fork" the `git` repository into your own GitHub account, follow the
 
 First, go to [the repository for this workshop](https://github.com/SouthernMethodistUniversity/git) on GitHub. Note the `Fork` button in the upper right hand corner. By clicking that button, you can copy, or fork, this repository to your account.
 
-![Image showing where the button to fork a repo is located](../images/fork-button.png)
+![Image showing where the button to fork a repo is located](../sections/images/fork-button.png)
 
 Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace `DHRI-Curriculum`, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, `DHRI-Curriculum` below after `forked from`, since this was the origin point of _your_ fork.
 
-![Image showing the changes in attribution that happen when a repo is forked](../images/forking-attrib-chng.png)
+![Image showing the changes in attribution that happen when a repo is forked](../sections/images/forking-attrib-chng.png)
 
 Your local machine would come into play when you want to _clone_ that repository so you can work on it locally. This also means that when you push those changes to GitHub, you would be pushing them to a forked repository associated with your own account.
 
@@ -573,6 +572,5 @@ You'll know you've completed step one when the project folder (called `git`) sho
 
 After you've made and saved the changes, you'll know you've completed step three when your changes appear in the project folder on _your_ GitHub account.
 
-Following up
 
 ---
