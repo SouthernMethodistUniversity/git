@@ -16,7 +16,8 @@ As we move forward it's important to make sure we're firm on the distinctions be
 
 # Why use it? What You Can Do with Git and GitHub ?
 
-* [Link to presentation slides](https://github.com/SouthernMethodistUniversity/git/blob/main/sections/files/HPCgithubintro.pdf)
+* <a href="https://github.com/SouthernMethodistUniversity/git/blob/main/sections/files/HPCgithubintro.pdf">Link to presentation slides</a>
+
 
 ## How We Use GitHub
 
