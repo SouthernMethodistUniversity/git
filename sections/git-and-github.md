@@ -1,4 +1,4 @@
-# Getting Started with Git and GitHub (workshop)
+# Getting Started with Git and GitHub (Workshop)
 
 **Git** is software used for version control—that is, tracking the state of files and changes you make to them over time. Git can be enabled in a folder, and then used to save the state of the contents in that folder at different points in the future, as designated by you. In the language of Git, a folder is called a _repository_. In the context of this workshop, it refers to a folder that is being tracked by Git. Using Git, you can view a log of the changes you've made to the files in a repository and compare changes over time. We will explore these features in the current workshop. You can also revert back to previous versions, and create "branches" of a project to explore different futures. These are advanced features, which we will provide resources for you to explore later. Git is also useful for collaboration, as a repository can be shared across computers, and its contents can be asynchronously developed and eventually merged with the main project.
 
@@ -16,7 +16,7 @@ As we move forward it's important to make sure we're firm on the distinctions be
 
 # Why use it? What You Can Do with Git and GitHub ?
 
-* [Link to presentation slides](TBD)
+* [Link to presentation slides](https://github.com/SouthernMethodistUniversity/git/blob/main/sections/files/HPCgithubintro.pdf)
 
 ## How We Use GitHub
 
@@ -61,8 +61,7 @@ to be shared can and should be stored in a version control system.
 As you can see [across these sessions, we use GitHub to host workshop curricula.](https://github.com/SouthernMethodistUniversity?q=git&type=all&language=&sort=) Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.[As you can see in our acknowledgements](https://github.com/SouthernMethodistUniversity/git#acknowledgements)
 - You can [add a citation file as well](https://swcarpentry.github.io/git-novice/12-citation.html)
 
-
-<sub> 
+---
 * Github & Digital Humanities: A [study of how Digital Humanists use GitHub](https://digitalscholarship.files.wordpress.com/2016/07/spirosmithdh2016githubpresentationfinal.pdf), conducted by Lisa Spiro and Sean Morey Smith, found that a wide range of users, including professors, research staff, graduate students, IT staff, and librarians commonly used the site in their DH work. They used GitHub for a diverse range of activities, such as:
 
 - Developing software
@@ -78,7 +77,7 @@ As you can see [across these sessions, we use GitHub to host workshop curricula.
 - When version control is diligently, it acts as a shareable electronic lab notebook for computational work
 - It helps make code citable 
 - [Open scientific work](https://swcarpentry.github.io/git-novice/10-open.html)
-</sub>
+
 ---
 
 
@@ -120,7 +119,8 @@ user.name=Superstar Git User
 user.email=gitsuperstar@gmail.com
 ```
 
-<sub>[More about setting up git](https://swcarpentry.github.io/git-novice/02-setup.html)</sub>
+<sub> [More about setting up git](https://swcarpentry.github.io/git-novice/02-setup.html)</sub>
+
 ---
 
 # Creating a Syllabus File
@@ -147,6 +147,7 @@ Now Git is tracking our directory. However, it has not done any versioning yet. 
 Before version control is useful, we'll have to create a text file for Git to track. For this session, the file we will track will be a course syllabus—we'll create that next.
 
 <sub>[More about creating a repository](https://swcarpentry.github.io/git-novice/03-create.html)</sub>
+
 
 ### Creating a Syllabus file
 
