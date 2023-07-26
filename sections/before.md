@@ -1,5 +1,5 @@
 # Before the workshop (REQUIRED)
-In this section, we want to introduce some central steps that you want to take before you get started with this workshop. For instance, there are workshop suggestions that you may want to engage with before you start this workshop, some required or recommended software installations, some files from external sources to download, etc. :green_circle:  indicated what is *required* before the session. 
+In this section, we want to introduce some central steps that you want to take before you get started with this workshop. For instance, there are workshop suggestions that you may want to engage with before you start this workshop, some required or recommended software installations, some files from external sources to download, etc. We have marked what is *required* before the session. 
 
 ## Git vs. GitHub: What's the difference? (required)
 * Watch this video before the session. 
@@ -10,7 +10,8 @@ In this section, we want to introduce some central steps that you want to take b
 
 ## Prior Knowledge (recommended)
 Having some knowledge about how to use the command line will be central for anyone who wants to learn about git and GitHub. This workshop will assume some knowledge of the command line.
-If you do not have experience or prior knowledge of the command line, you may want to review the following workshop: [Introduction to the Command Line](https://www.github.com/DHRI-Curriculum/command-line) 
+If you do not have experience or prior knowledge of the command line, you may want to work though one of 
+ the following workshops: [Introduction to the Command Line](https://gc-dri.github.io/Dhrift-GC/workshops/command-line/) or [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
 
 
 ## Required Software or accounts (required)

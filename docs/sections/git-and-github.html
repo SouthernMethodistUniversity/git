@@ -179,6 +179,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
+
 <li class="toctree-l1"><a class="reference internal" href="after.html">Theory to Practice</a></li>
 
 </ul>
@@ -418,6 +420,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conflicts">Conflicts</a></li>
 </ul>
 
             </nav>
@@ -486,7 +490,7 @@ to be shared can and should be stored in a version control system.</p></li>
 </section>
 <section id="sharing-and-attribution">
 <h3>Sharing and Attribution<a class="headerlink" href="#sharing-and-attribution" title="Permalink to this headline">#</a></h3>
-<p>As you can see <a class="reference external" href="https://github.com/SouthernMethodistUniversity?q=git&amp;type=all&amp;language=&amp;sort=">across these sessions, we use GitHub to host workshop curricula.</a> Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.<a class="reference external" href="https://github.com/SouthernMethodistUniversity/git#acknowledgements">As you can see in our acknowledgements</a></p>
+<p>As you can see <a class="reference external" href="https://github.com/SouthernMethodistUniversity?q=git&amp;type=all&amp;language=&amp;sort=">we use GitHub to host workshop curricula.</a> Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.<a class="reference external" href="https://github.com/SouthernMethodistUniversity/git#acknowledgements">As you can see in our acknowledgements</a></p>
 <ul class="simple">
 <li><p>You can <a class="reference external" href="https://swcarpentry.github.io/git-novice/12-citation.html">add a citation file as well</a></p></li>
 </ul>
@@ -520,11 +524,11 @@ to be shared can and should be stored in a version control system.</p></li>
 <p>Through this section, you’ll be checking your installation and configuring Git with your own name and information.</p>
 <section id="check-your-installation">
 <h2>Check Your Installation<a class="headerlink" href="#check-your-installation" title="Permalink to this headline">#</a></h2>
-<p>First, let’s make sure Git has been successfully installed. In your terminal, type the following command:</p>
+<p>First, let’s make sure <a class="reference external" href="https://git-scm.com/downloads">Git</a> has been successfully installed. In your terminal, type the following command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git --version
 </pre></div>
 </div>
-<p>If you see a version number, you’re all set. If not, follow the installation instructions <a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/git.md">here</a> or <a class="reference external" href="https://swcarpentry.github.io/git-novice/index.html#installing-git">here</a>.</p>
+<p>If you see a version number, you’re all set. If not, follow the installation instructions <a class="reference external" href="https://gc-dri.github.io/Dhrift-GC/workshops/git/?page=5">here</a> or <a class="reference external" href="https://swcarpentry.github.io/git-novice/index.html#installing-git">here</a>.</p>
 </section>
 <section id="configuring-git-on-your-computer">
 <h2>Configuring Git on Your Computer<a class="headerlink" href="#configuring-git-on-your-computer" title="Permalink to this headline">#</a></h2>
@@ -816,7 +820,7 @@ nothing to commit, working tree clean
 </pre></div>
 </div>
 <p>When you clone a repository from GitHub, the folder that shows up on your local machine comes built-in with a few things. First, Git is already present, so you don’t need to initialize the folder. Also, the connection between your local copy and the online repository is already made, so <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code> will work (no <code class="docutils literal notranslate"><span class="pre">-u</span></code> flag needed).</p>
-<p>For practice, let’s clone the repository for this workshop about Git and GitHub, which <span class="xref myst">lives on GitHub</span>.</p>
+<p>For practice, let’s clone the repository for this workshop about Git and GitHub, which <a class="reference external" href="https://southernmethodistuniversity.github.io/git/">lives on GitHub</a>.</p>
 <p>First, let’s navigate back to your Desktop folder.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> ~/Desktop
 </pre></div>
@@ -848,7 +852,7 @@ nothing to commit, working tree clean
 <p>In order to “fork” the <code class="docutils literal notranslate"><span class="pre">git</span></code> repository into your own GitHub account, follow these steps.</p>
 <p>First, go to <a class="reference external" href="https://github.com/SouthernMethodistUniversity/git">the repository for this workshop</a> on GitHub. Note the <code class="docutils literal notranslate"><span class="pre">Fork</span></code> button in the upper right hand corner. By clicking that button, you can copy, or fork, this repository to your account.</p>
 <p><img alt="Image showing where the button to fork a repo is located" src="../_images/fork-button.png" /></p>
-<p>Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace <code class="docutils literal notranslate"><span class="pre">DHRI-Curriculum</span></code>, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, <code class="docutils literal notranslate"><span class="pre">DHRI-Curriculum</span></code> below after <code class="docutils literal notranslate"><span class="pre">forked</span> <span class="pre">from</span></code>, since this was the origin point of <em>your</em> fork.</p>
+<p>Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace <code class="docutils literal notranslate"><span class="pre">SouthernMethodistUniversity</span></code>, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, <code class="docutils literal notranslate"><span class="pre">SouthernMethodistUniversity</span></code> below after <code class="docutils literal notranslate"><span class="pre">forked</span> <span class="pre">from</span></code>, since this was the origin point of <em>your</em> fork.</p>
 <p><img alt="Image showing the changes in attribution that happen when a repo is forked" src="../_images/forking-attrib-chng.png" /></p>
 <p>Your local machine would come into play when you want to <em>clone</em> that repository so you can work on it locally. This also means that when you push those changes to GitHub, you would be pushing them to a forked repository associated with your own account.</p>
 <p>You might use this method if you were going to teach your own Git &amp; GitHub workshop. You could use our repository as a base for getting started, and add more examples or change some language, clarify something further, or create a connection to another workshop you are giving, etc. This allows us to continue to use the workshop as we have it as well. Also, maybe at a later time, we want to merge some of your changes with ours. We can do that too by revisiting your version history.</p>
@@ -866,8 +870,28 @@ nothing to commit, working tree clean
 <p>Rather than write out the solution here, I want to encourage you to go back through the lessons as needed.</p>
 <p>You’ll know you’ve completed step one when the project folder (called <code class="docutils literal notranslate"><span class="pre">git</span></code>) shows up on your local machine.</p>
 <p>After you’ve made and saved the changes, you’ll know you’ve completed step three when your changes appear in the project folder on <em>your</em> GitHub account.</p>
-<hr class="docutils" />
+<p><em>Additional content</em></p>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="collaborating">
+<h1>Collaborating<a class="headerlink" href="#collaborating" title="Permalink to this headline">#</a></h1>
+<p><a class="reference external" href="https://swcarpentry.github.io/git-novice/08-collab.html">How can I use version control to collaborate with other people?</a>
+A BASIC COLLABORATIVE WORKFLOW</p>
+<ul class="simple">
+<li><p>In practice, it is good to be sure that you have an updated version of the repository you are collaborating on, so you should git pull before making our changes. The basic collaborative workflow would be:</p></li>
+</ul>
+<ul class="simple">
+<li><p>update your local repo with git pull origin main,</p></li>
+<li><p>make your changes and stage them with git add,</p></li>
+<li><p>commit your changes with git commit -m, and</p></li>
+<li><p>upload the changes to GitHub with git push origin main
+It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="conflicts">
+<h1>Conflicts<a class="headerlink" href="#conflicts" title="Permalink to this headline">#</a></h1>
+<p><a class="reference external" href="https://swcarpentry.github.io/git-novice/09-conflict.html">What do I do when my changes conflict with someone else’s?</a></p>
+<hr class="docutils" />
 </section>
 
     <script type="text/x-thebe-config">
@@ -981,6 +1005,8 @@ nothing to commit, working tree clean
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conflicts">Conflicts</a></li>
 </ul>
 
   </nav></div>

@@ -59,7 +59,7 @@ to be shared can and should be stored in a version control system.
 
 ### Sharing and Attribution
 
-As you can see [across these sessions, we use GitHub to host workshop curricula.](https://github.com/SouthernMethodistUniversity?q=git&type=all&language=&sort=) Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.[As you can see in our acknowledgements](https://github.com/SouthernMethodistUniversity/git#acknowledgements)
+As you can see [we use GitHub to host workshop curricula.](https://github.com/SouthernMethodistUniversity?q=git&type=all&language=&sort=) Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.[As you can see in our acknowledgements](https://github.com/SouthernMethodistUniversity/git#acknowledgements)
 - You can [add a citation file as well](https://swcarpentry.github.io/git-novice/12-citation.html)
 
 ---
@@ -88,13 +88,13 @@ Through this section, you'll be checking your installation and configuring Git w
 
 ## Check Your Installation
 
-First, let's make sure Git has been successfully installed. In your terminal, type the following command:
+First, let's make sure [Git](https://git-scm.com/downloads) has been successfully installed. In your terminal, type the following command:
 
 ```console
 $ git --version
 ```
 
-If you see a version number, you're all set. If not, follow the installation instructions [here](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/git.md) or [here](https://swcarpentry.github.io/git-novice/index.html#installing-git).
+If you see a version number, you're all set. If not, follow the installation instructions [here](https://gc-dri.github.io/Dhrift-GC/workshops/git/?page=5) or [here](https://swcarpentry.github.io/git-novice/index.html#installing-git).
 
 ## Configuring Git on Your Computer
 
@@ -498,7 +498,7 @@ $ git clone <repository-url>
 
 When you clone a repository from GitHub, the folder that shows up on your local machine comes built-in with a few things. First, Git is already present, so you don't need to initialize the folder. Also, the connection between your local copy and the online repository is already made, so `git push origin main` will work (no `-u` flag needed).
 
-For practice, let's clone the repository for this workshop about Git and GitHub, which [lives on GitHub](hhttps://github.com/SouthernMethodistUniversity/git).
+For practice, let's clone the repository for this workshop about Git and GitHub, which [lives on GitHub](https://southernmethodistuniversity.github.io/git/).
 
 First, let's navigate back to your Desktop folder.
 
@@ -552,7 +552,7 @@ First, go to [the repository for this workshop](https://github.com/SouthernMetho
 
 ![Image showing where the button to fork a repo is located](../sections/images/fork-button.png)
 
-Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace `DHRI-Curriculum`, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, `DHRI-Curriculum` below after `forked from`, since this was the origin point of _your_ fork.
+Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace `SouthernMethodistUniversity`, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, `SouthernMethodistUniversity` below after `forked from`, since this was the origin point of _your_ fork.
 
 ![Image showing the changes in attribution that happen when a repo is forked](../sections/images/forking-attrib-chng.png)
 
@@ -574,5 +574,19 @@ You'll know you've completed step one when the project folder (called `git`) sho
 
 After you've made and saved the changes, you'll know you've completed step three when your changes appear in the project folder on _your_ GitHub account.
 
+*Additional content* 
+
+# Collaborating  
+[How can I use version control to collaborate with other people?](https://swcarpentry.github.io/git-novice/08-collab.html)
+A BASIC COLLABORATIVE WORKFLOW
+* In practice, it is good to be sure that you have an updated version of the repository you are collaborating on, so you should git pull before making our changes. The basic collaborative workflow would be:
+- update your local repo with git pull origin main,
+- make your changes and stage them with git add,
+- commit your changes with git commit -m, and
+- upload the changes to GitHub with git push origin main
+It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.
+
+# Conflicts
+[What do I do when my changes conflict with someone else’s?](https://swcarpentry.github.io/git-novice/09-conflict.html)
 
 ---

@@ -1,6 +1,5 @@
 # Review of the Command Line (Optional Review)
 
-
 During this workshop, you'll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.
 
 In addition to the command line, you'll be using your text editor and your browser. Before continuing, its important that we clearly distinguish between these three different spaces or environments:
@@ -23,7 +22,10 @@ Press the <kbd>windows</kbd> button on your keyboard. When the search menu pops 
 
 ## Practice Navigating the Command Line
 
-If you don't feel comfortable navigating your hard drive through the command line, here is a short section catching you up. _If you feel fairly comfortable using the command line, you can skip this section, and go straight to the next one._
+If you don't feel comfortable navigating your hard drive through the command line, here is a short section catching you up. 
+- _If you feel fairly comfortable using the command line, you can skip this ._
+- If you _do not have experience or prior knowledge of the command line, you may want to work through one of 
+ the following workshops_: [Introduction to the Command Line](https://gc-dri.github.io/Dhrift-GC/workshops/command-line/) or [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
 
 You can create the folder anywhere on your hard drive by typing the following into your terminal and hitting <kbd>enter</kbd>.
 
@@ -65,7 +67,7 @@ When finished, go to your Desktop folder and check that you're there with `pwd`.
 
 In this session, we will be making a syllabus and using Git to keep track of our revisions. Let's create a Git project folder.
 
-If you've worked through the command line session, you should already have a `projects` folder on your desktop. _If you don't have a projects folder on your desktop, create one using the following command_:
+If you don't have a projects folder on your desktop, create one using the following command:
 
 ```console
 $ mkdir projects
