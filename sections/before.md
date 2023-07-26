@@ -17,13 +17,18 @@ If you do not have experience or prior knowledge of the command line, you may wa
 ## Required Software or accounts (required)
 Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.
 
-Plain Text Editor
+*Plain Text Editor*
 - [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any plain text editor but for our purposes, Visual Studio Code ("VS Code") will be used.
  - [Download and install](https://code.visualstudio.com/)
  - [Directions](https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/)
 
+*Github*
 - **[Create a GitHub account](https://github.com/join) (required)**
 - You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
+
+*Git*
+-If you do not have [Git](https://git-scm.com/) installed, directions can be [found here](https://carpentries.github.io/workshop-template/install_instructions/#git)
+
 
 # Contexts
 Why am I learning this? Why does it matter? How will it help my project? Learning new digital skills is an investment of your valuable time, so it is reasonable to want to know—essentially—what will I get out of taking this workshop? The materials below help situate the skills you are about to learn within a larger context of how they are used, by whom, and to what ends.
