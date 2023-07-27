@@ -133,6 +133,8 @@ Which command do you use to check where you are?
 - `cd`
 - `mkdir`
 
+# [Shell Cheat Sheet](https://librarycarpentry.org/lc-shell/reference)
+[Shell Reference PDF] (https://swcarpentry.github.io/2013-08-23-harvard/lessons/ref/shell.html)
 ---
 ---
 

@@ -589,4 +589,6 @@ It is better to make many commits with smaller changes rather than of one commit
 # Conflicts
 [What do I do when my changes conflict with someone else’s?](https://swcarpentry.github.io/git-novice/09-conflict.html)
 
+# Git Cheatsheets for Quick Reference
+(https://swcarpentry.github.io/git-novice/reference.html#top)
 ---
