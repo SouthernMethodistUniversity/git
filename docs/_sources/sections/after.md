@@ -1,10 +1,10 @@
 # Theory to Practice
 
 You made it to the end of this workshop—congratulations! You now know a little more about why using Git and GitHub in your scholarly practice might be advantageous, and what the challenges are. Below you'll find a set of readings and tutorials to supplement the lessons outlined herein, and offer additional ways of advancing your use beyond the basics outlined here. There are also additional challenges to test your skills, as well as discussion questions to test your conceptual understanding of these tools. Enjoy!
-
+<!--
 # Assessment
 Add link to Assessment here 
-<!--
+
 ## Quantitative Self-Assessment
 
 **1)** Before beginning this workshop, how confident were you using Git, GitHub and Markdown?
@@ -33,7 +33,7 @@ I had used Git and GitHub on a project, but understood the softwares minimally.
 
 **3)** What is Markdown?
 
-**4)** How does Git and GitHub's expression of version control compare with your own? What might it add? What are the challenges or deterrents? Consider how your answered #3 of the Quantitative questions above.  -->
+**4)** How does Git and GitHub's expression of version control compare with your own? What might it add? What are the challenges or deterrents? Consider how your answered #3 of the Quantitative questions above.  
 
 ## Suggested Further Readings
 
@@ -47,11 +47,11 @@ I had used Git and GitHub on a project, but understood the softwares minimally.
 - [Steven Ovadia's "Internet Connection: Markdown for Librarians and Academics"](https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=1006&context=lg_pubs) is a short article from _Behavioral & Social Sciences Librarian_ that details the use of markdown as a "method of divorcing content from formatting."
 - For those who want an introduction to Creative Commons, a concept introduced in our Git and GitHub introductory workshop, the [Official website for Creative Commons](https://creativecommons.org/) is a good place to start. They also have a [Creative Commons Wiki](https://wiki.creativecommons.org/wiki/Main_Page) which may be of interest.
 - The University of Rhode Island has created ["Open Licensing with Creative Commons: The Creative Commons Licenses"](https://uri.libguides.com/creativecommons/licenses), a good introduction to creative commons as a concept with many links to other websites.
-- J.R. Dingwall's open-access book [_Creative Commons: An Educator's Course Guide to Creative Commons_](https://openpress.usask.ca/creativecommons) is a good place to start for anyone interested in how the Creative Commons can empower the open education movement with "tools that help create better, more flexible and sustainable open educational resources (OER), practices, and policies," as he writes in Part V of the book, ["Creative Commons for Educators."](https://openpress.usask.ca/creativecommons/part/creative-commons-for-educators/)
+- J.R. Dingwall's open-access book [_Creative Commons: An Educator's Course Guide to Creative Commons_](https://openpress.usask.ca/creativecommons) is a good place to start for anyone interested in how the Creative Commons can empower the open education movement with "tools that help create better, more flexible and sustainable open educational resources (OER), practices, and policies," as he writes in Part V of the book, ["Creative Commons for Educators."](https://openpress.usask.ca/creativecommons/part/creative-commons-for-educators/) -->
 
 ## Other Tutorials
 
-- FreeCodeCamp has an excellent introductory tutorial for how to use git on your computer, called ["An intro to Git: What it is and how to use it"](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/).
+- FreeCodeCamp has an introductory tutorial for how to use git on your computer, called ["An intro to Git: What it is and how to use it"](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/).
 - Don't miss Github's official documentation around [Getting Started with GitHub](https://help.github.com/en/github/getting-started-with-github). It is detailed and provides more in-depth examples of how to interact with GitHub using your command line.
 
 ## Projects or Challenges to Try
@@ -63,9 +63,4 @@ I had used Git and GitHub on a project, but understood the softwares minimally.
 - Use Git to track a project on your local machine. 
 - Find and/or modify an existing public project on GitHub.
 
-## Discussion Questions
 
-- What does your current version control workflow look like and what are the challenges it poses; or how could it be improved?
-- How can git support the work you are already doing? 
-- What additional opportunities does git and/or GitHub and/or Markdown create for your teaching, research or other scholarly work? 
-- What are the potential benefits and pitfalls of working in the open on the web via a platform like GitHub? 

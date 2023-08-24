@@ -1,6 +1,8 @@
 # Workshop objectives
 
-In this beginner-level workshop, participants will get an introduction to the general principles of Git and Github.  No prior experience with Git or Github is required. Some experience with using the Command Line is recommended. 
+In this beginner-level workshop, participants will get an introduction to the general principles of Git and Github.  
+No prior experience with Git or Github is required. 
+Some experience with using the Command Line is recommended. 
 
 * [Register for upcoming Scholarship & Research workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=55599&inc=0)
 * [Link to SMU Libraries guide for Computational Resources.](https://guides.smu.edu/computationalskills)

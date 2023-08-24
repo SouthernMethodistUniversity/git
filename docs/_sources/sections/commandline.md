@@ -41,6 +41,13 @@ $ cd Desktop
 
 This will change your current working directory from `/Users/<your-name>` to `/Users/<your-name>/Desktop`.
 
+*Note for staff or company computers* If your computer has multiple users you can choose your user profile in the C: drive or you type the following command in your terminal and and hit <kbd>enter</kbd>
+```console
+$ cd C:/Users/[put your username such as SMU ID here]/Desktop/
+```
+
+
+
 Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:
 
 ```console
@@ -134,8 +141,23 @@ Which command do you use to check where you are?
 - `mkdir`
 
 # Shell Cheat Sheets
-- [Shell Cheat Sheets](https://librarycarpentry.org/lc-shell/reference)
-- [Shell Reference PDF] (https://swcarpentry.github.io/2013-08-23-harvard/lessons/ref/shell.html)
+
+[Summary of Basic Commands](https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands)
+
+| Action       | Files | Folders      | 
+| ------------ | ----- | ------------ |
+| Inspect      | ls    | ls           | 
+| View content | cat   | ls           | 
+| Navigate to  |       | cd           | 
+| Move         | mv    | mv           | 
+| Copy         | cp    | cp -r        | 
+| Create       | nano  | mkdir        | 
+| Delete       | rm    | rmdir, rm -r | 
+
+- [Unix Shell Cheat Sheet](https://cambiotraining.github.io/hpc-intro/99-unix_cheatsheet.html)
+
+# Glossary
+- [Glossary](https://swcarpentry.github.io/shell-novice/reference.html#glossary)
 ---
 ---
 

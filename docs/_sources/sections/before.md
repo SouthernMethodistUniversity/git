@@ -25,9 +25,24 @@ Some software is required for you to participate in this workshop. This is a lis
 **Github**
 - **[Create a GitHub account](https://github.com/join) (required)**
 - You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
+  
+
+***Authenticating to Remote Git Repositories***  
+"Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
+  
+There are three main approaches you can take:
+- Using a personal authentication token or password
+- Using an SSH key
+- Using your GitHub password with 2-factor authentication"
+- [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
+    - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
+
+
 
 **Git**
 - If you do not have [Git](https://git-scm.com/) installed, directions can be [found here](https://carpentries.github.io/workshop-template/install_instructions/#git)
+
+
 
 
 # Contexts
@@ -37,6 +52,7 @@ Why am I learning this? Why does it matter? How will it help my project? Learnin
 - Digital tools and the skills required to use them are part of our culture and, therefore, never neutral. Digital humanists and social scientists consider the ethical challenges and responsibilities of the tools and methods that they use. The following materials are designed to introduce you to issues you may want to consider as you learn this new skill and decide how to integrate it into your own research and teaching.
 - Within the nebulous open-source ecosystem, GitHub is an important place for storing and finding code. What if your open source code was used by an entity or for a purpose that did not agree with your ethics? For example, the platform received backlash from employees of GitHub and users of the platform when it was revealed that they held a contract with ICE. In this case, neither group wanted their code shared and used by ICE in detaining and deporting immigrants. [Read more here.](https://www.theatlantic.com/technology/archive/2020/01/ice-contract-github-sparks-developer-protests/604339/)
 
+<!-- 
 ## Readings before you get started (optional)
 -The readings listed below situate what you are about to learn in cultural contexts, such as a particular humanities or social science field, the information or computer sciences, or popular discourse. The purpose of the readings is to provide a theoretical framework you can use to contextualize how you intend to use the skill or tool introduced in this workshop.
 
@@ -55,5 +71,5 @@ The following are sample projects that use the skill or tool (either implicitly 
 - Here are two examples of using Git and GitHub for teaching—[a syllabus using a GitHub repo](https://github.com/quinnanya/dlcl204) and [a syllabus using a repo and GitPages](https://digitalhistory.github.io/).
 - [Fake New Corpus](https://github.com/several27/FakeNewsCorpus), an open source dataset composed of millions of news articles mainly intended for use in training deep learning algorithms for purpose of fake news recognition. The dataset is still work in progress and for now, the public version includes only 9,408,908 articles.
 - [C+=](https://github.com/TheFeministSoftwareFoundation/C-plus-Equality), a feminist programming language, created by The Feminist Software Foundation to smash the toxic Patriarchy that is inherent in and that permeates all current computer programming languages.
-- [Leaflet](https://github.com/Leaflet/Leaflet), an open-source Javascript library for building mobile-friendly interactive maps.
+- [Leaflet](https://github.com/Leaflet/Leaflet), an open-source Javascript library for building mobile-friendly interactive maps.-->
 
