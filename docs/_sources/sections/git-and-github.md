@@ -163,6 +163,13 @@ Next, open the `syllabus.md` file in Visual Studio Code using:
 ```console
 $ code syllabus.md
 ```
+<sub>
+**Note** code is the command used for Visual Studio code. If this does not work, or you would like to set a different text editor, you can do so using the correct 	[configuration command, as listed on this page](https://swcarpentry.github.io/git-novice/02-setup.html#line-endings) for the text editor. 
+
+```console
+$ git config --global core.editor "Add specific command for text editor"
+```
+</sub>
 
 You should see a window appear that looks similar to this:
 
