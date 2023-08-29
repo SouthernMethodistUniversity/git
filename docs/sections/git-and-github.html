@@ -396,7 +396,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file">Creating a Syllabus File</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Creating a Syllabus file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-plain-text-file">Creating a plain text file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file-creating-a-markdown-file-using-an-ide">Creating a Syllabus file (Creating a Markdown file using an IDE)</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-syllabus-content-using-markdown">Creating Syllabus Content Using Markdown</a><ul class="visible nav section-nav flex-column">
@@ -417,7 +418,7 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-and-forking">Cloning and Forking</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning">Cloning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forking">Forking</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Challenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Challenge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
 </ul>
 </li>
@@ -575,8 +576,15 @@ to be shared can and should be stored in a version control system.</p></li>
 <p>Now Git is tracking our directory. However, it has not done any versioning yet. This is because 1) we haven’t told Git to take a snapshot yet, and 2) there are no files in the folder to take a snapshot of. For now, Git knows this folder exists and is prepared to take a snapshot of the files when you tell it to.</p>
 <p>Before version control is useful, we’ll have to create a text file for Git to track. For this session, the file we will track will be a course syllabus—we’ll create that next.</p>
 <p><sub><a class="reference external" href="https://swcarpentry.github.io/git-novice/03-create.html">More about creating a repository</a></sub></p>
-<section id="id1">
-<h2>Creating a Syllabus file<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<section id="creating-a-plain-text-file">
+<h2>Creating a plain text file<a class="headerlink" href="#creating-a-plain-text-file" title="Permalink to this headline">#</a></h2>
+<p>To quickly create a plain text file in your practice folder, enter the following command</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> <span class="s2">&quot;hello&quot;</span> &gt; hello.txt
+</pre></div>
+</div>
+</section>
+<section id="creating-a-syllabus-file-creating-a-markdown-file-using-an-ide">
+<h2>Creating a Syllabus file (Creating a Markdown file using an IDE)<a class="headerlink" href="#creating-a-syllabus-file-creating-a-markdown-file-using-an-ide" title="Permalink to this headline">#</a></h2>
 <p>To create a plain text file, we’re going to switch to our text editor, Visual Studio Code, to create and edit a file named <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> and save it to our <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder. The <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension indicates that it is a Markdown file, which is a special file format we will dive into in the next section.</p>
 <p>If you have not installed Visual Studio Code, review <a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">the installation instructions here</a>.</p>
 <p>In terminal, check to make sure you are in your <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder. (<em>Hint</em>: use <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to see what directory you are currently in.)</p>
@@ -871,8 +879,8 @@ nothing to commit, working tree clean
 <p>Your local machine would come into play when you want to <em>clone</em> that repository so you can work on it locally. This also means that when you push those changes to GitHub, you would be pushing them to a forked repository associated with your own account.</p>
 <p>You might use this method if you were going to teach your own Git &amp; GitHub workshop. You could use our repository as a base for getting started, and add more examples or change some language, clarify something further, or create a connection to another workshop you are giving, etc. This allows us to continue to use the workshop as we have it as well. Also, maybe at a later time, we want to merge some of your changes with ours. We can do that too by revisiting your version history.</p>
 </section>
-<section id="id2">
-<h2>Challenge<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h2>Challenge<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Fork and clone <a class="reference external" href="https://github.com/SouthernMethodistUniversity/git">the repository for this workshop</a>. Note not only <em>what</em> you are doing, but also <em>where</em> you are working when completing these two different tasks.</p></li>
 <li><p>Make changes to the files on your local machine. Remember to save them!</p></li>
@@ -1031,7 +1039,8 @@ about the relationships between workspace, staging area, local repository, upstr
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file">Creating a Syllabus File</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Creating a Syllabus file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-plain-text-file">Creating a plain text file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file-creating-a-markdown-file-using-an-ide">Creating a Syllabus file (Creating a Markdown file using an IDE)</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-syllabus-content-using-markdown">Creating Syllabus Content Using Markdown</a><ul class="visible nav section-nav flex-column">
@@ -1052,7 +1061,7 @@ about the relationships between workspace, staging area, local repository, upstr
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-and-forking">Cloning and Forking</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning">Cloning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forking">Forking</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Challenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Challenge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
 </ul>
 </li>

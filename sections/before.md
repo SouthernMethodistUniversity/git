@@ -7,25 +7,31 @@ In this section, we want to introduce some central steps that you want to take b
 
 * While watching consider: Why might using GitHub be useful even if you are not working on a development team? 
 
-
-## Prior Knowledge (recommended)
-Having some knowledge about how to use the command line will be central for anyone who wants to learn about git and GitHub. This workshop will assume some knowledge of the command line.
-If you do not have experience or prior knowledge of the command line, you may want to work though one of 
- the following workshops: [Introduction to the Command Line](https://gc-dri.github.io/Dhrift-GC/workshops/command-line/) or [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
-
-
-## Required Software or accounts (required)
+## Required Software or accounts (required)  
 Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.
 
-**Plain Text Editor**
+**Git** (required)  
+- If you do not have [Git](https://git-scm.com/) installed, directions can be [found here](https://carpentries.github.io/workshop-template/install_instructions/#git)
+
+**Unix shell** (required)  
+* Accessing the Unix shell depends on your operating system
+* macOS: You can find Terminal in the Applications > Utilities folder.
+* Windows PC: Computers with Windows operating systems do not automatically have a Unix Shell program installed. You will need to install software to use a Unix-like shell environment on Windows.
+    * [This link goes to the Software Carpentry installation directions for accessing the unix shell](https://carpentries.github.io/workshop-template/install_instructions/#shell) 
+
+**Github** (required)  
+- **[Create a GitHub account](https://github.com/join) (required)**
+- You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. 
+- For SMU affiliates (students, faculty,staff): If you already have an account, you *do not need to create another account.* In the settings section of your personal account, you can add additional emails, such as your SMU email. 
+- If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
+  
+**integrated development environment (IDE)** (Optional)
+* An IDE is a computer program that helps in writing and working on software. It allows you to create files such as .md (Markdown), .py Python, .r (R), etc. An IDE  is only needed if we are going to create a Markdown file in the workshop
+- In the content for this workshop, the examples use Visual Studio Code/
 - [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any plain text editor but for our purposes, Visual Studio Code ("VS Code") will be used.
  - [Download and install](https://code.visualstudio.com/)
  - [Directions](https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/)
 
-**Github**
-- **[Create a GitHub account](https://github.com/join) (required)**
-- You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
-  
 
 ***Authenticating to Remote Git Repositories***  
 "Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
@@ -39,10 +45,13 @@ There are three main approaches you can take:
 
 
 
-**Git**
-- If you do not have [Git](https://git-scm.com/) installed, directions can be [found here](https://carpentries.github.io/workshop-template/install_instructions/#git)
 
 
+
+## Prior Knowledge (recommended)
+Having some knowledge about how to use the command line will be central for anyone who wants to learn about git and GitHub. This workshop will assume some knowledge of the command line.
+If you do not have experience or prior knowledge of the command line, you may want to work though one of 
+ the following workshops: [Introduction to the Command Line](https://gc-dri.github.io/Dhrift-GC/workshops/command-line/) or [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
 
 
 # Contexts

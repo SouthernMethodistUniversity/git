@@ -379,8 +379,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Before the workshop (REQUIRED)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vs-github-what-s-the-difference-required">Git vs. GitHub: What’s the difference? (required)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prior-knowledge-recommended">Prior Knowledge (recommended)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-required">Required Software or accounts (required)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prior-knowledge-recommended">Prior Knowledge (recommended)</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contexts">Contexts</a><ul class="visible nav section-nav flex-column">
@@ -410,25 +410,39 @@ document.write(`
 <li><p>While watching consider: Why might using GitHub be useful even if you are not working on a development team?</p></li>
 </ul>
 </section>
-<section id="prior-knowledge-recommended">
-<h2>Prior Knowledge (recommended)<a class="headerlink" href="#prior-knowledge-recommended" title="Permalink to this headline">#</a></h2>
-<p>Having some knowledge about how to use the command line will be central for anyone who wants to learn about git and GitHub. This workshop will assume some knowledge of the command line.
-If you do not have experience or prior knowledge of the command line, you may want to work though one of
-the following workshops: <a class="reference external" href="https://gc-dri.github.io/Dhrift-GC/workshops/command-line/">Introduction to the Command Line</a> or <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></p>
-</section>
 <section id="required-software-or-accounts-required">
 <h2>Required Software or accounts (required)<a class="headerlink" href="#required-software-or-accounts-required" title="Permalink to this headline">#</a></h2>
 <p>Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.</p>
-<p><strong>Plain Text Editor</strong></p>
+<p><strong>Git</strong> (required)</p>
 <ul class="simple">
+<li><p>If you do not have <a class="reference external" href="https://git-scm.com/">Git</a> installed, directions can be <a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#git">found here</a></p></li>
+</ul>
+<p><strong>Unix shell</strong> (required)</p>
+<ul class="simple">
+<li><p>Accessing the Unix shell depends on your operating system</p></li>
+<li><p>macOS: You can find Terminal in the Applications &gt; Utilities folder.</p></li>
+<li><p>Windows PC: Computers with Windows operating systems do not automatically have a Unix Shell program installed. You will need to install software to use a Unix-like shell environment on Windows.</p>
+<ul>
+<li><p><a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#shell">This link goes to the Software Carpentry installation directions for accessing the unix shell</a></p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Github</strong> (required)</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://github.com/join">Create a GitHub account</a> (required)</strong></p></li>
+<li><p>You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link.</p></li>
+<li><p>For SMU affiliates (students, faculty,staff): If you already have an account, you <em>do not need to create another account.</em> In the settings section of your personal account, you can add additional emails, such as your SMU email.</p></li>
+<li><p>If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about <a class="reference external" href="https://education.github.com/pack">here</a></p></li>
+</ul>
+<p><strong>integrated development environment (IDE)</strong> (Optional)</p>
+<ul class="simple">
+<li><p>An IDE is a computer program that helps in writing and working on software. It allows you to create files such as .md (Markdown), .py Python, .r (R), etc. An IDE  is only needed if we are going to create a Markdown file in the workshop</p></li>
+</ul>
+<ul class="simple">
+<li><p>In the content for this workshop, the examples use Visual Studio Code/</p></li>
 <li><p><a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">Visual Studio Code</a> (recommended) You can use any plain text editor but for our purposes, Visual Studio Code (“VS Code”) will be used.</p></li>
 <li><p><a class="reference external" href="https://code.visualstudio.com/">Download and install</a></p></li>
 <li><p><a class="reference external" href="https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/">Directions</a></p></li>
-</ul>
-<p><strong>Github</strong></p>
-<ul class="simple">
-<li><p><strong><a class="reference external" href="https://github.com/join">Create a GitHub account</a> (required)</strong></p></li>
-<li><p>You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about <a class="reference external" href="https://education.github.com/pack">here</a></p></li>
 </ul>
 <p><em><strong>Authenticating to Remote Git Repositories</strong></em><br />
 “Git provides multiple protocols for authenticating to and interacting with remote Git repositories.</p>
@@ -443,10 +457,12 @@ the following workshops: <a class="reference external" href="https://gc-dri.gith
 </ul>
 </li>
 </ul>
-<p><strong>Git</strong></p>
-<ul class="simple">
-<li><p>If you do not have <a class="reference external" href="https://git-scm.com/">Git</a> installed, directions can be <a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#git">found here</a></p></li>
-</ul>
+</section>
+<section id="prior-knowledge-recommended">
+<h2>Prior Knowledge (recommended)<a class="headerlink" href="#prior-knowledge-recommended" title="Permalink to this headline">#</a></h2>
+<p>Having some knowledge about how to use the command line will be central for anyone who wants to learn about git and GitHub. This workshop will assume some knowledge of the command line.
+If you do not have experience or prior knowledge of the command line, you may want to work though one of
+the following workshops: <a class="reference external" href="https://gc-dri.github.io/Dhrift-GC/workshops/command-line/">Introduction to the Command Line</a> or <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="contexts">
@@ -550,8 +566,8 @@ The following are sample projects that use the skill or tool (either implicitly 
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Before the workshop (REQUIRED)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vs-github-what-s-the-difference-required">Git vs. GitHub: What’s the difference? (required)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prior-knowledge-recommended">Prior Knowledge (recommended)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-required">Required Software or accounts (required)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prior-knowledge-recommended">Prior Knowledge (recommended)</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contexts">Contexts</a><ul class="visible nav section-nav flex-column">

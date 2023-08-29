@@ -149,8 +149,14 @@ Before version control is useful, we'll have to create a text file for Git to tr
 
 <sub>[More about creating a repository](https://swcarpentry.github.io/git-novice/03-create.html)</sub>
 
+### Creating a plain text file 
 
-### Creating a Syllabus file
+To quickly create a plain text file in your practice folder, enter the following command 
+
+```console
+$ echo "hello" > hello.txt
+```
+### Creating a Syllabus file (Creating a Markdown file using an IDE)
 
 To create a plain text file, we're going to switch to our text editor, Visual Studio Code, to create and edit a file named `syllabus.md` and save it to our `git-practice` folder. The `.md` extension indicates that it is a Markdown file, which is a special file format we will dive into in the next section.  
 
