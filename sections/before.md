@@ -7,7 +7,7 @@ In this section, we want to introduce some central steps that you want to take b
 
 * While watching consider: Why might using GitHub be useful even if you are not working on a development team? 
 
-## Required Software or accounts (required)  
+## Required Software or accounts
 Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.
 
 **Git** (required)  
