@@ -6,9 +6,9 @@ root: index
 chapters:
   - file: sections/quickstart
   - file: sections/whycoding
-  - file: sections/before
-  - file: sections/commandline
-  - file: sections/git-and-github
+  - file: sections/what-git-and-github
+  - file: sections/intro-github
+  - file: sections/intro-git-and-github
   - file: sections/after
 
 

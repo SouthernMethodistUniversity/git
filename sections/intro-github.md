@@ -1,3 +1,28 @@
+## How to use GitHub 
+**Hands on workshop, online**
+- In this 60 minute workshop, participants will be introduced to GitHub and how to access online repositories. 
+
+**Github** (required)  
+- **[Create a GitHub account](https://github.com/join) (required)**
+- You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. 
+- For SMU affiliates (students, faculty,staff): If you already have an account, you *do not need to create another account.* In the settings section of your personal account, you can add additional emails, such as your SMU email. 
+
+
+***Authenticating to Remote Git Repositories***  
+"Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
+  
+There are three main approaches you can take:
+- Using a personal authentication token or password
+- Using an SSH key
+- Using your GitHub password with 2-factor authentication"
+- [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
+    - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
+
+
+- [Get started using GitHub in less than an hour.](https://github.com/skills/introduction-to-github)
+- DS1300 [https://southernmethodistuniversity.github.io/ds_1300/book/03_github_and_initial_setup.html]
+
+
 # Getting Started with Git and GitHub (Workshop)
 
 **Git** is software used for version control—that is, tracking the state of files and changes you make to them over time. Git can be enabled in a folder, and then used to save the state of the contents in that folder at different points in the future, as designated by you. In the language of Git, a folder is called a _repository_. In the context of this workshop, it refers to a folder that is being tracked by Git. Using Git, you can view a log of the changes you've made to the files in a repository and compare changes over time. We will explore these features in the current workshop. You can also revert back to previous versions, and create "branches" of a project to explore different futures. These are advanced features, which we will provide resources for you to explore later. Git is also useful for collaboration, as a repository can be shared across computers, and its contents can be asynchronously developed and eventually merged with the main project.

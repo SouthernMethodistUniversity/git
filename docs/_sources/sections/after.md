@@ -51,13 +51,24 @@ I had used Git and GitHub on a project, but understood the softwares minimally.
 
 ## Other Tutorials
 
-- FreeCodeCamp has an introductory tutorial for how to use git on your computer, called ["An intro to Git: What it is and how to use it"](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/).
 - Don't miss Github's official documentation around [Getting Started with GitHub](https://help.github.com/en/github/getting-started-with-github). It is detailed and provides more in-depth examples of how to interact with GitHub using your command line.
+
+- FreeCodeCamp has an introductory tutorial for how to use git on your computer, called ["An intro to Git: What it is and how to use it"](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/).
+
+- [Software Carpentry: Version Control with Git](https://swcarpentry.github.io/git-novice/) 
+
+
+# LinkedIn Learning: Github 
+-  [LinkedIn Learning is available to all *active* faculty, staff, and students.](https://www.smu.edu/OIT/Services/LinkedIn) 
+- You can [log into LinkedIn Learning](https://www.smu.edu/OIT/Services/linkedin) and search for the following courses.
+    - Git Essential Training:The Basics [LinkedIn Learning](https://www.linkedin.com/learning/git-essential-training-the-basics/)
+    - GitHub Essential Training [LinkedIn Learning](https://www.linkedin.com/learning/github-essential-training/version-control-and-collaboration-with-github?u=2139050)
+    - Learning GitHub [LinkedIn Learning](https://www.linkedin.com/learning/learning-github)
 
 ## Projects or Challenges to Try
 
-- Fill in your syllabus repository further, adding not only to your syllabus.md file, but adding additional content such as assignments.
-- Create a website from your syllabus files using GitHub Pages or Jekyll.
+- Fill in your repository further.
+- Create a website from your files using GitHub Pages or Jekyll.
 - Create an independent or collaborative reading group that tracks readings and notes using Git and GitHub. 
 - Use Git and GitHub to track, store, and share an independent or collaborative project folder. 
 - Use Git to track a project on your local machine. 
