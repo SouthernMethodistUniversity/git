@@ -1,4 +1,3 @@
-
 # Quickstart
 ## Explore Github on your own
 **If you already having coding skills, are comfortable with using the command line (see [Playing with text on the command line](https://github.com/veltman/learninglunches/tree/master/commandline)) and you are just looking for quickstart to GitHub, you can use the following links:** 

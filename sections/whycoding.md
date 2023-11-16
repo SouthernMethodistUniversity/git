@@ -35,7 +35,7 @@ Understanding computing: This section is to familiarize you wth important founda
 * The applications on your device can access the resources in your machine. Each local environment becomes different with use. 
 * The [kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system)) connects the application software to the hardware of a computer.
 
-[![kernel](../sections/images/kernel.png)](https://en.wikipedia.org/wiki/File:Kernel_Layout.svg)
+[![kernel](../images/kernel.png)](https://en.wikipedia.org/wiki/File:Kernel_Layout.svg)
 
 * Local installations give you more control, and more power, but the pedagogical tradeoff is that it is more difficult to manage and configure during class. Installation is dependent on type of device. 
 
@@ -287,7 +287,7 @@ The following are sample projects that use the skill or tool (either implicitly 
 
 
 -----
-#### Attribution 
+### Attribution 
 
 Session Leaders: [Rafia Mirza](http://guides.smu.edu/prf.php?account_id=142826/) Written by Rafia Mirza. 
 
