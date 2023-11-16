@@ -4,7 +4,6 @@
 format: jb-book
 root: index
 chapters:
-  - file: README
   - file: sections/quickstart
   - file: sections/whycoding
   - file: sections/whatgitandgithub
