@@ -3,7 +3,6 @@
 
 format: jb-book
 root: index
-chapters:
   - file: sections/introgitandgithub
   - file: sections/introgithub
   - file: sections/quickstart
