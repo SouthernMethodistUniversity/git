@@ -1,16 +1,13 @@
 # Workshop options
 We offer multiple versions of this workshop depending on the learning objectives and time allotted.
-
-# Git vs. GitHub: What's the difference? 
-* ***Watch this video before your session.***
- [Git vs. GitHub: What's the difference?](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
-
-* While watching consider: Why might using GitHub be useful even if you are not working on a development team?
   
 ## What is Git & GitHub?  
 **Discussion based only**
 - In this 30 minute workshop participants will be introduced to what Git and Github are. 
+- ***Watch this video before your session.***
+ [Git vs. GitHub: What's the difference?](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
 
+* While watching consider: Why might using GitHub be useful even if you are not working on a development team?
 ## How to use GitHub 
 **Hands on workshop, online**
 - In this 60 minute workshop, participants will be introduced to GitHub and how to access online repositories. 
