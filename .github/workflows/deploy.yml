@@ -8,8 +8,7 @@ on:
       - main
     paths:
       - 'docs/**'
-      - 'sections/**/*.md'
-
+    
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
   deploy-book:
