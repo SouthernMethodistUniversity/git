@@ -3,7 +3,7 @@
 title                       : Introduction to Git  # The title of the book. Will be placed in the left navbar.
 author                      : Rafia Mirza, & <a href="https://www.smu.edu/libraries/scholarship/srstudio.">Scholarship & Research Studio </a> staff.   # The author of the book
 copyright                   : Creative Commons Attribution-ShareAlike 4.0 International License.  # Copyright year to be placed in the footer
-logo                        : images/logo.png  # A path to the book logo
+logo                        : main/images/logo.png # A path to the book logo
 
 parse:
   myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
