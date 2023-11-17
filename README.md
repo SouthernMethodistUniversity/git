@@ -1,5 +1,5 @@
 
-# Workshops objectives
+# Workshops information: Git & GitHub
 - We offer [multiple versions of this workshop depending on the learning objectives and time allotted.](https://southernmethodistuniversity.github.io/git/index.html)
 - [Request a workshop](https://www.smu.edu/libraries/help/workshops)
 
