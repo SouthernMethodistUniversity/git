@@ -1,0 +1,690 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>What are Git &amp; GitHub &#8212; Introduction to Git</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/copybutton_funcs.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery-3.5.1.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/underscore-1.13.1.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/scripts/bootstrap.js"></script>
+    <script src="../../_static/scripts/pydata-sphinx-theme.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_sources/sections/whatgitandgithub';</script>
+    <link rel="canonical" href="https://southernmethodistuniversity.github.io/git/_sources/sections/whatgitandgithub.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduction to Git</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Workshop options
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../whatgitandgithub.html">What are Git &amp; GitHub</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../introgithub.html">How to use GitHub</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../whycoding.html">Why Learn Coding (Optional)</a></li>
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../introgitandgithub.html">How to use Git &amp; GitHub</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../after.html">Theory to Practice</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SouthernMethodistUniversity/git/issues/new?title=Issue%20on%20page%20%2F_sources/sections/whatgitandgithub.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/_sources/sections/whatgitandgithub.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>What are Git & GitHub</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">What are Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workshop-objectives">Workshop objectives</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-git-software">What is Git? (<em>software</em>)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github-web-based">What is GitHub? (<em>web based</em>)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-we-use-github">How We Use GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">Collaboration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instruction">Instruction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control">Version control</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-and-attribution">Sharing and Attribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-for-git">Glossary for Git</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-for-github">Glossary for GitHub</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="what-are-git-github">
+<h1>What are Git &amp; GitHub<a class="headerlink" href="#what-are-git-github" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p>In this 30 minute workshop participants will be introduced to what Git and Github are.</p></li>
+<li><p>This workshop is discussion based only.</p></li>
+</ul>
+<section id="workshop-objectives">
+<h2>Workshop objectives<a class="headerlink" href="#workshop-objectives" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>In this beginner-level workshop, participants will get an introduction to the general principles of Git and Github. No prior experience with Git or Github is required.</p></li>
+</ul>
+<section id="why-use-it-what-you-can-do-with-git-and-github">
+<h3>Why use it? What You Can Do with Git and GitHub ?<a class="headerlink" href="#why-use-it-what-you-can-do-with-git-and-github" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a href="https://github.com/SouthernMethodistUniversity/git/blob/main/sections/files/HPCgithubintro.pdf">Link to presentation slides</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="what-is-git-software">
+<h1>What is Git? (<em>software</em>)<a class="headerlink" href="#what-is-git-software" title="Permalink to this headline">#</a></h1>
+<p><strong>Git</strong> is <em>software</em> that you use on your laptop, or your local computer/machine. The software is used for <em>version control</em>—that is, tracking the state of files and changes you make to them over time. It is a Version Control System (VCS).</p>
+<ul class="simple">
+<li><p>Git can be enabled in a folder, and then used to save the state of the contents in that folder at different points in the future, as designated by you.</p></li>
+<li><p>In the language of Git, a folder (that is being tracked by Git) is called a <em>repository</em>.</p></li>
+<li><p>Using Git, you can view a <em>log</em> of the changes you’ve made to the files in a repository and compare changes over time.</p></li>
+<li><p>You can also revert back to previous versions, and create “branches” of a project to explore different futures.</p></li>
+<li><p>Git is useful for collaboration, as a repository can be shared across computers, and its contents can be asynchronously developed and eventually merged with the main project.
+Version Control system (VCS)/ distributed version control system (DVCS)</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="what-is-github-web-based">
+<h1>What is GitHub? (<em>web based</em>)<a class="headerlink" href="#what-is-github-web-based" title="Permalink to this headline">#</a></h1>
+<p><strong>GitHub</strong> is an <em>online platform</em> for <em>hosting Git repositories.</em> It is a cloud-based platform that you access through your internet browser.</p>
+<ul class="simple">
+<li><p>It functions for some, predominantly programmers, as a social network for sharing and collaborating on code-based projects.</p></li>
+<li><p>Users can share their own projects, as well as search for others, which they can then often work on and contribute to.</p></li>
+<li><p>Digital Humanists, librarians, and other academics are also finding ways Git and GitHub are useful in writing projects and teaching.</p></li>
+<li><p>GitHub also serves as a web-hosting platform, allowing users to create websites from their repositories.</p></li>
+<li><p>With GitHub, you are uploading your repository—as described above—from your local machine to this platform on the Internet to be shared more broadly.</p></li>
+</ul>
+<section id="how-we-use-github">
+<h2>How We Use GitHub<a class="headerlink" href="#how-we-use-github" title="Permalink to this headline">#</a></h2>
+<section id="collaboration">
+<h3>Collaboration<a class="headerlink" href="#collaboration" title="Permalink to this headline">#</a></h3>
+<p><strong>Collaborative Writing</strong></p>
+<p>Git is also used in writing projects! <em>Version control</em> makes tracking changes trackable, especially when there are multiple authors working asynchronously. It can be an alternative to using track changes in Microsoft Word, or comments and edits in a Google Doc.</p>
+<p><sub> <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches">Click here for information on branches</a></sub></p>
+</section>
+<section id="instruction">
+<h3>Instruction<a class="headerlink" href="#instruction" title="Permalink to this headline">#</a></h3>
+<p><strong>Syllabi sharing</strong></p>
+<p>Increasingly we see that faculty are sharing their syllabi on GitHub (example: <a class="reference external" href="https://github.com/quinnanya/dlcl204">DLCL 204: Digital Humanities Across Borders</a>).</p>
+<p><strong>Class Websites</strong></p>
+<p>Some instructors are even using GitPages that apply a user-friendly interface to their repository to make it easier to access and navigate for their students (examples: <a class="reference external" href="https://southernmethodistuniversity.github.io/ds_1300/book/00_introduction.html">DS 1300: A Practical Introduction to Data Science</a> &amp; <a class="reference external" href="https://digitalhistory.github.io/">Digital History</a>).</p>
+<p>For courses in disciplines such as Data Sciences or Computer Science, instructors  will put assignments, code or notebooks in the class repository and may even require their students to submit assignments using GitHub.</p>
+</section>
+<section id="version-control">
+<h3>Version control<a class="headerlink" href="#version-control" title="Permalink to this headline">#</a></h3>
+<p><strong>Versions Across Time</strong></p>
+<p>How did you initially come by the syllabus you use for your class(es), and did you develop it over time? Many professors borrow and adapt from each other, and most of us probably update our syllabi each semester, even if only a little bit.</p>
+<p>Through this process, many of us end up with a set of files that looks something like this:</p>
+<p><img alt="Example of a messy folder structure with many files named similarly" src="_sources/images/messy-file-structure.png" />
+While I probably can tell which version is the “final” one, I can not see what was changed along the way or how the different versions vary from each other.</p>
+<p>With Git, you would save these multiple versions over time as one file, and each version you save includes a note about what has changed so you can easily revert back to an older version if needed.</p>
+<p>By looking at the file list, you also can not tell who the syllabus originally came from, or if there were contributions from many individuals. Git and GitHub can help make attribution clear, and maintain it over time as the syllabus travels between hands.</p>
+<p><em>With version control:</em></p>
+<ul class="simple">
+<li><p>Nothing that is committed to version control is ever lost, unless you work really, really hard at it. Since all old versions of files are saved, it’s always possible to go back in time to see exactly who wrote what on a particular day, or what version of a program was used to generate a particular set of results.</p>
+<ul>
+<li><p>Teams are not the only ones to benefit from version control: lone researchers can benefit immensely.  Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).</p></li>
+</ul>
+</li>
+<li><p>As we have this record of who made what changes when, we know who to ask if we have questions later on, and, if needed, revert to a previous version, much like the “undo” feature in an editor.</p></li>
+<li><p>When several people collaborate in the same project, it’s possible to accidentally overlook or overwrite someone’s changes. The version control system automatically notifies users whenever there’s a conflict between one person’s work and another’s.</p></li>
+<li><p>Version control is the lab notebook of the digital world: it’s what professionals use to keep track of what they’ve done and to collaborate with other people.  Every large software development project relies on it, and most programmers use it for their small jobs as well.  And it isn’t just for software: books, papers, small data sets, and anything that changes over time or needs to be shared can and should be stored in a version control system.</p></li>
+</ul>
+<p><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/01-basics.html">Click here for extended explanation of: What is version control</a></sub></p>
+</section>
+<section id="sharing-and-attribution">
+<h3>Sharing and Attribution<a class="headerlink" href="#sharing-and-attribution" title="Permalink to this headline">#</a></h3>
+<p>As you can see <a class="reference external" href="https://github.com/SouthernMethodistUniversity?q=git&amp;type=all&amp;language=&amp;sort=">we use GitHub to host workshop curricula.</a> Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.<a class="reference external" href="https://github.com/SouthernMethodistUniversity/git#acknowledgements">As you can see in our acknowledgements</a></p>
+<ul class="simple">
+<li><p>You can <a class="reference external" href="https://swcarpentry.github.io/git-novice/12-citation.html">add a citation file as well</a></p></li>
+</ul>
+<hr class="docutils" />
+<p><em>Github &amp; Digital Humanities</em></p>
+<ul class="simple">
+<li><p>A <a class="reference external" href="https://digitalscholarship.files.wordpress.com/2016/07/spirosmithdh2016githubpresentationfinal.pdf">study of how Digital Humanists use GitHub</a>, conducted by Lisa Spiro and Sean Morey Smith, found that a wide range of users, including professors, research staff, graduate students, IT staff, and librarians commonly used the site in their DH work. They used GitHub for a diverse range of activities, such as:</p></li>
+<li><p>Developing software</p></li>
+<li><p>Sharing data sets</p></li>
+<li><p>Creating websites</p></li>
+<li><p>Writing articles and books</p></li>
+<li><p>Collating online resources</p></li>
+<li><p>Keeping research notes</p></li>
+<li><p>Hosting syllabi and course materials</p></li>
+</ul>
+<p><em>Github &amp; Open Science</em></p>
+<ul class="simple">
+<li><p>When version control is diligently, it acts as a shareable electronic lab notebook for computational work</p></li>
+<li><p>It helps make code citable</p></li>
+<li><p><a class="reference external" href="https://swcarpentry.github.io/git-novice/10-open.html">Open scientific work</a></p></li>
+</ul>
+</section>
+<section id="glossary-for-git">
+<h3>Glossary for Git<a class="headerlink" href="#glossary-for-git" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-scm.com/docs/gitglossary">Full Git Glossary</a></p></li>
+</ul>
+</section>
+<section id="glossary-for-github">
+<h3>Glossary for GitHub<a class="headerlink" href="#glossary-for-github" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.github.com/en/get-started/quickstart/github-glossary">Github Glossary:</a> This glossary introduces common Git and GitHub terminology.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./_sources\sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">What are Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workshop-objectives">Workshop objectives</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-git-software">What is Git? (<em>software</em>)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github-web-based">What is GitHub? (<em>web based</em>)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-we-use-github">How We Use GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">Collaboration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instruction">Instruction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control">Version control</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-and-attribution">Sharing and Attribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-for-git">Glossary for Git</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-for-github">Glossary for GitHub</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rafia Mirza, & <a href="https://www.smu.edu/libraries/scholarship/srstudio.">Scholarship & Research Studio </a> staff.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright Creative Commons Attribution-ShareAlike 4.0 International License..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
