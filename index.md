@@ -1,4 +1,4 @@
-# Workshops objectives
+# Workshop options
 We offer multiple versions of this workshop depending on the learning objectives and time allotted.
 
 # Git vs. GitHub: What's the difference? 
