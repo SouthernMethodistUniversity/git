@@ -1,15 +1,12 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 
-
 format: jb-book
 root: index
-  - file: sections/introgitandgithub
-  - file: sections/introgithub
+chapters:
   - file: sections/quickstart
   - file: sections/whatgitandgithub
+  - file: sections/introgithub
   - file: sections/whycoding
+  - file: sections/introgitandgithub
   - file: sections/after
-
-
-
