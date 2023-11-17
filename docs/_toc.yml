@@ -4,9 +4,9 @@
 format: jb-book
 root: index
 chapters:
-  - file: sections/quickstart
-  - file: sections/whatgitandgithub
-  - file: sections/introgithub
-  - file: sections/whycoding
-  - file: sections/introgitandgithub
-  - file: sections/after
+  - file: quickstart
+  - file: whatgitandgithub
+  - file: introgithub
+  - file: whycoding
+  - file: introgitandgithub
+  - file: after
