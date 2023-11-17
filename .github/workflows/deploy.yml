@@ -9,7 +9,6 @@ on:
     paths:
       - 'docs/**'
       - 'sections/**/*.md'
-      - 'index.md' 
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
