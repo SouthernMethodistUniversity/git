@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>How to use Git &amp; GitHub &#8212; Introduction to Git</title>
+    <title>How to use GitHub &#8212; Introduction to Git</title>
   
   
   
@@ -19,80 +19,82 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/theme.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="_static/vendor/fontawesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
-    <script src="../../_static/sphinx-thebe.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/jquery-3.5.1.js"></script>
-    <script src="../../_static/searchtools.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore-1.13.1.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/language_data.js"></script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
-    <script src="../../_static/copybutton_funcs.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/scripts/pydata-sphinx-theme.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
-    <script src="../../_static/scripts/bootstrap.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/sphinx-thebe.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/jquery-3.5.1.js"></script>
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore-1.13.1.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/design-tabs.js"></script>
+    <script src="_static/documentation_options.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/copybutton_funcs.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/scripts/pydata-sphinx-theme.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script src="_static/scripts/bootstrap.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
+    <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '_sources/sections/intro-git-and-github';</script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'introgithub';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Why Learn Coding (Optional)" href="whycoding.html" />
+    <link rel="prev" title="What are Git &amp; GitHub" href="whatgitandgithub.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -129,7 +131,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="../../search.html"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -167,7 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="../../index.html">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -182,40 +184,19 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../../index.html">
+                <a class="reference internal" href="index.html">
                     Workshop options
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../../whatgitandgithub.html">What are Git &amp; GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="whatgitandgithub.html">What are Git &amp; GitHub</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../../introgithub.html">How to use GitHub</a></li>
-
-
-
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="../../whycoding.html">Why Learn Coding (Optional)</a></li>
-
-
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="../../introgitandgithub.html">How to use Git &amp; GitHub</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">How to use GitHub</a></li>
 
 
 
@@ -226,10 +207,31 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="whycoding.html">Why Learn Coding (Optional)</a></li>
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="../../after.html">Theory to Practice</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="introgitandgithub.html">How to use Git &amp; GitHub</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="after.html">Theory to Practice</a></li>
 
 </ul>
 
@@ -302,7 +304,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/SouthernMethodistUniversity/git/issues/new?title=Issue%20on%20page%20%2F_sources/sections/intro-git-and-github.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/SouthernMethodistUniversity/git/issues/new?title=Issue%20on%20page%20%2Fintrogithub.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -332,7 +334,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/_sources/sections/intro-git-and-github.md" target="_blank"
+      <li><a href="_sources/introgithub.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -414,7 +416,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>How to use Git & GitHub</h1>
+    <h1>How to use GitHub</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -424,22 +426,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts">Required Software or accounts</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#add-gitbash-terminal-section">ADD GITBASH &amp; TERMINAL SECTION</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-the-command-line-optional-review">Review of the Command Line (Optional Review)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-projects-folder">Making a Projects Folder</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation">Evaluation</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-cheat-sheets">Shell Cheat Sheets</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use GitHub</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started-with-git-and-github-workshop">Getting Started with Git and GitHub (Workshop)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#highlighting-distinctions">Highlighting Distinctions</a></li>
 </ul>
@@ -491,7 +478,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#full-software-carpentry-workshop">Full Software Carpentry Workshop</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
 </ul>
 </li>
 </ul>
@@ -506,51 +493,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="how-to-use-git-github">
-<h1>How to use Git &amp; GitHub<a class="headerlink" href="#how-to-use-git-github" title="Permalink to this heading">#</a></h1>
-<p><strong>Hands on workshop, online. In this workshop we will <em>install software</em> on your laptop/local machine</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="how-to-use-github">
+<h1>How to use GitHub<a class="headerlink" href="#how-to-use-github" title="Permalink to this heading">#</a></h1>
+<p><strong>Hands on workshop, online</strong></p>
 <ul class="simple">
-<li><p>In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE <a class="reference external" href="https://www.codecademy.com/article/what-is-an-ide">(Integrated Development Environment)</a> and upload a repository with that file to their Github account.</p></li>
-<li><p><em>This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)</em></p></li>
-</ul>
-</section>
-<section id="required-software-or-accounts">
-<h1>Required Software or accounts<a class="headerlink" href="#required-software-or-accounts" title="Permalink to this heading">#</a></h1>
-<p>Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.</p>
-<p><strong>Git</strong> (required)</p>
-<ul class="simple">
-<li><p>If you do not have <a class="reference external" href="https://git-scm.com/">Git</a> installed, directions can be <a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#git">found here</a></p></li>
-</ul>
-<p><strong>Unix shell</strong> (required)</p>
-<ul class="simple">
-<li><p>Accessing the Unix shell depends on your operating system</p></li>
-<li><p>macOS: You can find Terminal in the Applications &gt; Utilities folder.</p></li>
-<li><p>Windows PC: Computers with Windows operating systems do not automatically have a Unix Shell program installed. You will need to install software to use a Unix-like shell environment on Windows.</p></li>
-<li><p>Git for Windows provides a BASH emulation used to run Git from the command line.</p>
-<ul>
-<li><p><a class="reference external" href="https://gitforwindows.org/">Download and install Git For Windows like other Windows applications.</a></p></li>
-<li><p>Once downloaded find the included .exe file and open to execute Git Bash.</p></li>
-<li><p>“<a class="reference external" href="https://www.atlassian.com/git/tutorials/git-bash">What is Git Bash?:</a> Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.”</p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#shell">Alternate option: This link goes to the Software Carpentry installation directions for accessing the unix shell</a></p></li>
+<li><p>In this 60 minute workshop, participants will be introduced to GitHub and how to access online repositories.</p></li>
 </ul>
 <p><strong>Github</strong> (required)</p>
 <ul class="simple">
 <li><p><strong><a class="reference external" href="https://github.com/join">Create a GitHub account</a> (required)</strong></p></li>
 <li><p>You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link.</p></li>
 <li><p>For SMU affiliates (students, faculty,staff): If you already have an account, you <em>do not need to create another account.</em> In the settings section of your personal account, you can add additional emails, such as your SMU email.</p></li>
-<li><p>If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about <a class="reference external" href="https://education.github.com/pack">here</a></p></li>
-</ul>
-<p><strong>integrated development environment (IDE)</strong> (Optional)</p>
-<ul class="simple">
-<li><p>An IDE is a computer program that helps in writing and working on software. It allows you to create files such as .md (Markdown), .py Python, .r (R), etc. An IDE  is only needed if we are going to create a Markdown file in the workshop</p></li>
-</ul>
-<ul class="simple">
-<li><p>In the content for this workshop, the examples use Visual Studio Code/</p></li>
-<li><p><a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">Visual Studio Code</a> (recommended) You can use any plain text editor but for our purposes, Visual Studio Code (“VS Code”) will be used.</p></li>
-<li><p><a class="reference external" href="https://code.visualstudio.com/">Download and install</a></p></li>
-<li><p><a class="reference external" href="https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/">Directions</a></p></li>
 </ul>
 <p><em><strong>Authenticating to Remote Git Repositories</strong></em><br />
 “Git provides multiple protocols for authenticating to and interacting with remote Git repositories.</p>
@@ -564,193 +517,10 @@ document.write(`
 <li><p>For additional directions, <a class="reference external" href="https://docs.github.com/authentication">see Github’s Authentication documentation</a></p></li>
 </ul>
 </li>
+<li><p><a class="reference external" href="https://github.com/skills/introduction-to-github">Get started using GitHub in less than an hour.</a></p></li>
+<li><p>DS1300 [<a class="reference external" href="https://southernmethodistuniversity.github.io/ds_1300/book/03_github_and_initial_setup.html">https://southernmethodistuniversity.github.io/ds_1300/book/03_github_and_initial_setup.html</a>]</p></li>
 </ul>
 </section>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="add-gitbash-terminal-section">
-<h1>ADD GITBASH &amp; TERMINAL SECTION<a class="headerlink" href="#add-gitbash-terminal-section" title="Permalink to this heading">#</a></h1>
-</section>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="review-of-the-command-line-optional-review">
-<h1>Review of the Command Line (Optional Review)<a class="headerlink" href="#review-of-the-command-line-optional-review" title="Permalink to this heading">#</a></h1>
-<p>During this workshop, you’ll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.</p>
-<p>In addition to the command line, you’ll be using your text editor and your browser. Before continuing, its important that we clearly distinguish between these three different spaces or environments:</p>
-<ul class="simple">
-<li><p>Your plain text editor where you’ll be writing your syllabus is on your local computer.</p></li>
-<li><p>That syllabus is initially saved in a git-enabled repository on your local computer.</p></li>
-<li><p>Your browser is where you’ll be uploading your repository to GitHub, a cloud service.</p></li>
-<li><p>Your terminal is where you’ll be communicating with GitHub to send the repository and project files back and forth between the cloud (which you can view through the GitHub website) and your hard drive.</p></li>
-</ul>
-<p>Because you’ll be moving between these three spaces throughout the workshop, you may want to use (<kbd>command (⌘)</kbd> + <kbd>tab</kbd>) or (<kbd>control</kbd> + <kbd>tab</kbd>) to move quickly between the three windows on your desktop.</p>
-<section id="accessing-the-terminal">
-<h2>Accessing the Terminal<a class="headerlink" href="#accessing-the-terminal" title="Permalink to this heading">#</a></h2>
-<section id="macos">
-<h3>macOS<a class="headerlink" href="#macos" title="Permalink to this heading">#</a></h3>
-<p>Hold the <kbd>command (⌘)</kbd> key and press the <kbd>space</kbd> bar at the same time to bring up the “Spotlight Search” window. Type <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, followed by <kbd>enter</kbd> to quickly open the Terminal.</p>
-</section>
-<section id="windows">
-<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this heading">#</a></h3>
-<p>Press the <kbd>windows</kbd> button on your keyboard. When the search menu pops up, type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">bash</span></code> and press <kbd>enter</kbd>.</p>
-</section>
-</section>
-<section id="practice-navigating-the-command-line">
-<h2>Practice Navigating the Command Line<a class="headerlink" href="#practice-navigating-the-command-line" title="Permalink to this heading">#</a></h2>
-<p>If you don’t feel comfortable navigating your hard drive through the command line, here is a short section catching you up.</p>
-<ul class="simple">
-<li><p><em>If you feel fairly comfortable using the command line, you can skip this .</em></p></li>
-<li><p>If you <em>do not have experience or prior knowledge of the command line, you may want to work through one of
-the following workshops</em>: <a class="reference external" href="https://gc-dri.github.io/Dhrift-GC/workshops/command-line/">Introduction to the Command Line</a> or <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></p></li>
-</ul>
-<p>You can create the folder anywhere on your hard drive by typing the following into your terminal and hitting <kbd>enter</kbd>.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>&lt;directory-name&gt;
-</pre></div>
-</div>
-<p>Let’s practice this command by using it to take us to our Desktop. Type the following command into your terminal and hit <kbd>enter</kbd>.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>Desktop
-</pre></div>
-</div>
-<p>This will change your current working directory from <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;</span></code> to <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop</span></code>.</p>
-<p><em>Note for staff or company computers</em> If your computer has multiple users you can choose your user profile in the C: drive or you type the following command in your terminal and and hit <kbd>enter</kbd></p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>C:/Users/<span class="o">[</span>put<span class="w"> </span>your<span class="w"> </span>username<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>SMU<span class="w"> </span>ID<span class="w"> </span>here<span class="o">]</span>/Desktop/
-</pre></div>
-</div>
-<p>Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
-</pre></div>
-</div>
-<p>Now, use the following command to go up one directory:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
-</pre></div>
-</div>
-<p>Check your current directory again using the following command. You should be back in your “home” directory:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
-</pre></div>
-</div>
-<p>Practice going back and forth between your Desktop and your home directory.</p>
-<p>When finished, go to your Desktop folder and check that you’re there with <code class="docutils literal notranslate"><span class="pre">pwd</span></code>.</p>
-</section>
-<section id="making-a-projects-folder">
-<h2>Making a Projects Folder<a class="headerlink" href="#making-a-projects-folder" title="Permalink to this heading">#</a></h2>
-<p>In this session, we will be making a syllabus and using Git to keep track of our revisions. Let’s create a Git project folder.</p>
-<p>If you don’t have a projects folder on your desktop, create one using the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>projects
-</pre></div>
-</div>
-<p>From <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>, Navigate into your <code class="docutils literal notranslate"><span class="pre">projects</span></code> folder using the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>projects
-</pre></div>
-</div>
-<p>Then create a <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder with the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>git-practice
-</pre></div>
-</div>
-<p>Navigate into the new <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder using the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>git-practice
-</pre></div>
-</div>
-<p>At this point, when you type <code class="docutils literal notranslate"><span class="pre">pwd</span></code>, your folder structure should look like this:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
-<span class="go">/home/&lt;username&gt;/Desktop/projects/git-practice</span>
-</pre></div>
-</div>
-</section>
-<section id="evaluation">
-<h2>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this heading">#</a></h2>
-<p>Which best describes where you are working when you’re writing in your plain text editor:</p>
-<ul class="simple">
-<li><p>on my local machine*</p></li>
-<li><p>on the internet</p></li>
-</ul>
-<p>Which best describes where you are working when you’re using your terminal to communicate with GitHub and share the files:</p>
-<ul class="simple">
-<li><p>on my local machine*</p></li>
-<li><p>on the internet</p></li>
-</ul>
-<p>Which best describes where your files are when you are viewing them in GitHub:</p>
-<ul class="simple">
-<li><p>on my local machine</p></li>
-<li><p>on the internet*</p></li>
-</ul>
-<p>Git-enabled repository means</p>
-<ul class="simple">
-<li><p>none of the files on my local machine are being tracked</p></li>
-<li><p>a specific file on my local machine is being tracked</p></li>
-<li><p>a specific folder on my local machine is being tracked*</p></li>
-<li><p>all the files on my local machine are being tracked</p></li>
-</ul>
-<p>Which command do you use to make a new folder?</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code>*</p></li>
-</ul>
-<p>Which command do you use to enter into a folder?</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code>*</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code></p></li>
-</ul>
-<p>Which command do you use to check where you are?</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code>*</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code></p></li>
-</ul>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="shell-cheat-sheets">
-<h1>Shell Cheat Sheets<a class="headerlink" href="#shell-cheat-sheets" title="Permalink to this heading">#</a></h1>
-<p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands">Summary of Basic Commands</a></p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Action</p></th>
-<th class="head"><p>Files</p></th>
-<th class="head"><p>Folders</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Inspect</p></td>
-<td><p>ls</p></td>
-<td><p>ls</p></td>
-</tr>
-<tr class="row-odd"><td><p>View content</p></td>
-<td><p>cat</p></td>
-<td><p>ls</p></td>
-</tr>
-<tr class="row-even"><td><p>Navigate to</p></td>
-<td><p></p></td>
-<td><p>cd</p></td>
-</tr>
-<tr class="row-odd"><td><p>Move</p></td>
-<td><p>mv</p></td>
-<td><p>mv</p></td>
-</tr>
-<tr class="row-even"><td><p>Copy</p></td>
-<td><p>cp</p></td>
-<td><p>cp -r</p></td>
-</tr>
-<tr class="row-odd"><td><p>Create</p></td>
-<td><p>nano</p></td>
-<td><p>mkdir</p></td>
-</tr>
-<tr class="row-even"><td><p>Delete</p></td>
-<td><p>rm</p></td>
-<td><p>rmdir, rm -r</p></td>
-</tr>
-</tbody>
-</table>
-<ul class="simple">
-<li><p><a class="reference external" href="https://cambiotraining.github.io/hpc-intro/99-unix_cheatsheet.html">Unix Shell Cheat Sheet</a></p></li>
-</ul>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="glossary">
-<h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this heading">#</a></h1>
-<ul class="simple">
-<li><p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/reference.html#glossary">Glossary</a></p></li>
-</ul>
-<hr class="docutils" />
-</section>
-<hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-git-and-github-workshop">
 <h1>Getting Started with Git and GitHub (Workshop)<a class="headerlink" href="#getting-started-with-git-and-github-workshop" title="Permalink to this heading">#</a></h1>
 <p><strong>Git</strong> is software used for version control—that is, tracking the state of files and changes you make to them over time. Git can be enabled in a folder, and then used to save the state of the contents in that folder at different points in the future, as designated by you. In the language of Git, a folder is called a <em>repository</em>. In the context of this workshop, it refers to a folder that is being tracked by Git. Using Git, you can view a log of the changes you’ve made to the files in a repository and compare changes over time. We will explore these features in the current workshop. You can also revert back to previous versions, and create “branches” of a project to explore different futures. These are advanced features, which we will provide resources for you to explore later. Git is also useful for collaboration, as a repository can be shared across computers, and its contents can be asynchronously developed and eventually merged with the main project.</p>
@@ -777,7 +547,7 @@ the following workshops</em>: <a class="reference external" href="https://gc-dri
 <h3>Versions Across Time (Version control)<a class="headerlink" href="#versions-across-time-version-control" title="Permalink to this heading">#</a></h3>
 <p>How did you initially come by the syllabus you use for your class(es), and did you develop it over time? Many professors borrow and adapt from each other, and most of us probably update our syllabi each semester, even if only a little bit.</p>
 <p>Through this process, many of us end up with a set of files that looks something like this:</p>
-<p><img alt="Example of a messy folder structure with many files named similarly" src="_sources/sections/images/messy-file-structure.png" />
+<p><img alt="Example of a messy folder structure with many files named similarly" src="_images/messy-file-structure.png" />
 While I probably can tell which version is the “final” one, I can not see what was changed along the way or how the different versions vary from each other.</p>
 <p>With Git, you would save these multiple versions over time as one file, and each version you save includes a note about what has changed so you can easily revert back to an older version if needed.</p>
 <p>By looking at the file list, you also can not tell who the syllabus originally came from, or if there were contributions from many individuals. Git and GitHub can help make attribution clear, and maintain it over time as the syllabus travels between hands.</p>
@@ -907,7 +677,7 @@ to be shared can and should be stored in a version control system.</p></li>
 </div>
 </sub>
 <p>You should see a window appear that looks similar to this:</p>
-<p><img alt="Image of what Visual Studio Code looks like when opening the syllabus.md file" src="_sources/sections/images/vscode1.png" /></p>
+<p><img alt="Image of what Visual Studio Code looks like when opening the syllabus.md file" src="_images/vscode1.png" /></p>
 <p>If Visual Studio Code does not open when you use the <code class="docutils literal notranslate"><span class="pre">code</span></code> command in your terminal, open it using the Start Menu on Windows or Spotlight Search on macOS as you would any other software. Then click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">File</span></code> and use the dialog to navigate to the <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop/projects/git</span></code> folder and create a <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file there.</p>
 <p>We’ll be typing our markdown into this file in the Visual Studio Code window. At any time, you can save your file by hitting <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS. Alternatively, you can click the <code class="docutils literal notranslate"><span class="pre">File</span></code> menu on the top right, then select <code class="docutils literal notranslate"><span class="pre">Save</span></code> from the dropdown menu.</p>
 <p>Saving frequently is advised. When we get to the version contol functionality of Git, only changes that are saved will be preserved when a version is created.</p>
@@ -965,15 +735,15 @@ This is a second paragraph in markdown, which I&#39;ll use to tell you what I li
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h2>
 <p>You can look at an example syllabus in raw text form <a class="reference external" href="https://raw.githubusercontent.com/SouthernMethodistUniversity/dhri/main/sections/data1.md">here</a>. When it’s rendered by GitHub, it looks like <a class="reference external" href="https://github.com/SouthernMethodistUniversity/dhri/blob/main/sections/data1.md">this</a>. When editing the markdown file in Visual Studio Code, it might look like this:</p>
-<p><img alt="What your markdown might look like when typed into Visual Studio Code" src="_sources/sections/images/vscode2.png" /></p>
+<p><img alt="What your markdown might look like when typed into Visual Studio Code" src="_images/vscode2.png" /></p>
 </section>
 <section id="tips">
 <h2>Tips<a class="headerlink" href="#tips" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Visual Studio Code also has a preview feature for your markdown. Hit the preview button on the top right while editing your markdown file:</p>
-<p><img alt="Button to hit to get a preview in Visual Studio Code" src="_sources/sections/images/vscode3.png" /></p>
+<p><img alt="Button to hit to get a preview in Visual Studio Code" src="_images/vscode3.png" /></p>
 <p>You’ll get two side-by-side panels. Your markdown file will be on the left, and your rendered preview will be on the right:</p>
-<p><img alt="Side by side markdown and preview in Visual Studio Code" src="_sources/sections/images/vscode4.png" /></p>
+<p><img alt="Side by side markdown and preview in Visual Studio Code" src="_images/vscode4.png" /></p>
 </li>
 <li><p>Remember to save your work—regularly!—with <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS.</p></li>
 </ol>
@@ -1071,7 +841,7 @@ nothing to commit, working tree clean
 <h2>Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?<a class="headerlink" href="#why-do-we-need-to-use-the-m-flag" title="Permalink to this heading">#</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag is useful for human purposes and technical purposes. For human purposes, the <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag helps you keep track of the changes you’re making. Version control is most useful when you can confidently return to a specific version. It can also help you be more structured in your approach to making changes—your notes to self are limited, so to make them clear, you might make commits after specific tasks are completed. If you update readings for the first week of classes or if you add another reading, you will want to make a commit. This can also make it easier to reverse a specific change in the future.</p>
 <p>Also, if you type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> by itself, git will open the command line’s default text editor to allow you to enter the commit message in a file-like environment. It looks something like this:</p>
-<p><img alt="Example of what the vi screen looks like" src="_sources/sections/images/vi.png" /></p>
+<p><img alt="Example of what the vi screen looks like" src="_images/vi.png" /></p>
 <p>This unfamiliar screen is the default text editor, <code class="docutils literal notranslate"><span class="pre">vi</span></code>, and it requires some knowledge to use. We don’t teach it as part of our sessions, but if you find yourself stuck in this screen, you can try this trick to leave that environment and return to your usual command prompt. Type <code class="docutils literal notranslate"><span class="pre">:q</span></code> and then press <kbd>enter</kbd>. You should be back to the command line with a message saying:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Aborting commit due to empty commit message.</span>
 </pre></div>
@@ -1097,11 +867,11 @@ nothing to commit, working tree clean
 <h1>Pushing to GitHub<a class="headerlink" href="#pushing-to-github" title="Permalink to this heading">#</a></h1>
 <p>Now, let’s connect the directory you made to GitHub. GitHub is a service that allows us to host files, collaborate, and find the work of others. Once our syllabus is on GitHub, it will be publicly visible.</p>
 <p>Go to GitHub in your browser and click the plus sign in the upper right hand corner.</p>
-<p><img alt="You can find the plus sign button to add a repo on the top right of github" src="_sources/sections/images/addrepo.png" /></p>
+<p><img alt="You can find the plus sign button to add a repo on the top right of github" src="_images/addrepo.png" /></p>
 <p>After clicking the plus button, select <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">repository</span></code> from the dropdown menu.</p>
-<p><img alt="The dropdown menu where you select New Repository" src="_sources/sections/images/createrepo.png" /></p>
+<p><img alt="The dropdown menu where you select New Repository" src="_images/createrepo.png" /></p>
 <p>After clicking <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">repository</span></code>, you’ll have to enter some information, including a name and description for your repository.</p>
-<p><img alt="Screen on GitHub where you enter your repository information" src="_sources/sections/images/createrepo2.png" /></p>
+<p><img alt="Screen on GitHub where you enter your repository information" src="_images/createrepo2.png" /></p>
 <ul class="simple">
 <li><p>Choose a name, such as <code class="docutils literal notranslate"><span class="pre">git-practice</span></code>.</p></li>
 <li><p>Enter a description, such as <code class="docutils literal notranslate"><span class="pre">Test</span> <span class="pre">syllabus</span> <span class="pre">for</span> <span class="pre">learning</span> <span class="pre">Git</span> <span class="pre">and</span> <span class="pre">GitHub</span></code>.</p></li>
@@ -1111,7 +881,7 @@ nothing to commit, working tree clean
 </ul>
 <p>You should end up inside your newly created git-practice repo. It will look like a set of instructions that you might want to use to connect your GitHub repository to a local repository.</p>
 <p>The instructions we want consist of three lines underneath the heading <code class="docutils literal notranslate"><span class="pre">...or</span> <span class="pre">push</span> <span class="pre">an</span> <span class="pre">existing</span> <span class="pre">repository</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">command</span> <span class="pre">line</span></code>. The arrow in this screenshot points to where these directions are on the page:</p>
-<p><img alt="The commands you need to copy from the new repo page on GitHub" src="_sources/sections/images/connect-repo.png" /></p>
+<p><img alt="The commands you need to copy from the new repo page on GitHub" src="_images/connect-repo.png" /></p>
 <p>Copy out the first command and paste it in your terminal. It should look something like this:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git remote add origin https://github.com/&lt;username&gt;/&lt;repository-name&gt;.git</span>
 </pre></div>
@@ -1126,9 +896,9 @@ nothing to commit, working tree clean
 </pre></div>
 </div>
 <p>If you have not used git before, you will need to authenticate with GitHub, and a window will pop up asking you to sign in. Click <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">in</span> <span class="pre">with</span> <span class="pre">your</span> <span class="pre">browser</span></code>:</p>
-<p><img alt="The window asking you to sign in to GitHub" src="_sources/sections/images/github_authenticate.png" /></p>
+<p><img alt="The window asking you to sign in to GitHub" src="_images/github_authenticate.png" /></p>
 <p>Your browser should open a window asking you to “Authorize Git Credential Manager.” Click the green <code class="docutils literal notranslate"><span class="pre">Authorize</span> <span class="pre">GitCredentialManager</span></code> button:</p>
-<p><img alt="The window asking you to authorize Git Credential Manager" src="_sources/sections/images/github_credential_manager.png" /></p>
+<p><img alt="The window asking you to authorize Git Credential Manager" src="_images/github_credential_manager.png" /></p>
 <p>You should see a message that authentication succeeded. If so, you may now close the browser window and return to the command line, where you should see output like this:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Total 4 (delta 3), reused 0 (delta 0)</span>
 <span class="go">remote: Resolving deltas: 100% (3/3), completed with 3 local objects.</span>
@@ -1158,10 +928,10 @@ nothing to commit, working tree clean
 <p>Remember that the <code class="docutils literal notranslate"><span class="pre">~</span></code> refers to your home directory. Now let’s find the URL we need to clone the lesson.</p>
 <p>First, follow <a class="reference external" href="https://github.com/SouthernMethodistUniversity/git">this link to the main page of this lesson on Git and GitHub</a>.</p>
 <p>On the main page, there should be a green <code class="docutils literal notranslate"><span class="pre">Code</span></code> button on the right side:</p>
-<p><img alt="Image pointing out where the clone or download button is on GitHub" src="_sources/sections/images/clone.png" /></p>
+<p><img alt="Image pointing out where the clone or download button is on GitHub" src="_images/clone.png" /></p>
 <p>Click the green button and you will see a box with highlighted text under a heading that says <code class="docutils literal notranslate"><span class="pre">Clone</span> <span class="pre">with</span> <span class="pre">HTTPS</span></code>. If you instead see <code class="docutils literal notranslate"><span class="pre">Cloning</span> <span class="pre">with</span> <span class="pre">SSH</span></code>, click the small link that says <code class="docutils literal notranslate"><span class="pre">Use</span> <span class="pre">HTTPS</span></code>.</p>
 <p>Now copy out the text in the box:</p>
-<p><img alt="Image showing where the text you need to copy is located" src="_sources/sections/images/copy-clone-text.png" /></p>
+<p><img alt="Image showing where the text you need to copy is located" src="_images/copy-clone-text.png" /></p>
 <p>Now that you have the text copied, go back to your terminal. Remember, you should be on the <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>. (Hint: Use <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to find out what your current working directory is.)</p>
 <p>Once you are in the <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>, type:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>&lt;copied-url&gt;
@@ -1181,9 +951,9 @@ nothing to commit, working tree clean
 <p><em>Forking</em> a repository means making a copy of someone else’s repository on GitHub, and saving it to your account on GitHub. This function happens within GitHub, and has nothing to do with what is happening on your local machine. Note that <em>forking</em> will not automatically make the repository appear as a folder on your computer; that’s the role of <em>cloning</em>.</p>
 <p>In order to “fork” the <code class="docutils literal notranslate"><span class="pre">git</span></code> repository into your own GitHub account, follow these steps.</p>
 <p>First, go to <a class="reference external" href="https://github.com/SouthernMethodistUniversity/git">the repository for this workshop</a> on GitHub. Note the <code class="docutils literal notranslate"><span class="pre">Fork</span></code> button in the upper right hand corner. By clicking that button, you can copy, or fork, this repository to your account.</p>
-<p><img alt="Image showing where the button to fork a repo is located" src="_sources/sections/images/fork-button.png" /></p>
+<p><img alt="Image showing where the button to fork a repo is located" src="_images/fork-button.png" /></p>
 <p>Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace <code class="docutils literal notranslate"><span class="pre">SouthernMethodistUniversity</span></code>, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, <code class="docutils literal notranslate"><span class="pre">SouthernMethodistUniversity</span></code> below after <code class="docutils literal notranslate"><span class="pre">forked</span> <span class="pre">from</span></code>, since this was the origin point of <em>your</em> fork.</p>
-<p><img alt="Image showing the changes in attribution that happen when a repo is forked" src="_sources/sections/images/forking-attrib-chng.png" /></p>
+<p><img alt="Image showing the changes in attribution that happen when a repo is forked" src="_images/forking-attrib-chng.png" /></p>
 <p>Your local machine would come into play when you want to <em>clone</em> that repository so you can work on it locally. This also means that when you push those changes to GitHub, you would be pushing them to a forked repository associated with your own account.</p>
 <p>You might use this method if you were going to teach your own Git &amp; GitHub workshop. You could use our repository as a base for getting started, and add more examples or change some language, clarify something further, or create a connection to another workshop you are giving, etc. This allows us to continue to use the workshop as we have it as well. Also, maybe at a later time, we want to merge some of your changes with ours. We can do that too by revisiting your version history.</p>
 </section>
@@ -1251,13 +1021,12 @@ about the relationships between workspace, staging area, local repository, upstr
 -<a class="reference external" href="https://carpentries-incubator.github.io/git-novice-branch-pr/discuss/">Discussion</a></p>
 </section>
 </section>
-<section id="id2">
-<h2>Glossary<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="glossary">
+<h2>Glossary<a class="headerlink" href="#glossary" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://swcarpentry.github.io/git-novice/reference.html#glossary">Short Software Carpentry Glossary</a></p></li>
 <li><p><a class="reference external" href="https://git-scm.com/docs/gitglossary">Full GitGlossary</a></p></li>
 </ul>
-<hr class="docutils" />
 </section>
 </section>
 
@@ -1274,7 +1043,7 @@ about the relationships between workspace, staging area, local repository, upstr
         },
         kernelOptions: {
             name: "python3",
-            path: "./_sources/sections"
+            path: "./."
         },
         predefinedOutput: true
     }
@@ -1291,6 +1060,24 @@ about the relationships between workspace, staging area, local repository, upstr
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="whatgitandgithub.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">What are Git &amp; GitHub</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="whycoding.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Why Learn Coding (Optional)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -1306,22 +1093,7 @@ about the relationships between workspace, staging area, local repository, upstr
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts">Required Software or accounts</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#add-gitbash-terminal-section">ADD GITBASH &amp; TERMINAL SECTION</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-the-command-line-optional-review">Review of the Command Line (Optional Review)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-projects-folder">Making a Projects Folder</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation">Evaluation</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-cheat-sheets">Shell Cheat Sheets</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use GitHub</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started-with-git-and-github-workshop">Getting Started with Git and GitHub (Workshop)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#highlighting-distinctions">Highlighting Distinctions</a></li>
 </ul>
@@ -1373,7 +1145,7 @@ about the relationships between workspace, staging area, local repository, upstr
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#full-software-carpentry-workshop">Full Software Carpentry Workshop</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
 </ul>
 </li>
 </ul>
@@ -1424,8 +1196,8 @@ By Rafia Mirza, & <a href="https://www.smu.edu/libraries/scholarship/srstudio.">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
 
   <footer class="bd-footer">
   </footer>
