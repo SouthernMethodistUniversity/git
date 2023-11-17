@@ -1,8 +1,9 @@
 # Workshop objectives
 
 # Git vs. GitHub: What's the difference? 
-* Watch this video before your session. 
-!["Git vs. GitHub: What's the difference?"](..../images/gitvgithub.png)](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
+* Watch this video before your session.
+* [Git vs. GitHub: What's the difference?](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
+
 
 * While watching consider: Why might using GitHub be useful even if you are not working on a development team? 
 
