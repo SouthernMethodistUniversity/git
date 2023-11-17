@@ -38,7 +38,7 @@ html:
   comments:
     hypothesis              : false
     utterances              : false
-  announcement              : "header3x.png" # A banner announcement at the top of the site.
+  announcement              : "SMU Libraries & OIT's Research Services team: Git & Github Information " # A banner announcement at the top of the site.
 
 
 #######################################################################################
