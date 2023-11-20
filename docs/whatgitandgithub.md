@@ -77,34 +77,7 @@ It’s why we use ”Save As”; you want to save the new file without writing o
    - **Sandboxing** (i.e. insurance against yourself) -- Plan to make a big change? You can make temporary changes in an isolated area, test and work out the kinks before ”checking in” your set of changes.
    - **Branching and merging** A larger sandbox. You can branch a copy of your code into a separate area and modify it in isolation (tracking changes separately). Later, you can merge your work back into the common
 area.
-
-
-## Collaboration
-
-**Collaborative Writing**
-
-Git is also used in writing projects! _Version control_ makes tracking changes trackable, especially when there are multiple authors working asynchronously. It can be an alternative to using track changes in Microsoft Word, or comments and edits in a Google Doc.
-
 <sub> [Click here for information on branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)</sub>
-
-
-## Instruction
-
-**Syllabi sharing**
-
-Increasingly we see that faculty are sharing their syllabi on GitHub (example: [DLCL 204: Digital Humanities Across Borders](https://github.com/quinnanya/dlcl204)).
-
-**Class Websites**
-
-Some instructors are even using GitPages that apply a user-friendly interface to their repository to make it easier to access and navigate for their students (examples: [DS 1300: A Practical Introduction to Data Science](https://southernmethodistuniversity.github.io/ds_1300/book/00_introduction.html) & [Digital History](https://digitalhistory.github.io/)). 
-
-For courses in disciplines such as Data Sciences or Computer Science, instructors  will put assignments, code or notebooks in the class repository and may even require their students to submit assignments using GitHub. 
-
-## Sharing and Attribution
-
-As you can see [we use GitHub to host workshop curricula.](https://github.com/SouthernMethodistUniversity?q=git&type=all&language=&sort=) Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.[As you can see in our acknowledgements](https://github.com/SouthernMethodistUniversity/git#acknowledgements)
-- You can [add a citation file as well](https://swcarpentry.github.io/git-novice/12-citation.html)
-
 
 ## Digital Humanities
 - A [study of how Digital Humanists use GitHub](https://digitalscholarship.files.wordpress.com/2016/07/spirosmithdh2016githubpresentationfinal.pdf), conducted by Lisa Spiro and Sean Morey Smith, found that a wide range of users, including professors, research staff, graduate students, IT staff, and librarians commonly used the site in their DH work. They used GitHub for a diverse range of activities, such as:
@@ -120,6 +93,27 @@ As you can see [we use GitHub to host workshop curricula.](https://github.com/So
 - When version control is used diligently, it acts as a shareable electronic lab notebook for computational work
 - It helps make code citable 
 - [Open scientific work](https://swcarpentry.github.io/git-novice/10-open.html)
+
+## Collaboration
+
+**Collaborative Writing**
+
+Git is also used in writing projects! _Version control_ makes tracking changes trackable, especially when there are multiple authors working asynchronously. It can be an alternative to using track changes in Microsoft Word, or comments and edits in a Google Doc.
+
+
+## Instruction
+
+**Syllabi sharing**
+Increasingly we see that faculty are sharing their syllabi on GitHub (example: [DLCL 204: Digital Humanities Across Borders](https://github.com/quinnanya/dlcl204)).
+
+**Class Websites**
+Some instructors are even using GitPages that apply a user-friendly interface to their repository to make it easier to access and navigate for their students (examples: [DS 1300: A Practical Introduction to Data Science](https://southernmethodistuniversity.github.io/ds_1300/book/00_introduction.html) & [Digital History](https://digitalhistory.github.io/)). 
+
+For courses in disciplines such as Data Sciences or Computer Science, instructors  will put assignments, code or notebooks in the class repository and may even require their students to submit assignments using GitHub. 
+
+## Sharing and Attribution
+As you can see [we use GitHub to host workshop curricula.](https://github.com/SouthernMethodistUniversity?q=git&type=all&language=&sort=) Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.[As you can see in our acknowledgements](https://github.com/SouthernMethodistUniversity/git#acknowledgements)
+- You can [add a citation file as well](https://swcarpentry.github.io/git-novice/12-citation.html)
 
 ---
 # Actions
