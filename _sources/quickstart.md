@@ -2,11 +2,15 @@
 ## Explore Github on your own
 **If you already having coding skills, are comfortable with using the command line (see [Playing with text on the command line](https://github.com/veltman/learninglunches/tree/master/commandline)) and you are just looking for quickstart to GitHub, you can use the following links:** 
 
-### Sign up for a Github account 
+### Sign up for a personal Github account 
 - Sign up for a Github account [by clicking here](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)  
 - Create a 'personal account, which serves as your identity on GitHub.com.  
 - [Select free and follow the prompts.](https://github.com/pricing)
 
+#### SMU GitHub Campus Program
+- SMU participates in the [GitHub Campus Program.](https://www.smu.edu/OIT/Services/GitHub) The GitHub Campus Program is available to all *active* faculty, staff, and students. 
+[Sign into SMU's Github Enterprise account](http://github.smu.edu/) and upload content using your web browser.
+- [Documentation and Training](https://www.smu.edu/oit/services/github/documentation)
 
 # Quickstart lessons  
 - [Github Quickstart: Follow this Hello World exercise to get started with GitHub.](https://docs.github.com/en/get-started/quickstart/hello-world)
@@ -21,6 +25,4 @@
     - Learning GitHub [LinkedIn Learning](https://www.linkedin.com/learning/learning-github)
 
 
-*Note:* SMU participates in the [GitHub Campus Program.](https://www.smu.edu/OIT/Services/GitHub) The GitHub Campus Program is available to all *active* faculty, staff, and students. 
-[Sign into SMU's Github Enterprise account](http://github.smu.edu/) and upload content using your web browser.
 
