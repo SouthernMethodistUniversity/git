@@ -1,4 +1,4 @@
-# How to use GitHub 
+# How to use GitHub (DRAFT content needs complete update)
 **Hands on workshop, online**
 - In this 60 minute workshop, participants will be introduced to GitHub and how to access online repositories. 
 
