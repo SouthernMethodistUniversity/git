@@ -50,7 +50,7 @@ It’s why we use ”Save As”; you want to save the new file without writing o
       - With Git, you would save these multiple versions over time as one file, and each version you save includes a note about what has changed so you can easily revert back to an older version if needed.
  - By looking at the file list, you also can not tell who the file originally came from, or if there were contributions from many individuals. Git and GitHub can help make attribution clear, and maintain it over time as the file travels between hands.
 
-*With version control:*
+*With version control*
 
 - Nothing that is committed to version control is ever lost, unless you work really, really hard at it. Since all old versions of files are saved, it's always possible to go back in time to see exactly who wrote what on a particular day, or what version of a program was used to generate a particular set of results.
    - Teams are not the only ones to benefit from version control: lone researchers can benefit immensely.  Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).
@@ -60,7 +60,7 @@ It’s why we use ”Save As”; you want to save the new file without writing o
 
 <sub> [Click here for extended explanation of: What is version control](https://swcarpentry.github.io/git-novice/01-basics.html)</sub>
 
-### Software projects
+## Software projects
 
 ![Example of a messy folder structure with many files named similarly](../images/messy-file-structurec.png)
 
@@ -79,7 +79,7 @@ It’s why we use ”Save As”; you want to save the new file without writing o
 area.
 
 
-### Collaboration
+## Collaboration
 
 **Collaborative Writing**
 
@@ -88,7 +88,7 @@ Git is also used in writing projects! _Version control_ makes tracking changes t
 <sub> [Click here for information on branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)</sub>
 
 
-### Instruction
+## Instruction
 
 **Syllabi sharing**
 
@@ -100,13 +100,13 @@ Some instructors are even using GitPages that apply a user-friendly interface to
 
 For courses in disciplines such as Data Sciences or Computer Science, instructors  will put assignments, code or notebooks in the class repository and may even require their students to submit assignments using GitHub. 
 
-### Sharing and Attribution
+## Sharing and Attribution
 
 As you can see [we use GitHub to host workshop curricula.](https://github.com/SouthernMethodistUniversity?q=git&type=all&language=&sort=) Hosting sessions on GitHub allows you (and anyone else interested in these topics!) to follow our repositories, and create your own version of the workshop based on our materials. This fosters open scholarship and knowledge sharing. It also facilitates attribution and citation by clearly tracking which content was created by whom, when it was added, and which projects or materials are derived from others.[As you can see in our acknowledgements](https://github.com/SouthernMethodistUniversity/git#acknowledgements)
 - You can [add a citation file as well](https://swcarpentry.github.io/git-novice/12-citation.html)
 
 
-### Digital Humanities
+## Digital Humanities
 - A [study of how Digital Humanists use GitHub](https://digitalscholarship.files.wordpress.com/2016/07/spirosmithdh2016githubpresentationfinal.pdf), conducted by Lisa Spiro and Sean Morey Smith, found that a wide range of users, including professors, research staff, graduate students, IT staff, and librarians commonly used the site in their DH work. They used GitHub for a diverse range of activities, such as:
 - Developing software
 - Sharing data sets
@@ -116,7 +116,7 @@ As you can see [we use GitHub to host workshop curricula.](https://github.com/So
 - Keeping research notes
 - Hosting syllabi and course materials
 
-### Open Science
+## Open Science
 - When version control is used diligently, it acts as a shareable electronic lab notebook for computational work
 - It helps make code citable 
 - [Open scientific work](https://swcarpentry.github.io/git-novice/10-open.html)
