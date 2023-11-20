@@ -7,7 +7,7 @@
 
 ### Why use it? What You Can Do with Git and GitHub ?
 
-* <a href="https://github.com/SouthernMethodistUniversity/git/blob/main/sections/files/HPCgithubintro.pdf">Link to presentation slides</a>
+* <a href="https://github.com/SouthernMethodistUniversity/git/blob/main/files/HPCgithubintro.pdf">Link to presentation slides</a>
 
 # What is Git? (*software*) 
 
