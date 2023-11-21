@@ -18,7 +18,8 @@
 - You can also revert back to previous versions, and create "branches" of a project to explore different futures. 
 - Git is useful for collaboration, as a repository can be shared across computers, and its contents can be asynchronously developed and eventually merged with the main project.
 - Version Control system (VCS) vs. distributed version control system (DVCS)
-   - Git was one of the first version control systems that followed a distributed revision control model (DRCS), in which it is no longer required to have a single server that all clients connect with.
+- Git was one of the first version control systems that followed a distributed revision control model (DRCS), in which it is no longer required to have a single server that all clients connect with.
+   - [Read more about the version control system, Git, and how it works with GitHub.](https://docs.github.com/en/get-started/using-git/about-git)
 
 
 # What is GitHub? (*web based*) 
@@ -138,7 +139,7 @@ As you can see [we use GitHub to host workshop curricula.](https://github.com/So
 - Check out for edit: Checking out an ”editable” version of a file. Some VCSes have editable files by default, others require an explicit command.
 
 
-### Repository Walkthrough
+### [Repository Walkthrough](https://docs.github.com/en/repositories)
 1.	Creating repositories
 2.	Branching
 3.	Merging
@@ -146,11 +147,15 @@ As you can see [we use GitHub to host workshop curricula.](https://github.com/So
 5.	Pull requests
 6.	Forking
 
-Useful Repository Management Tips
+### Useful Repository Management Tips
 1.	SSH keys
+   - [Authentication documentation](https://docs.github.com/en/authentication)
 2.	Branch restrictions
+   - [Branch documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository)
 3.	Project management
+   - [Learning about Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects)
 4.	Actions
+   - [Actions documentation](https://docs.github.com/en/actions)
 
 ___ 
 ## Glossary for Git

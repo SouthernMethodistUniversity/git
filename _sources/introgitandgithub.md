@@ -1,5 +1,6 @@
 # How to use Git & GitHub (Draft, gitbash/terminal section requires updates)
-**Hands on workshop, online. In this workshop we will *install software* on your laptop/local machine**
+**Hands on workshop. In this workshop we will *install software* on your laptop/local machine**
+
 
 - In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE [(Integrated Development Environment)](https://www.codecademy.com/article/what-is-an-ide) and upload a repository with that file to their Github account. 
 - *This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)*  
@@ -26,7 +27,7 @@ Some software is required for you to participate in this workshop. This is a lis
 - For SMU affiliates (students, faculty,staff): If you already have an account, you *do not need to create another account.* In the settings section of your personal account, you can add additional emails, such as your SMU email. 
 - If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
   
-**integrated development environment (IDE)** (Optional)
+**integrated development environment (IDE)** 
 * An IDE is a computer program that helps in writing and working on software. It allows you to create files such as .md (Markdown), .py Python, .r (R), etc. An IDE  is only needed if we are going to create a Markdown file in the workshop
 - In the content for this workshop, the examples use Visual Studio Code/
 - [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any plain text editor but for our purposes, Visual Studio Code ("VS Code") will be used.
@@ -814,30 +815,3 @@ It is better to make many commits with smaller changes rather than of one commit
 # Conflicts
 [What do I do when my changes conflict with someone else’s?](https://swcarpentry.github.io/git-novice/09-conflict.html)
 
-**Discussion Questions**
-- What does your current version control workflow look like and what are the challenges it poses; or how could it be improved?
-- How can git support the work you are already doing? 
-- What additional opportunities does git and/or GitHub and/or Markdown create for your teaching, research or other scholarly work? 
-- What are the potential benefits and pitfalls of working in the open on the web via a platform like GitHub? 
-
-## Reference sheets for Quick Reference
-**Cheatsheets For Git**
-- [Git Cheatsheets for Quick Reference](https://swcarpentry.github.io/git-novice/reference.html#top)
-- Printable Git cheatsheets in several languages are [available here](https://github.github.com/training-kit/) ([English version](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)). More material is available from the [GitHub training website](https://try.github.io/).
-- An [interactive one-page visualization](https://ndpsoftware.com/git-cheatsheet.html)
-  about the relationships between workspace, staging area, local repository, upstream repository, and the commands associated with each (with explanations).
-- Both resources are also available in other languages (e.g. Spanish, French, and more).
-- "[Happy Git and GitHub for the useR](https://happygitwithr.com)" is an accessible, free online book by Jenny Bryan on how to setup and use Git and GitHub with specific references on the integration of Git with RStudio and working with Git in R.
-- [Open Scientific Code using Git and GitHub](https://open-source-for-researchers.github.io/open-source-workshop/) - A collection of explanations and short practical exercises to help researchers learn more about version control and open source software.
-
-**Cheatsheets For Markdown**
-- [Markdown Cheat Sheet:](https://www.markdownguide.org/cheat-sheet/) provides a quick overview of all the Markdown syntax elements.  
-- [The Markdown Guide](https://www.markdownguide.org) contains reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax) and [extended syntax](https://www.markdownguide.org/extended-syntax).
-
-## Glossary
-- [Short Software Carpentry Glossary](https://swcarpentry.github.io/git-novice/reference.html#glossary)
-- [Full GitGlossary](https://git-scm.com/docs/gitglossary)  
-
-### Full Software Carpentry Workshop 
--[Full Workshop Content](https://swcarpentry.github.io/git-novice/)  
--[Discussion](https://carpentries-incubator.github.io/git-novice-branch-pr/discuss/) 
