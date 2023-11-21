@@ -6,6 +6,7 @@
 - Sign up for a Github account [by clicking here](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)  
 - Create a 'personal account, which serves as your identity on GitHub.com.  
 - [Select free and follow the prompts.](https://github.com/pricing)
+    - [More on Getting started with your GitHub account](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account)
 
 #### SMU GitHub Campus Program
 - SMU participates in the [GitHub Campus Program.](https://www.smu.edu/OIT/Services/GitHub) The GitHub Campus Program is available to all *active* faculty, staff, and students. 
@@ -15,6 +16,10 @@
 # Quickstart lessons  
 - [Github Quickstart: Follow this Hello World exercise to get started with GitHub.](https://docs.github.com/en/get-started/quickstart/hello-world)
 - [Software Carpentry: Version Control with Git](https://swcarpentry.github.io/git-novice/) 
+- [Git and GitHub learning resources](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources)
+    - [GitHub Skills: Learn how to use GitHub with interactive courses designed for beginners and experts.](https://skills.github.com/)
+- [GitHub Training Kit](https://training.github.com/)
+
 
 
 # LinkedIn Learning: Github 

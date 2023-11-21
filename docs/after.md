@@ -1,6 +1,12 @@
 # Theory to Practice
-
+  
 You made it to the end of this workshop—congratulations! You now know a little more about why using Git and GitHub in your scholarly practice might be advantageous, and what the challenges are. Below you'll find a set of readings and tutorials to supplement the lessons outlined herein, and offer additional ways of advancing your use beyond the basics outlined here. There are also additional challenges to test your skills, as well as discussion questions to test your conceptual understanding of these tools. Enjoy!
+
+**Discussion Questions**
+- What does your current version control workflow look like and what are the challenges it poses; or how could it be improved?
+- How can git support the work you are already doing? 
+- What additional opportunities does git and/or GitHub and/or Markdown create for your teaching, research or other scholarly work? 
+- What are the potential benefits and pitfalls of working in the open on the web via a platform like GitHub? 
 <!--
 # Assessment
 Add link to Assessment here 
@@ -73,5 +79,34 @@ I had used Git and GitHub on a project, but understood the softwares minimally.
 - Use Git and GitHub to track, store, and share an independent or collaborative project folder. 
 - Use Git to track a project on your local machine. 
 - Find and/or modify an existing public project on GitHub.
+
+
+## Reference sheets for Quick Reference
+**Cheatsheets For Git**
+- [Git Cheatsheets for Quick Reference](https://swcarpentry.github.io/git-novice/reference.html#top)
+- Printable Git cheatsheets in several languages are [available here](https://github.github.com/training-kit/) ([English version](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)). More material is available from the [GitHub training website](https://try.github.io/).
+- An [interactive one-page visualisation](https://ndpsoftware.com/git-cheatsheet.html)
+  about the relationships between workspace, staging area, local repository, upstream repository, and the commands associated with each (with explanations).
+- Both resources are also available in other languages (e.g. Spanish, French, and more).
+- "[Happy Git and GitHub for the useR](https://happygitwithr.com)" is an accessible, free online book by Jenny Bryan on how to setup and use Git and GitHub with specific references on the integration of Git with RStudio and working with Git in R.
+- [Open Scientific Code using Git and GitHub](https://open-source-for-researchers.github.io/open-source-workshop/) - A collection of explanations and short practical exercises to help researchers learn more about version control and open source software.
+
+**Cheatsheets For Markdown**
+- [Markdown Cheat Sheet:](https://www.markdownguide.org/cheat-sheet/) provides a quick overview of all the Markdown syntax elements.  
+- [The Markdown Guide](https://www.markdownguide.org) contains reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax) and [extended syntax](https://www.markdownguide.org/extended-syntax).
+
+
+### Full Software Carpentry Workshop 
+-[Full Workshop Content](https://swcarpentry.github.io/git-novice/)  
+-[Discussion](https://carpentries-incubator.github.io/git-novice-branch-pr/discuss/) 
+
+## Glossary
+- [Short Software Carpentry Glossary](https://swcarpentry.github.io/git-novice/reference.html#glossary)
+- [Full GitGlossary](https://git-scm.com/docs/gitglossary)  
+
+
+
+
+
 
 
