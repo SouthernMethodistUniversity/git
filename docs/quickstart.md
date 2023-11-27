@@ -19,6 +19,8 @@
 - [Git and GitHub learning resources](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources)
     - [GitHub Skills: Learn how to use GitHub with interactive courses designed for beginners and experts.](https://skills.github.com/)
 - [GitHub Training Kit](https://training.github.com/)
+ 
+- [**Reference Sheets** for Git and Markdown](https://southernmethodistuniversity.github.io/git/after.html#reference-sheets-for-quick-reference)
 
 
 
