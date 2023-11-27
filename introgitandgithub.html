@@ -212,6 +212,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
 <li class="toctree-l1"><a class="reference internal" href="after.html">Theory to Practice</a></li>
 
 </ul>
@@ -410,9 +411,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub (Draft, gitbash/terminal section requires updates)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts">Required Software or accounts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-for-git-github">Required Software or accounts for Git &amp; GitHub</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#add-gitbash-terminal-section">ADD GITBASH &amp; TERMINAL SECTION</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-the-command-line-optional-review">Review of the Command Line (Optional Review)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
@@ -493,21 +495,36 @@ document.write(`
 <li><p>In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE <a class="reference external" href="https://www.codecademy.com/article/what-is-an-ide">(Integrated Development Environment)</a> and upload a repository with that file to their Github account.</p></li>
 <li><p><em>This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)</em></p></li>
 </ul>
-<section id="required-software-or-accounts">
-<h2>Required Software or accounts<a class="headerlink" href="#required-software-or-accounts" title="Permalink to this heading">#</a></h2>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Familiarity with using the command line (also command shell) is expected in this workshop.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Go through <a class="reference external" href="https://swcarpentry.github.io/shell-novice/index.html">The Unix Shell workshop</a></p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="required-software-or-accounts-for-git-github">
+<h1>Required Software or accounts for Git &amp; GitHub<a class="headerlink" href="#required-software-or-accounts-for-git-github" title="Permalink to this heading">#</a></h1>
 <p>Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.</p>
 <p><strong>Git</strong> (required)</p>
 <ul class="simple">
 <li><p>If you do not have <a class="reference external" href="https://git-scm.com/">Git</a> installed, directions can be <a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#git">found here</a></p></li>
 </ul>
-<p><strong>Unix shell</strong> (required)</p>
+<p><strong>Git from the command line</strong> (required)</p>
 <ul class="simple">
-<li><p>Accessing the Unix shell depends on your operating system</p></li>
+<li><p>Using git from the command line <strong>depends on your operating system (OS)</strong></p>
+<ul>
+<li><p>Git was developed and designed on Linux, so you can using git from the terminal on Linux Os or Mac OS. If you are using Windows, to in order to use the git commands, you will use Git Bash.
+<a class="reference external" href="https://www.atlassian.com/git/tutorials/git-bash#:~:text=What%20is%20Git%20Bash%3F,operating%20system%20through%20written%20commands.">What is Git Bash: Bash is an acronym for Bourne Again Shell</a>Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.</p></li>
+</ul>
+</li>
 <li><p>macOS: You can find Terminal in the Applications &gt; Utilities folder.</p></li>
 <li><p>Windows PC: Computers with Windows operating systems do not automatically have a Unix Shell program installed. You will need to install software to use a Unix-like shell environment on Windows.</p></li>
-<li><p>Git for Windows provides a BASH emulation used to run Git from the command line.</p>
+<li><p><strong>Git for Windows provides a BASH emulation used to run Git from the command line.</strong></p>
 <ul>
-<li><p><a class="reference external" href="https://gitforwindows.org/">Download and install Git For Windows like other Windows applications.</a></p></li>
+<li><p><a class="reference external" href="https://gitforwindows.org/">Download and <strong>install Git For Windows</strong> like other Windows applications.</a></p></li>
 <li><p>Once downloaded find the included .exe file and open to execute Git Bash.</p></li>
 <li><p>“<a class="reference external" href="https://www.atlassian.com/git/tutorials/git-bash">What is Git Bash?:</a> Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.”</p></li>
 </ul>
@@ -544,7 +561,6 @@ document.write(`
 </ul>
 </li>
 </ul>
-</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="add-gitbash-terminal-section">
 <h1>ADD GITBASH &amp; TERMINAL SECTION<a class="headerlink" href="#add-gitbash-terminal-section" title="Permalink to this heading">#</a></h1>
@@ -1265,9 +1281,10 @@ It is better to make many commits with smaller changes rather than of one commit
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub (Draft, gitbash/terminal section requires updates)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts">Required Software or accounts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-for-git-github">Required Software or accounts for Git &amp; GitHub</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#add-gitbash-terminal-section">ADD GITBASH &amp; TERMINAL SECTION</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-the-command-line-optional-review">Review of the Command Line (Optional Review)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
