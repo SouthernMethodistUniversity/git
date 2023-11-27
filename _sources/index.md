@@ -2,14 +2,14 @@
 We offer multiple versions of this workshop depending on the learning objectives and time allotted.
   
 ## What is Git & GitHub?  
-**Discussion based only, can be online or in-person**
+**Discussion based only, can be online or in person**
 - In this **30 minute workshop** participants will be introduced to what Git and Github are. 
 - ***Watch this video before your session.***
  [Git vs. GitHub: What's the difference?](https://www.youtube-nocookie.com/embed/wpISo9TNjfU)
   * While watching consider: Why might using GitHub be useful even if you are not working on a development team?
 
 ## How to use GitHub 
-**Hands on workshop, can be online or in-person**
+**Hands on workshop, can be online or in person**
 - In this **60 minute workshop** participants will be introduced to GitHub and how to create and edit online repositories.
 - Particpants will need access to a computer.
 - This session incorporates content from *What is Git & GitHub?*
