@@ -11,7 +11,7 @@ We offer multiple versions of this workshop depending on the learning objectives
 ## How to use GitHub 
 **Hands on workshop, can be online or in person**
 - In this **60 minute workshop** participants will be introduced to GitHub and how to create and edit online repositories.
-- Particpants will need access to a computer.
+- Participants will need access to a computer.
 - This session incorporates content from *What is Git & GitHub?*
   - We will fork a repo or create a new repo, depending on the goals of the workshop.
 
