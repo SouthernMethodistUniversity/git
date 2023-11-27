@@ -193,7 +193,7 @@ Which command do you use to check where you are?
 - `cd`
 - `mkdir`
 
-# Shell Cheat Sheets
+## Shell Cheat Sheets
 
 [Summary of Basic Commands](https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands)
 
@@ -209,7 +209,7 @@ Which command do you use to check where you are?
 
 - [Unix Shell Cheat Sheet](https://cambiotraining.github.io/hpc-intro/99-unix_cheatsheet.html)
 
-# Glossary
+## Glossary
 - [Glossary](https://swcarpentry.github.io/shell-novice/reference.html#glossary)
 
 
