@@ -2,6 +2,8 @@
 **Hands on workshop, online**
 - In this 60 minute workshop, participants will be introduced to GitHub and how to access online repositories. 
 - based on GitHub Docs [Hello World exercise](https://docs.github.com/en/get-started/quickstart/hello-world)
+- - **GitHub Skills**
+- [Learn how to use GitHub with interactive courses designed for beginners and experts](https://skills.github.com/)
 
 **Github** (required)  
 - **[Create a GitHub account](https://github.com/join) (required)**
@@ -15,8 +17,14 @@ In this workshop we will:
 - Start and manage a new branch
 - Make changes to a file and push them to GitHub as commits
 - Open and merge a pull request
-  - We will do this on the [Github platform](https://github.com/). **We will *not be* installing git or using the command line in this workshop.** 
-
+  - We will do this on the [Github platform](https://github.com/). **We will *not be* installing git or using the command line in this workshop.**
+  -We will **either** create a repo OR Fork a repo
+ ________ 
+# *Fork* a repo
+* [About forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
+* We wll fork the [Introduction to GitHub repo](https://github.com/skills/introduction-to-github) and got through the lesson
+_____ 
+# *Create* a repo
 ## [Create and use a repository](https://docs.github.com/en/get-started/quickstart/hello-world#creating-a-repository)
 - Define: Repository, README, Markdown
   - In the upper-right corner of any page, select, then click New repository.
@@ -35,6 +43,7 @@ In this workshop we will:
 - Type a branch name, readme-edits, into the text box.
 - Click Create branch: readme-edits from main.
   - Now you have two branches, main and readme-edits. Right now, they look exactly the same. Next you'll add changes to the new branch.
+    - [Learn about Git branching using an interactive tool](https://learngitbranching.js.org/)
 
 ## [Make changes to a file and push them to GitHub as commits](https://docs.github.com/en/get-started/quickstart/hello-world#making-and-committing-changes)
 - Define: changes aka commits, commit messages.  
@@ -59,6 +68,7 @@ In this workshop we will:
   - Optionally, to the right of your title and description, click the  next to Reviewers, Assignees, Labels, Projects, or Milestone to add any of these options to your pull request. You do not need to add any yet, but these options offer different ways to collaborate using pull requests. For more information, see ["About pull requests."](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 - Click Create pull request.
   - Your collaborators can now review your edits and make suggestions.
+    - [More About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 ## [Merging your pull request](https://docs.github.com/en/get-started/quickstart/hello-world#merging-your-pull-request)
 - - Define: merge, conflicts 
