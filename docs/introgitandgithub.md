@@ -27,36 +27,6 @@ Some software is required for you to participate in this workshop. This is a lis
     - "[What is Git Bash?:](https://www.atlassian.com/git/tutorials/git-bash) Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system."
 * [Alternate option: This link goes to the Software Carpentry installation directions for accessing the unix shell](https://carpentries.github.io/workshop-template/install_instructions/#shell) 
 
-
-
-**Github** (required)  
-- **[Create a GitHub account](https://github.com/join) (required)**
-- You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. 
-- For SMU affiliates (students, faculty,staff): If you already have an account, you *do not need to create another account.* In the settings section of your personal account, you can add additional emails, such as your SMU email. 
-- If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
-  
-**integrated development environment (IDE)** 
-* An IDE is a computer program that helps in writing and working on software. It allows you to create files such as .md (Markdown), .py Python, .r (R), etc. An IDE  is only needed if we are going to create a Markdown file in the workshop
-- In the content for this workshop, the examples use Visual Studio Code/
-- [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any plain text editor but for our purposes, Visual Studio Code ("VS Code") will be used.
- - [Download and install](https://code.visualstudio.com/)
- - [Directions](https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/)
-
-
-***Authenticating to Remote Git Repositories***  
-"Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
-  
-There are three main approaches you can take:
-- Using a personal authentication token or password
-- Using an SSH key
-- Using your GitHub password with 2-factor authentication"
-- [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
-    - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
-
-# ADD GITBASH & TERMINAL SECTION
-
- *TO BE ADDED*
-
 ## Review of the Command Line (Optional Review)
 
 During this workshop, you'll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.
@@ -163,6 +133,30 @@ At this point, when you type `pwd`, your folder structure should look like this:
 $ pwd
 /home/<username>/Desktop/projects/git-practice
 ```
+
+**Github** (required)  
+- **[Create a GitHub account](https://github.com/join) (required)**
+- You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. 
+- For SMU affiliates (students, faculty,staff): If you already have an account, you *do not need to create another account.* In the settings section of your personal account, you can add additional emails, such as your SMU email. 
+- If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
+  
+**integrated development environment (IDE)** 
+* An IDE is a computer program that helps in writing and working on software. It allows you to create files such as .md (Markdown), .py Python, .r (R), etc. An IDE  is only needed if we are going to create a Markdown file in the workshop
+- In the content for this workshop, the examples use Visual Studio Code/
+- [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any plain text editor but for our purposes, Visual Studio Code ("VS Code") will be used.
+ - [Download and install](https://code.visualstudio.com/)
+ - [Directions](https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/)
+
+***Authenticating to Remote Git Repositories***  
+"Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
+  
+There are three main approaches you can take:
+- Using a personal authentication token or password
+- Using an SSH key
+- Using your GitHub password with 2-factor authentication"
+- [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
+    - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
+
 
 ## Evaluation
 
