@@ -18,7 +18,7 @@ In this workshop we will:
 - Make changes to a file and push them to GitHub as commits
 - Open and merge a pull request
   - We will do this on the [Github platform](https://github.com/). **We will *not be* installing git or using the command line in this workshop.**
-  -We will **either** create a repo OR Fork a repo
+  - We will **either** fork a repo OR create a repo
  ________ 
 # *Fork* a repo
 * [About forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
