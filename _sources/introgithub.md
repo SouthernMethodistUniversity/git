@@ -1,4 +1,4 @@
-# How to use GitHub (DRAFT)
+# How to use GitHub
 **Hands on workshop, online**
 - In this 60 minute workshop, participants will be introduced to GitHub and how to access online repositories. 
 - based on GitHub Docs [Hello World exercise](https://docs.github.com/en/get-started/quickstart/hello-world)
