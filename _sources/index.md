@@ -12,12 +12,13 @@ We offer multiple versions of this workshop depending on the learning objectives
 **Hands on workshop, online**
 - In this 60 minute workshop, participants will be introduced to GitHub and how to access online repositories. 
 - This session incorporates content from *What is Git & GitHub?*
+  - We can fork a repo or create a new repo, depending on the goals of the workshop.
 
 ## How to use Git & GitHub 
 **Hands on workshop, online. In this workshop we will *install software* on your laptop/local machine**
 
 - In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE [(Integrated Development Environment)](https://www.codecademy.com/article/what-is-an-ide) and upload a repository with that file to their Github account. 
-- *This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)*  
+- *This workshop requires software installation on the participants laptop and familiarity with using the command line (Terminal (Mac/Linus) or Git bash (Windows PC))*  
 
 
 * [Register for upcoming Scholarship & Research workshops this semester.](https://libcal.smu.edu/calendar/?cid=-1&t=g&d=0000-00-00&cal=-1&ct=55599&inc=0)
