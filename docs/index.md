@@ -19,7 +19,7 @@ We offer multiple versions of this workshop depending on the learning objectives
 **Hands on workshop, in person only.**
 *In this workshop we will *install software* on your laptop/local machine*
 - In this **2 hour + workshop** participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE [(Integrated Development Environment)](https://www.codecademy.com/article/what-is-an-ide) and upload a repository with that file to their Github account. 
-- *This workshop requires software installation on the participants laptop and familiarity with using the command line (Terminal (Mac/Linus) or Git bash (Windows PC))*
+- *This workshop requires software installation on the participants laptop and familiarity with using the command line (Terminal (Mac/Linux) or Git bash (Windows PC)*
 - Participants will need to bring a laptop, and they will need to be able to install software (administrative access.)
 
 
