@@ -2,17 +2,18 @@
 **Hands on workshop, online**
 - In this 60 minute workshop, participants will be introduced to GitHub and how to access online repositories. 
 - based on GitHub Docs [Hello World exercise](https://docs.github.com/en/get-started/quickstart/hello-world)
-- - **GitHub Skills**
-- [Learn how to use GitHub with interactive courses designed for beginners and experts](https://skills.github.com/)
+  - **GitHub Skills**
+    - [Learn how to use GitHub with interactive courses designed for beginners and experts](https://skills.github.com/)
 
 **Github** (required)  
 - **[Create a GitHub account](https://github.com/join) (required)**
 - You need to have a GitHub account for the purposes of this workshop. It is free to sign up [via this link.](https://github.com/join)
 - For SMU affiliates (students, faculty,staff): If you already have an account, you *do not need to create another account.* In the settings section of your personal account, **you can add additional emails, such as your SMU email.** 
 
-# [What are Git & GitHub](https://southernmethodistuniversity.github.io/git/whatgitandgithub.html)
-- Introduction to Git & Github terms. 
-In this workshop we will: 
+# What are Git & GitHub ?
+- Go through [Introduction to Git & Github.](https://southernmethodistuniversity.github.io/git/whatgitandgithub.html)
+
+- **In this workshop we will:** 
 - Create and use a repository
 - Start and manage a new branch
 - Make changes to a file and push them to GitHub as commits
@@ -71,7 +72,7 @@ _____
     - [More About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 ## [Merging your pull request](https://docs.github.com/en/get-started/quickstart/hello-world#merging-your-pull-request)
-- - Define: merge, conflicts 
+- Define: merge, conflicts 
 - At the bottom of the pull request, click Merge pull request to merge the changes into main.
 - Click Confirm merge. You will receive a message that the request was successfully merged and the request was closed.
 - Click Delete branch. 
