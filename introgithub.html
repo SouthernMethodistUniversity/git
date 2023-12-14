@@ -188,6 +188,9 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="whycoding.html">Why Learn Coding (Optional)</a></li>
 
 
@@ -198,7 +201,15 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="commandline.html">Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Style Guide</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="ide.html"><strong>integrated development environment (IDE)</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="introgitandgithub.html">How to use Git &amp; GitHub</a></li>
+
 
 
 
@@ -408,10 +419,23 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use GitHub</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-git-github">What are Git &amp; GitHub ?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-a-repo"><em>Fork</em> a repo</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-to-a-github-repo">Contributing to a Github Repo</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-a-repo"><em>Fork</em> a repo</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forking">Forking</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-repo"><em>Create</em> a repo</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-and-use-a-repository">Create and use a repository</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-branch"><em>Create</em> a branch</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-and-manage-a-new-branch">Start and manage a new branch</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#commits">Commits</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-changes-to-a-file-and-push-them-to-github-as-commits">Make changes to a file and push them to GitHub as commits</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-and-merge-a-pull-request">Open and merge a pull request</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#merging-your-pull-request">Merging your pull request</a></li>
@@ -468,14 +492,45 @@ document.write(`
 </ul>
 </section>
 <hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="contributing-to-a-github-repo">
+<h1>Contributing to a Github Repo<a class="headerlink" href="#contributing-to-a-github-repo" title="Permalink to this heading">#</a></h1>
+<p>There are many ways to contribute to a GitHub repo, from creating issues that suggest improvements to specific files to creating entirely new sessions. We will discuss various modes of interaction with a repo, including <em>forking</em> a repository to your account, <em>creating issues</em> and <em>pull requests.</em></p>
+<hr class="docutils" />
+<section id="creating-issues">
+<h2>Creating Issues<a class="headerlink" href="#creating-issues" title="Permalink to this heading">#</a></h2>
+<p>A critical and relatively accessible way to contribute back to a repo is to create an issue on GitHub. While reading a repo on GitHub, you may encounter inconsistencies, typos, sections that need clarification, or typographical errors. When this happens, you can open an issue to let them know about the problem or potential improvement.</p>
+<p>To open an issue, you must be in a GitHub repository. In the menu bar at the top center of the page, click the <code class="docutils literal notranslate"><span class="pre">Issues</span></code> tab.</p>
+<p><img alt="Image showing that the Issues tab is in the center menu bar above the files in the GitHub repository" src="..images/issues_tab.png" />.</p>
+<p>After clicking the issues tab, you will see a screen with the currently open issues, if any. To create a new issue, click the large green button on the right of the page.</p>
+<p><img alt="Image showing where the Create New Issue button is in the Issues tab on GitHub" src="images/new_issue.png" /></p>
+<p>On the New Issue page, there is only one required field—the issue title. However, consider leaving a detailed explanation of the issue, including which file you encountered it, if relevant. You can use markdown formatting in the body of your issue.</p>
+<p>To complete your issue, click the green button labelled <code class="docutils literal notranslate"><span class="pre">Submit</span> <span class="pre">New</span> <span class="pre">Issue</span></code>.</p>
+<p><img alt="Image showing where the submit new issue button is. In the issue body box, the message reads &quot;In loop.md, I noticed that the index of the example is flowers[1], which is not &quot;rose&quot; as the output indicates. Looks like it should be 0.&quot;" src="images/finish_new_issue.png" />.</p>
+</section>
+</section>
+<hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="fork-a-repo">
 <h1><em>Fork</em> a repo<a class="headerlink" href="#fork-a-repo" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks">About forks</a></p></li>
-<li><p>We wll fork the <a class="reference external" href="https://github.com/skills/introduction-to-github">Introduction to GitHub repo</a> and got through the lesson</p></li>
+<li><p><strong>We wll be forking the <a class="reference external" href="https://github.com/skills/introduction-to-github">Introduction to GitHub repo.</a></strong></p></li>
 </ul>
-</section>
+<section id="forking">
+<h2>Forking<a class="headerlink" href="#forking" title="Permalink to this heading">#</a></h2>
+<p>By default, you will not have access to directly modify repos. In the world of free and open source software, this is common—usually, only the creator of a repository and certain core contributors can add and modify files in a repository. However, this doesn’t mean that you cannot modify the repo and make it your own.</p>
+<p>If you wish to create your own version of the repo for your own use , the first step is to <strong>fork</strong> the relevant repository. That means to make a copy of it under your own account on GitHub, one in which you have access to modify files. Once you have forked a repository, you can create a new lesson based on it. Because the (majority of ) curriculum is under a Creative Commons license, you may use any module as the basis for a new lesson and share freely, as long as you provide attribution and share under the same license.</p>
+<p>To fork a repository to your account, click the <code class="docutils literal notranslate"><span class="pre">Fork</span></code> button at the top right of any repository on GitHub.</p>
+<p><img alt="Image showing where fork button is on GitHub" src="fork.png" /></p>
+<p>After clicking the fork button, if you’re a member of an organization on GitHub, you may see a screen asking you to which account you wish to fork the repository. Choose your personal account. If you are not a member of an organization, you will not see this screen.</p>
+<p>Once you have clicked <code class="docutils literal notranslate"><span class="pre">Fork</span></code> and (possibly) chosen an account or organization, you will see a screen showing you that the fork is in progress:</p>
+<p><img alt="Image showing the fork in progress" src="currently-forking.png" /></p>
+<p>Once the fork is complete, you will be directed to a screen showing the repository in your own account.</p>
+<p><img alt="Image showing the forked repository in your own account" src="after-forking.png" /></p>
+<p>OR</p>
 <hr class="docutils" />
+<p><em>start from scratch</em></p>
+</section>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="create-a-repo">
 <h1><em>Create</em> a repo<a class="headerlink" href="#create-a-repo" title="Permalink to this heading">#</a></h1>
 <section id="create-and-use-a-repository">
@@ -496,7 +551,11 @@ document.write(`
 </ul>
 </li>
 </ul>
+<p><em>Now that we have a repo on our account (either created new or forked), we will make some changes</em></p>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="create-a-branch">
+<h1><em>Create</em> a branch<a class="headerlink" href="#create-a-branch" title="Permalink to this heading">#</a></h1>
 <section id="start-and-manage-a-new-branch">
 <h2><a class="reference external" href="https://docs.github.com/en/get-started/quickstart/hello-world#creating-a-branch">Start and manage a new branch</a><a class="headerlink" href="#start-and-manage-a-new-branch" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
@@ -516,6 +575,9 @@ document.write(`
 </li>
 </ul>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="commits">
+<h1>Commits<a class="headerlink" href="#commits" title="Permalink to this heading">#</a></h1>
 <section id="make-changes-to-a-file-and-push-them-to-github-as-commits">
 <h2><a class="reference external" href="https://docs.github.com/en/get-started/quickstart/hello-world#making-and-committing-changes">Make changes to a file and push them to GitHub as commits</a><a class="headerlink" href="#make-changes-to-a-file-and-push-them-to-github-as-commits" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
@@ -640,10 +702,23 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use GitHub</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-git-github">What are Git &amp; GitHub ?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-a-repo"><em>Fork</em> a repo</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-to-a-github-repo">Contributing to a Github Repo</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fork-a-repo"><em>Fork</em> a repo</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forking">Forking</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-repo"><em>Create</em> a repo</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-and-use-a-repository">Create and use a repository</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-branch"><em>Create</em> a branch</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-and-manage-a-new-branch">Start and manage a new branch</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#commits">Commits</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-changes-to-a-file-and-push-them-to-github-as-commits">Make changes to a file and push them to GitHub as commits</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-and-merge-a-pull-request">Open and merge a pull request</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#merging-your-pull-request">Merging your pull request</a></li>

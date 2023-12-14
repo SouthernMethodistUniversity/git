@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Theory to Practice" href="after.html" />
-    <link rel="prev" title="Why Learn Coding (Optional)" href="whycoding.html" />
+    <link rel="prev" title="integrated development environment (IDE)" href="ide.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -188,6 +188,9 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="whycoding.html">Why Learn Coding (Optional)</a></li>
 
 
@@ -198,7 +201,15 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="commandline.html">Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Style Guide</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="ide.html"><strong>integrated development environment (IDE)</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">How to use Git &amp; GitHub</a></li>
+
 
 
 
@@ -461,6 +472,13 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-content">Contributing content</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Forking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-pull-request">Creating a pull request</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Creating a pull request</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conflicts">Conflicts</a></li>
 </ul>
 
@@ -1103,7 +1121,6 @@ nothing to commit, working tree clean
 <p>Rather than write out the solution here, I want to encourage you to go back through the lessons as needed.</p>
 <p>You’ll know you’ve completed step one when the project folder (called <code class="docutils literal notranslate"><span class="pre">\introduction-to-github-main</span></code>) shows up on your local machine.</p>
 <p>After you’ve made and saved the changes, you’ll know you’ve completed step three when your changes appear in the project folder on <em>your</em> GitHub account.</p>
-<p><em>Additional content</em></p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="collaborating">
@@ -1120,6 +1137,108 @@ A BASIC COLLABORATIVE WORKFLOW</p>
 <li><p>upload the changes to GitHub with git push origin main
 It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.</p></li>
 </ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="contributing-content">
+<h1>Contributing content<a class="headerlink" href="#contributing-content" title="Permalink to this heading">#</a></h1>
+<p>There are many ways to contribute to a GitHub repo, from creating issues that suggest improvements to specific files to creating entirely new sessions. This section describes various modes of interaction with a repo, including forking repositories to your account and creating issues and pull requests.</p>
+<section id="creating-issues">
+<h2>Creating Issues<a class="headerlink" href="#creating-issues" title="Permalink to this heading">#</a></h2>
+<p>A critical and relatively accessible way to contribute back to a repo is to create an issue on GitHub. While reading a repo on GitHub, you may encounter inconsistencies, typos, sections that need clarification, or typographical errors. When this happens, you can open an issue to let us know about the problem or potential improvement.</p>
+<p>To open an issue, you must be in a GitHub repository. In the menu bar at the top center of the page, click the <code class="docutils literal notranslate"><span class="pre">Issues</span></code> tab.</p>
+<p><img alt="Image showing that the Issues tab is in the center menu bar above the files in the GitHub repository" src="..images/issues_tab.png" />.</p>
+<p>After clicking the issues tab, you will see a screen with the currently open issues, if any. To create a new issue, click the large green button on the right of the page.</p>
+<p><img alt="Image showing where the Create New Issue button is in the Issues tab on GitHub" src="images/new_issue.png" /></p>
+<p>On the New Issue page, there is only one required field—the issue title. However, consider leaving a detailed explanation of the issue, including which file you encountered it, if relevant. You can use markdown formatting in the body of your issue.</p>
+<p>To complete your issue, click the green button labelled <code class="docutils literal notranslate"><span class="pre">Submit</span> <span class="pre">New</span> <span class="pre">Issue</span></code>.</p>
+<p><img alt="Image showing where the submit new issue button is. In the issue body box, the message reads &quot;In loop.md, I noticed that the index of the example is flowers[1], which is not &quot;rose&quot; as the output indicates. Looks like it should be 0.&quot;" src="images/finish_new_issue.png" />.</p>
+</section>
+<section id="id2">
+<h2>Forking<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>By default, you will not have access to directly modify repositories in the curriculum. In the world of free and open source software, this is common—usually, only the creator of a repository and certain core contributors can add and modify files in a repository. However, this doesn’t mean that you cannot modify the curriculum and make it your own.</p>
+<p>If you wish to create your own version of the repo for your own use , the first step is to <strong>fork</strong> the relevant repository. That means to make a copy of it under your own account on GitHub, one in which you have access to modify files. Once you have forked a repository, you can create a new lesson based on it. Because the (majority of ) curriculum is under a Creative Commons license, you may use any module as the basis for a new lesson and share freely, as long as you provide attribution and share under the same license.</p>
+<p>To fork a repository to your account, click the <code class="docutils literal notranslate"><span class="pre">Fork</span></code> button at the top right of any repository on GitHub.</p>
+<p><img alt="Image showing where fork button is on GitHub" src="fork.png" /></p>
+<p>After clicking the fork button, if you’re a member of an organization on GitHub, you may see a screen asking you to which account you wish to fork the repository. Choose your personal account. If you are not a member of an organization, you will not see this screen.</p>
+<p>Once you have clicked <code class="docutils literal notranslate"><span class="pre">Fork</span></code> and (possibly) chosen an account or organization, you will see a screen showing you that the fork is in progress:</p>
+<p><img alt="Image showing the fork in progress" src="currently-forking.png" /></p>
+<p>Once the fork is complete, you will be directed to a screen showing the repository in your own account.</p>
+<p><img alt="Image showing the forked repository in your own account" src="after-forking.png" /></p>
+<p>At this point, you can begin to create your own version, or fork,  of the session by cloning this repository to your computer, making changews, and pushing them back up to GitHub.</p>
+</section>
+<section id="creating-a-pull-request">
+<h2>Creating a pull request<a class="headerlink" href="#creating-a-pull-request" title="Permalink to this heading">#</a></h2>
+<p>A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, “This is what I think your repository should look like.” If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.</p>
+<p>To do a pull request takes a few steps:</p>
+<ol class="arabic simple">
+<li><p>Fork the repository as above.</p></li>
+<li><p>Clone the forked repository.</p></li>
+<li><p>Make the changes you intend to propose locally.</p></li>
+<li><p>Add, commit, and push your changes to the forked repository.;</p></li>
+<li><p>Using the GitHub interface, initiate the pull request. A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, “This is what I think your repository should look like.” If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.</p></li>
+</ol>
+<p>A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, “This is what I think your repository should look like.” If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.</p>
+<p>Let’s step through these steps in more detail.</p>
+<p>First, fork the repository to which you wish to submit a pull request. Instructions for forking are available in the previous section on forking.</p>
+<p>Next, clone the forked repository to your computer by clicking the <code class="docutils literal notranslate"><span class="pre">Clone</span> <span class="pre">or</span> <span class="pre">Download</span></code> button, copying the link, and using the</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>&lt;copied-link&gt;
+</pre></div>
+</div>
+<p>command in your terminal.</p>
+<p>Once you’ve cloned the repository, use a text editor such as VS Code to make the changes you wish to propose to the target repository. You can make any number of changes in any number of files.</p>
+<p>Once you have finished editing, use the add command to stage your changes, commit them, and then push them back to your forked repository on GitHub.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>-A
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Changes proposed for pull request&quot;</span>
+git<span class="w"> </span>push
+</pre></div>
+</div>
+<p>Note that you can add files one by one instead of using the <code class="docutils literal notranslate"><span class="pre">-A</span></code> flag to add all files, and that you should use a more specific and description commit message than the generic one provided above.</p>
+<p>Once your changes have been pushed to GitHub, open the web interface to the repository and refresh the page. It’s easy to miss it in the interface, but there will be a notification about the commit you just made. Within that notification, click the <code class="docutils literal notranslate"><span class="pre">Pull</span> <span class="pre">Request</span></code> button.</p>
+<p><img alt="Small button for pull request in the GitHub interface" src="commit_notification.png" /></p>
+<p>If you can’t find the notification, or if it disappears, you can also begin the pull request process by clicking the <code class="docutils literal notranslate"><span class="pre">Pull</span> <span class="pre">Request</span></code> tab and clicking the green <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Pull</span> <span class="pre">Request</span></code> button.</p>
+<p>Once the pull request is initiated, you will encounter a screen that compares the changes between your forked repository and the target repository.</p>
+<p><img alt="Image showing the screen that compares changes in the GitHub interface" src="comparing_changes.png" /></p>
+<p>After reviewing, click the green <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Pull</span> <span class="pre">Request</span></code> button. You will have a chance to add a comment, and the interface is similar to the interface when creating issues.</p>
+<p><img alt="Image showing the message box after creating a pull request" src="add_message.png" /></p>
+<p>After adding a descriptive message, click the green button to finalize the pull request. You will be taken to a view of the completed pull request.</p>
+<p>Now it’s up to the repository owner if they wish to accept the request, initiate a conversation with you, or—which sometimes happens—ignore or reject your request. In the case of the DHRI curriculum, we may accept some requests right away, and ask for clarification on other occasions.</p>
+</section>
+<section id="id3">
+<h2>Creating a pull request<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, “This is what I think your repository should look like.” If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.</p>
+<p>To do a pull request takes a few steps:</p>
+<ol class="arabic simple">
+<li><p>Fork the repository as above.</p></li>
+<li><p>Clone the forked repository.</p></li>
+<li><p>Make the changes you intend to propose locally.</p></li>
+<li><p>Add, commit, and push your changes to the forked repository.;</p></li>
+<li><p>Using the GitHub interface, initiate the pull request. A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, “This is what I think your repository should look like.” If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.</p></li>
+</ol>
+<p>A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, “This is what I think your repository should look like.” If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.</p>
+<p>Let’s step through these steps in more detail.</p>
+<p>First, fork the repository to which you wish to submit a pull request. Instructions for forking are available in the previous section on forking.</p>
+<p>Next, clone the forked repository to your computer by clicking the <code class="docutils literal notranslate"><span class="pre">Clone</span> <span class="pre">or</span> <span class="pre">Download</span></code> button, copying the link, and using the</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>&lt;copied-link&gt;
+</pre></div>
+</div>
+<p>command in your terminal.</p>
+<p>Once you’ve cloned the repository, use a text editor such as VS Code to make the changes you wish to propose to the target repository. You can make any number of changes in any number of files.</p>
+<p>Once you have finished editing, use the add command to stage your changes, commit them, and then push them back to your forked repository on GitHub.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>-A
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Changes proposed for pull request&quot;</span>
+git<span class="w"> </span>push
+</pre></div>
+</div>
+<p>Note that you can add files one by one instead of using the <code class="docutils literal notranslate"><span class="pre">-A</span></code> flag to add all files, and that you should use a more specific and description commit message than the generic one provided above.</p>
+<p>Once your changes have been pushed to GitHub, open the web interface to the repository and refresh the page. It’s easy to miss it in the interface, but there will be a notification about the commit you just made. Within that notification, click the <code class="docutils literal notranslate"><span class="pre">Pull</span> <span class="pre">Request</span></code> button.</p>
+<p><img alt="Small button for pull request in the GitHub interface" src="commit_notification.png" /></p>
+<p>If you can’t find the notification, or if it disappears, you can also begin the pull request process by clicking the <code class="docutils literal notranslate"><span class="pre">Pull</span> <span class="pre">Request</span></code> tab and clicking the green <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Pull</span> <span class="pre">Request</span></code> button.</p>
+<p>Once the pull request is initiated, you will encounter a screen that compares the changes between your forked repository and the target repository.</p>
+<p><img alt="Image showing the screen that compares changes in the GitHub interface" src="comparing_changes.png" /></p>
+<p>After reviewing, click the green <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Pull</span> <span class="pre">Request</span></code> button. You will have a chance to add a comment, and the interface is similar to the interface when creating issues.</p>
+<p><img alt="Image showing the message box after creating a pull request" src="add_message.png" /></p>
+<p>After adding a descriptive message, click the green button to finalize the pull request. You will be taken to a view of the completed pull request.</p>
+<p>Now it’s up to the repository owner if they wish to accept the request, initiate a conversation with you, or—which sometimes happens—ignore or reject your request. In the case of the DHRI curriculum, we may accept some requests right away, and ask for clarification on other occasions.</p>
+</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="conflicts">
 <h1>Conflicts<a class="headerlink" href="#conflicts" title="Permalink to this heading">#</a></h1>
@@ -1157,12 +1276,12 @@ It is better to make many commits with smaller changes rather than of one commit
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="whycoding.html"
+       href="ide.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Why Learn Coding (Optional)</p>
+        <p class="prev-next-title"><strong>integrated development environment (IDE)</strong></p>
       </div>
     </a>
     <a class="right-next"
@@ -1244,6 +1363,13 @@ It is better to make many commits with smaller changes rather than of one commit
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-content">Contributing content</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Forking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-pull-request">Creating a pull request</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Creating a pull request</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conflicts">Conflicts</a></li>
 </ul>
 
