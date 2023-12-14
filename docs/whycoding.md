@@ -1,8 +1,8 @@
-# Why Learn Coding (Optional)
-* This section is to give context to 
+# Why Learn Coding 
 
-# Computing  
-Understanding computing: This section is to familiarize you wth important foundational concepts and to give you a framework for understanding the types of computational methods you can use on a projects, including: minimal computing, tool choice or coding.  Finally, this session aims to give you language to conceptualize what is possible and to communicate more effectively with partners. 
+* This section is to give context to:
+
+* Understanding computing: This section is to familiarize you wth important foundational concepts and to give you a framework for understanding the types of computational methods you can use on a projects, including: minimal computing, tool choice or coding.  Finally, this session aims to give you language to conceptualize what is possible and to communicate more effectively with partners. 
 
 * Understanding the affordances and limitations of a computational approach for your project will help you better imagine, plan manage your project. Even if you are not directly involved in the coding aspect, this will give you the tools to better collaborate with those who will.
 
