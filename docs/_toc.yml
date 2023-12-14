@@ -8,6 +8,9 @@ chapters:
   - file: whatgitandgithub
   - file: introgithub
   - file: whycoding
+  - file: commandline
+  - file: markdown
+  - file: ide
   - file: introgitandgithub
   - file: after
 
