@@ -190,7 +190,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-
 <li class="toctree-l1"><a class="reference internal" href="whycoding.html">Why Learn Coding</a></li>
 
 
@@ -204,6 +203,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ide.html">IDE</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">How to use Git &amp; GitHub</a></li>
+
+
 
 
 
@@ -459,19 +460,26 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-to-a-github-repo">Contributing to a Github Repo</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-and-forking">Cloning and Forking</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning">Cloning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forking">Forking</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Challenge</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Forking</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Challenge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-content">Contributing content</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Forking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Creating Issues</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Forking</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-pull-request">Creating a pull request</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Creating a pull request</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Creating a pull request</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conflicts">Conflicts</a></li>
@@ -1052,8 +1060,25 @@ nothing to commit, working tree clean
 </pre></div>
 </div>
 <p>If you see output like this, go back to your new repository page in the browser and click the <code class="docutils literal notranslate"><span class="pre">Refresh</span></code> button. You should see your <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file on GitHub! Your git credentials are also now stored locally, so you should not need to authorize the credential manager again from that computer.</p>
+<hr class="docutils" />
 </section>
 <hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="contributing-to-a-github-repo">
+<h1>Contributing to a Github Repo<a class="headerlink" href="#contributing-to-a-github-repo" title="Permalink to this heading">#</a></h1>
+<p>There are many ways to contribute to a GitHub repo, from creating issues that suggest improvements to specific files to creating entirely new sessions. We will discuss various modes of interaction with a repo, including <em>forking</em> a repository to your account, <em>creating issues</em> and <em>pull requests.</em></p>
+<hr class="docutils" />
+<section id="creating-issues">
+<h2>Creating Issues<a class="headerlink" href="#creating-issues" title="Permalink to this heading">#</a></h2>
+<p>A critical and relatively accessible way to contribute back to a repo is to create an issue on GitHub. While reading a repo on GitHub, you may encounter inconsistencies, typos, sections that need clarification, or typographical errors. When this happens, you can open an issue to let them know about the problem or potential improvement.</p>
+<p>To open an issue, you must be in a GitHub repository. In the menu bar at the top center of the page, click the <code class="docutils literal notranslate"><span class="pre">Issues</span></code> tab.</p>
+<p><img alt="Image showing that the Issues tab is in the center menu bar above the files in the GitHub repository" src="..images/issues_tab.png" />.</p>
+<p>After clicking the issues tab, you will see a screen with the currently open issues, if any. To create a new issue, click the large green button on the right of the page.</p>
+<p><img alt="Image showing where the Create New Issue button is in the Issues tab on GitHub" src="images/new_issue.png" /></p>
+<p>On the New Issue page, there is only one required field—the issue title. However, consider leaving a detailed explanation of the issue, including which file you encountered it, if relevant. You can use markdown formatting in the body of your issue.</p>
+<p>To complete your issue, click the green button labelled <code class="docutils literal notranslate"><span class="pre">Submit</span> <span class="pre">New</span> <span class="pre">Issue</span></code>.</p>
+<p><img alt="Image showing where the submit new issue button is. In the issue body box, the message reads &quot;In loop.md, I noticed that the index of the example is flowers[1], which is not &quot;rose&quot; as the output indicates. Looks like it should be 0.&quot;" src="images/finish_new_issue.png" />.</p>
+</section>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="cloning-and-forking">
 <h1>Cloning and Forking<a class="headerlink" href="#cloning-and-forking" title="Permalink to this heading">#</a></h1>
 <p>GitHub was built for sharing and collaborating on projects. A key advantage of the platform is that you can find lots of bits of software that do many different things—such as code for plugins for WordPress or Leaflet. Increasingly, you might find syllabi or open writing projects. If a project is public, you can save a copy of it to your local machine, work on it, save your amendations and share it on your own GitHub account. Like we’ve already mentioned, GitHub usefully helps track attribution along the way.</p>
@@ -1102,8 +1127,20 @@ nothing to commit, working tree clean
 <p>Your local machine would come into play when you want to <em>clone</em> that repository so you can work on it locally. This also means that when you push those changes to GitHub, you would be pushing them to a forked repository associated with your own account.</p>
 <p>You might use this method if you were going to teach your own Git &amp; GitHub workshop. You could use our repository as a base for getting started, and add more examples or change some language, clarify something further, or create a connection to another workshop you are giving, etc. This allows us to continue to use the workshop as we have it as well. Also, maybe at a later time, we want to merge some of your changes with ours. We can do that too by revisiting your version history.</p>
 </section>
-<section id="id1">
-<h2>Challenge<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Forking<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>By default, you will not have access to directly modify repos. In the world of free and open source software, this is common—usually, only the creator of a repository and certain core contributors can add and modify files in a repository. However, this doesn’t mean that you cannot modify the repo and make it your own.</p>
+<p>If you wish to create your own version of the repo for your own use , the first step is to <strong>fork</strong> the relevant repository. That means to make a copy of it under your own account on GitHub, one in which you have access to modify files. Once you have forked a repository, you can create a new lesson based on it. Because the (majority of ) curriculum is under a Creative Commons license, you may use any module as the basis for a new lesson and share freely, as long as you provide attribution and share under the same license.</p>
+<p>To fork a repository to your account, click the <code class="docutils literal notranslate"><span class="pre">Fork</span></code> button at the top right of any repository on GitHub.</p>
+<p><img alt="Image showing where fork button is on GitHub" src="fork.png" /></p>
+<p>After clicking the fork button, if you’re a member of an organization on GitHub, you may see a screen asking you to which account you wish to fork the repository. Choose your personal account. If you are not a member of an organization, you will not see this screen.</p>
+<p>Once you have clicked <code class="docutils literal notranslate"><span class="pre">Fork</span></code> and (possibly) chosen an account or organization, you will see a screen showing you that the fork is in progress:</p>
+<p><img alt="Image showing the fork in progress" src="currently-forking.png" /></p>
+<p>Once the fork is complete, you will be directed to a screen showing the repository in your own account.</p>
+<p><img alt="Image showing the forked repository in your own account" src="after-forking.png" /></p>
+<section id="id2">
+<h2>Challenge<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Fork and clone <a class="reference external" href="https://github.com/skills/introduction-to-github">the repository for Github’s Introduction to GitHub</a></p></li>
 <li><p>Note not only <em>what</em> you are doing, but also <em>where</em> you are working when completing these two different tasks.</p></li>
@@ -1136,8 +1173,8 @@ It is better to make many commits with smaller changes rather than of one commit
 <section class="tex2jax_ignore mathjax_ignore" id="contributing-content">
 <h1>Contributing content<a class="headerlink" href="#contributing-content" title="Permalink to this heading">#</a></h1>
 <p>There are many ways to contribute to a GitHub repo, from creating issues that suggest improvements to specific files to creating entirely new sessions. This section describes various modes of interaction with a repo, including forking repositories to your account and creating issues and pull requests.</p>
-<section id="creating-issues">
-<h2>Creating Issues<a class="headerlink" href="#creating-issues" title="Permalink to this heading">#</a></h2>
+<section id="id3">
+<h2>Creating Issues<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <p>A critical and relatively accessible way to contribute back to a repo is to create an issue on GitHub. While reading a repo on GitHub, you may encounter inconsistencies, typos, sections that need clarification, or typographical errors. When this happens, you can open an issue to let us know about the problem or potential improvement.</p>
 <p>To open an issue, you must be in a GitHub repository. In the menu bar at the top center of the page, click the <code class="docutils literal notranslate"><span class="pre">Issues</span></code> tab.</p>
 <p><img alt="Image showing that the Issues tab is in the center menu bar above the files in the GitHub repository" src="..images/issues_tab.png" />.</p>
@@ -1147,8 +1184,8 @@ It is better to make many commits with smaller changes rather than of one commit
 <p>To complete your issue, click the green button labelled <code class="docutils literal notranslate"><span class="pre">Submit</span> <span class="pre">New</span> <span class="pre">Issue</span></code>.</p>
 <p><img alt="Image showing where the submit new issue button is. In the issue body box, the message reads &quot;In loop.md, I noticed that the index of the example is flowers[1], which is not &quot;rose&quot; as the output indicates. Looks like it should be 0.&quot;" src="images/finish_new_issue.png" />.</p>
 </section>
-<section id="id2">
-<h2>Forking<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="id4">
+<h2>Forking<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <p>By default, you will not have access to directly modify repositories in the curriculum. In the world of free and open source software, this is common—usually, only the creator of a repository and certain core contributors can add and modify files in a repository. However, this doesn’t mean that you cannot modify the curriculum and make it your own.</p>
 <p>If you wish to create your own version of the repo for your own use , the first step is to <strong>fork</strong> the relevant repository. That means to make a copy of it under your own account on GitHub, one in which you have access to modify files. Once you have forked a repository, you can create a new lesson based on it. Because the (majority of ) curriculum is under a Creative Commons license, you may use any module as the basis for a new lesson and share freely, as long as you provide attribution and share under the same license.</p>
 <p>To fork a repository to your account, click the <code class="docutils literal notranslate"><span class="pre">Fork</span></code> button at the top right of any repository on GitHub.</p>
@@ -1197,8 +1234,8 @@ git<span class="w"> </span>push
 <p>After adding a descriptive message, click the green button to finalize the pull request. You will be taken to a view of the completed pull request.</p>
 <p>Now it’s up to the repository owner if they wish to accept the request, initiate a conversation with you, or—which sometimes happens—ignore or reject your request. In the case of the DHRI curriculum, we may accept some requests right away, and ask for clarification on other occasions.</p>
 </section>
-<section id="id3">
-<h2>Creating a pull request<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<section id="id5">
+<h2>Creating a pull request<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
 <p>A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, “This is what I think your repository should look like.” If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.</p>
 <p>To do a pull request takes a few steps:</p>
 <ol class="arabic simple">
@@ -1350,19 +1387,26 @@ git<span class="w"> </span>push
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-to-a-github-repo">Contributing to a Github Repo</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-and-forking">Cloning and Forking</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning">Cloning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forking">Forking</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Challenge</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Forking</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Challenge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-content">Contributing content</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Forking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Creating Issues</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Forking</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-pull-request">Creating a pull request</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Creating a pull request</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Creating a pull request</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conflicts">Conflicts</a></li>
