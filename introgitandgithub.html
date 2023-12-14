@@ -418,17 +418,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-for-git-github">Required Software or accounts for Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-the-command-line-optional-review">Review of the Command Line (Optional Review)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-projects-folder">Making a Projects Folder</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation">Evaluation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-cheat-sheets">Shell Cheat Sheets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started-with-git-and-github-workshop">Getting Started with Git and GitHub (Workshop)</a><ul class="visible nav section-nav flex-column">
@@ -442,10 +432,10 @@ document.write(`
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file">Creating a Syllabus File</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-plain-text-file">Creating a plain text file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file-creating-a-markdown-file-using-an-ide">Creating a Syllabus file (Creating a Markdown file using an IDE)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-creating-a-markdown-file-using-an-ide">Creating a file (Creating a Markdown file using an IDE)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-syllabus-content-using-markdown">Creating Syllabus Content Using Markdown</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-content-using-markdown">Creating Content Using Markdown</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge">Challenge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
@@ -456,7 +446,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-changes-with-the-add-command">Staging Changes with the <code class="docutils literal notranslate"><span class="pre">add</span></code> Command</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">Committing Changes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-use-the-m-flag">Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pro-tip-for-the-command-line-how-to-exit-unknown-screens">Pro-tip for the Command Line: How to exit unknown screens</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
@@ -505,7 +494,7 @@ document.write(`
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Familiarity with using the command line (also command shell) is expected in this workshop.</p></li>
+<li><p>Familiarity with using the [command line (also command shell)](* extended explanation of Forking [link to explanation]) is expected in this workshop.</p></li>
 </ul>
 <ul class="simple">
 <li><p>Go through <a class="reference external" href="https://swcarpentry.github.io/shell-novice/index.html">The Unix Shell workshop</a></p></li>
@@ -538,89 +527,9 @@ document.write(`
 </li>
 <li><p><a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#shell">Alternate option: This link goes to the Software Carpentry installation directions for accessing the unix shell</a></p></li>
 </ul>
-<section id="review-of-the-command-line-optional-review">
-<h2>Review of the Command Line (Optional Review)<a class="headerlink" href="#review-of-the-command-line-optional-review" title="Permalink to this heading">#</a></h2>
-<p>During this workshop, you’ll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.</p>
-<p>In addition to the command line, you’ll be using your text editor and your browser. Before continuing, its important that we clearly distinguish between these three different spaces or environments:</p>
-<ul class="simple">
-<li><p>Your plain text editor where you’ll be writing your syllabus is on your local computer.</p></li>
-<li><p>That syllabus is initially saved in a git-enabled repository on your local computer.</p></li>
-<li><p>Your browser is where you’ll be uploading your repository to GitHub, a cloud service.</p></li>
-<li><p>Your terminal is where you’ll be communicating with GitHub to send the repository and project files back and forth between the cloud (which you can view through the GitHub website) and your hard drive.</p></li>
-</ul>
-<p>Because you’ll be moving between these three spaces throughout the workshop, you may want to use (<kbd>command (⌘)</kbd> + <kbd>tab</kbd>) or (<kbd>control</kbd> + <kbd>tab</kbd>) to move quickly between the three windows on your desktop.</p>
-</section>
-<section id="accessing-the-terminal">
-<h2>Accessing the Terminal<a class="headerlink" href="#accessing-the-terminal" title="Permalink to this heading">#</a></h2>
-<section id="macos">
-<h3>macOS<a class="headerlink" href="#macos" title="Permalink to this heading">#</a></h3>
-<p>Hold the <kbd>command (⌘)</kbd> key and press the <kbd>space</kbd> bar at the same time to bring up the “Spotlight Search” window. Type <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, followed by <kbd>enter</kbd> to quickly open the Terminal.</p>
-</section>
-<section id="windows">
-<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this heading">#</a></h3>
-<p>Press the <kbd>windows</kbd> button on your keyboard. When the search menu pops up, type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">bash</span></code> and press <kbd>enter</kbd>.</p>
-</section>
-</section>
 <section id="practice-navigating-the-command-line">
 <h2>Practice Navigating the Command Line<a class="headerlink" href="#practice-navigating-the-command-line" title="Permalink to this heading">#</a></h2>
-<p>If you don’t feel comfortable navigating your hard drive through the command line, here is a short section catching you up.</p>
-<ul class="simple">
-<li><p><em>If you feel fairly comfortable using the command line, you can skip this .</em></p></li>
-<li><p>If you <em>do not have experience or prior knowledge of the command line, you may want to work through one of
-the following workshops</em>: <a class="reference external" href="https://gc-dri.github.io/Dhrift-GC/workshops/command-line/">Introduction to the Command Line</a> or <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></p></li>
-</ul>
-<p>You can create the folder anywhere on your hard drive by typing the following into your terminal and hitting <kbd>enter</kbd>.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>&lt;directory-name&gt;
-</pre></div>
-</div>
-<p>Let’s practice this command by using it to take us to our Desktop. Type the following command into your terminal and hit <kbd>enter</kbd>.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>Desktop
-</pre></div>
-</div>
-<p>This will change your current working directory from <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;</span></code> to <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop</span></code>.</p>
-<p><em>Note for staff or company computers</em> If your computer has multiple users you can choose your user profile in the C: drive or you type the following command in your terminal and and hit <kbd>enter</kbd></p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>C:/Users/<span class="o">[</span>put<span class="w"> </span>your<span class="w"> </span>username<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>SMU<span class="w"> </span>ID<span class="w"> </span>here<span class="o">]</span>/Desktop/
-</pre></div>
-</div>
-<p>Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
-</pre></div>
-</div>
-<p>Now, use the following command to go up one directory:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
-</pre></div>
-</div>
-<p>Check your current directory again using the following command. You should be back in your “home” directory:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
-</pre></div>
-</div>
-<p>Practice going back and forth between your Desktop and your home directory.</p>
-<p>When finished, go to your Desktop folder and check that you’re there with <code class="docutils literal notranslate"><span class="pre">pwd</span></code>.</p>
-</section>
-<section id="making-a-projects-folder">
-<h2>Making a Projects Folder<a class="headerlink" href="#making-a-projects-folder" title="Permalink to this heading">#</a></h2>
-<p>In this session, we will be making a syllabus and using Git to keep track of our revisions. Let’s create a Git project folder.</p>
-<p>If you don’t have a projects folder on your desktop, create one using the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>projects
-</pre></div>
-</div>
-<p>From <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>, Navigate into your <code class="docutils literal notranslate"><span class="pre">projects</span></code> folder using the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>projects
-</pre></div>
-</div>
-<p>Then create a <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder with the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>git-practice
-</pre></div>
-</div>
-<p>Navigate into the new <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder using the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>git-practice
-</pre></div>
-</div>
-<p>At this point, when you type <code class="docutils literal notranslate"><span class="pre">pwd</span></code>, your folder structure should look like this:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
-<span class="go">/home/&lt;username&gt;/Desktop/projects/git-practice</span>
-</pre></div>
-</div>
+<p>If you don’t feel comfortable navigating your hard drive through the command line, <a class="reference external" href="https://southernmethodistuniversity.github.io/git/commandline.html#">here is a short section catching you up.</a></p>
 <p><strong>Github</strong> (required)</p>
 <ul class="simple">
 <li><p><strong><a class="reference external" href="https://github.com/join">Create a GitHub account</a> (required)</strong></p></li>
@@ -630,11 +539,11 @@ the following workshops</em>: <a class="reference external" href="https://gc-dri
 </ul>
 <p><strong>integrated development environment (IDE)</strong></p>
 <ul class="simple">
-<li><p>An IDE is a computer program that helps in writing and working on software. It allows you to create files such as .md (Markdown), .py Python, .r (R), etc. An IDE  is only needed if we are going to create a Markdown file in the workshop</p></li>
+<li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/git/ide.html">What is an IDE?</a></p></li>
 </ul>
 <ul class="simple">
-<li><p>In the content for this workshop, the examples use Visual Studio Code/</p></li>
-<li><p><a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">Visual Studio Code</a> (recommended) You can use any plain text editor but for our purposes, Visual Studio Code (“VS Code”) will be used.</p></li>
+<li><p>In the content for this workshop, the examples use Visual Studio Code</p></li>
+<li><p><a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">Visual Studio Code</a> (recommended) You can use any IDE but for our purposes, Visual Studio Code (“VS Code”) will be used.</p></li>
 <li><p><a class="reference external" href="https://code.visualstudio.com/">Download and install</a></p></li>
 <li><p><a class="reference external" href="https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/">Directions</a></p></li>
 </ul>
@@ -650,100 +559,6 @@ the following workshops</em>: <a class="reference external" href="https://gc-dri
 <li><p>For additional directions, <a class="reference external" href="https://docs.github.com/authentication">see Github’s Authentication documentation</a></p></li>
 </ul>
 </li>
-</ul>
-</section>
-<section id="evaluation">
-<h2>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this heading">#</a></h2>
-<p>Which best describes where you are working when you’re writing in your plain text editor:</p>
-<ul class="simple">
-<li><p>on my local machine*</p></li>
-<li><p>on the internet</p></li>
-</ul>
-<p>Which best describes where you are working when you’re using your terminal to communicate with GitHub and share the files:</p>
-<ul class="simple">
-<li><p>on my local machine*</p></li>
-<li><p>on the internet</p></li>
-</ul>
-<p>Which best describes where your files are when you are viewing them in GitHub:</p>
-<ul class="simple">
-<li><p>on my local machine</p></li>
-<li><p>on the internet*</p></li>
-</ul>
-<p>Git-enabled repository means</p>
-<ul class="simple">
-<li><p>none of the files on my local machine are being tracked</p></li>
-<li><p>a specific file on my local machine is being tracked</p></li>
-<li><p>a specific folder on my local machine is being tracked*</p></li>
-<li><p>all the files on my local machine are being tracked</p></li>
-</ul>
-<p>Which command do you use to make a new folder?</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code>*</p></li>
-</ul>
-<p>Which command do you use to enter into a folder?</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code>*</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code></p></li>
-</ul>
-<p>Which command do you use to check where you are?</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code>*</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code></p></li>
-</ul>
-</section>
-<section id="shell-cheat-sheets">
-<h2>Shell Cheat Sheets<a class="headerlink" href="#shell-cheat-sheets" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands">Summary of Basic Commands</a></p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Action</p></th>
-<th class="head"><p>Files</p></th>
-<th class="head"><p>Folders</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Inspect</p></td>
-<td><p>ls</p></td>
-<td><p>ls</p></td>
-</tr>
-<tr class="row-odd"><td><p>View content</p></td>
-<td><p>cat</p></td>
-<td><p>ls</p></td>
-</tr>
-<tr class="row-even"><td><p>Navigate to</p></td>
-<td><p></p></td>
-<td><p>cd</p></td>
-</tr>
-<tr class="row-odd"><td><p>Move</p></td>
-<td><p>mv</p></td>
-<td><p>mv</p></td>
-</tr>
-<tr class="row-even"><td><p>Copy</p></td>
-<td><p>cp</p></td>
-<td><p>cp -r</p></td>
-</tr>
-<tr class="row-odd"><td><p>Create</p></td>
-<td><p>nano</p></td>
-<td><p>mkdir</p></td>
-</tr>
-<tr class="row-even"><td><p>Delete</p></td>
-<td><p>rm</p></td>
-<td><p>rmdir, rm -r</p></td>
-</tr>
-</tbody>
-</table>
-<ul class="simple">
-<li><p><a class="reference external" href="https://cambiotraining.github.io/hpc-intro/99-unix_cheatsheet.html">Unix Shell Cheat Sheet</a></p></li>
-</ul>
-</section>
-<section id="glossary">
-<h2>Glossary<a class="headerlink" href="#glossary" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/reference.html#glossary">Glossary</a></p></li>
 </ul>
 </section>
 </section>
@@ -814,8 +629,8 @@ the following workshops</em>: <a class="reference external" href="https://gc-dri
 </pre></div>
 </div>
 </section>
-<section id="creating-a-syllabus-file-creating-a-markdown-file-using-an-ide">
-<h2>Creating a Syllabus file (Creating a Markdown file using an IDE)<a class="headerlink" href="#creating-a-syllabus-file-creating-a-markdown-file-using-an-ide" title="Permalink to this heading">#</a></h2>
+<section id="creating-a-file-creating-a-markdown-file-using-an-ide">
+<h2>Creating a file (Creating a Markdown file using an IDE)<a class="headerlink" href="#creating-a-file-creating-a-markdown-file-using-an-ide" title="Permalink to this heading">#</a></h2>
 <p>To create a plain text file, we’re going to switch to our text editor, Visual Studio Code, to create and edit a file named <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> and save it to our <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder. The <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension indicates that it is a Markdown file, which is a special file format we will dive into in the next section.</p>
 <p>If you have not installed Visual Studio Code, review <a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">the installation instructions here</a>.</p>
 <p>In terminal, check to make sure you are in your <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder. (<em>Hint</em>: use <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to see what directory you are currently in.)</p>
@@ -837,9 +652,9 @@ the following workshops</em>: <a class="reference external" href="https://gc-dri
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="creating-syllabus-content-using-markdown">
-<h1>Creating Syllabus Content Using Markdown<a class="headerlink" href="#creating-syllabus-content-using-markdown" title="Permalink to this heading">#</a></h1>
-<p>We’ll be using <strong>Markdown</strong> to write a syllabus, and then using <strong>Git</strong> to track any changes we make to it. Markdown allows us to format textual features like headings, emphasis, links, and lists in a plain text file using a streamlined set of notations that humans can interpret without much training. Markdown files usually have a <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="creating-content-using-markdown">
+<h1>Creating Content Using Markdown<a class="headerlink" href="#creating-content-using-markdown" title="Permalink to this heading">#</a></h1>
+<p>We’ll be using <strong>Markdown</strong> to write a file (it can be a syllabus, a CV, a profile page,etc,) and then using <strong>Git</strong> to track any changes we make to it. Markdown allows us to format textual features like headings, emphasis, links, and lists in a plain text file using a streamlined set of notations that humans can interpret without much training. Markdown files usually have a <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension.</p>
 <p><strong>Markdown</strong> is a markup language for formatting text. Like HTML, you add markers to plain text to style and organize the text of a document.</p>
 <p>Whereas you use HTML and CSS with WordPress, you use Markdown to render legible documents on GitHub. Markdown has fewer options for marking text than HTML. It was designed to be easier to write and edit.</p>
 <p>For comparison, you learned to create headers in HTML like this:</p>
@@ -863,7 +678,7 @@ the following workshops</em>: <a class="reference external" href="https://gc-dri
 <span class="gs">**This text will appear bold.**</span>
 </pre></div>
 </div>
-<p>For emphasis, you need to mark where it should start and where it should end, so you need astrisks at the beginning and end of whatever text is being emphasized.</p>
+<p>For emphasis, you need to mark where it should start and where it should end, so you need asterisks at the beginning and end of whatever text is being emphasized.</p>
 <p>To create a bulleted list, put a hyphen at the beginning of each list item:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">-</span><span class="w"> </span>Reading one
 <span class="k">-</span><span class="w"> </span>Reading two
@@ -1001,17 +816,6 @@ nothing to commit, working tree clean
 </div>
 <p>If you make a mistake where you include an opening quotation mark but forget a closing one, you might accidentally end up inside a “quote prompt.” You will know you’re there when your command prompt changes to <code class="docutils literal notranslate"><span class="pre">quote&gt;</span></code>. If this happens, you can just keep writing as much of your commit message as you want, and then end it with the same quotation mark that you opened the commit message with.</p>
 <p>Another option is to press <kbd>control</kbd> + <kbd>c</kbd> on your keyboard, which will exit the quote prompt and cancel any commits you were trying to perform.</p>
-</section>
-<section id="pro-tip-for-the-command-line-how-to-exit-unknown-screens">
-<h2>Pro-tip for the Command Line: How to exit unknown screens<a class="headerlink" href="#pro-tip-for-the-command-line-how-to-exit-unknown-screens" title="Permalink to this heading">#</a></h2>
-<p>If you’re ever stuck or “trapped” on the command line, try running through these common exit commands to return to the prompt:</p>
-<ul class="simple">
-<li><p><kbd>control</kbd> + <kbd>c</kbd></p></li>
-<li><p><kbd>control</kbd> + <kbd>d</kbd></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">q</span></code> followed by <kbd>enter</kbd></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">:q</span></code> followed by <kbd>enter</kbd></p></li>
-</ul>
-<p><kbd>control</kbd> + <kbd>c</kbd> attempts to abort the current task and restore user control. <kbd>control</kbd> + <kbd>d</kbd> escapes the current shell environment—if you use it at the normal <code class="docutils literal notranslate"><span class="pre">$</span></code> prompt, it will end the current command line session. <code class="docutils literal notranslate"><span class="pre">q</span></code> is often used as a command (followed by <kbd>enter</kbd>) to escape from specific programs like <code class="docutils literal notranslate"><span class="pre">less</span></code>. <code class="docutils literal notranslate"><span class="pre">:q</span></code> is the command used in <code class="docutils literal notranslate"><span class="pre">vi</span></code> that changes the mode of interaction (<code class="docutils literal notranslate"><span class="pre">:</span></code>), allowing you to enter the <code class="docutils literal notranslate"><span class="pre">q</span></code>, a one-letter command to quit, which must be followed by <kbd>enter</kbd>. Thus, it’s a command specific to <code class="docutils literal notranslate"><span class="pre">vi</span></code>.</p>
 <p><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/04-changes.html">More about Tracking changes</a> </sub></p>
 </section>
 </section>
@@ -1345,17 +1149,7 @@ git<span class="w"> </span>push
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-for-git-github">Required Software or accounts for Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-the-command-line-optional-review">Review of the Command Line (Optional Review)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-projects-folder">Making a Projects Folder</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation">Evaluation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-cheat-sheets">Shell Cheat Sheets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started-with-git-and-github-workshop">Getting Started with Git and GitHub (Workshop)</a><ul class="visible nav section-nav flex-column">
@@ -1369,10 +1163,10 @@ git<span class="w"> </span>push
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file">Creating a Syllabus File</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-plain-text-file">Creating a plain text file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file-creating-a-markdown-file-using-an-ide">Creating a Syllabus file (Creating a Markdown file using an IDE)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-creating-a-markdown-file-using-an-ide">Creating a file (Creating a Markdown file using an IDE)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-syllabus-content-using-markdown">Creating Syllabus Content Using Markdown</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-content-using-markdown">Creating Content Using Markdown</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge">Challenge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
@@ -1383,7 +1177,6 @@ git<span class="w"> </span>push
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-changes-with-the-add-command">Staging Changes with the <code class="docutils literal notranslate"><span class="pre">add</span></code> Command</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">Committing Changes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-use-the-m-flag">Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pro-tip-for-the-command-line-how-to-exit-unknown-screens">Pro-tip for the Command Line: How to exit unknown screens</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>

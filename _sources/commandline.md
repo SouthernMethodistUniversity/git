@@ -124,13 +124,6 @@ $ pwd
 ```
 
 
-  
-**integrated development environment (IDE)** 
-* An IDE is a computer program that helps in writing and working on software. It allows you to create files such as .md (Markdown), .py Python, .r (R), etc. An IDE  is only needed if we are going to create a Markdown file in the workshop
-- In the content for this workshop, the examples use Visual Studio Code/
-- [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any plain text editor but for our purposes, Visual Studio Code ("VS Code") will be used.
- - [Download and install](https://code.visualstudio.com/)
- - [Directions](https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/)
 
 ***Authenticating to Remote Git Repositories***  
 "Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
@@ -192,5 +185,58 @@ If you're ever stuck or "trapped" on the command line, try running through these
 <kbd>control</kbd> + <kbd>c</kbd> attempts to abort the current task and restore user control. <kbd>control</kbd> + <kbd>d</kbd> escapes the current shell environment—if you use it at the normal `$` prompt, it will end the current command line session. `q` is often used as a command (followed by <kbd>enter</kbd>) to escape from specific programs like `less`. `:q` is the command used in `vi` that changes the mode of interaction (`:`), allowing you to enter the `q`, a one-letter command to quit, which must be followed by <kbd>enter</kbd>. Thus, it's a command specific to `vi`.
 
 
+
+
+## Evaluation
+
+Which best describes where you are working when you're writing in your plain text editor:
+- on my local machine*
+- on the internet
+
+Which best describes where you are working when you're using your terminal to communicate with GitHub and share the files:
+- on my local machine*
+- on the internet
+
+Which best describes where your files are when you are viewing them in GitHub:
+- on my local machine
+- on the internet*
+
+Git-enabled repository means
+- none of the files on my local machine are being tracked
+- a specific file on my local machine is being tracked
+- a specific folder on my local machine is being tracked*
+- all the files on my local machine are being tracked
+
+Which command do you use to make a new folder?
+- `pwd`
+- `cd`
+- `mkdir`*
+
+Which command do you use to enter into a folder?
+- `pwd`
+- `cd`*
+- `mkdir`
+
+Which command do you use to check where you are?
+- `pwd`*
+- `cd`
+- `mkdir`
 ---
- 
+ ## Shell Cheat Sheets
+
+[Summary of Basic Commands](https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands)
+
+| Action       | Files | Folders      | 
+| ------------ | ----- | ------------ |
+| Inspect      | ls    | ls           | 
+| View content | cat   | ls           | 
+| Navigate to  |       | cd           | 
+| Move         | mv    | mv           | 
+| Copy         | cp    | cp -r        | 
+| Create       | nano  | mkdir        | 
+| Delete       | rm    | rmdir, rm -r | 
+
+- [Unix Shell Cheat Sheet](https://cambiotraining.github.io/hpc-intro/99-unix_cheatsheet.html)
+
+## Glossary
+- [Glossary](https://swcarpentry.github.io/shell-novice/reference.html#glossary)
