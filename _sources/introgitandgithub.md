@@ -5,7 +5,7 @@
 - *This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)*  
 
 ## Prerequisites  
-* Familiarity with using the command line (also command shell) is expected in this workshop.
+* Familiarity with using the [command line (also command shell)](* extended explanation of Forking [link to explanation]) is expected in this workshop.
 - Go through [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
 
 # Required Software or accounts for Git & GitHub
@@ -27,112 +27,11 @@ Some software is required for you to participate in this workshop. This is a lis
     - "[What is Git Bash?:](https://www.atlassian.com/git/tutorials/git-bash) Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system."
 * [Alternate option: This link goes to the Software Carpentry installation directions for accessing the unix shell](https://carpentries.github.io/workshop-template/install_instructions/#shell) 
 
-## Review of the Command Line (Optional Review)
-
-During this workshop, you'll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.
-
-In addition to the command line, you'll be using your text editor and your browser. Before continuing, its important that we clearly distinguish between these three different spaces or environments:
-- Your plain text editor where you'll be writing your syllabus is on your local computer.
-- That syllabus is initially saved in a git-enabled repository on your local computer.
-- Your browser is where you'll be uploading your repository to GitHub, a cloud service.
-- Your terminal is where you'll be communicating with GitHub to send the repository and project files back and forth between the cloud (which you can view through the GitHub website) and your hard drive.
-
-Because you'll be moving between these three spaces throughout the workshop, you may want to use (<kbd>command (⌘)</kbd> + <kbd>tab</kbd>) or (<kbd>control</kbd> + <kbd>tab</kbd>) to move quickly between the three windows on your desktop.
-
-## Accessing the Terminal
-
-### macOS
-
-Hold the <kbd>command (⌘)</kbd> key and press the <kbd>space</kbd> bar at the same time to bring up the "Spotlight Search" window. Type `terminal`, followed by <kbd>enter</kbd> to quickly open the Terminal.
-
-### Windows
-
-Press the <kbd>windows</kbd> button on your keyboard. When the search menu pops up, type `git bash` and press <kbd>enter</kbd>.
 
 ## Practice Navigating the Command Line
 
-If you don't feel comfortable navigating your hard drive through the command line, here is a short section catching you up. 
-- _If you feel fairly comfortable using the command line, you can skip this ._
-- If you _do not have experience or prior knowledge of the command line, you may want to work through one of 
- the following workshops_: [Introduction to the Command Line](https://gc-dri.github.io/Dhrift-GC/workshops/command-line/) or [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
+If you don't feel comfortable navigating your hard drive through the command line, [here is a short section catching you up.](https://southernmethodistuniversity.github.io/git/commandline.html#) 
 
-You can create the folder anywhere on your hard drive by typing the following into your terminal and hitting <kbd>enter</kbd>.
-
-```console
-$ cd <directory-name>
-```
-
-Let's practice this command by using it to take us to our Desktop. Type the following command into your terminal and hit <kbd>enter</kbd>.
-
-```console
-$ cd Desktop
-```
-
-This will change your current working directory from `/Users/<your-name>` to `/Users/<your-name>/Desktop`.
-
-*Note for staff or company computers* If your computer has multiple users you can choose your user profile in the C: drive or you type the following command in your terminal and and hit <kbd>enter</kbd>
-```console
-$ cd C:/Users/[put your username such as SMU ID here]/Desktop/
-```
-
-
-
-Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:
-
-```console
-$ pwd
-```
-
-Now, use the following command to go up one directory:
-
-```console
-$ cd ..
-```
-
-Check your current directory again using the following command. You should be back in your "home" directory:
-
-```console
-$ pwd
-```
-
-Practice going back and forth between your Desktop and your home directory.
-
-When finished, go to your Desktop folder and check that you're there with `pwd`.
-
-## Making a Projects Folder
-
-In this session, we will be making a syllabus and using Git to keep track of our revisions. Let's create a Git project folder.
-
-If you don't have a projects folder on your desktop, create one using the following command:
-
-```console
-$ mkdir projects
-```
-
-From `Desktop`, Navigate into your `projects` folder using the following command:
-
-```console
-$ cd projects
-```
-
-Then create a `git-practice` folder with the following command:
-
-```console
-$ mkdir git-practice
-```
-
-Navigate into the new `git-practice` folder using the following command:
-
-```console
-$ cd git-practice
-```
-
-At this point, when you type `pwd`, your folder structure should look like this:
-
-```console
-$ pwd
-/home/<username>/Desktop/projects/git-practice
-```
 
 **Github** (required)  
 - **[Create a GitHub account](https://github.com/join) (required)**
@@ -141,9 +40,9 @@ $ pwd
 - If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
   
 **integrated development environment (IDE)** 
-* An IDE is a computer program that helps in writing and working on software. It allows you to create files such as .md (Markdown), .py Python, .r (R), etc. An IDE  is only needed if we are going to create a Markdown file in the workshop
-- In the content for this workshop, the examples use Visual Studio Code/
-- [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any plain text editor but for our purposes, Visual Studio Code ("VS Code") will be used.
+* [What is an IDE?](https://southernmethodistuniversity.github.io/git/ide.html) 
+- In the content for this workshop, the examples use Visual Studio Code
+- [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any IDE but for our purposes, Visual Studio Code ("VS Code") will be used.
  - [Download and install](https://code.visualstudio.com/)
  - [Directions](https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/)
 
@@ -156,61 +55,6 @@ There are three main approaches you can take:
 - Using your GitHub password with 2-factor authentication"
 - [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
     - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
-
-
-## Evaluation
-
-Which best describes where you are working when you're writing in your plain text editor:
-- on my local machine*
-- on the internet
-
-Which best describes where you are working when you're using your terminal to communicate with GitHub and share the files:
-- on my local machine*
-- on the internet
-
-Which best describes where your files are when you are viewing them in GitHub:
-- on my local machine
-- on the internet*
-
-Git-enabled repository means
-- none of the files on my local machine are being tracked
-- a specific file on my local machine is being tracked
-- a specific folder on my local machine is being tracked*
-- all the files on my local machine are being tracked
-
-Which command do you use to make a new folder?
-- `pwd`
-- `cd`
-- `mkdir`*
-
-Which command do you use to enter into a folder?
-- `pwd`
-- `cd`*
-- `mkdir`
-
-Which command do you use to check where you are?
-- `pwd`*
-- `cd`
-- `mkdir`
-
-## Shell Cheat Sheets
-
-[Summary of Basic Commands](https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands)
-
-| Action       | Files | Folders      | 
-| ------------ | ----- | ------------ |
-| Inspect      | ls    | ls           | 
-| View content | cat   | ls           | 
-| Navigate to  |       | cd           | 
-| Move         | mv    | mv           | 
-| Copy         | cp    | cp -r        | 
-| Create       | nano  | mkdir        | 
-| Delete       | rm    | rmdir, rm -r | 
-
-- [Unix Shell Cheat Sheet](https://cambiotraining.github.io/hpc-intro/99-unix_cheatsheet.html)
-
-## Glossary
-- [Glossary](https://swcarpentry.github.io/shell-novice/reference.html#glossary)
 
 
 ___ 
@@ -298,7 +142,7 @@ To quickly create a plain text file in your practice folder, enter the following
 ```console
 $ echo "hello" > hello.txt
 ```
-## Creating a Syllabus file (Creating a Markdown file using an IDE)
+## Creating a file (Creating a Markdown file using an IDE)
 
 To create a plain text file, we're going to switch to our text editor, Visual Studio Code, to create and edit a file named `syllabus.md` and save it to our `git-practice` folder. The `.md` extension indicates that it is a Markdown file, which is a special file format we will dive into in the next section.  
 
@@ -330,9 +174,9 @@ We'll be typing our markdown into this file in the Visual Studio Code window. At
 Saving frequently is advised. When we get to the version contol functionality of Git, only changes that are saved will be preserved when a version is created.
 
 ---
-# Creating Syllabus Content Using Markdown
+# Creating Content Using Markdown
 
-We'll be using **Markdown** to write a syllabus, and then using **Git** to track any changes we make to it. Markdown allows us to format textual features like headings, emphasis, links, and lists in a plain text file using a streamlined set of notations that humans can interpret without much training. Markdown files usually have a `.md` extension.  
+We'll be using **Markdown** to write a file (it can be a syllabus, a CV, a profile page,etc,) and then using **Git** to track any changes we make to it. Markdown allows us to format textual features like headings, emphasis, links, and lists in a plain text file using a streamlined set of notations that humans can interpret without much training. Markdown files usually have a `.md` extension.  
 
 **Markdown** is a markup language for formatting text. Like HTML, you add markers to plain text to style and organize the text of a document.
 
@@ -371,7 +215,7 @@ To provide emphasis, place asterisks around some text:
 **This text will appear bold.**
 ```
 
-For emphasis, you need to mark where it should start and where it should end, so you need astrisks at the beginning and end of whatever text is being emphasized.
+For emphasis, you need to mark where it should start and where it should end, so you need asterisks at the beginning and end of whatever text is being emphasized.
 
 To create a bulleted list, put a hyphen at the beginning of each list item:
 
@@ -552,16 +396,6 @@ If you make a mistake where you include an opening quotation mark but forget a c
 
 Another option is to press <kbd>control</kbd> + <kbd>c</kbd> on your keyboard, which will exit the quote prompt and cancel any commits you were trying to perform.
 
-## Pro-tip for the Command Line: How to exit unknown screens
-
-If you're ever stuck or "trapped" on the command line, try running through these common exit commands to return to the prompt:
-
-- <kbd>control</kbd> + <kbd>c</kbd>
-- <kbd>control</kbd> + <kbd>d</kbd>
-- `q` followed by <kbd>enter</kbd>
-- `:q` followed by <kbd>enter</kbd>
-
-<kbd>control</kbd> + <kbd>c</kbd> attempts to abort the current task and restore user control. <kbd>control</kbd> + <kbd>d</kbd> escapes the current shell environment—if you use it at the normal `$` prompt, it will end the current command line session. `q` is often used as a command (followed by <kbd>enter</kbd>) to escape from specific programs like `less`. `:q` is the command used in `vi` that changes the mode of interaction (`:`), allowing you to enter the `q`, a one-letter command to quit, which must be followed by <kbd>enter</kbd>. Thus, it's a command specific to `vi`.
 
 <sub> [More about Tracking changes](https://swcarpentry.github.io/git-novice/04-changes.html) </sub>
 
@@ -758,8 +592,6 @@ Once the fork is complete, you will be directed to a screen showing the reposito
 ![Image showing the forked repository in your own account](after-forking.png)
 
 
-
-
 ## Challenge
 
 1. Fork and clone [the repository for Github's Introduction to GitHub](https://github.com/skills/introduction-to-github)
@@ -776,7 +608,6 @@ You'll know you've completed step one when the project folder (called `\introduc
 After you've made and saved the changes, you'll know you've completed step three when your changes appear in the project folder on _your_ GitHub account.
 
 
-
 # Collaborating  
 [How can I use version control to collaborate with other people?](https://swcarpentry.github.io/git-novice/08-collab.html)
 A BASIC COLLABORATIVE WORKFLOW
@@ -786,7 +617,6 @@ A BASIC COLLABORATIVE WORKFLOW
 - commit your changes with git commit -m, and
 - upload the changes to GitHub with git push origin main
 It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.
-
 
 
 # Contributing content

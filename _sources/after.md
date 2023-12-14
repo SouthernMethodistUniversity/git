@@ -2,6 +2,43 @@
   
 You made it to the end of this workshop—congratulations! You now know a little more about why using Git and GitHub in your scholarly practice might be advantageous, and what the challenges are. Below you'll find a set of readings and tutorials to supplement the lessons outlined herein, and offer additional ways of advancing your use beyond the basics outlined here. There are also additional challenges to test your skills, as well as discussion questions to test your conceptual understanding of these tools. Enjoy!
 
+
+## Evaluation
+
+Which best describes where you are working when you're writing in your plain text editor:
+- on my local machine*
+- on the internet
+
+Which best describes where you are working when you're using your terminal to communicate with GitHub and share the files:
+- on my local machine*
+- on the internet
+
+Which best describes where your files are when you are viewing them in GitHub:
+- on my local machine
+- on the internet*
+
+Git-enabled repository means
+- none of the files on my local machine are being tracked
+- a specific file on my local machine is being tracked
+- a specific folder on my local machine is being tracked*
+- all the files on my local machine are being tracked
+
+Which command do you use to make a new folder?
+- `pwd`
+- `cd`
+- `mkdir`*
+
+Which command do you use to enter into a folder?
+- `pwd`
+- `cd`*
+- `mkdir`
+
+Which command do you use to check where you are?
+- `pwd`*
+- `cd`
+- `mkdir`
+
+
 **Discussion Questions**
 - What does your current version control workflow look like and what are the challenges it poses; or how could it be improved?
 - How can git support the work you are already doing? 
