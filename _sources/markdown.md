@@ -45,7 +45,6 @@ Markdown is used for a number of reasons:
 - It can be read locally with a text editor.
 - As plain text, it's maintainable.
 - It's easy to embed code and images.
-- It plays well with the tools we teach at the DRI.
 
 Many of markdown's advantages come from the fact that it's plain text. Tools that work well with code, such as version control, editors, and grep, also work well with markdown.
 
@@ -53,27 +52,27 @@ Many of markdown's advantages come from the fact that it's plain text. Tools tha
 
 Most formatting guidelines here are designed to make markdown source files more readable. Others are designed to preserve semantics, which allow markdown to be rendered the same in different contexts.
 
-Here are some example guidelines.
+**Here are some example guidelines.**
 
 * Formatting should be as follows:  
 1. Separated paragraphs with a blank line.
 2. Place blank lines between elements whenever possible. For example, put a blank line between a heading and a paragraph, and between a paragraph and an image link.
 3. Use headings consistently, and use them only to denote new sections. For example, do not use headings for emphasis.
-  * First header is H1, secondary headers H2, etc. H1 only used at top of page, H2 used to break sections into chunks, H3 only used if necessary within sections that already have an H2.   
-  * Compare to outline format:  
-  H1 (title of page)  
-  H2 (first section)  
-  H3 (point 1)  
-  H3 (point 2)  
-  H3 (point 3)  
-  H2 (second section) with no H3 titles necessary  
-  H2 (third section)  
-  * Are there any extraneous Markdown tags due to errors in coding? (hashtags, dashes, etc.)  
-  * [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
+ 	 * First header is H1, secondary headers H2, etc. H1 only used at top of page, H2 used to break sections into chunks, H3 only used if necessary within sections that already have an H2.   
+ 	 * Compare to outline format:  
+	  H1 (title of page)  
+	  H2 (first section)  
+	  H3 (point 1)  
+	  H3 (point 2)  
+	  H3 (point 3)  
+	  H2 (second section) with no H3 titles necessary  
+	  H2 (third section)  
+  	* Are there any extraneous Markdown tags due to errors in coding? (hashtags, dashes, etc.)  
+  	* [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 4. Use other markdown elements for their intended purpose. Use lists for lists and emphasis for emphasis. For example, do not use emphasis in place of a heading.
 5. Unless a raw URL is part of the document, don't leave raw URLs in your document. Incorporate the link into the flow of your prose.
 6. If code segments are short, indicate them by indenting. If they're longer, use the ````` syntax.
-  * Is coding consistent throughout module?  
+  	* Is coding consistent throughout module?  
 7. When introducing new commands or code, put them on a new line so they stand out from the rest of the text.
 8. When including [including images,](https://www.markdownguide.org/basic-syntax/#images-1) don't leave the alt text segment `[]` blank. Fill it in with information that would be useful if the image could not be seen or rendered.
 
