@@ -56,7 +56,6 @@ There are three main approaches you can take:
 - [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
     - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
 
-
 ___ 
 # Getting Started with Git and GitHub (Workshop)
 
@@ -647,26 +646,8 @@ After adding a descriptive message, click the green button to finalize the pull 
 
 Now it's up to the repository owner if they wish to accept the request, initiate a conversation with you, or—which sometimes happens—ignore or reject your request. In the case of the DHRI curriculum, we may accept some requests right away, and ask for clarification on other occasions.
 
-
 # Conflicts
 [What do I do when my changes conflict with someone else’s?](https://swcarpentry.github.io/git-novice/09-conflict.html)
-
-
-## Challenge
-
-1. Fork and clone [the repository for Github's Introduction to GitHub](https://github.com/skills/introduction-to-github)
-2. Note not only _what_ you are doing, but also _where_ you are working when completing these two different tasks.
-3. Make changes to the files on your local machine. Remember to save them!
-4. Use the 3-step process of stage, commit and push to return the amended files to the repository on GitHub.
-
-## Solution
-
-Rather than write out the solution here, I want to encourage you to go back through the lessons as needed.
-
-You'll know you've completed step one when the project folder (called `\introduction-to-github-main`) shows up on your local machine.
-
-After you've made and saved the changes, you'll know you've completed step three when your changes appear in the project folder on _your_ GitHub account.
-
 
 # Collaborating  
 [How can I use version control to collaborate with other people?](https://swcarpentry.github.io/git-novice/08-collab.html)
@@ -677,4 +658,22 @@ A BASIC COLLABORATIVE WORKFLOW
 - commit your changes with git commit -m, and
 - upload the changes to GitHub with git push origin main
 It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.
+
+## Challenge
+
+1. Fork and clone [the repository for Github's Introduction to GitHub](https://github.com/skills/introduction-to-github)
+2. Note not only _what_ you are doing, but also _where_ you are working when completing these two different tasks.
+3. Make changes to the files on your local machine. Remember to save them!
+4. Use the 3-step process of stage, commit and push to return the amended files to the repository on GitHub.
+
+### Solution
+
+Rather than write out the solution here, I want to encourage you to go back through the lessons as needed.
+
+You'll know you've completed step one when the project folder (called `\introduction-to-github-main`) shows up on your local machine.
+
+After you've made and saved the changes, you'll know you've completed step three when your changes appear in the project folder on _your_ GitHub account.
+
+
+
 
