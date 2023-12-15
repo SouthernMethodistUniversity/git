@@ -494,24 +494,6 @@ To complete your issue, click the green button labelled `Submit New Issue`.
 
 ![Image showing where the submit new issue button is. In the issue body box, the message reads "In loop.md, I noticed that the index of the example is flowers[1], which is not "rose" as the output indicates. Looks like it should be 0."](/images/finish_new_issue.png).
 
-# Creating Issues
-
-A critical and relatively accessible way to contribute back to a repo is to create an issue on GitHub. While reading a repo on GitHub, you may encounter inconsistencies, typos, sections that need clarification, or typographical errors. When this happens, you can open an issue to let us know about the problem or potential improvement.
-
-To open an issue, you must be in a GitHub repository. In the menu bar at the top center of the page, click the `Issues` tab.
-
-![Image showing that the Issues tab is in the center menu bar above the files in the GitHub repository](..images/issues_tab.png).
-
-After clicking the issues tab, you will see a screen with the currently open issues, if any. To create a new issue, click the large green button on the right of the page.
-
-![Image showing where the Create New Issue button is in the Issues tab on GitHub](images/new_issue.png)
-
-On the New Issue page, there is only one required field—the issue title. However, consider leaving a detailed explanation of the issue, including which file you encountered it, if relevant. You can use markdown formatting in the body of your issue.
-
-To complete your issue, click the green button labelled `Submit New Issue`.
-
-![Image showing where the submit new issue button is. In the issue body box, the message reads "In loop.md, I noticed that the index of the example is flowers[1], which is not "rose" as the output indicates. Looks like it should be 0."](/images/finish_new_issue.png).
-
 
 # Cloning and Forking
 
@@ -574,24 +556,6 @@ But maybe that is not possible or ideal. Maybe you don't want to contribute your
 Forking is the step you could take to do this.
 
 ## Forking
-
-_Forking_ a repository means making a copy of someone else's repository on GitHub, and saving it to your account on GitHub. This function happens within GitHub, and has nothing to do with what is happening on your local machine. Note that _forking_ will not automatically make the repository appear as a folder on your computer; that's the role of _cloning_.
-
-In order to "fork" the `git` repository into your own GitHub account, follow these steps.
-
-First, go to [the repository for this workshop](https://github.com/SouthernMethodistUniversity/git) on GitHub. Note the `Fork` button in the upper right hand corner. By clicking that button, you can copy, or fork, this repository to your account.
-
-![Image showing where the button to fork a repo is located](../images/fork-button.png)
-
-Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace `SouthernMethodistUniversity`, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, `SouthernMethodistUniversity` below after `forked from`, since this was the origin point of _your_ fork.
-
-![Image showing the changes in attribution that happen when a repo is forked](../images/forking-attrib-chng.png)
-
-Your local machine would come into play when you want to _clone_ that repository so you can work on it locally. This also means that when you push those changes to GitHub, you would be pushing them to a forked repository associated with your own account.
-
-You might use this method if you were going to teach your own Git & GitHub workshop. You could use our repository as a base for getting started, and add more examples or change some language, clarify something further, or create a connection to another workshop you are giving, etc. This allows us to continue to use the workshop as we have it as well. Also, maybe at a later time, we want to merge some of your changes with ours. We can do that too by revisiting your version history.
-
-# Forking
 By default, you will not have access to directly modify repos. In the world of free and open source software, this is common—usually, only the creator of a repository and certain core contributors can add and modify files in a repository. However, this doesn't mean that you cannot modify the repo and make it your own.
 
 If you wish to create your own version of the repo for your own use , the first step is to **fork** the relevant repository. That means to make a copy of it under your own account on GitHub, one in which you have access to modify files. Once you have forked a repository, you can create a new lesson based on it. Because the (majority of ) curriculum is under a Creative Commons license, you may use any module as the basis for a new lesson and share freely, as long as you provide attribution and share under the same license.
@@ -611,7 +575,21 @@ Once the fork is complete, you will be directed to a screen showing the reposito
 ![Image showing the forked repository in your own account](../images/after-forking.png)
 
 
+_Forking_ a repository means making a copy of someone else's repository on GitHub, and saving it to your account on GitHub. This function happens within GitHub, and has nothing to do with what is happening on your local machine. Note that _forking_ will not automatically make the repository appear as a folder on your computer; that's the role of _cloning_.
 
+In order to "fork" the `git` repository into your own GitHub account, follow these steps.
+
+First, go to [the repository for this workshop](https://github.com/SouthernMethodistUniversity/git) on GitHub. Note the `Fork` button in the upper right hand corner. By clicking that button, you can copy, or fork, this repository to your account.
+
+![Image showing where the button to fork a repo is located](../images/fork-button.png)
+
+Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace `SouthernMethodistUniversity`, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, `SouthernMethodistUniversity` below after `forked from`, since this was the origin point of _your_ fork.
+
+![Image showing the changes in attribution that happen when a repo is forked](../images/forking-attrib-chng.png)
+
+Your local machine would come into play when you want to _clone_ that repository so you can work on it locally. This also means that when you push those changes to GitHub, you would be pushing them to a forked repository associated with your own account.
+
+You might use this method if you were going to teach your own Git & GitHub workshop. You could use our repository as a base for getting started, and add more examples or change some language, clarify something further, or create a connection to another workshop you are giving, etc. This allows us to continue to use the workshop as we have it as well. Also, maybe at a later time, we want to merge some of your changes with ours. We can do that too by revisiting your version history.
 
 
 ## Creating a pull request
