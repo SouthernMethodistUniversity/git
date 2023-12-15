@@ -469,7 +469,6 @@ To github.com:<repo-name>/git.git
 
 If you see output like this, go back to your new repository page in the browser and click the `Refresh` button. You should see your `syllabus.md` file on GitHub! Your git credentials are also now stored locally, so you should not need to authorize the credential manager again from that computer.
 
----
 _______________________
 
 # Contributing content
@@ -486,13 +485,13 @@ To open an issue, you must be in a GitHub repository. In the menu bar at the top
 
 After clicking the issues tab, you will see a screen with the currently open issues, if any. To create a new issue, click the large green button on the right of the page.
 
-![Image showing where the Create New Issue button is in the Issues tab on GitHub](images/new_issue.png)
+![Image showing where the Create New Issue button is in the Issues tab on GitHub](..images/new_issue.png)
 
 On the New Issue page, there is only one required field—the issue title. However, consider leaving a detailed explanation of the issue, including which file you encountered it, if relevant. You can use markdown formatting in the body of your issue.
 
 To complete your issue, click the green button labelled `Submit New Issue`.
 
-![Image showing where the submit new issue button is. In the issue body box, the message reads "In loop.md, I noticed that the index of the example is flowers[1], which is not "rose" as the output indicates. Looks like it should be 0."](/images/finish_new_issue.png).
+![Image showing where the submit new issue button is. In the issue body box, the message reads "In loop.md, I noticed that the index of the example is flowers[1], which is not "rose" as the output indicates. Looks like it should be 0."](../images/finish_new_issue.png).
 
 
 # Cloning and Forking
