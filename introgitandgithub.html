@@ -642,12 +642,11 @@ document.write(`
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>code<span class="w"> </span>syllabus.md
 </pre></div>
 </div>
-<sub>
-**Note** code is the command used for Visual Studio code. If this does not work, or you would like to set a different text editor, you can do so using the correct 	[configuration command, as listed on this page](https://swcarpentry.github.io/git-novice/02-setup.html#line-endings) for the text editor. 
+<p><sub><strong>Note</strong> code is the command used for Visual Studio code. If this does not work, or you would like to set a different text editor, you can do so using the correct configuration command for the text editor. </sub></p>
+<p><a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup.html">See this page for configuration commands for other text editors</a></p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;Add specific command for text editor&quot;</span>
 </pre></div>
 </div>
-</sub>
 <p>You should see a window appear that looks similar to this:</p>
 <p><img alt="Image of what Visual Studio Code looks like when opening the syllabus.md file" src="_images/vscode1.png" /></p>
 <p>If Visual Studio Code does not open when you use the <code class="docutils literal notranslate"><span class="pre">code</span></code> command in your terminal, open it using the Start Menu on Windows or Spotlight Search on macOS as you would any other software. Then click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">File</span></code> and use the dialog to navigate to the <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop/projects/git</span></code> folder and create a <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file there.</p>
@@ -949,28 +948,31 @@ nothing to commit, working tree clean
 <p>To do a pull request takes a few steps:</p>
 <ol class="arabic simple">
 <li><p>Fork the repository as above.</p></li>
-<li><p>Clone the forked repository.</p></li>
+<li><p>Clone the forked repository to your local machine.</p></li>
 <li><p>Make the changes you intend to propose locally.</p></li>
-<li><p>Add, commit, and push your changes to the forked repository.;</p></li>
-<li><p>Using the GitHub interface, initiate the pull request. A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, “This is what I think your repository should look like.” If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.</p></li>
+<li><p>Add, commit, and push your changes to the forked repository.</p></li>
+<li><p>Using the GitHub interface, initiate the pull request by navigating to the “Pull requests” tab.</p></li>
 </ol>
-<p>A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, “This is what I think your repository should look like.” If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.</p>
-<p>Let’s step through these steps in more detail.</p>
-<p>First, fork the repository to which you wish to submit a pull request. Instructions for forking are available in the previous section on forking.</p>
-<p>Next, clone the forked repository to your computer by clicking the <code class="docutils literal notranslate"><span class="pre">Clone</span> <span class="pre">or</span> <span class="pre">Download</span></code> button, copying the link, and using the</p>
+<p><em>Let’s step through these steps in more detail.</em></p>
+<ol class="arabic simple">
+<li><p>First, fork the repository to which you wish to submit a pull request. Instructions for forking are available in the previous section on forking.</p></li>
+<li><p>Next, clone the forked repository to your computer by clicking the <code class="docutils literal notranslate"><span class="pre">Clone</span> <span class="pre">or</span> <span class="pre">Download</span></code> button, copying the link, and using the</p></li>
+</ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>&lt;copied-link&gt;
 </pre></div>
 </div>
 <p>command in your terminal.</p>
-<p>Once you’ve cloned the repository, use a text editor such as VS Code to make the changes you wish to propose to the target repository. You can make any number of changes in any number of files.</p>
-<p>Once you have finished editing, use the add command to stage your changes, commit them, and then push them back to your forked repository on GitHub.</p>
+<ol class="arabic simple" start="3">
+<li><p>Once you’ve cloned the repository, use a text editor such as VS Code to make the changes you wish to propose to the target repository. You can make any number of changes in any number of files.</p></li>
+<li><p>Once you have finished editing, use the add command to stage your changes, commit them, and then push them back to your forked repository on GitHub.</p></li>
+</ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>-A
 git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Changes proposed for pull request&quot;</span>
 git<span class="w"> </span>push
 </pre></div>
 </div>
 <p>Note that you can add files one by one instead of using the <code class="docutils literal notranslate"><span class="pre">-A</span></code> flag to add all files, and that you should use a more specific and description commit message than the generic one provided above.</p>
-<p>Once your changes have been pushed to GitHub, open the web interface to the repository and refresh the page. It’s easy to miss it in the interface, but there will be a notification about the commit you just made. Within that notification, click the <code class="docutils literal notranslate"><span class="pre">Pull</span> <span class="pre">Request</span></code> button.</p>
+<p>5 .Once your changes have been pushed to GitHub, open the web interface to the repository and refresh the page. It’s easy to miss it in the interface, but there will be a notification about the commit you just made. Within that notification, click the <code class="docutils literal notranslate"><span class="pre">Pull</span> <span class="pre">Request</span></code> button.</p>
 <p><img alt="Small button for pull request in the GitHub interface" src="_images/commit_notification.png" /></p>
 <p>If you can’t find the notification, or if it disappears, you can also begin the pull request process by clicking the <code class="docutils literal notranslate"><span class="pre">Pull</span> <span class="pre">Request</span></code> tab and clicking the green <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Pull</span> <span class="pre">Request</span></code> button.</p>
 <p>Once the pull request is initiated, you will encounter a screen that compares the changes between your forked repository and the target repository.</p>
@@ -987,8 +989,8 @@ git<span class="w"> </span>push
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="collaborating">
 <h1>Collaborating<a class="headerlink" href="#collaborating" title="Permalink to this heading">#</a></h1>
-<p><a class="reference external" href="https://swcarpentry.github.io/git-novice/08-collab.html">How can I use version control to collaborate with other people?</a>
-A BASIC COLLABORATIVE WORKFLOW</p>
+<p><a class="reference external" href="https://swcarpentry.github.io/git-novice/08-collab.html">How can I use version control to collaborate with other people?</a></p>
+<p>A BASIC COLLABORATIVE WORKFLOW</p>
 <ul class="simple">
 <li><p>In practice, it is good to be sure that you have an updated version of the repository you are collaborating on, so you should git pull before making our changes. The basic collaborative workflow would be:</p></li>
 </ul>

@@ -163,13 +163,14 @@ Next, open the `syllabus.md` file in Visual Studio Code using:
 ```console
 $ code syllabus.md
 ```
-<sub>
-**Note** code is the command used for Visual Studio code. If this does not work, or you would like to set a different text editor, you can do so using the correct 	[configuration command, as listed on this page](https://swcarpentry.github.io/git-novice/02-setup.html#line-endings) for the text editor. 
+<sub>**Note** code is the command used for Visual Studio code. If this does not work, or you would like to set a different text editor, you can do so using the correct configuration command for the text editor. </sub>
 
+
+[See this page for configuration commands for other text editors](https://swcarpentry.github.io/git-novice/02-setup.html)
 ```console
 $ git config --global core.editor "Add specific command for text editor"
 ```
-</sub>
+
 
 You should see a window appear that looks similar to this:
 
@@ -606,28 +607,27 @@ A pull request allows you to make a specific suggestion or set of suggestions on
 To do a pull request takes a few steps:
 
 1. Fork the repository as above.
-2. Clone the forked repository.
+2. Clone the forked repository to your local machine.
 3. Make the changes you intend to propose locally.
-4. Add, commit, and push your changes to the forked repository.;
-5. Using the GitHub interface, initiate the pull request. A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, "This is what I think your repository should look like." If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.
+4. Add, commit, and push your changes to the forked repository.
+5. Using the GitHub interface, initiate the pull request by navigating to the "Pull requests" tab.
 
-A pull request allows you to make a specific suggestion or set of suggestions on a repository that can be accepted by the owner of that repository. Basically, you are creating a new version of the target repository, pointing to it, and saying, "This is what I think your repository should look like." If the owner of the target repository agrees with you, they can click a button on GitHub that allows them to incorporate the changes.
+*Let's step through these steps in more detail.*
 
-Let's step through these steps in more detail.
+1. First, fork the repository to which you wish to submit a pull request. Instructions for forking are available in the previous section on forking.
 
-First, fork the repository to which you wish to submit a pull request. Instructions for forking are available in the previous section on forking.
-
-Next, clone the forked repository to your computer by clicking the `Clone or Download` button, copying the link, and using the
+2. Next, clone the forked repository to your computer by clicking the `Clone or Download` button, copying the link, and using the
 
 ```bash
 git clone <copied-link>
+
 ```
 
 command in your terminal.
 
-Once you've cloned the repository, use a text editor such as VS Code to make the changes you wish to propose to the target repository. You can make any number of changes in any number of files.
+3. Once you've cloned the repository, use a text editor such as VS Code to make the changes you wish to propose to the target repository. You can make any number of changes in any number of files.
 
-Once you have finished editing, use the add command to stage your changes, commit them, and then push them back to your forked repository on GitHub.
+4. Once you have finished editing, use the add command to stage your changes, commit them, and then push them back to your forked repository on GitHub.
 
 ```bash
 git add -A
@@ -637,7 +637,7 @@ git push
 
 Note that you can add files one by one instead of using the `-A` flag to add all files, and that you should use a more specific and description commit message than the generic one provided above.
 
-Once your changes have been pushed to GitHub, open the web interface to the repository and refresh the page. It's easy to miss it in the interface, but there will be a notification about the commit you just made. Within that notification, click the `Pull Request` button.
+5 .Once your changes have been pushed to GitHub, open the web interface to the repository and refresh the page. It's easy to miss it in the interface, but there will be a notification about the commit you just made. Within that notification, click the `Pull Request` button.
 
 ![Small button for pull request in the GitHub interface](../images/commit_notification.png)
 
@@ -660,6 +660,7 @@ Now it's up to the repository owner if they wish to accept the request, initiate
 
 # Collaborating  
 [How can I use version control to collaborate with other people?](https://swcarpentry.github.io/git-novice/08-collab.html)
+
 A BASIC COLLABORATIVE WORKFLOW
 * In practice, it is good to be sure that you have an updated version of the repository you are collaborating on, so you should git pull before making our changes. The basic collaborative workflow would be:
 - update your local repo with git pull origin main,
