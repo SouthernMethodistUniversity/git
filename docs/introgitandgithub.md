@@ -5,10 +5,10 @@
 - *This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)*  
 
 ## Prerequisites  
-* Familiarity with using the [command line (also command shell)](* extended explanation of Forking [link to explanation]) is expected in this workshop.
-- Go through [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
+* Familiarity with using the [command line (or command shell)](https://southernmethodistuniversity.github.io/git/commandline.html) is expected in this workshop.
+- If you have not used the command link, you can go through [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
 
-# Required Software or accounts for Git & GitHub
+# Required Software and accounts for Git & GitHub Workshop
 Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.
 
 **Git** (required)  
@@ -17,14 +17,21 @@ Some software is required for you to participate in this workshop. This is a lis
 **Git from the command line** (required)  
 
 * Using git from the command line **depends on your operating system (OS)**
-  * Git was developed and designed on Linux, so you can using git from the terminal on Linux Os or Mac OS. If you are using Windows, to in order to use the git commands, you will use Git Bash.
-    [What is Git Bash: Bash is an acronym for Bourne Again Shell](https://www.atlassian.com/git/tutorials/git-bash#:~:text=What%20is%20Git%20Bash%3F,operating%20system%20through%20written%20commands.)Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.
-* macOS: You can find Terminal in the Applications > Utilities folder.
-* Windows PC: Computers with Windows operating systems do not automatically have a Unix Shell program installed. You will need to install software to use a Unix-like shell environment on Windows.
+
+  * Git was developed and designed on **Linux,** so you can using git from the terminal on Linux OS or Mac OS. 
+
+  * **macOS:** You can find Terminal in the Applications > Utilities folder.
+
+  * **Windows PC:** Computers with Windows operating systems do not automatically have a Unix Shell program installed. You will need to install software to use a Unix-like shell environment on Windows. 
+ - A *shell* is a terminal application used to interface with an operating system through written commands. 
+ - Bash is a popular default shell on Linux and macOS. *Bash is an acronym for Bourne Again Shell.* 
+ - [Git Bash]((https://www.atlassian.com/git/tutorials/git-bash)) is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.
+- *If you are using Windows, to in order to use the git commands, you will use Git Bash.*
 * **Git for Windows provides a BASH emulation used to run Git from the command line.** 
     - [Download and **install Git For Windows** like other Windows applications.](https://gitforwindows.org/)
     - Once downloaded find the included .exe file and open to execute Git Bash.
-    - "[What is Git Bash?:](https://www.atlassian.com/git/tutorials/git-bash) Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system."
+  
+
 * [Alternate option: This link goes to the Software Carpentry installation directions for accessing the unix shell](https://carpentries.github.io/workshop-template/install_instructions/#shell) 
 
 
@@ -109,7 +116,7 @@ user.email=gitsuperstar@gmail.com
 
 ---
 
-# Creating a Syllabus File
+# Creating a Project Folder
 
 The next step is to _initialize_ the project folder that we want Git to track. Even though we configured Git for our computer, Git doesn't start tracking every single file on our computer. That would turn into a headache quickly. We only want Git to track changes for files within specific folders/projects.  
 
@@ -133,6 +140,8 @@ Now Git is tracking our directory. However, it has not done any versioning yet. 
 Before version control is useful, we'll have to create a text file for Git to track. For this session, the file we will track will be a course syllabus—we'll create that next.
 
 <sub>[More about creating a repository](https://swcarpentry.github.io/git-novice/03-create.html)</sub>
+
+# Creating a file in the project folder (plain text or Markdown)
 
 ## Creating a plain text file 
 
@@ -170,7 +179,7 @@ If Visual Studio Code does not open when you use the `code` command in your term
 
 We'll be typing our markdown into this file in the Visual Studio Code window. At any time, you can save your file by hitting <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS. Alternatively, you can click the `File` menu on the top right, then select `Save` from the dropdown menu.
 
-Saving frequently is advised. When we get to the version contol functionality of Git, only changes that are saved will be preserved when a version is created.
+Saving frequently is advised. When we get to the version control functionality of Git, only changes that are saved will be preserved when a version is created.
 
 ---
 # Creating Content Using Markdown

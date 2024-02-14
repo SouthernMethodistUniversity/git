@@ -3,20 +3,8 @@
 * Familiarity with using the command line (also command shell) is expected in this workshop.
 - Go through [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
 
-**Git from the command line** (required)  
 
-* Using git from the command line **depends on your operating system (OS)**
-  * Git was developed and designed on Linux, so you can using git from the terminal on Linux Os or Mac OS. If you are using Windows, to in order to use the git commands, you will use Git Bash.
-    [What is Git Bash: Bash is an acronym for Bourne Again Shell](https://www.atlassian.com/git/tutorials/git-bash#:~:text=What%20is%20Git%20Bash%3F,operating%20system%20through%20written%20commands.)Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.
-* macOS: You can find Terminal in the Applications > Utilities folder.
-* Windows PC: Computers with Windows operating systems do not automatically have a Unix Shell program installed. You will need to install software to use a Unix-like shell environment on Windows.
-* **Git for Windows provides a BASH emulation used to run Git from the command line.** 
-    - [Download and **install Git For Windows** like other Windows applications.](https://gitforwindows.org/)
-    - Once downloaded find the included .exe file and open to execute Git Bash.
-    - "[What is Git Bash?:](https://www.atlassian.com/git/tutorials/git-bash) Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system."
-* [Alternate option: This link goes to the Software Carpentry installation directions for accessing the unix shell](https://carpentries.github.io/workshop-template/install_instructions/#shell) 
-
-## Review of the Command Line (Optional Review)
+## Review of the Command Line
 
 During this workshop, you'll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.
 
