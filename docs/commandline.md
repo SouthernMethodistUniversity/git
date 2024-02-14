@@ -48,6 +48,7 @@ $ cd Desktop
 This will change your current working directory from `/Users/<your-name>` to `/Users/<your-name>/Desktop`.
 
 #### *Note for staff or company computers* 
+
 If your computer has multiple users you can choose your user profile in the C: drive or you type the following command in your terminal and and hit <kbd>enter</kbd>
 ```console
 $ cd C:/Users/[put your username such as SMU ID here]/Desktop/
