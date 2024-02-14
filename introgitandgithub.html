@@ -214,6 +214,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
 <li class="toctree-l1"><a class="reference internal" href="after.html">Theory to Practice</a></li>
 
 </ul>
@@ -415,7 +416,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-for-git-github">Required Software or accounts for Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
 </ul>
 </li>
@@ -428,7 +429,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file">Creating a Syllabus File</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-folder">Creating a Project Folder</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-in-the-project-folder-plain-text-or-markdown">Creating a file in the project folder (plain text or Markdown)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-plain-text-file">Creating a plain text file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-creating-a-markdown-file-using-an-ide">Creating a file (Creating a Markdown file using an IDE)</a></li>
 </ul>
@@ -487,15 +489,15 @@ document.write(`
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Familiarity with using the [command line (also command shell)](* extended explanation of Forking [link to explanation]) is expected in this workshop.</p></li>
+<li><p>Familiarity with using the <a class="reference external" href="https://southernmethodistuniversity.github.io/git/commandline.html">command line (or command shell)</a> is expected in this workshop.</p></li>
 </ul>
 <ul class="simple">
-<li><p>Go through <a class="reference external" href="https://swcarpentry.github.io/shell-novice/index.html">The Unix Shell workshop</a></p></li>
+<li><p>If you have not used the command link, you can go through <a class="reference external" href="https://swcarpentry.github.io/shell-novice/index.html">The Unix Shell workshop</a></p></li>
 </ul>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="required-software-or-accounts-for-git-github">
-<h1>Required Software or accounts for Git &amp; GitHub<a class="headerlink" href="#required-software-or-accounts-for-git-github" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="required-software-and-accounts-for-git-github-workshop">
+<h1>Required Software and accounts for Git &amp; GitHub Workshop<a class="headerlink" href="#required-software-and-accounts-for-git-github-workshop" title="Permalink to this heading">#</a></h1>
 <p>Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.</p>
 <p><strong>Git</strong> (required)</p>
 <ul class="simple">
@@ -505,17 +507,23 @@ document.write(`
 <ul class="simple">
 <li><p>Using git from the command line <strong>depends on your operating system (OS)</strong></p>
 <ul>
-<li><p>Git was developed and designed on Linux, so you can using git from the terminal on Linux Os or Mac OS. If you are using Windows, to in order to use the git commands, you will use Git Bash.
-<a class="reference external" href="https://www.atlassian.com/git/tutorials/git-bash#:~:text=What%20is%20Git%20Bash%3F,operating%20system%20through%20written%20commands.">What is Git Bash: Bash is an acronym for Bourne Again Shell</a>Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.</p></li>
+<li><p>Git was developed and designed on <strong>Linux,</strong> so you can using git from the terminal on Linux OS or Mac OS.</p></li>
+<li><p><strong>macOS:</strong> You can find Terminal in the Applications &gt; Utilities folder.</p></li>
+<li><p><strong>Windows PC:</strong> Computers with Windows operating systems do not automatically have a Unix Shell program installed. You will need to install software to use a Unix-like shell environment on Windows.</p></li>
 </ul>
 </li>
-<li><p>macOS: You can find Terminal in the Applications &gt; Utilities folder.</p></li>
-<li><p>Windows PC: Computers with Windows operating systems do not automatically have a Unix Shell program installed. You will need to install software to use a Unix-like shell environment on Windows.</p></li>
+</ul>
+<ul class="simple">
+<li><p>A <em>shell</em> is a terminal application used to interface with an operating system through written commands.</p></li>
+<li><p>Bash is a popular default shell on Linux and macOS. <em>Bash is an acronym for Bourne Again Shell.</em></p></li>
+<li><p><span class="xref myst">Git Bash</span> is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.</p></li>
+<li><p><em>If you are using Windows, to in order to use the git commands, you will use Git Bash.</em></p></li>
+</ul>
+<ul class="simple">
 <li><p><strong>Git for Windows provides a BASH emulation used to run Git from the command line.</strong></p>
 <ul>
 <li><p><a class="reference external" href="https://gitforwindows.org/">Download and <strong>install Git For Windows</strong> like other Windows applications.</a></p></li>
 <li><p>Once downloaded find the included .exe file and open to execute Git Bash.</p></li>
-<li><p>“<a class="reference external" href="https://www.atlassian.com/git/tutorials/git-bash">What is Git Bash?:</a> Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.”</p></li>
 </ul>
 </li>
 <li><p><a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#shell">Alternate option: This link goes to the Software Carpentry installation directions for accessing the unix shell</a></p></li>
@@ -599,8 +607,8 @@ document.write(`
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="creating-a-syllabus-file">
-<h1>Creating a Syllabus File<a class="headerlink" href="#creating-a-syllabus-file" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="creating-a-project-folder">
+<h1>Creating a Project Folder<a class="headerlink" href="#creating-a-project-folder" title="Permalink to this heading">#</a></h1>
 <p>The next step is to <em>initialize</em> the project folder that we want Git to track. Even though we configured Git for our computer, Git doesn’t start tracking every single file on our computer. That would turn into a headache quickly. We only want Git to track changes for files within specific folders/projects.</p>
 <p>When we initialize a folder, we are telling Git to pay attention to it. This only needs to happen once because what is actually happening through this process is Git is adding a hidden subfolder within your folder that houses the internal data structure required for version control. After initialization, Git is ready to track the files within the folder. The folder is now considered a Git <em>repository</em>.</p>
 <p>First, use <code class="docutils literal notranslate"><span class="pre">cd</span></code>, navigate to the <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder (inside <code class="docutils literal notranslate"><span class="pre">projects</span></code>). From your home directory, you can do all of them in one command by typing the following into your terminal:</p>
@@ -615,6 +623,9 @@ document.write(`
 <p>Now Git is tracking our directory. However, it has not done any versioning yet. This is because 1) we haven’t told Git to take a snapshot yet, and 2) there are no files in the folder to take a snapshot of. For now, Git knows this folder exists and is prepared to take a snapshot of the files when you tell it to.</p>
 <p>Before version control is useful, we’ll have to create a text file for Git to track. For this session, the file we will track will be a course syllabus—we’ll create that next.</p>
 <p><sub><a class="reference external" href="https://swcarpentry.github.io/git-novice/03-create.html">More about creating a repository</a></sub></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="creating-a-file-in-the-project-folder-plain-text-or-markdown">
+<h1>Creating a file in the project folder (plain text or Markdown)<a class="headerlink" href="#creating-a-file-in-the-project-folder-plain-text-or-markdown" title="Permalink to this heading">#</a></h1>
 <section id="creating-a-plain-text-file">
 <h2>Creating a plain text file<a class="headerlink" href="#creating-a-plain-text-file" title="Permalink to this heading">#</a></h2>
 <p>To quickly create a plain text file in your practice folder, enter the following command</p>
@@ -641,7 +652,7 @@ document.write(`
 <p><img alt="Image of what Visual Studio Code looks like when opening the syllabus.md file" src="_images/vscode1.png" /></p>
 <p>If Visual Studio Code does not open when you use the <code class="docutils literal notranslate"><span class="pre">code</span></code> command in your terminal, open it using the Start Menu on Windows or Spotlight Search on macOS as you would any other software. Then click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">File</span></code> and use the dialog to navigate to the <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop/projects/git</span></code> folder and create a <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file there.</p>
 <p>We’ll be typing our markdown into this file in the Visual Studio Code window. At any time, you can save your file by hitting <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS. Alternatively, you can click the <code class="docutils literal notranslate"><span class="pre">File</span></code> menu on the top right, then select <code class="docutils literal notranslate"><span class="pre">Save</span></code> from the dropdown menu.</p>
-<p>Saving frequently is advised. When we get to the version contol functionality of Git, only changes that are saved will be preserved when a version is created.</p>
+<p>Saving frequently is advised. When we get to the version control functionality of Git, only changes that are saved will be preserved when a version is created.</p>
 </section>
 </section>
 <hr class="docutils" />
@@ -1072,7 +1083,7 @@ It is better to make many commits with smaller changes rather than of one commit
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-or-accounts-for-git-github">Required Software or accounts for Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
 </ul>
 </li>
@@ -1085,7 +1096,8 @@ It is better to make many commits with smaller changes rather than of one commit
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-syllabus-file">Creating a Syllabus File</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-folder">Creating a Project Folder</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-in-the-project-folder-plain-text-or-markdown">Creating a file in the project folder (plain text or Markdown)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-plain-text-file">Creating a plain text file</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-creating-a-markdown-file-using-an-ide">Creating a file (Creating a Markdown file using an IDE)</a></li>
 </ul>
