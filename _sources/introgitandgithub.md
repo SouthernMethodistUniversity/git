@@ -39,6 +39,7 @@ Some software is required for you to participate in this workshop. This is a lis
 
 If you don't feel comfortable navigating your hard drive through the command line, [here is a short section catching you up.](https://southernmethodistuniversity.github.io/git/commandline.html#) 
 
+*[Note for computers with multiple users (staff of or other shared computers)](https://southernmethodistuniversity.github.io/git/commandline.html#note-for-staff-or-company-computers)
 
 **Github** (required)  
 - **[Create a GitHub account](https://github.com/join) (required)**
