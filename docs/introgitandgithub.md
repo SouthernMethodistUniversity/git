@@ -653,7 +653,7 @@ After reviewing, click the green `Create Pull Request` button. You will have a c
 
 After adding a descriptive message, click the green button to finalize the pull request. You will be taken to a view of the completed pull request.
 
-Now it's up to the repository owner if they wish to accept the request, initiate a conversation with you, or—which sometimes happens—ignore or reject your request. In the case of the DHRI curriculum, we may accept some requests right away, and ask for clarification on other occasions.
+Now it's up to the repository owner if they wish to accept the request, initiate a conversation with you, or—which sometimes happens—ignore or reject your request. 
 
 # Conflicts
 [What do I do when my changes conflict with someone else’s?](https://swcarpentry.github.io/git-novice/09-conflict.html)
