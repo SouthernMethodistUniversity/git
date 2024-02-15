@@ -4,9 +4,9 @@
 - In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE [(Integrated Development Environment)](https://www.codecademy.com/article/what-is-an-ide) and upload a repository with that file to their Github account. 
 - *This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)*  
 
-## Prerequisites  
-* Familiarity with using the [command line (or command shell)](https://southernmethodistuniversity.github.io/git/commandline.html) is expected in this workshop.
-- If you have not used the command link, you can go through [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
+# Command Line
+* We will begin with an overview of the [Command line](https://southernmethodistuniversity.github.io/git/commandline.html#)
+- [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
 
 # Required Software and accounts for Git & GitHub Workshop
 Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.
@@ -316,6 +316,14 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Let's follow the recommendation in the status message above and use the `add` command to stage files, making them ready to be committed.
 
+To see more details, use git log.
+
+```console
+$ git log
+
+```
+
+
 We will go ahead and add `syllabus.md` by writing the following in the terminal:
 
 ```console
@@ -431,7 +439,7 @@ After clicking `New repository`, you'll have to enter some information, includin
 - Choose a name, such as `git-practice`.
 - Enter a description, such as `Test syllabus for learning Git and GitHub`.
 - Keep the `Public — Anyone can see this repository` selector checked.
-- Do *not* select `Initialize this repository with a README` since you will be importing an existing repository from your computer.
+- **Do *not* select `Initialize this repository with a README` since you will be importing an existing repository from your computer.** 
 - Click `Create repository`.
 
 You should end up inside your newly created git-practice repo. It will look like a set of instructions that you might want to use to connect your GitHub repository to a local repository.
