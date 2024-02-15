@@ -215,6 +215,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
 <li class="toctree-l1"><a class="reference internal" href="after.html">Theory to Practice</a></li>
 
 </ul>
@@ -412,7 +413,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-the-command-line">Review of the Command Line</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
@@ -444,15 +444,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="command-line">
 <h1>Command Line<a class="headerlink" href="#command-line" title="Permalink to this heading">#</a></h1>
-<section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
+<p>We will begin with an overview of the Command line (also command shell).</p>
 <ul class="simple">
-<li><p>Familiarity with using the command line (also command shell) is expected in this workshop.</p></li>
+<li><p>For additional practice, you can look at this <a class="reference external" href="https://swcarpentry.github.io/shell-novice/index.html">The Unix Shell workshop</a></p></li>
 </ul>
-<ul class="simple">
-<li><p>Go through <a class="reference external" href="https://swcarpentry.github.io/shell-novice/index.html">The Unix Shell workshop</a></p></li>
-</ul>
-</section>
 <section id="review-of-the-command-line">
 <h2>Review of the Command Line<a class="headerlink" href="#review-of-the-command-line" title="Permalink to this heading">#</a></h2>
 <p>During this workshop, you’ll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.</p>
@@ -537,6 +532,12 @@ the following workshops</em>: <a class="reference external" href="https://gc-dri
 <p>At this point, when you type <code class="docutils literal notranslate"><span class="pre">pwd</span></code>, your folder structure should look like this:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
 <span class="go">/home/&lt;username&gt;/Desktop/projects/git-practice</span>
+</pre></div>
+</div>
+<p>TO see what files are in a folder, <code class="docutils literal notranslate"><span class="pre">ls</span></code>, it will show what files are there. To see all files, including invisible, type <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-a</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ls
+
+<span class="gp">$ </span>ls<span class="w"> </span>-a
 </pre></div>
 </div>
 <p><em><strong>Authenticating to Remote Git Repositories</strong></em><br />
@@ -796,7 +797,6 @@ the following workshops</em>: <a class="reference external" href="https://gc-dri
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-the-command-line">Review of the Command Line</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>

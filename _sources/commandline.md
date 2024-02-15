@@ -1,7 +1,7 @@
 # Command Line
-## Prerequisites  
-* Familiarity with using the command line (also command shell) is expected in this workshop.
-- Go through [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
+
+We will begin with an overview of the Command line (also command shell).
+- For additional practice, you can look at this [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
 
 
 ## Review of the Command Line
@@ -111,6 +111,14 @@ At this point, when you type `pwd`, your folder structure should look like this:
 ```console
 $ pwd
 /home/<username>/Desktop/projects/git-practice
+```
+
+TO see what files are in a folder, `ls`, it will show what files are there. To see all files, including invisible, type `ls -a`
+
+```console
+$ ls
+
+$ ls -a
 ```
 
 

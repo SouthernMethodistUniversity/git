@@ -215,6 +215,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
 <li class="toctree-l1"><a class="reference internal" href="after.html">Theory to Practice</a></li>
 
 </ul>
@@ -412,10 +413,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line">Command Line</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
 </ul>
@@ -486,15 +485,15 @@ document.write(`
 <li><p>In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE <a class="reference external" href="https://www.codecademy.com/article/what-is-an-ide">(Integrated Development Environment)</a> and upload a repository with that file to their Github account.</p></li>
 <li><p><em>This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)</em></p></li>
 </ul>
-<section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Familiarity with using the <a class="reference external" href="https://southernmethodistuniversity.github.io/git/commandline.html">command line (or command shell)</a> is expected in this workshop.</p></li>
-</ul>
-<ul class="simple">
-<li><p>If you have not used the command link, you can go through <a class="reference external" href="https://swcarpentry.github.io/shell-novice/index.html">The Unix Shell workshop</a></p></li>
-</ul>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="command-line">
+<h1>Command Line<a class="headerlink" href="#command-line" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>We will begin with an overview of the <a class="reference external" href="https://southernmethodistuniversity.github.io/git/commandline.html#">Command line</a></p></li>
+</ul>
+<ul class="simple">
+<li><p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/index.html">The Unix Shell workshop</a></p></li>
+</ul>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="required-software-and-accounts-for-git-github-workshop">
 <h1>Required Software and accounts for Git &amp; GitHub Workshop<a class="headerlink" href="#required-software-and-accounts-for-git-github-workshop" title="Permalink to this heading">#</a></h1>
@@ -755,6 +754,10 @@ This is a second paragraph in markdown, which I&#39;ll use to tell you what I li
 </div>
 <p>“Nothing added to commit” means that we have initialized our repository, but haven’t made any commits yet. <em>If you’re instead getting a message that begins with the word <code class="docutils literal notranslate"><span class="pre">fatal</span></code> when you use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>, you may be in the wrong directory or perhaps you haven’t run the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> command on your directory yet.</em></p>
 <p>Let’s follow the recommendation in the status message above and use the <code class="docutils literal notranslate"><span class="pre">add</span></code> command to stage files, making them ready to be committed.</p>
+<p>To see more details, use git log.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>log
+</pre></div>
+</div>
 <p>We will go ahead and add <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> by writing the following in the terminal:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>add<span class="w"> </span>syllabus.md
 </pre></div>
@@ -837,7 +840,7 @@ nothing to commit, working tree clean
 <li><p>Choose a name, such as <code class="docutils literal notranslate"><span class="pre">git-practice</span></code>.</p></li>
 <li><p>Enter a description, such as <code class="docutils literal notranslate"><span class="pre">Test</span> <span class="pre">syllabus</span> <span class="pre">for</span> <span class="pre">learning</span> <span class="pre">Git</span> <span class="pre">and</span> <span class="pre">GitHub</span></code>.</p></li>
 <li><p>Keep the <code class="docutils literal notranslate"><span class="pre">Public</span> <span class="pre">—</span> <span class="pre">Anyone</span> <span class="pre">can</span> <span class="pre">see</span> <span class="pre">this</span> <span class="pre">repository</span></code> selector checked.</p></li>
-<li><p>Do <em>not</em> select <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">this</span> <span class="pre">repository</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">README</span></code> since you will be importing an existing repository from your computer.</p></li>
+<li><p><strong>Do <em>not</em> select <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">this</span> <span class="pre">repository</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">README</span></code> since you will be importing an existing repository from your computer.</strong></p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">repository</span></code>.</p></li>
 </ul>
 <p>You should end up inside your newly created git-practice repo. It will look like a set of instructions that you might want to use to connect your GitHub repository to a local repository.</p>
@@ -1082,10 +1085,8 @@ It is better to make many commits with smaller changes rather than of one commit
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line">Command Line</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
 </ul>
