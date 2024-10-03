@@ -10,40 +10,40 @@ on:
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
-  deploy-book:                # Job name should be aligned under `jobs`
-    runs-on: ubuntu-latest    # Specifies the runner environment
+  deploy-book:                 # Job name should be aligned under `jobs`
+    runs-on: ubuntu-latest     # Specifies the runner environment
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    # Install dependencies
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
+      # Install dependencies
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
 
-    - name: Install dependencies
-      run: |
-        pip install -U jupyter-book
+      - name: Install dependencies
+        run: |
+          pip install -U jupyter-book
 
-    # Build the book
-    - name: Build the book
-      run: |
-        jupyter-book build docs
+      # Build the book
+      - name: Build the book
+        run: |
+          jupyter-book build docs
 
-    # Copy images to gh-pages branch
-    - name: Copy images to gh-pages branch
-      run: |
-        git fetch origin gh-pages
-        git checkout gh-pages
-        cp -R markdown/images/* _images/
-        git add _images/
-        git commit -m "Copy images for GitHub Pages"
-        git push origin gh-pages
+      # Copy images to gh-pages branch
+      - name: Copy images to gh-pages branch
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages
+          cp -R markdown/images/* _images/
+          git add _images/
+          git commit -m "Copy images for GitHub Pages"
+          git push origin gh-pages
 
-    # Push the book's HTML to GitHub Pages
-    - name: GitHub Pages action
-      uses: peaceiris/actions-gh-pages@v3.6.1
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/_build/html
+      # Push the book's HTML to GitHub Pages
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/_build/html
