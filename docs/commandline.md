@@ -168,25 +168,6 @@ Which command do you use to check where you are?
 - `cd`
 - `mkdir`
 
-## Shell Cheat Sheets
-
-[Summary of Basic Commands](https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands)
-
-| Action       | Files | Folders      | 
-| ------------ | ----- | ------------ |
-| Inspect      | ls    | ls           | 
-| View content | cat   | ls           | 
-| Navigate to  |       | cd           | 
-| Move         | mv    | mv           | 
-| Copy         | cp    | cp -r        | 
-| Create       | nano  | mkdir        | 
-| Delete       | rm    | rmdir, rm -r | 
-
-- [Unix Shell Cheat Sheet](https://cambiotraining.github.io/hpc-intro/99-unix_cheatsheet.html)
-
-## Glossary
-- [Glossary](https://swcarpentry.github.io/shell-novice/reference.html#glossary)
-
 
 ## Pro-tip for the Command Line: How to exit unknown screens
 
@@ -198,7 +179,6 @@ If you're ever stuck or "trapped" on the command line, try running through these
 - `:q` followed by <kbd>enter</kbd>
 
 <kbd>control</kbd> + <kbd>c</kbd> attempts to abort the current task and restore user control. <kbd>control</kbd> + <kbd>d</kbd> escapes the current shell environment—if you use it at the normal `$` prompt, it will end the current command line session. `q` is often used as a command (followed by <kbd>enter</kbd>) to escape from specific programs like `less`. `:q` is the command used in `vi` that changes the mode of interaction (`:`), allowing you to enter the `q`, a one-letter command to quit, which must be followed by <kbd>enter</kbd>. Thus, it's a command specific to `vi`.
-
 
 
 
@@ -255,3 +235,4 @@ Which command do you use to check where you are?
 
 ## Glossary
 - [Glossary](https://swcarpentry.github.io/shell-novice/reference.html#glossary)
+
