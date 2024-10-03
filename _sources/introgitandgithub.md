@@ -272,7 +272,7 @@ user.email=gitsuperstar@gmail.com
 <sub> [PDF from GitHub: GIT CHEAT SHEET](https://education.github.com/git-cheat-sheet-education.pdf)</sub>
 ---
 
-# Creating a Project Folder
+## Creating a Project Folder
 
 The next step is to _initialize_ the project folder that we want Git to track. Even though we configured Git for our computer, Git doesn't start tracking every single file on our computer. That would turn into a headache quickly. We only want Git to track changes for files within specific folders/projects.  
 
