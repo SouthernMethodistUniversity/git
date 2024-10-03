@@ -4,7 +4,7 @@
 Getting Started with Git and GitHub (Workshop): In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE [(Integrated Development Environment)](https://www.codecademy.com/article/what-is-an-ide) and upload a repository with that file to their Github account. 
 - *This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)*  
 
-# Required Software and accounts for Git & GitHub Workshop
+## Required Software and accounts for Git & GitHub Workshop
 For this workshop, you will need your own laptop on which you have administrative permissions (so you can install software). This is a list of the prerequisite installations (or accounts) that are required for this workshop.
     
 
@@ -75,7 +75,7 @@ In addition to the command line, you'll be using your text editor and your brows
 
 Because you'll be moving between these three spaces throughout the workshop, you may want to use (<kbd>command (⌘)</kbd> + <kbd>tab</kbd>) or (<kbd>control</kbd> + <kbd>tab</kbd>) to move quickly between the three windows on your desktop.
 
-# Orienting Yourself in the Command Line: Folders
+## Orienting Yourself in the Command Line: Folders
 
 ![What your Computer's Folders might look like](https://github.com/SouthernMethodistUniversity/git/raw/main/images/folders.png "Computer's Folders")
 
@@ -197,18 +197,6 @@ $ ls -a
 ```
 
 
-
-***Authenticating to Remote Git Repositories***  
-"Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
-  
-There are three main approaches you can take:
-- Using a personal authentication token or password
-- Using an SSH key
-- Using your GitHub password with 2-factor authentication"
-- [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
-    - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
-
-
 ### Shell Cheat Sheets
 
 [Summary of Basic Commands](https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands)
@@ -281,7 +269,7 @@ user.email=gitsuperstar@gmail.com
 ```
 
 <sub> [More about setting up git](https://swcarpentry.github.io/git-novice/02-setup.html)</sub>
-[PDF from GitHub: GIT CHEAT SHEET](https://education.github.com/git-cheat-sheet-education.pdf)
+<sub> [PDF from GitHub: GIT CHEAT SHEET](https://education.github.com/git-cheat-sheet-education.pdf)</sub>
 ---
 
 # Creating a Project Folder
@@ -309,6 +297,15 @@ Before version control is useful, we'll have to create a text file for Git to tr
 
 <sub>[More about creating a repository](https://swcarpentry.github.io/git-novice/03-create.html)</sub>
 
+***Authenticating to Remote Git Repositories***  
+"Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
+  
+There are three main approaches you can take:
+- Using a personal authentication token or password
+- Using an SSH key
+- Using your GitHub password with 2-factor authentication"
+- [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
+    - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
 
 ---
 # VSCode (IDE)
@@ -876,7 +873,7 @@ A BASIC COLLABORATIVE WORKFLOW
 - commit your changes with git commit -m, and
 - upload the changes to GitHub with git push origin main
 It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.
-
+<!-->
 ## Challenge
 
 1. Fork and clone [the repository for Github's Introduction to GitHub](https://github.com/skills/introduction-to-github)
@@ -892,6 +889,6 @@ You'll know you've completed step one when the project folder (called `\introduc
 
 After you've made and saved the changes, you'll know you've completed step three when your changes appear in the project folder on _your_ GitHub account.
 
-
+-->
 
 
