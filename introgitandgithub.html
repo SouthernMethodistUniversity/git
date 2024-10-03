@@ -422,17 +422,17 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#orienting-yourself-in-the-command-line-folders">Orienting Yourself in the Command Line: Folders</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#note-for-staff-or-company-computers"><em>Note for staff or company computers</em></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#orienting-yourself-in-the-command-line-folders">Orienting Yourself in the Command Line: Folders</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#note-for-staff-or-company-computers"><em>Note for staff or company computers</em></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-projects-folder">Making a Projects Folder</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-cheat-sheets">Shell Cheat Sheets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
@@ -443,6 +443,8 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Git</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-your-installation">Check Your Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-more-about-setting-up-git-sub-pdf-from-github-git-cheat-sheet"><sub> More about setting up git</sub>
+PDF from GitHub: GIT CHEAT SHEET</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-folder">Creating a Project Folder</a></li>
@@ -583,6 +585,10 @@ document.write(`
 <li><p>Your terminal is where you’ll be communicating with GitHub to send the repository and project files back and forth between the cloud (which you can view through the GitHub website) and your hard drive.</p></li>
 </ul>
 <p>Because you’ll be moving between these three spaces throughout the workshop, you may want to use (<kbd>command (⌘)</kbd> + <kbd>tab</kbd>) or (<kbd>control</kbd> + <kbd>tab</kbd>) to move quickly between the three windows on your desktop.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="orienting-yourself-in-the-command-line-folders">
+<h1>Orienting Yourself in the Command Line: Folders<a class="headerlink" href="#orienting-yourself-in-the-command-line-folders" title="Permalink to this heading">#</a></h1>
+<p><img alt="What your Computer's Folders might look like" src="https://github.com/SouthernMethodistUniversity/git/raw/main/images/folders.png" /></p>
 <section id="accessing-the-terminal">
 <h2>Accessing the Terminal<a class="headerlink" href="#accessing-the-terminal" title="Permalink to this heading">#</a></h2>
 <section id="macos">
@@ -601,11 +607,6 @@ document.write(`
 <li><p>For further practice, you may want to work through one of
 the following workshops: <a class="reference external" href="https://gc-dri.github.io/Dhrift-GC/workshops/command-line/">Introduction to the Command Line</a> or <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></p></li>
 </ul>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="orienting-yourself-in-the-command-line-folders">
-<h1>Orienting Yourself in the Command Line: Folders<a class="headerlink" href="#orienting-yourself-in-the-command-line-folders" title="Permalink to this heading">#</a></h1>
-<p><img alt="What your Computer's Folders might look like" src="https://github.com/SouthernMethodistUniversity/git/raw/main/images/folders.png" /></p>
 <p>Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
 </pre></div>
@@ -638,11 +639,12 @@ the following workshops: <a class="reference external" href="https://gc-dri.gith
 </div>
 <p>This will change your current working directory from <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;</span></code> to <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop</span></code>.</p>
 <section id="note-for-staff-or-company-computers">
-<h2><em>Note for staff or company computers</em><a class="headerlink" href="#note-for-staff-or-company-computers" title="Permalink to this heading">#</a></h2>
+<h3><em>Note for staff or company computers</em><a class="headerlink" href="#note-for-staff-or-company-computers" title="Permalink to this heading">#</a></h3>
 <p>If your computer has multiple users you can choose your user profile in the C: drive or you type the following command in your terminal and and hit <kbd>enter</kbd></p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>C:/Users/<span class="o">[</span>put<span class="w"> </span>your<span class="w"> </span>username<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>SMU<span class="w"> </span>ID<span class="w"> </span>here<span class="o">]</span>/Desktop/
 </pre></div>
 </div>
+</section>
 </section>
 <section id="making-a-projects-folder">
 <h2>Making a Projects Folder<a class="headerlink" href="#making-a-projects-folder" title="Permalink to this heading">#</a></h2>
@@ -761,7 +763,7 @@ the following workshops: <a class="reference external" href="https://gc-dri.gith
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>--version
 </pre></div>
 </div>
-<p>If you see a version number, you’re all set. If not, follow the installation instructions <a class="reference external" href="https://gc-dri.github.io/Dhrift-GC/workshops/git/?page=5">here</a> or <a class="reference external" href="https://swcarpentry.github.io/git-novice/index.html#installing-git">here</a>.</p>
+<p>If you see a version number, you’re all set. If not, follow the installation instructions <a class="reference external" href="https://gc-dri.github.io/Dhrift-GC/workshops/git/?page=5">here</a> <!--or [here](https://swcarpentry.github.io/git-novice/index.html#installing-git).--></p>
 </section>
 <section id="configuring-git-on-your-computer">
 <h2>Configuring Git on Your Computer<a class="headerlink" href="#configuring-git-on-your-computer" title="Permalink to this heading">#</a></h2>
@@ -780,10 +782,12 @@ the following workshops: <a class="reference external" href="https://gc-dri.gith
 <span class="n">user</span><span class="o">.</span><span class="n">email</span><span class="o">=</span><span class="n">gitsuperstar</span><span class="nd">@gmail</span><span class="o">.</span><span class="n">com</span>
 </pre></div>
 </div>
-<p><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup.html">More about setting up git</a></sub></p>
+</section>
+<section id="sub-more-about-setting-up-git-sub-pdf-from-github-git-cheat-sheet">
+<h2><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup.html">More about setting up git</a></sub>
+<a class="reference external" href="https://education.github.com/git-cheat-sheet-education.pdf">PDF from GitHub: GIT CHEAT SHEET</a><a class="headerlink" href="#sub-more-about-setting-up-git-sub-pdf-from-github-git-cheat-sheet" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
-<hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="creating-a-project-folder">
 <h1>Creating a Project Folder<a class="headerlink" href="#creating-a-project-folder" title="Permalink to this heading">#</a></h1>
 <p>The next step is to <em>initialize</em> the project folder that we want Git to track. Even though we configured Git for our computer, Git doesn’t start tracking every single file on our computer. That would turn into a headache quickly. We only want Git to track changes for files within specific folders/projects.</p>
@@ -1307,17 +1311,17 @@ It is better to make many commits with smaller changes rather than of one commit
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#orienting-yourself-in-the-command-line-folders">Orienting Yourself in the Command Line: Folders</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#note-for-staff-or-company-computers"><em>Note for staff or company computers</em></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#orienting-yourself-in-the-command-line-folders">Orienting Yourself in the Command Line: Folders</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#note-for-staff-or-company-computers"><em>Note for staff or company computers</em></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-projects-folder">Making a Projects Folder</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-cheat-sheets">Shell Cheat Sheets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
@@ -1328,6 +1332,8 @@ It is better to make many commits with smaller changes rather than of one commit
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Git</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-your-installation">Check Your Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-more-about-setting-up-git-sub-pdf-from-github-git-cheat-sheet"><sub> More about setting up git</sub>
+PDF from GitHub: GIT CHEAT SHEET</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-folder">Creating a Project Folder</a></li>

@@ -122,6 +122,7 @@ I had used Git and GitHub on a project, but understood the softwares minimally.
 **Cheatsheets For Git**
 - [Git Cheatsheets for Quick Reference](https://swcarpentry.github.io/git-novice/reference.html#top)
 - Printable Git cheatsheets in several languages are [available here](https://github.github.com/training-kit/) ([English version](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)). More material is available from the [GitHub training website](https://try.github.io/).
+- [GIT CHEAT SHEET pdf](https://education.github.com/git-cheat-sheet-education.pdf)
 - An [interactive one-page visualisation](https://ndpsoftware.com/git-cheatsheet.html)
   about the relationships between workspace, staging area, local repository, upstream repository, and the commands associated with each (with explanations).
 - Both resources are also available in other languages (e.g. Spanish, French, and more).
