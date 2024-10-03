@@ -1,5 +1,22 @@
 # Command Line
 
+# The Unix shell
+
+Shell: ["A shell is a terminal application used to interface with an operating system through written commands." ](https://www.atlassian.com/git/tutorials/git-bash#:~:text=Git%20Bash%20is%20an%20application,operating%20system%20through%20written%20commands.)
+- The [Unix shell](https://swcarpentry.github.io/shell-novice/01-intro.html) is both a command-line interface (CLI) and a scripting language, allowing such repetitive tasks to be done automatically and fast. 
+- The most popular Unix shell is Bash. Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows. Note that ‘Git Bash’ is a piece of software that enables Windows users to use a Bash like interface when interacting with Git.
+
+# Bash
+
+- "Bash is a popular *default shell* on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system."
+- If you are running Linux and macOS, Bash should be available.  If you are running Windows, you need to install GitBash. 
+- [Installation](https://carpentries.github.io/workshop-template/install_instructions/#shell)
+
+- Based on [Software Carpentry lesson](https://swcarpentry.github.io/shell-novice/) 
+- [What is Terminal, Console, Shell and Kernel?](https://www.geeksforgeeks.org/what-is-terminal-console-shell-and-kernel/)
+
+# Review of Command Line 
+
 We will begin with an overview of the Command line (also command shell).
 - For additional practice, you can look at this [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
 

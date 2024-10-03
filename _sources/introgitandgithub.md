@@ -1,20 +1,45 @@
 # How to use Git & GitHub
 **Hands on workshop. In this workshop we will *install software* on your laptop/local machine**
 
-- In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE [(Integrated Development Environment)](https://www.codecademy.com/article/what-is-an-ide) and upload a repository with that file to their Github account. 
+Getting Started with Git and GitHub (Workshop): In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE [(Integrated Development Environment)](https://www.codecademy.com/article/what-is-an-ide) and upload a repository with that file to their Github account. 
 - *This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)*  
 
-# Command Line
-* We will begin with an overview of the [Command line](https://southernmethodistuniversity.github.io/git/commandline.html#)
-- [The Unix Shell workshop](https://swcarpentry.github.io/shell-novice/index.html)
-
 # Required Software and accounts for Git & GitHub Workshop
-Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.
+For this workshop, you will need your own laptop on which you have administrative permissions (so you can install software). This is a list of the prerequisite installations (or accounts) that are required for this workshop.
+    
 
-**Git** (required)  
-- If you do not have [Git](https://git-scm.com/) installed, directions can be [found here](https://carpentries.github.io/workshop-template/install_instructions/#git)
+**Git** *(required)*
 
-**Git from the command line** (required)  
+[Git](https://git-scm.com/downloads) may already be installed on your computer. 
+- To check on *Linux & MacOS*: In your terminal, type the following command:
+```console
+$ git --version
+```
+- *Windows* users will need to [download and install GitBash](https://gitforwindows.org/)  
+- To check on *Windows PCs*: In GitBash, type the following command:
+```console
+$ git --version
+```
+
+If you see a version number, you're all set. If not, [go here to download and install](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+
+**IDE (integrated development environment)** *(required)*
+- [Download and Install VSCode](https://code.visualstudio.com/) 
+
+**Github** *(required)*
+- [Create a GitHub account](https://github.com/)
+
+___ 
+# What are Git and GitHub ?
+
+## Why use it? What You Can Do with Git and GitHub ?
+
+* <a href="https://github.com/SouthernMethodistUniversity/git/blob/main/sections/files/HPCgithubintro.pdf">Link to presentation slides</a>
+* [What are Git & GitHub](https://southernmethodistuniversity.github.io/git/whatgitandgithub.html)
+
+____
+
+# Command-Line Interface (CLI)
 
 * Using git from the command line **depends on your operating system (OS)**
 
@@ -31,28 +56,148 @@ Some software is required for you to participate in this workshop. This is a lis
     - [Download and **install Git For Windows** like other Windows applications.](https://gitforwindows.org/)
     - Once downloaded find the included .exe file and open to execute Git Bash.
   
-
 * [Alternate option: This link goes to the Software Carpentry installation directions for accessing the unix shell](https://carpentries.github.io/workshop-template/install_instructions/#shell) 
 
-
-## Practice Navigating the Command Line
-
-If you don't feel comfortable navigating your hard drive through the command line, [here is a short section catching you up.](https://southernmethodistuniversity.github.io/git/commandline.html#) 
+* Here is a [CLI review](https://southernmethodistuniversity.github.io/git/commandline.html#) 
 
 *[Note for computers with multiple users (staff of or other shared computers)](https://southernmethodistuniversity.github.io/git/commandline.html#note-for-staff-or-company-computers)
 
-**Github** (required)  
-- **[Create a GitHub account](https://github.com/join) (required)**
-- You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. 
-- For SMU affiliates (students, faculty,staff): If you already have an account, you *do not need to create another account.* In the settings section of your personal account, you can add additional emails, such as your SMU email. 
-- If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
-  
-**integrated development environment (IDE)** 
-* [What is an IDE?](https://southernmethodistuniversity.github.io/git/ide.html) 
-- In the content for this workshop, the examples use Visual Studio Code
-- [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any IDE but for our purposes, Visual Studio Code ("VS Code") will be used.
- - [Download and install](https://code.visualstudio.com/)
- - [Directions](https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/)
+- [What is Terminal, Console, Shell and Kernel?](https://www.geeksforgeeks.org/what-is-terminal-console-shell-and-kernel/)
+
+
+During this workshop, you'll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.
+
+In addition to the command line, you'll be using your text editor and your browser. Before continuing, its important that we clearly distinguish between these three different spaces or environments:
+- Your plain text editor where you'll be writing your document is on your local computer.
+- That document is initially saved in a git-enabled repository on your local computer.
+- Your browser is where you'll be uploading your repository to GitHub, a cloud service.
+- Your terminal is where you'll be communicating with GitHub to send the repository and project files back and forth between the cloud (which you can view through the GitHub website) and your hard drive.
+
+Because you'll be moving between these three spaces throughout the workshop, you may want to use (<kbd>command (⌘)</kbd> + <kbd>tab</kbd>) or (<kbd>control</kbd> + <kbd>tab</kbd>) to move quickly between the three windows on your desktop.
+
+## Accessing the Terminal
+
+### macOS
+
+Hold the <kbd>command (⌘)</kbd> key and press the <kbd>space</kbd> bar at the same time to bring up the "Spotlight Search" window. Type `terminal`, followed by <kbd>enter</kbd> to quickly open the Terminal.
+
+### Windows
+
+Press the <kbd>windows</kbd> button on your keyboard. When the search menu pops up, type `git bash` and press <kbd>enter</kbd>.
+
+## Practice Navigating the Command Line
+
+We are going to practice navigating your hard drive through the command line. 
+
+- For further practice, you may want to work through one of 
+ the following workshops: [Introduction to the Command Line](https://gc-dri.github.io/Dhrift-GC/workshops/command-line/) or [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
+
+# Where is CLI
+
+Orienting Yourself in the Command Line: Folders
+
+![What your Computer's Folders might look like](..main/images/vscode2.png "Computer's Folders")
+
+
+Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:
+
+```console
+$ pwd
+```
+
+Now, use the following command to go up one directory:
+
+```console
+$ cd ..
+```
+
+To navigate down one directory in your terminal, use the cd command followed by the name of the subdirectory you want to enter
+```console
+ $ cd <subdirectory-name>
+```
+Check your current directory again using the following command. You should be back in your "home" directory:
+
+```console
+$ pwd
+```
+
+Practice going back and forth between your Desktop and your home directory.
+
+When finished, go to your Desktop folder and check that you're there with `pwd`.
+
+You can also navigate to the location where you want to create the folder
+```console
+$ cd path/to/parent/folder
+```
+ 
+
+You can create the folder anywhere on your hard drive by typing the following into your terminal and hitting <kbd>enter</kbd>.
+
+```console
+$ cd <directory-name>
+```
+
+Let's practice this command by using it to take us to our Desktop. Type the following command into your terminal and hit <kbd>enter</kbd>.
+
+```console
+$ cd Desktop
+```
+
+This will change your current working directory from `/Users/<your-name>` to `/Users/<your-name>/Desktop`.
+
+#### *Note for staff or company computers* 
+
+If your computer has multiple users you can choose your user profile in the C: drive or you type the following command in your terminal and and hit <kbd>enter</kbd>
+```console
+$ cd C:/Users/[put your username such as SMU ID here]/Desktop/
+```
+
+
+
+## Making a Projects Folder
+
+In this session, we will be making a resume (or syllabus) and using Git to keep track of our revisions. Let's create a Git project folder.
+
+If you don't have a projects folder on your desktop, create one using the following command:
+
+```console
+$ mkdir projects
+```
+
+From `Desktop`, Navigate into your `projects` folder using the following command:
+
+```console
+$ cd projects
+```
+
+Then create a `git-practice` folder with the following command:
+
+```console
+$ mkdir git-practice
+```
+
+Navigate into the new `git-practice` folder using the following command:
+
+```console
+$ cd git-practice
+```
+
+At this point, when you type `pwd`, your folder structure should look like this:
+
+```console
+$ pwd
+/home/<username>/Desktop/projects/git-practice
+```
+
+To see what files are in a folder, `ls`, it will show what files are there. To see all files, including invisible, type `ls -a`
+
+```console
+$ ls
+
+$ ls -a
+```
+
+
 
 ***Authenticating to Remote Git Repositories***  
 "Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
@@ -64,18 +209,41 @@ There are three main approaches you can take:
 - [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
     - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
 
-___ 
-# Getting Started with Git and GitHub (Workshop)
 
-## Why use it? What You Can Do with Git and GitHub ?
+### Shell Cheat Sheets
 
-* <a href="https://github.com/SouthernMethodistUniversity/git/blob/main/sections/files/HPCgithubintro.pdf">Link to presentation slides</a>
-* [What are Git & GitHub](https://southernmethodistuniversity.github.io/git/whatgitandgithub.html)
+[Summary of Basic Commands](https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands)
 
-____
+| Action       | Files | Folders      | 
+| ------------ | ----- | ------------ |
+| Inspect      | ls    | ls           | 
+| View content | cat   | ls           | 
+| Navigate to  |       | cd           | 
+| Move         | mv    | mv           | 
+| Copy         | cp    | cp -r        | 
+| Create       | nano  | mkdir        | 
+| Delete       | rm    | rmdir, rm -r | 
+
+- [Unix Shell Cheat Sheet](https://cambiotraining.github.io/hpc-intro/99-unix_cheatsheet.html)
+
+### Glossary
+- [Glossary](https://swcarpentry.github.io/shell-novice/reference.html#glossary)
 
 
-# SET UP: Setting Up Git
+*Pro-tip for the Command Line: How to exit unknown screens*
+
+If you're ever stuck or "trapped" on the command line, try running through these common exit commands to return to the prompt:
+
+- <kbd>control</kbd> + <kbd>c</kbd>
+- <kbd>control</kbd> + <kbd>d</kbd>
+- `q` followed by <kbd>enter</kbd>
+- `:q` followed by <kbd>enter</kbd>
+
+<kbd>control</kbd> + <kbd>c</kbd> attempts to abort the current task and restore user control. <kbd>control</kbd> + <kbd>d</kbd> escapes the current shell environment—if you use it at the normal `$` prompt, it will end the current command line session. `q` is often used as a command (followed by <kbd>enter</kbd>) to escape from specific programs like `less`. `:q` is the command used in `vi` that changes the mode of interaction (`:`), allowing you to enter the `q`, a one-letter command to quit, which must be followed by <kbd>enter</kbd>. Thus, it's a command specific to `vi`.
+
+
+# Git
+- Setting Up Git
 
 Through this section, you'll be checking your installation and configuring Git with your own name and information.
 
@@ -142,34 +310,46 @@ Before version control is useful, we'll have to create a text file for Git to tr
 
 <sub>[More about creating a repository](https://swcarpentry.github.io/git-novice/03-create.html)</sub>
 
-# Creating a file in the project folder (plain text or Markdown)
 
-## Creating a plain text file 
+---
+# VSCode (IDE)
 
-To quickly create a plain text file in your practice folder, enter the following command 
+**integrated development environment (IDE)** 
+* [What is an IDE?](https://southernmethodistuniversity.github.io/git/ide.html) 
+- In the content for this workshop, the examples use Visual Studio Code
+- [Visual Studio Code](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md) (recommended) You can use any IDE but for our purposes, Visual Studio Code ("VS Code") will be used.
+ - [Download and install](https://code.visualstudio.com/)
+ - [Directions](https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/)
+
+
+- We will be creating a file in the project folder (plain text or Markdown)
+- To quickly create a plain text file in your practice folder, enter the following command 
 
 ```console
 $ echo "hello" > hello.txt
 ```
-## Creating a file (Creating a Markdown file using an IDE)
+
+## Creating a Markdown file using an IDE
 
 To create a plain text file, we're going to switch to our text editor, Visual Studio Code, to create and edit a file named `syllabus.md` and save it to our `git-practice` folder. The `.md` extension indicates that it is a Markdown file, which is a special file format we will dive into in the next section.  
 
-If you have not installed Visual Studio Code, review [the installation instructions here](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md).
-
 In terminal, check to make sure you are in your `git-practice` folder. (_Hint_: use `pwd` to see what directory you are currently in.)
 
-Next, open the `syllabus.md` file in Visual Studio Code using:
+We are going to open VSCode and create a markdown file.  Open VSCode it using the Start Menu on Windows or Spotlight Search on macOS as you would any other software. 
 
-```console
-$ code syllabus.md
-```
-<sub>**Note** code is the command used for Visual Studio code. If this does not work, or you would like to set a different text editor, you can do so using the correct configuration command for the text editor. </sub>
+- -Then click `File > New File` 
+- in 'Enter File name" type `<filename>.md`
+  - .md indicates a markdown file.
+- use the dialog to navigate to the `/Users/<your-name>/Desktop/projects/git` folder and save  `<filename>.md` file there.
 
 
-[See this page for configuration commands for other text editors](https://swcarpentry.github.io/git-novice/02-setup.html)
+<sub> For future reference: You can set shortcut commands for your IDE: [See this page for configuration commands for text editors](https://swcarpentry.github.io/git-novice/02-setup.html) </sub>
 ```console
 $ git config --global core.editor "Add specific command for text editor"
+```
+<sub> For example, you can set a shortcut command for VSCode, which will be:</sub>
+```console
+$ code <file name>
 ```
 
 
@@ -177,14 +357,14 @@ You should see a window appear that looks similar to this:
 
 ![Image of what Visual Studio Code looks like when opening the syllabus.md file](../images/vscode1.png)
 
-If Visual Studio Code does not open when you use the `code` command in your terminal, open it using the Start Menu on Windows or Spotlight Search on macOS as you would any other software. Then click `File > Open File` and use the dialog to navigate to the `/Users/<your-name>/Desktop/projects/git` folder and create a `syllabus.md` file there.
+
 
 We'll be typing our markdown into this file in the Visual Studio Code window. At any time, you can save your file by hitting <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS. Alternatively, you can click the `File` menu on the top right, then select `Save` from the dropdown menu.
 
 Saving frequently is advised. When we get to the version control functionality of Git, only changes that are saved will be preserved when a version is created.
 
----
-# Creating Content Using Markdown
+
+## Creating Content Using Markdown
 
 We'll be using **Markdown** to write a file (it can be a syllabus, a CV, a profile page,etc,) and then using **Git** to track any changes we make to it. Markdown allows us to format textual features like headings, emphasis, links, and lists in a plain text file using a streamlined set of notations that humans can interpret without much training. Markdown files usually have a `.md` extension.  
 
@@ -251,7 +431,7 @@ This is a second paragraph in markdown, which I'll use to tell you what I like a
 
 ## Challenge
 
-Use these five elements—headings, emphasis, lists, links, and paragraphs—to create a syllabus. Have a main heading that gives the course title (one `#`), then subheadings for, at least, course info and readings. Use emphasis (`*`) for book titles and try to get a list in there somewhere.
+Use these five elements—headings, emphasis, lists, links, and paragraphs—to create a resume or syllabus. Have a main heading that gives the course title (one `#`), then subheadings for, at least, course info and readings. Use emphasis (`*`) for book titles and try to get a list in there somewhere.
 
 If you want an a more advanced challenge, you can review some additional markdown elements on [this page](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and add some extra features like images, blockquotes, or horizontal rules.
 
@@ -259,7 +439,9 @@ If you want an a more advanced challenge, you can review some additional markdow
 
 You can look at an example syllabus in raw text form [here](https://raw.githubusercontent.com/SouthernMethodistUniversity/dhri/main/sections/data1.md). When it's rendered by GitHub, it looks like [this](https://github.com/SouthernMethodistUniversity/dhri/blob/main/sections/data1.md). When editing the markdown file in Visual Studio Code, it might look like this:
 
-![What your markdown might look like when typed into Visual Studio Code](../images/vscode2.png)
+![What your markdown might look like when typed into Visual Studio Code](..main/images/vscode2.png "markdown typed into Visual Studio Code")
+
+
 
 ## Tips
 
@@ -275,7 +457,7 @@ You can look at an example syllabus in raw text form [here](https://raw.githubus
 
 ---
 
-# Staging and Committing Changes
+# Staging and Committing Changes (Git)
 
 Git's primary function is version control, or to track a project as it exists at particular points in time. Now that we have a file to track—our `syllabus.md`—let's use Git to save the current state of the repository as it exists now.
 
@@ -419,8 +601,26 @@ Another option is to press <kbd>control</kbd> + <kbd>c</kbd> on your keyboard, w
 
 
 ---
+# Github
+## Pushing to GitHub
+-Now we will push the repo you made on your local machine to the cloud (Github)
 
-# Pushing to GitHub
+**Github** (required)  
+- **[Create a GitHub account](https://github.com/join) (required)**
+- You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link. 
+- For SMU affiliates (students, faculty,staff): If you already have an account, you *do not need to create another account.* In the settings section of your personal account, you can add additional emails, such as your SMU email. 
+- If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about [here](https://education.github.com/pack)
+  
+***Authenticating to Remote Git Repositories***  
+"Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
+  
+There are three main approaches you can take:
+- Using a personal authentication token or password
+- Using an SSH key
+- Using your GitHub password with 2-factor authentication"
+- [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
+    - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
+
 
 Now, let's connect the directory you made to GitHub. GitHub is a service that allows us to host files, collaborate, and find the work of others. Once our syllabus is on GitHub, it will be publicly visible.
 

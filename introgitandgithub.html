@@ -200,6 +200,9 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <li class="toctree-l1"><a class="reference internal" href="commandline.html">Command Line</a></li>
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ide.html">IDE</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">How to use Git &amp; GitHub</a></li>
@@ -414,40 +417,54 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line">Command Line</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started-with-git-and-github-workshop">Getting Started with Git and GitHub (Workshop)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-git-and-github">What are Git and GitHub ?</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-setting-up-git">SET UP: Setting Up Git</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#where-is-cli">Where is CLI</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#note-for-staff-or-company-computers"><em>Note for staff or company computers</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-projects-folder">Making a Projects Folder</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-cheat-sheets">Shell Cheat Sheets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Git</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-your-installation">Check Your Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-folder">Creating a Project Folder</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-in-the-project-folder-plain-text-or-markdown">Creating a file in the project folder (plain text or Markdown)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-plain-text-file">Creating a plain text file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-creating-a-markdown-file-using-an-ide">Creating a file (Creating a Markdown file using an IDE)</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-content-using-markdown">Creating Content Using Markdown</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-ide">VSCode (IDE)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-markdown-file-using-an-ide">Creating a Markdown file using an IDE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-content-using-markdown">Creating Content Using Markdown</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge">Challenge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-and-committing-changes">Staging and Committing Changes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-and-committing-changes-git">Staging and Committing Changes (Git)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-metaphor-for-adding-and-committing">A Metaphor for Adding and Committing</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-changes-with-the-add-command">Staging Changes with the <code class="docutils literal notranslate"><span class="pre">add</span></code> Command</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">Committing Changes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-use-the-m-flag">Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github">Github</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-content">Contributing content</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
 </ul>
@@ -481,28 +498,53 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="how-to-use-git-github">
 <h1>How to use Git &amp; GitHub<a class="headerlink" href="#how-to-use-git-github" title="Permalink to this heading">#</a></h1>
 <p><strong>Hands on workshop. In this workshop we will <em>install software</em> on your laptop/local machine</strong></p>
+<p>Getting Started with Git and GitHub (Workshop): In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE <a class="reference external" href="https://www.codecademy.com/article/what-is-an-ide">(Integrated Development Environment)</a> and upload a repository with that file to their Github account.</p>
 <ul class="simple">
-<li><p>In this 2 hour + workshop participants will create a Git initialized folder on their local machine. They will create a Markdown file using an IDE <a class="reference external" href="https://www.codecademy.com/article/what-is-an-ide">(Integrated Development Environment)</a> and upload a repository with that file to their Github account.</p></li>
 <li><p><em>This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)</em></p></li>
-</ul>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="command-line">
-<h1>Command Line<a class="headerlink" href="#command-line" title="Permalink to this heading">#</a></h1>
-<ul class="simple">
-<li><p>We will begin with an overview of the <a class="reference external" href="https://southernmethodistuniversity.github.io/git/commandline.html#">Command line</a></p></li>
-</ul>
-<ul class="simple">
-<li><p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/index.html">The Unix Shell workshop</a></p></li>
 </ul>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="required-software-and-accounts-for-git-github-workshop">
 <h1>Required Software and accounts for Git &amp; GitHub Workshop<a class="headerlink" href="#required-software-and-accounts-for-git-github-workshop" title="Permalink to this heading">#</a></h1>
-<p>Some software is required for you to participate in this workshop. This is a list of the prerequisite installations that are required of you, a link to each of their instructions and an indication as to whether it is required or not.</p>
-<p><strong>Git</strong> (required)</p>
+<p>For this workshop, you will need your own laptop on which you have administrative permissions (so you can install software). This is a list of the prerequisite installations (or accounts) that are required for this workshop.</p>
+<p><strong>Git</strong> <em>(required)</em></p>
+<p><a class="reference external" href="https://git-scm.com/downloads">Git</a> may already be installed on your computer.</p>
 <ul class="simple">
-<li><p>If you do not have <a class="reference external" href="https://git-scm.com/">Git</a> installed, directions can be <a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#git">found here</a></p></li>
+<li><p>To check on <em>Linux &amp; MacOS</em>: In your terminal, type the following command:</p></li>
 </ul>
-<p><strong>Git from the command line</strong> (required)</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>--version
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><em>Windows</em> users will need to <a class="reference external" href="https://gitforwindows.org/">download and install GitBash</a></p></li>
+<li><p>To check on <em>Windows PCs</em>: In GitBash, type the following command:</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>If you see a version number, you’re all set. If not, <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">go here to download and install</a></p>
+<p><strong>IDE (integrated development environment)</strong> <em>(required)</em></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://code.visualstudio.com/">Download and Install VSCode</a></p></li>
+</ul>
+<p><strong>Github</strong> <em>(required)</em></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/">Create a GitHub account</a></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="what-are-git-and-github">
+<h1>What are Git and GitHub ?<a class="headerlink" href="#what-are-git-and-github" title="Permalink to this heading">#</a></h1>
+<section id="why-use-it-what-you-can-do-with-git-and-github">
+<h2>Why use it? What You Can Do with Git and GitHub ?<a class="headerlink" href="#why-use-it-what-you-can-do-with-git-and-github" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a href="https://github.com/SouthernMethodistUniversity/git/blob/main/sections/files/HPCgithubintro.pdf">Link to presentation slides</a></p></li>
+<li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/git/whatgitandgithub.html">What are Git &amp; GitHub</a></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="command-line-interface-cli">
+<h1>Command-Line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Using git from the command line <strong>depends on your operating system (OS)</strong></p>
 <ul>
@@ -526,28 +568,113 @@ document.write(`
 </ul>
 </li>
 <li><p><a class="reference external" href="https://carpentries.github.io/workshop-template/install_instructions/#shell">Alternate option: This link goes to the Software Carpentry installation directions for accessing the unix shell</a></p></li>
+<li><p>Here is a <a class="reference external" href="https://southernmethodistuniversity.github.io/git/commandline.html#">CLI review</a></p></li>
 </ul>
+<p>*<a class="reference external" href="https://southernmethodistuniversity.github.io/git/commandline.html#note-for-staff-or-company-computers">Note for computers with multiple users (staff of or other shared computers)</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geeksforgeeks.org/what-is-terminal-console-shell-and-kernel/">What is Terminal, Console, Shell and Kernel?</a></p></li>
+</ul>
+<p>During this workshop, you’ll be communicating with GitHub from your local computer via the command line (the Terminal or the Git Bash on Windows). This section reviews some of the basic commands that will also be used in this workshop.</p>
+<p>In addition to the command line, you’ll be using your text editor and your browser. Before continuing, its important that we clearly distinguish between these three different spaces or environments:</p>
+<ul class="simple">
+<li><p>Your plain text editor where you’ll be writing your document is on your local computer.</p></li>
+<li><p>That document is initially saved in a git-enabled repository on your local computer.</p></li>
+<li><p>Your browser is where you’ll be uploading your repository to GitHub, a cloud service.</p></li>
+<li><p>Your terminal is where you’ll be communicating with GitHub to send the repository and project files back and forth between the cloud (which you can view through the GitHub website) and your hard drive.</p></li>
+</ul>
+<p>Because you’ll be moving between these three spaces throughout the workshop, you may want to use (<kbd>command (⌘)</kbd> + <kbd>tab</kbd>) or (<kbd>control</kbd> + <kbd>tab</kbd>) to move quickly between the three windows on your desktop.</p>
+<section id="accessing-the-terminal">
+<h2>Accessing the Terminal<a class="headerlink" href="#accessing-the-terminal" title="Permalink to this heading">#</a></h2>
+<section id="macos">
+<h3>macOS<a class="headerlink" href="#macos" title="Permalink to this heading">#</a></h3>
+<p>Hold the <kbd>command (⌘)</kbd> key and press the <kbd>space</kbd> bar at the same time to bring up the “Spotlight Search” window. Type <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, followed by <kbd>enter</kbd> to quickly open the Terminal.</p>
+</section>
+<section id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this heading">#</a></h3>
+<p>Press the <kbd>windows</kbd> button on your keyboard. When the search menu pops up, type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">bash</span></code> and press <kbd>enter</kbd>.</p>
+</section>
+</section>
 <section id="practice-navigating-the-command-line">
 <h2>Practice Navigating the Command Line<a class="headerlink" href="#practice-navigating-the-command-line" title="Permalink to this heading">#</a></h2>
-<p>If you don’t feel comfortable navigating your hard drive through the command line, <a class="reference external" href="https://southernmethodistuniversity.github.io/git/commandline.html#">here is a short section catching you up.</a></p>
-<p>*<a class="reference external" href="https://southernmethodistuniversity.github.io/git/commandline.html#note-for-staff-or-company-computers">Note for computers with multiple users (staff of or other shared computers)</a></p>
-<p><strong>Github</strong> (required)</p>
+<p>We are going to practice navigating your hard drive through the command line.</p>
 <ul class="simple">
-<li><p><strong><a class="reference external" href="https://github.com/join">Create a GitHub account</a> (required)</strong></p></li>
-<li><p>You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link.</p></li>
-<li><p>For SMU affiliates (students, faculty,staff): If you already have an account, you <em>do not need to create another account.</em> In the settings section of your personal account, you can add additional emails, such as your SMU email.</p></li>
-<li><p>If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about <a class="reference external" href="https://education.github.com/pack">here</a></p></li>
+<li><p>For further practice, you may want to work through one of
+the following workshops: <a class="reference external" href="https://gc-dri.github.io/Dhrift-GC/workshops/command-line/">Introduction to the Command Line</a> or <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></p></li>
 </ul>
-<p><strong>integrated development environment (IDE)</strong></p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/git/ide.html">What is an IDE?</a></p></li>
-</ul>
-<ul class="simple">
-<li><p>In the content for this workshop, the examples use Visual Studio Code</p></li>
-<li><p><a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">Visual Studio Code</a> (recommended) You can use any IDE but for our purposes, Visual Studio Code (“VS Code”) will be used.</p></li>
-<li><p><a class="reference external" href="https://code.visualstudio.com/">Download and install</a></p></li>
-<li><p><a class="reference external" href="https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/">Directions</a></p></li>
-</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="where-is-cli">
+<h1>Where is CLI<a class="headerlink" href="#where-is-cli" title="Permalink to this heading">#</a></h1>
+<p>Orienting Yourself in the Command Line: Folders</p>
+<p><img alt="What your Computer's Folders might look like" src="..main/images/vscode2.png" /></p>
+<p>Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Now, use the following command to go up one directory:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>..
+</pre></div>
+</div>
+<p>To navigate down one directory in your terminal, use the cd command followed by the name of the subdirectory you want to enter</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"> $ </span><span class="nb">cd</span><span class="w"> </span>&lt;subdirectory-name&gt;
+</pre></div>
+</div>
+<p>Check your current directory again using the following command. You should be back in your “home” directory:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Practice going back and forth between your Desktop and your home directory.</p>
+<p>When finished, go to your Desktop folder and check that you’re there with <code class="docutils literal notranslate"><span class="pre">pwd</span></code>.</p>
+<p>You can also navigate to the location where you want to create the folder</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>path/to/parent/folder
+</pre></div>
+</div>
+<p>You can create the folder anywhere on your hard drive by typing the following into your terminal and hitting <kbd>enter</kbd>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>&lt;directory-name&gt;
+</pre></div>
+</div>
+<p>Let’s practice this command by using it to take us to our Desktop. Type the following command into your terminal and hit <kbd>enter</kbd>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>Desktop
+</pre></div>
+</div>
+<p>This will change your current working directory from <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;</span></code> to <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop</span></code>.</p>
+<section id="note-for-staff-or-company-computers">
+<h2><em>Note for staff or company computers</em><a class="headerlink" href="#note-for-staff-or-company-computers" title="Permalink to this heading">#</a></h2>
+<p>If your computer has multiple users you can choose your user profile in the C: drive or you type the following command in your terminal and and hit <kbd>enter</kbd></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>C:/Users/<span class="o">[</span>put<span class="w"> </span>your<span class="w"> </span>username<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>SMU<span class="w"> </span>ID<span class="w"> </span>here<span class="o">]</span>/Desktop/
+</pre></div>
+</div>
+</section>
+<section id="making-a-projects-folder">
+<h2>Making a Projects Folder<a class="headerlink" href="#making-a-projects-folder" title="Permalink to this heading">#</a></h2>
+<p>In this session, we will be making a resume (or syllabus) and using Git to keep track of our revisions. Let’s create a Git project folder.</p>
+<p>If you don’t have a projects folder on your desktop, create one using the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>projects
+</pre></div>
+</div>
+<p>From <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>, Navigate into your <code class="docutils literal notranslate"><span class="pre">projects</span></code> folder using the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>projects
+</pre></div>
+</div>
+<p>Then create a <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder with the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>git-practice
+</pre></div>
+</div>
+<p>Navigate into the new <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder using the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>git-practice
+</pre></div>
+</div>
+<p>At this point, when you type <code class="docutils literal notranslate"><span class="pre">pwd</span></code>, your folder structure should look like this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
+<span class="go">/home/&lt;username&gt;/Desktop/projects/git-practice</span>
+</pre></div>
+</div>
+<p>To see what files are in a folder, <code class="docutils literal notranslate"><span class="pre">ls</span></code>, it will show what files are there. To see all files, including invisible, type <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-a</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ls
+
+<span class="gp">$ </span>ls<span class="w"> </span>-a
+</pre></div>
+</div>
 <p><em><strong>Authenticating to Remote Git Repositories</strong></em><br />
 “Git provides multiple protocols for authenticating to and interacting with remote Git repositories.</p>
 <p>There are three main approaches you can take:</p>
@@ -561,22 +688,73 @@ document.write(`
 </ul>
 </li>
 </ul>
-</section>
-</section>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-git-and-github-workshop">
-<h1>Getting Started with Git and GitHub (Workshop)<a class="headerlink" href="#getting-started-with-git-and-github-workshop" title="Permalink to this heading">#</a></h1>
-<section id="why-use-it-what-you-can-do-with-git-and-github">
-<h2>Why use it? What You Can Do with Git and GitHub ?<a class="headerlink" href="#why-use-it-what-you-can-do-with-git-and-github" title="Permalink to this heading">#</a></h2>
+<section id="shell-cheat-sheets">
+<h3>Shell Cheat Sheets<a class="headerlink" href="#shell-cheat-sheets" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands">Summary of Basic Commands</a></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p>Files</p></th>
+<th class="head"><p>Folders</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Inspect</p></td>
+<td><p>ls</p></td>
+<td><p>ls</p></td>
+</tr>
+<tr class="row-odd"><td><p>View content</p></td>
+<td><p>cat</p></td>
+<td><p>ls</p></td>
+</tr>
+<tr class="row-even"><td><p>Navigate to</p></td>
+<td><p></p></td>
+<td><p>cd</p></td>
+</tr>
+<tr class="row-odd"><td><p>Move</p></td>
+<td><p>mv</p></td>
+<td><p>mv</p></td>
+</tr>
+<tr class="row-even"><td><p>Copy</p></td>
+<td><p>cp</p></td>
+<td><p>cp -r</p></td>
+</tr>
+<tr class="row-odd"><td><p>Create</p></td>
+<td><p>nano</p></td>
+<td><p>mkdir</p></td>
+</tr>
+<tr class="row-even"><td><p>Delete</p></td>
+<td><p>rm</p></td>
+<td><p>rmdir, rm -r</p></td>
+</tr>
+</tbody>
+</table>
 <ul class="simple">
-<li><p><a href="https://github.com/SouthernMethodistUniversity/git/blob/main/sections/files/HPCgithubintro.pdf">Link to presentation slides</a></p></li>
-<li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/git/whatgitandgithub.html">What are Git &amp; GitHub</a></p></li>
+<li><p><a class="reference external" href="https://cambiotraining.github.io/hpc-intro/99-unix_cheatsheet.html">Unix Shell Cheat Sheet</a></p></li>
 </ul>
 </section>
+<section id="glossary">
+<h3>Glossary<a class="headerlink" href="#glossary" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/reference.html#glossary">Glossary</a></p></li>
+</ul>
+<p><em>Pro-tip for the Command Line: How to exit unknown screens</em></p>
+<p>If you’re ever stuck or “trapped” on the command line, try running through these common exit commands to return to the prompt:</p>
+<ul class="simple">
+<li><p><kbd>control</kbd> + <kbd>c</kbd></p></li>
+<li><p><kbd>control</kbd> + <kbd>d</kbd></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">q</span></code> followed by <kbd>enter</kbd></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:q</span></code> followed by <kbd>enter</kbd></p></li>
+</ul>
+<p><kbd>control</kbd> + <kbd>c</kbd> attempts to abort the current task and restore user control. <kbd>control</kbd> + <kbd>d</kbd> escapes the current shell environment—if you use it at the normal <code class="docutils literal notranslate"><span class="pre">$</span></code> prompt, it will end the current command line session. <code class="docutils literal notranslate"><span class="pre">q</span></code> is often used as a command (followed by <kbd>enter</kbd>) to escape from specific programs like <code class="docutils literal notranslate"><span class="pre">less</span></code>. <code class="docutils literal notranslate"><span class="pre">:q</span></code> is the command used in <code class="docutils literal notranslate"><span class="pre">vi</span></code> that changes the mode of interaction (<code class="docutils literal notranslate"><span class="pre">:</span></code>), allowing you to enter the <code class="docutils literal notranslate"><span class="pre">q</span></code>, a one-letter command to quit, which must be followed by <kbd>enter</kbd>. Thus, it’s a command specific to <code class="docutils literal notranslate"><span class="pre">vi</span></code>.</p>
 </section>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="set-up-setting-up-git">
-<h1>SET UP: Setting Up Git<a class="headerlink" href="#set-up-setting-up-git" title="Permalink to this heading">#</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="git">
+<h1>Git<a class="headerlink" href="#git" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Setting Up Git</p></li>
+</ul>
 <p>Through this section, you’ll be checking your installation and configuring Git with your own name and information.</p>
 <section id="check-your-installation">
 <h2>Check Your Installation<a class="headerlink" href="#check-your-installation" title="Permalink to this heading">#</a></h2>
@@ -624,39 +802,53 @@ document.write(`
 <p>Before version control is useful, we’ll have to create a text file for Git to track. For this session, the file we will track will be a course syllabus—we’ll create that next.</p>
 <p><sub><a class="reference external" href="https://swcarpentry.github.io/git-novice/03-create.html">More about creating a repository</a></sub></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="creating-a-file-in-the-project-folder-plain-text-or-markdown">
-<h1>Creating a file in the project folder (plain text or Markdown)<a class="headerlink" href="#creating-a-file-in-the-project-folder-plain-text-or-markdown" title="Permalink to this heading">#</a></h1>
-<section id="creating-a-plain-text-file">
-<h2>Creating a plain text file<a class="headerlink" href="#creating-a-plain-text-file" title="Permalink to this heading">#</a></h2>
-<p>To quickly create a plain text file in your practice folder, enter the following command</p>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="vscode-ide">
+<h1>VSCode (IDE)<a class="headerlink" href="#vscode-ide" title="Permalink to this heading">#</a></h1>
+<p><strong>integrated development environment (IDE)</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/git/ide.html">What is an IDE?</a></p></li>
+</ul>
+<ul class="simple">
+<li><p>In the content for this workshop, the examples use Visual Studio Code</p></li>
+<li><p><a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">Visual Studio Code</a> (recommended) You can use any IDE but for our purposes, Visual Studio Code (“VS Code”) will be used.</p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/">Download and install</a></p></li>
+<li><p><a class="reference external" href="https://curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/">Directions</a></p></li>
+<li><p>We will be creating a file in the project folder (plain text or Markdown)</p></li>
+<li><p>To quickly create a plain text file in your practice folder, enter the following command</p></li>
+</ul>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hello&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>hello.txt
 </pre></div>
 </div>
-</section>
-<section id="creating-a-file-creating-a-markdown-file-using-an-ide">
-<h2>Creating a file (Creating a Markdown file using an IDE)<a class="headerlink" href="#creating-a-file-creating-a-markdown-file-using-an-ide" title="Permalink to this heading">#</a></h2>
+<section id="creating-a-markdown-file-using-an-ide">
+<h2>Creating a Markdown file using an IDE<a class="headerlink" href="#creating-a-markdown-file-using-an-ide" title="Permalink to this heading">#</a></h2>
 <p>To create a plain text file, we’re going to switch to our text editor, Visual Studio Code, to create and edit a file named <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> and save it to our <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder. The <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension indicates that it is a Markdown file, which is a special file format we will dive into in the next section.</p>
-<p>If you have not installed Visual Studio Code, review <a class="reference external" href="https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md">the installation instructions here</a>.</p>
 <p>In terminal, check to make sure you are in your <code class="docutils literal notranslate"><span class="pre">git-practice</span></code> folder. (<em>Hint</em>: use <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to see what directory you are currently in.)</p>
-<p>Next, open the <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file in Visual Studio Code using:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>code<span class="w"> </span>syllabus.md
+<p>We are going to open VSCode and create a markdown file.  Open VSCode it using the Start Menu on Windows or Spotlight Search on macOS as you would any other software.</p>
+<ul class="simple">
+<li><p>-Then click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">File</span></code></p></li>
+<li><p>in ‘Enter File name” type <code class="docutils literal notranslate"><span class="pre">&lt;filename&gt;.md</span></code></p>
+<ul>
+<li><p>.md indicates a markdown file.</p></li>
+</ul>
+</li>
+<li><p>use the dialog to navigate to the <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop/projects/git</span></code> folder and save  <code class="docutils literal notranslate"><span class="pre">&lt;filename&gt;.md</span></code> file there.</p></li>
+</ul>
+<p><sub> For future reference: You can set shortcut commands for your IDE: <a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup.html">See this page for configuration commands for text editors</a> </sub></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;Add specific command for text editor&quot;</span>
 </pre></div>
 </div>
-<p><sub><strong>Note</strong> code is the command used for Visual Studio code. If this does not work, or you would like to set a different text editor, you can do so using the correct configuration command for the text editor. </sub></p>
-<p><a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup.html">See this page for configuration commands for other text editors</a></p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;Add specific command for text editor&quot;</span>
+<p><sub> For example, you can set a shortcut command for VSCode, which will be:</sub></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>code<span class="w"> </span>&lt;file<span class="w"> </span>name&gt;
 </pre></div>
 </div>
 <p>You should see a window appear that looks similar to this:</p>
 <p><img alt="Image of what Visual Studio Code looks like when opening the syllabus.md file" src="_images/vscode1.png" /></p>
-<p>If Visual Studio Code does not open when you use the <code class="docutils literal notranslate"><span class="pre">code</span></code> command in your terminal, open it using the Start Menu on Windows or Spotlight Search on macOS as you would any other software. Then click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">File</span></code> and use the dialog to navigate to the <code class="docutils literal notranslate"><span class="pre">/Users/&lt;your-name&gt;/Desktop/projects/git</span></code> folder and create a <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file there.</p>
 <p>We’ll be typing our markdown into this file in the Visual Studio Code window. At any time, you can save your file by hitting <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS. Alternatively, you can click the <code class="docutils literal notranslate"><span class="pre">File</span></code> menu on the top right, then select <code class="docutils literal notranslate"><span class="pre">Save</span></code> from the dropdown menu.</p>
 <p>Saving frequently is advised. When we get to the version control functionality of Git, only changes that are saved will be preserved when a version is created.</p>
 </section>
-</section>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="creating-content-using-markdown">
-<h1>Creating Content Using Markdown<a class="headerlink" href="#creating-content-using-markdown" title="Permalink to this heading">#</a></h1>
+<section id="creating-content-using-markdown">
+<h2>Creating Content Using Markdown<a class="headerlink" href="#creating-content-using-markdown" title="Permalink to this heading">#</a></h2>
 <p>We’ll be using <strong>Markdown</strong> to write a file (it can be a syllabus, a CV, a profile page,etc,) and then using <strong>Git</strong> to track any changes we make to it. Markdown allows us to format textual features like headings, emphasis, links, and lists in a plain text file using a streamlined set of notations that humans can interpret without much training. Markdown files usually have a <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension.</p>
 <p><strong>Markdown</strong> is a markup language for formatting text. Like HTML, you add markers to plain text to style and organize the text of a document.</p>
 <p>Whereas you use HTML and CSS with WordPress, you use Markdown to render legible documents on GitHub. Markdown has fewer options for marking text than HTML. It was designed to be easier to write and edit.</p>
@@ -698,15 +890,16 @@ document.write(`
 This is a second paragraph in markdown, which I&#39;ll use to tell you what I like about markdown. I like markdown because it looks pretty good, if minimal, whether you&#39;re looking at the rendered or unrendered version. It&#39;s like tidy HTML.
 </pre></div>
 </div>
+</section>
 <section id="challenge">
 <h2>Challenge<a class="headerlink" href="#challenge" title="Permalink to this heading">#</a></h2>
-<p>Use these five elements—headings, emphasis, lists, links, and paragraphs—to create a syllabus. Have a main heading that gives the course title (one <code class="docutils literal notranslate"><span class="pre">#</span></code>), then subheadings for, at least, course info and readings. Use emphasis (<code class="docutils literal notranslate"><span class="pre">*</span></code>) for book titles and try to get a list in there somewhere.</p>
+<p>Use these five elements—headings, emphasis, lists, links, and paragraphs—to create a resume or syllabus. Have a main heading that gives the course title (one <code class="docutils literal notranslate"><span class="pre">#</span></code>), then subheadings for, at least, course info and readings. Use emphasis (<code class="docutils literal notranslate"><span class="pre">*</span></code>) for book titles and try to get a list in there somewhere.</p>
 <p>If you want an a more advanced challenge, you can review some additional markdown elements on <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">this page</a> and add some extra features like images, blockquotes, or horizontal rules.</p>
 </section>
 <section id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h2>
 <p>You can look at an example syllabus in raw text form <a class="reference external" href="https://raw.githubusercontent.com/SouthernMethodistUniversity/dhri/main/sections/data1.md">here</a>. When it’s rendered by GitHub, it looks like <a class="reference external" href="https://github.com/SouthernMethodistUniversity/dhri/blob/main/sections/data1.md">this</a>. When editing the markdown file in Visual Studio Code, it might look like this:</p>
-<p><img alt="What your markdown might look like when typed into Visual Studio Code" src="_images/vscode2.png" /></p>
+<p><img alt="What your markdown might look like when typed into Visual Studio Code" src="..main/images/vscode2.png" /></p>
 </section>
 <section id="tips">
 <h2>Tips<a class="headerlink" href="#tips" title="Permalink to this heading">#</a></h2>
@@ -721,8 +914,8 @@ This is a second paragraph in markdown, which I&#39;ll use to tell you what I li
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="staging-and-committing-changes">
-<h1>Staging and Committing Changes<a class="headerlink" href="#staging-and-committing-changes" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="staging-and-committing-changes-git">
+<h1>Staging and Committing Changes (Git)<a class="headerlink" href="#staging-and-committing-changes-git" title="Permalink to this heading">#</a></h1>
 <p>Git’s primary function is version control, or to track a project as it exists at particular points in time. Now that we have a file to track—our <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code>—let’s use Git to save the current state of the repository as it exists now.</p>
 <section id="a-metaphor-for-adding-and-committing">
 <h2>A Metaphor for Adding and Committing<a class="headerlink" href="#a-metaphor-for-adding-and-committing" title="Permalink to this heading">#</a></h2>
@@ -827,8 +1020,31 @@ nothing to commit, working tree clean
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="pushing-to-github">
-<h1>Pushing to GitHub<a class="headerlink" href="#pushing-to-github" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="github">
+<h1>Github<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h1>
+<section id="pushing-to-github">
+<h2>Pushing to GitHub<a class="headerlink" href="#pushing-to-github" title="Permalink to this heading">#</a></h2>
+<p>-Now we will push the repo you made on your local machine to the cloud (Github)</p>
+<p><strong>Github</strong> (required)</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://github.com/join">Create a GitHub account</a> (required)</strong></p></li>
+<li><p>You need to have a GitHub account for the purposes of this workshop. It is free to sign up via this link.</p></li>
+<li><p>For SMU affiliates (students, faculty,staff): If you already have an account, you <em>do not need to create another account.</em> In the settings section of your personal account, you can add additional emails, such as your SMU email.</p></li>
+<li><p>If you are an educator or a student, you might also qualify for the GitHub Education Pack, which you can read more about <a class="reference external" href="https://education.github.com/pack">here</a></p></li>
+</ul>
+<p><em><strong>Authenticating to Remote Git Repositories</strong></em><br />
+“Git provides multiple protocols for authenticating to and interacting with remote Git repositories.</p>
+<p>There are three main approaches you can take:</p>
+<ul class="simple">
+<li><p>Using a personal authentication token or password</p></li>
+<li><p>Using an SSH key</p></li>
+<li><p>Using your GitHub password with 2-factor authentication”</p></li>
+<li><p><a class="reference external" href="https://statistics.berkeley.edu/computing/faqs/git-auth">See these directions from Berkeley Statistics</a></p>
+<ul>
+<li><p>For additional directions, <a class="reference external" href="https://docs.github.com/authentication">see Github’s Authentication documentation</a></p></li>
+</ul>
+</li>
+</ul>
 <p>Now, let’s connect the directory you made to GitHub. GitHub is a service that allows us to host files, collaborate, and find the work of others. Once our syllabus is on GitHub, it will be publicly visible.</p>
 <p>Go to GitHub in your browser and click the plus sign in the upper right hand corner.</p>
 <p><img alt="You can find the plus sign button to add a repo on the top right of github" src="_images/addrepo.png" /></p>
@@ -871,6 +1087,7 @@ nothing to commit, working tree clean
 </pre></div>
 </div>
 <p>If you see output like this, go back to your new repository page in the browser and click the <code class="docutils literal notranslate"><span class="pre">Refresh</span></code> button. You should see your <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file on GitHub! Your git credentials are also now stored locally, so you should not need to authorize the credential manager again from that computer.</p>
+</section>
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="contributing-content">
@@ -1086,40 +1303,54 @@ It is better to make many commits with smaller changes rather than of one commit
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line">Command Line</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started-with-git-and-github-workshop">Getting Started with Git and GitHub (Workshop)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-git-and-github">What are Git and GitHub ?</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-setting-up-git">SET UP: Setting Up Git</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-navigating-the-command-line">Practice Navigating the Command Line</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#where-is-cli">Where is CLI</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#note-for-staff-or-company-computers"><em>Note for staff or company computers</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-projects-folder">Making a Projects Folder</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shell-cheat-sheets">Shell Cheat Sheets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Git</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-your-installation">Check Your Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-folder">Creating a Project Folder</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-in-the-project-folder-plain-text-or-markdown">Creating a file in the project folder (plain text or Markdown)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-plain-text-file">Creating a plain text file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-file-creating-a-markdown-file-using-an-ide">Creating a file (Creating a Markdown file using an IDE)</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-content-using-markdown">Creating Content Using Markdown</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-ide">VSCode (IDE)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-markdown-file-using-an-ide">Creating a Markdown file using an IDE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-content-using-markdown">Creating Content Using Markdown</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge">Challenge</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-and-committing-changes">Staging and Committing Changes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-and-committing-changes-git">Staging and Committing Changes (Git)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-metaphor-for-adding-and-committing">A Metaphor for Adding and Committing</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#staging-changes-with-the-add-command">Staging Changes with the <code class="docutils literal notranslate"><span class="pre">add</span></code> Command</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">Committing Changes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-use-the-m-flag">Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github">Github</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-content">Contributing content</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-issues">Creating Issues</a></li>
 </ul>
