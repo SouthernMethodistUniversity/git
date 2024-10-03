@@ -99,6 +99,16 @@ Orienting Yourself in the Command Line: Folders
 
 ![What your Computer's Folders might look like](/git/blob/main/images/folders.png   "Computer's Folders")
 ![What your Computer's Folders might look like](https://github.com/SouthernMethodistUniversity/git/blob/main/images/folders.png "Computer's Folders")
+# Example Page
+
+## Using a Raw GitHub URL
+![What your Computer's Folders might look like](https://github.com/SouthernMethodistUniversity/git/raw/main/images/folders.png "Computer's Folders")
+
+## Using a Relative Path for GitHub Pages
+![What your Computer's Folders might look like](/git/images/folders.png "Computer's Folders")
+
+## Using an Absolute Path for GitHub Pages
+![What your Computer's Folders might look like](https://southernmethodistuniversity.github.io/git/images/folders.png "Computer's Folders")
 
 
 Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:
