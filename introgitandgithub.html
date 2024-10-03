@@ -217,8 +217,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-
-
 <li class="toctree-l1"><a class="reference internal" href="after.html">Theory to Practice</a></li>
 
 </ul>
@@ -416,14 +414,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-git-and-github">What are Git and GitHub ?</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#orienting-yourself-in-the-command-line-folders">Orienting Yourself in the Command Line: Folders</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orienting-yourself-in-the-command-line-folders">Orienting Yourself in the Command Line: Folders</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
@@ -443,8 +443,8 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Git</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-your-installation">Check Your Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-more-about-setting-up-git-sub-pdf-from-github-git-cheat-sheet"><sub> More about setting up git</sub>
-PDF from GitHub: GIT CHEAT SHEET</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-more-about-setting-up-git-sub-sub-pdf-from-github-git-cheat-sheet-sub"><sub> More about setting up git</sub>
+<sub> PDF from GitHub: GIT CHEAT SHEET</sub></a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-folder">Creating a Project Folder</a></li>
@@ -504,9 +504,8 @@ PDF from GitHub: GIT CHEAT SHEET</a></li>
 <ul class="simple">
 <li><p><em>This workshop requires software installation on the participants laptop and familiarity with the Terminal (Mac/Linus) or Git bash (Windows PC)</em></p></li>
 </ul>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="required-software-and-accounts-for-git-github-workshop">
-<h1>Required Software and accounts for Git &amp; GitHub Workshop<a class="headerlink" href="#required-software-and-accounts-for-git-github-workshop" title="Permalink to this heading">#</a></h1>
+<section id="required-software-and-accounts-for-git-github-workshop">
+<h2>Required Software and accounts for Git &amp; GitHub Workshop<a class="headerlink" href="#required-software-and-accounts-for-git-github-workshop" title="Permalink to this heading">#</a></h2>
 <p>For this workshop, you will need your own laptop on which you have administrative permissions (so you can install software). This is a list of the prerequisite installations (or accounts) that are required for this workshop.</p>
 <p><strong>Git</strong> <em>(required)</em></p>
 <p><a class="reference external" href="https://git-scm.com/downloads">Git</a> may already be installed on your computer.</p>
@@ -532,6 +531,7 @@ PDF from GitHub: GIT CHEAT SHEET</a></li>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/">Create a GitHub account</a></p></li>
 </ul>
+</section>
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="what-are-git-and-github">
@@ -585,10 +585,10 @@ PDF from GitHub: GIT CHEAT SHEET</a></li>
 <li><p>Your terminal is where you’ll be communicating with GitHub to send the repository and project files back and forth between the cloud (which you can view through the GitHub website) and your hard drive.</p></li>
 </ul>
 <p>Because you’ll be moving between these three spaces throughout the workshop, you may want to use (<kbd>command (⌘)</kbd> + <kbd>tab</kbd>) or (<kbd>control</kbd> + <kbd>tab</kbd>) to move quickly between the three windows on your desktop.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="orienting-yourself-in-the-command-line-folders">
-<h1>Orienting Yourself in the Command Line: Folders<a class="headerlink" href="#orienting-yourself-in-the-command-line-folders" title="Permalink to this heading">#</a></h1>
+<section id="orienting-yourself-in-the-command-line-folders">
+<h2>Orienting Yourself in the Command Line: Folders<a class="headerlink" href="#orienting-yourself-in-the-command-line-folders" title="Permalink to this heading">#</a></h2>
 <p><img alt="What your Computer's Folders might look like" src="https://github.com/SouthernMethodistUniversity/git/raw/main/images/folders.png" /></p>
+</section>
 <section id="accessing-the-terminal">
 <h2>Accessing the Terminal<a class="headerlink" href="#accessing-the-terminal" title="Permalink to this heading">#</a></h2>
 <section id="macos">
@@ -676,19 +676,6 @@ the following workshops: <a class="reference external" href="https://gc-dri.gith
 <span class="gp">$ </span>ls<span class="w"> </span>-a
 </pre></div>
 </div>
-<p><em><strong>Authenticating to Remote Git Repositories</strong></em><br />
-“Git provides multiple protocols for authenticating to and interacting with remote Git repositories.</p>
-<p>There are three main approaches you can take:</p>
-<ul class="simple">
-<li><p>Using a personal authentication token or password</p></li>
-<li><p>Using an SSH key</p></li>
-<li><p>Using your GitHub password with 2-factor authentication”</p></li>
-<li><p><a class="reference external" href="https://statistics.berkeley.edu/computing/faqs/git-auth">See these directions from Berkeley Statistics</a></p>
-<ul>
-<li><p>For additional directions, <a class="reference external" href="https://docs.github.com/authentication">see Github’s Authentication documentation</a></p></li>
-</ul>
-</li>
-</ul>
 <section id="shell-cheat-sheets">
 <h3>Shell Cheat Sheets<a class="headerlink" href="#shell-cheat-sheets" title="Permalink to this heading">#</a></h3>
 <p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/reference.html#summary-of-basic-commands">Summary of Basic Commands</a></p>
@@ -783,9 +770,9 @@ the following workshops: <a class="reference external" href="https://gc-dri.gith
 </pre></div>
 </div>
 </section>
-<section id="sub-more-about-setting-up-git-sub-pdf-from-github-git-cheat-sheet">
+<section id="sub-more-about-setting-up-git-sub-sub-pdf-from-github-git-cheat-sheet-sub">
 <h2><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup.html">More about setting up git</a></sub>
-<a class="reference external" href="https://education.github.com/git-cheat-sheet-education.pdf">PDF from GitHub: GIT CHEAT SHEET</a><a class="headerlink" href="#sub-more-about-setting-up-git-sub-pdf-from-github-git-cheat-sheet" title="Permalink to this heading">#</a></h2>
+<sub> <a class="reference external" href="https://education.github.com/git-cheat-sheet-education.pdf">PDF from GitHub: GIT CHEAT SHEET</a></sub><a class="headerlink" href="#sub-more-about-setting-up-git-sub-sub-pdf-from-github-git-cheat-sheet-sub" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="creating-a-project-folder">
@@ -804,6 +791,19 @@ the following workshops: <a class="reference external" href="https://gc-dri.gith
 <p>Now Git is tracking our directory. However, it has not done any versioning yet. This is because 1) we haven’t told Git to take a snapshot yet, and 2) there are no files in the folder to take a snapshot of. For now, Git knows this folder exists and is prepared to take a snapshot of the files when you tell it to.</p>
 <p>Before version control is useful, we’ll have to create a text file for Git to track. For this session, the file we will track will be a course syllabus—we’ll create that next.</p>
 <p><sub><a class="reference external" href="https://swcarpentry.github.io/git-novice/03-create.html">More about creating a repository</a></sub></p>
+<p><em><strong>Authenticating to Remote Git Repositories</strong></em><br />
+“Git provides multiple protocols for authenticating to and interacting with remote Git repositories.</p>
+<p>There are three main approaches you can take:</p>
+<ul class="simple">
+<li><p>Using a personal authentication token or password</p></li>
+<li><p>Using an SSH key</p></li>
+<li><p>Using your GitHub password with 2-factor authentication”</p></li>
+<li><p><a class="reference external" href="https://statistics.berkeley.edu/computing/faqs/git-auth">See these directions from Berkeley Statistics</a></p>
+<ul>
+<li><p>For additional directions, <a class="reference external" href="https://docs.github.com/authentication">see Github’s Authentication documentation</a></p></li>
+</ul>
+</li>
+</ul>
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="vscode-ide">
@@ -1225,6 +1225,7 @@ git<span class="w"> </span>push
 <li><p>upload the changes to GitHub with git push origin main
 It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.</p></li>
 </ul>
+<!-->
 <section id="id1">
 <h2>Challenge<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
@@ -1238,6 +1239,7 @@ It is better to make many commits with smaller changes rather than of one commit
 <p>Rather than write out the solution here, I want to encourage you to go back through the lessons as needed.</p>
 <p>You’ll know you’ve completed step one when the project folder (called <code class="docutils literal notranslate"><span class="pre">\introduction-to-github-main</span></code>) shows up on your local machine.</p>
 <p>After you’ve made and saved the changes, you’ll know you’ve completed step three when your changes appear in the project folder on <em>your</em> GitHub account.</p>
+<p>–&gt;</p>
 </section>
 </section>
 </section>
@@ -1305,14 +1307,16 @@ It is better to make many commits with smaller changes rather than of one commit
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">How to use Git &amp; GitHub</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-software-and-accounts-for-git-github-workshop">Required Software and accounts for Git &amp; GitHub Workshop</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-git-and-github">What are Git and GitHub ?</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-it-what-you-can-do-with-git-and-github">Why use it? What You Can Do with Git and GitHub ?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#orienting-yourself-in-the-command-line-folders">Orienting Yourself in the Command Line: Folders</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-interface-cli">Command-Line Interface (CLI)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orienting-yourself-in-the-command-line-folders">Orienting Yourself in the Command Line: Folders</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-the-terminal">Accessing the Terminal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macos">macOS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
@@ -1332,8 +1336,8 @@ It is better to make many commits with smaller changes rather than of one commit
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Git</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#check-your-installation">Check Your Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-on-your-computer">Configuring Git on Your Computer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-more-about-setting-up-git-sub-pdf-from-github-git-cheat-sheet"><sub> More about setting up git</sub>
-PDF from GitHub: GIT CHEAT SHEET</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-more-about-setting-up-git-sub-sub-pdf-from-github-git-cheat-sheet-sub"><sub> More about setting up git</sub>
+<sub> PDF from GitHub: GIT CHEAT SHEET</sub></a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-project-folder">Creating a Project Folder</a></li>
