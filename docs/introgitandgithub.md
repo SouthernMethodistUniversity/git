@@ -75,6 +75,11 @@ In addition to the command line, you'll be using your text editor and your brows
 
 Because you'll be moving between these three spaces throughout the workshop, you may want to use (<kbd>command (⌘)</kbd> + <kbd>tab</kbd>) or (<kbd>control</kbd> + <kbd>tab</kbd>) to move quickly between the three windows on your desktop.
 
+# Orienting Yourself in the Command Line: Folders
+
+![What your Computer's Folders might look like](https://github.com/SouthernMethodistUniversity/git/raw/main/images/folders.png "Computer's Folders")
+
+
 ## Accessing the Terminal
 
 ### macOS
@@ -91,11 +96,6 @@ We are going to practice navigating your hard drive through the command line.
 
 - For further practice, you may want to work through one of 
  the following workshops: [Introduction to the Command Line](https://gc-dri.github.io/Dhrift-GC/workshops/command-line/) or [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
-
-
-# Orienting Yourself in the Command Line: Folders
-
-![What your Computer's Folders might look like](https://github.com/SouthernMethodistUniversity/git/raw/main/images/folders.png "Computer's Folders")
 
 
 Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:
@@ -254,7 +254,7 @@ First, let's make sure [Git](https://git-scm.com/downloads) has been successfull
 $ git --version
 ```
 
-If you see a version number, you're all set. If not, follow the installation instructions [here](https://gc-dri.github.io/Dhrift-GC/workshops/git/?page=5) or [here](https://swcarpentry.github.io/git-novice/index.html#installing-git).
+If you see a version number, you're all set. If not, follow the installation instructions [here](https://gc-dri.github.io/Dhrift-GC/workshops/git/?page=5) <!--or [here](https://swcarpentry.github.io/git-novice/index.html#installing-git).-->
 
 ## Configuring Git on Your Computer
 
@@ -281,7 +281,7 @@ user.email=gitsuperstar@gmail.com
 ```
 
 <sub> [More about setting up git](https://swcarpentry.github.io/git-novice/02-setup.html)</sub>
-
+[PDF from GitHub: GIT CHEAT SHEET](https://education.github.com/git-cheat-sheet-education.pdf)
 ---
 
 # Creating a Project Folder
