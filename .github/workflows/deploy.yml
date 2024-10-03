@@ -10,7 +10,7 @@ on:
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
-  deploy-book:                # This is the name of the job
+  deploy-book:                # Job name should be aligned under `jobs`
     runs-on: ubuntu-latest    # Specifies the runner environment
 
     steps:
@@ -31,9 +31,10 @@ jobs:
       run: |
         jupyter-book build docs
 
-    # Copy images to gh-pages branch (optional step)
+    # Copy images to gh-pages branch
     - name: Copy images to gh-pages branch
       run: |
+        git fetch origin gh-pages
         git checkout gh-pages
         cp -R markdown/images/* _images/
         git add _images/
