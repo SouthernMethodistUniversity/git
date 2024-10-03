@@ -97,8 +97,8 @@ We are going to practice navigating your hard drive through the command line.
 Orienting Yourself in the Command Line: Folders
 
 
-![What your Computer's Folders might look like](/git/_images/folders.png "Computer's Folders")
-![What your Computer's Folders might look like](https://southernmethodistuniversity.github.io/git/_images/folders.png "Computer's Folders")
+![What your Computer's Folders might look like](/git/blob/main/images/folders.png   "Computer's Folders")
+![What your Computer's Folders might look like](https://github.com/SouthernMethodistUniversity/git/blob/main/images/folders.png "Computer's Folders")
 
 
 Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:
