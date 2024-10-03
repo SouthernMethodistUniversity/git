@@ -96,7 +96,7 @@ We are going to practice navigating your hard drive through the command line.
 
 Orienting Yourself in the Command Line: Folders
 
-![What your Computer's Folders might look like](..main/images/vscode2.png "Computer's Folders")
+![What your Computer's Folders might look like](.._images/vscode2.png "Computer's Folders")
 
 
 Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:
