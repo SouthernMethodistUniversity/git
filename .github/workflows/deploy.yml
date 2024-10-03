@@ -1,20 +1,17 @@
 name: deploy-book
 
-# Define when this workflow should run
+# Only run this when the main branch changes
 on:
   push:
     branches:
-      - main    # Triggers on pushes to the main branch
+      - main
     paths:
-      - 'docs/**'    # Optional: Only trigger if changes are made to the docs folder
-  pull_request:
-    branches:
-      - main    # Triggers on pull requests to the main branch
+      - 'docs/**'
 
-# Define the jobs to be executed
+# This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
   deploy-book:
-    runs-on: ubuntu-latest    # Specifies the runner environment
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
