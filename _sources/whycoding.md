@@ -35,7 +35,7 @@
 * The applications on your device can access the resources in your machine. Each local environment becomes different with use. 
 * The [kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system)) connects the application software to the hardware of a computer.
 
-[![kernel](../images/kernel.png)](https://en.wikipedia.org/wiki/File:Kernel_Layout.svg)
+[![kernel](https://github.com/SouthernMethodistUniversity/git/raw/main/images/kernel.png)](https://en.wikipedia.org/wiki/File:Kernel_Layout.svg)
 
 * Local installations give you more control, and more power, but the pedagogical tradeoff is that it is more difficult to manage and configure during class. Installation is dependent on type of device. 
 

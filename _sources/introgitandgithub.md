@@ -96,19 +96,8 @@ We are going to practice navigating your hard drive through the command line.
 
 Orienting Yourself in the Command Line: Folders
 
-
-![What your Computer's Folders might look like](/git/blob/main/images/folders.png   "Computer's Folders")
-![What your Computer's Folders might look like](https://github.com/SouthernMethodistUniversity/git/blob/main/images/folders.png "Computer's Folders")
-# Example Page
-
-## Using a Raw GitHub URL
 ![What your Computer's Folders might look like](https://github.com/SouthernMethodistUniversity/git/raw/main/images/folders.png "Computer's Folders")
 
-## Using a Relative Path for GitHub Pages
-![What your Computer's Folders might look like](/git/images/folders.png "Computer's Folders")
-
-## Using an Absolute Path for GitHub Pages
-![What your Computer's Folders might look like](https://southernmethodistuniversity.github.io/git/images/folders.png "Computer's Folders")
 
 
 Check your current directory by typing the following command into your terminal and hit <kbd>enter</kbd>:
@@ -367,7 +356,7 @@ $ code <file name>
 
 You should see a window appear that looks similar to this:
 
-![Image of what Visual Studio Code looks like when opening the syllabus.md file](../images/vscode1.png)
+![Image of what Visual Studio Code looks like when opening the syllabus.md file](https://github.com/SouthernMethodistUniversity/git/raw/main/images/vscode1.png)
 
 
 
@@ -451,7 +440,7 @@ If you want an a more advanced challenge, you can review some additional markdow
 
 You can look at an example syllabus in raw text form [here](https://raw.githubusercontent.com/SouthernMethodistUniversity/dhri/main/sections/data1.md). When it's rendered by GitHub, it looks like [this](https://github.com/SouthernMethodistUniversity/dhri/blob/main/sections/data1.md). When editing the markdown file in Visual Studio Code, it might look like this:
 
-![What your markdown might look like when typed into Visual Studio Code](..main/images/vscode2.png "markdown typed into Visual Studio Code")
+![What your markdown might look like when typed into Visual Studio Code](https://github.com/SouthernMethodistUniversity/git/raw/main/images/vscode2.png "markdown typed into Visual Studio Code")
 
 
 
@@ -459,11 +448,11 @@ You can look at an example syllabus in raw text form [here](https://raw.githubus
 
 1. Visual Studio Code also has a preview feature for your markdown. Hit the preview button on the top right while editing your markdown file:
 
-    ![Button to hit to get a preview in Visual Studio Code](../images/vscode3.png)
+    ![Button to hit to get a preview in Visual Studio Code](https://github.com/SouthernMethodistUniversity/git/raw/main/images/vscode3.png)
 
     You'll get two side-by-side panels. Your markdown file will be on the left, and your rendered preview will be on the right:
 
-    ![Side by side markdown and preview in Visual Studio Code](../images/vscode4.png)
+    ![Side by side markdown and preview in Visual Studio Code](https://github.com/SouthernMethodistUniversity/git/raw/main/images/vscode4.png)
 
 2. Remember to save your work—regularly!—with <kbd>control</kbd> + <kbd>s</kbd> on Windows or <kbd>⌘</kbd> + <kbd>s</kbd> on macOS.
 
@@ -596,7 +585,7 @@ The `-m` flag is useful for human purposes and technical purposes. For human pur
 
 Also, if you type `git commit` by itself, git will open the command line's default text editor to allow you to enter the commit message in a file-like environment. It looks something like this:
 
-![Example of what the vi screen looks like](../images/vi.png)
+![Example of what the vi screen looks like](https://github.com/SouthernMethodistUniversity/git/raw/main/images/vi.png)
 
 This unfamiliar screen is the default text editor, `vi`, and it requires some knowledge to use. We don't teach it as part of our sessions, but if you find yourself stuck in this screen, you can try this trick to leave that environment and return to your usual command prompt. Type `:q` and then press <kbd>enter</kbd>. You should be back to the command line with a message saying:
 
@@ -638,15 +627,15 @@ Now, let's connect the directory you made to GitHub. GitHub is a service that al
 
 Go to GitHub in your browser and click the plus sign in the upper right hand corner.
 
-![You can find the plus sign button to add a repo on the top right of github](../images/addrepo.png)
+![You can find the plus sign button to add a repo on the top right of github](https://github.com/SouthernMethodistUniversity/git/raw/main/images/addrepo.png)
 
 After clicking the plus button, select `New repository` from the dropdown menu.
 
-![The dropdown menu where you select New Repository](../images/createrepo.png)
+![The dropdown menu where you select New Repository](https://github.com/SouthernMethodistUniversity/git/raw/main/images/createrepo.png)
 
 After clicking `New repository`, you'll have to enter some information, including a name and description for your repository.
 
-![Screen on GitHub where you enter your repository information](../images/createrepo2.png)
+![Screen on GitHub where you enter your repository information](https://github.com/SouthernMethodistUniversity/git/raw/main/images/createrepo2.png)
 
 - Choose a name, such as `git-practice`.
 - Enter a description, such as `Test syllabus for learning Git and GitHub`.
@@ -658,7 +647,7 @@ You should end up inside your newly created git-practice repo. It will look like
 
 The instructions we want consist of three lines underneath the heading `...or push an existing repository from the command line`. The arrow in this screenshot points to where these directions are on the page:
 
-![The commands you need to copy from the new repo page on GitHub](../images/connect-repo.png)
+![The commands you need to copy from the new repo page on GitHub](https://github.com/SouthernMethodistUniversity/git/raw/main/images/connect-repo.png)
 
 Copy out the first command and paste it in your terminal. It should look something like this:
 
@@ -682,11 +671,11 @@ git push -u origin main
 
 If you have not used git before, you will need to authenticate with GitHub, and a window will pop up asking you to sign in. Click `Sign in with your browser`:
 
-![The window asking you to sign in to GitHub](../images/github_authenticate.png)
+![The window asking you to sign in to GitHub](https://github.com/SouthernMethodistUniversity/git/raw/main/images/github_authenticate.png)
 
 Your browser should open a window asking you to "Authorize Git Credential Manager." Click the green `Authorize GitCredentialManager` button:
 
-![The window asking you to authorize Git Credential Manager](../images/github_credential_manager.png)
+![The window asking you to authorize Git Credential Manager](https://github.com/SouthernMethodistUniversity/git/raw/main/images/github_credential_manager.png)
 
 You should see a message that authentication succeeded. If so, you may now close the browser window and return to the command line, where you should see output like this:
 
@@ -711,17 +700,17 @@ A critical and relatively accessible way to contribute back to a repo is to crea
 
 To open an issue, you must be in a GitHub repository. In the menu bar at the top center of the page, click the `Issues` tab.
 
-![Image showing that the Issues tab is in the center menu bar above the files in the GitHub repository](..images/issues_tab.png).
+![Image showing that the Issues tab is in the center menu bar above the files in the GitHub repository](https://github.com/SouthernMethodistUniversity/git/raw/main/images/issues_tab.png).
 
 After clicking the issues tab, you will see a screen with the currently open issues, if any. To create a new issue, click the large green button on the right of the page.
 
-![Image showing where the Create New Issue button is in the Issues tab on GitHub](..images/new_issue.png)
+![Image showing where the Create New Issue button is in the Issues tab on GitHub](https://github.com/SouthernMethodistUniversity/git/raw/main/images/new_issue.png)
 
 On the New Issue page, there is only one required field—the issue title. However, consider leaving a detailed explanation of the issue, including which file you encountered it, if relevant. You can use markdown formatting in the body of your issue.
 
 To complete your issue, click the green button labelled `Submit New Issue`.
 
-![Image showing where the submit new issue button is. In the issue body box, the message reads "In loop.md, I noticed that the index of the example is flowers[1], which is not "rose" as the output indicates. Looks like it should be 0."](../images/finish_new_issue.png).
+![Image showing where the submit new issue button is. In the issue body box, the message reads "In loop.md, I noticed that the index of the example is flowers[1], which is not "rose" as the output indicates. Looks like it should be 0."](https://github.com/SouthernMethodistUniversity/git/raw/main/images/finish_new_issue.png).
 
 
 # Cloning and Forking
@@ -754,13 +743,13 @@ First, follow [this link to the main page of this lesson on Git and GitHub](http
 
 On the main page, there should be a green `Code` button on the right side:
 
-![Image pointing out where the clone or download button is on GitHub](../images/clone.png)
+![Image pointing out where the clone or download button is on GitHub](https://github.com/SouthernMethodistUniversity/git/raw/main/images/clone.png)
 
 Click the green button and you will see a box with highlighted text under a heading that says `Clone with HTTPS`. If you instead see `Cloning with SSH`, click the small link that says `Use HTTPS`.
 
 Now copy out the text in the box:
 
-![Image showing where the text you need to copy is located](../images/copy-clone-text.png)
+![Image showing where the text you need to copy is located](https://github.com/SouthernMethodistUniversity/git/raw/main/images/copy-clone-text.png)
 
 Now that you have the text copied, go back to your terminal. Remember, you should be on the `Desktop`. (Hint: Use `pwd` to find out what your current working directory is.)
 
@@ -791,17 +780,17 @@ If you wish to create your own version of the repo for your own use , the first 
 
 To fork a repository to your account, click the `Fork` button at the top right of any repository on GitHub.
 
-![Image showing where fork button is on GitHub](../images/fork.png)
+![Image showing where fork button is on GitHub](https://github.com/SouthernMethodistUniversity/git/raw/main/images/fork.png)
 
 After clicking the fork button, if you're a member of an organization on GitHub, you may see a screen asking you to which account you wish to fork the repository. Choose your personal account. If you are not a member of an organization, you will not see this screen.
 
 Once you have clicked `Fork` and (possibly) chosen an account or organization, you will see a screen showing you that the fork is in progress:
 
-![Image showing the fork in progress](../images/currently-forking.png)
+![Image showing the fork in progress](https://github.com/SouthernMethodistUniversity/git/raw/main/images/currently-forking.png)
 
 Once the fork is complete, you will be directed to a screen showing the repository in your own account.
 
-![Image showing the forked repository in your own account](../images/after-forking.png)
+![Image showing the forked repository in your own account](https://github.com/SouthernMethodistUniversity/git/raw/main/images/after-forking.png)
 
 
 _Forking_ a repository means making a copy of someone else's repository on GitHub, and saving it to your account on GitHub. This function happens within GitHub, and has nothing to do with what is happening on your local machine. Note that _forking_ will not automatically make the repository appear as a folder on your computer; that's the role of _cloning_.
@@ -810,11 +799,11 @@ In order to "fork" the `git` repository into your own GitHub account, follow the
 
 First, go to [the repository for this workshop](https://github.com/SouthernMethodistUniversity/git) on GitHub. Note the `Fork` button in the upper right hand corner. By clicking that button, you can copy, or fork, this repository to your account.
 
-![Image showing where the button to fork a repo is located](../images/fork-button.png)
+![Image showing where the button to fork a repo is located](https://github.com/SouthernMethodistUniversity/git/raw/main/images/fork-button.png)
 
 Doing so would also adjust the attribution information in the upper left hand corner. Your username would replace `SouthernMethodistUniversity`, showing that you are looking at a copy of the repository on your account now. Additionally, it will reference the origin account, in this case, `SouthernMethodistUniversity` below after `forked from`, since this was the origin point of _your_ fork.
 
-![Image showing the changes in attribution that happen when a repo is forked](../images/forking-attrib-chng.png)
+![Image showing the changes in attribution that happen when a repo is forked](https://github.com/SouthernMethodistUniversity/git/raw/main/images/forking-attrib-chng.png)
 
 Your local machine would come into play when you want to _clone_ that repository so you can work on it locally. This also means that when you push those changes to GitHub, you would be pushing them to a forked repository associated with your own account.
 
@@ -860,17 +849,17 @@ Note that you can add files one by one instead of using the `-A` flag to add all
 
 5 .Once your changes have been pushed to GitHub, open the web interface to the repository and refresh the page. It's easy to miss it in the interface, but there will be a notification about the commit you just made. Within that notification, click the `Pull Request` button.
 
-![Small button for pull request in the GitHub interface](../images/commit_notification.png)
+![Small button for pull request in the GitHub interface](https://github.com/SouthernMethodistUniversity/git/raw/main/images/commit_notification.png)
 
 If you can't find the notification, or if it disappears, you can also begin the pull request process by clicking the `Pull Request` tab and clicking the green `New Pull Request` button.
 
 Once the pull request is initiated, you will encounter a screen that compares the changes between your forked repository and the target repository.
 
-![Image showing the screen that compares changes in the GitHub interface](../images/comparing_changes.png)
+![Image showing the screen that compares changes in the GitHub interface](https://github.com/SouthernMethodistUniversity/git/raw/main/images//comparing_changes.png)
 
 After reviewing, click the green `Create Pull Request` button. You will have a chance to add a comment, and the interface is similar to the interface when creating issues.
 
-![Image showing the message box after creating a pull request](../images/add_message.png)
+![Image showing the message box after creating a pull request](https://github.com/SouthernMethodistUniversity/git/raw/main/images/add_message.png)
 
 After adding a descriptive message, click the green button to finalize the pull request. You will be taken to a view of the completed pull request.
 
