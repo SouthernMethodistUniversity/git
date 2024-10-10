@@ -23,6 +23,9 @@ $ git --version
 
 If you see a version number, you're all set. If not, [go here to download and install](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
 
+<Sub>[GitHub has a requirement for all accounts to have multi-factor authentication (2FA) configured for extra security.](https://swcarpentry.github.io/git-novice/#multi-factor-authentication)</sub>
+
+
 **IDE (integrated development environment)** *(required)*
 - [Download and Install VSCode](https://code.visualstudio.com/) 
 
@@ -150,7 +153,6 @@ If your computer has multiple users you can choose your user profile in the C: d
 ```console
 $ cd C:/Users/[put your username such as SMU ID here]/Desktop/
 ```
-
 
 
 ## Making a Projects Folder
@@ -297,7 +299,7 @@ Before version control is useful, we'll have to create a text file for Git to tr
 
 <sub>[More about creating a repository](https://swcarpentry.github.io/git-novice/03-create.html)</sub>
 
-***Authenticating to Remote Git Repositories***  
+<!--***Authenticating to Remote Git Repositories***  
 "Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
   
 There are three main approaches you can take:
@@ -306,7 +308,7 @@ There are three main approaches you can take:
 - Using your GitHub password with 2-factor authentication"
 - [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
     - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
-
+-->
 ---
 # VSCode (IDE)
 
@@ -501,6 +503,13 @@ $ git log
 
 ```
 
+<sub> to see the difference between the differences between the current state of the file and the most recently saved version use:
+
+```console
+$ git diff
+
+```
+</sub>
 
 We will go ahead and add `syllabus.md` by writing the following in the terminal:
 
@@ -594,12 +603,13 @@ Another option is to press <kbd>control</kbd> + <kbd>c</kbd> on your keyboard, w
 
 
 <sub> [More about Tracking changes](https://swcarpentry.github.io/git-novice/04-changes.html) </sub>
-
+<sub> [Ignoring Things](https://swcarpentry.github.io/git-novice/06-ignore.html)</sub>
 
 ---
-# Github
+# GitHub (Remotes)
 ## Pushing to GitHub
 -Now we will push the repo you made on your local machine to the cloud (Github)
+
 
 **Github** (required)  
 - **[Create a GitHub account](https://github.com/join) (required)**
@@ -613,8 +623,7 @@ Another option is to press <kbd>control</kbd> + <kbd>c</kbd> on your keyboard, w
 There are three main approaches you can take:
 - Using a personal authentication token or password
 - Using an SSH key
-- Using your GitHub password with 2-factor authentication"
-- [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
+- Using your GitHub password with 2-factor authentication
     - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
 
 
@@ -683,6 +692,7 @@ To github.com:<repo-name>/git.git
 
 If you see output like this, go back to your new repository page in the browser and click the `Refresh` button. You should see your `syllabus.md` file on GitHub! Your git credentials are also now stored locally, so you should not need to authorize the credential manager again from that computer.
 
+<sub> [Remotes in GitHubs](https://swcarpentry.github.io/git-novice/07-github.html)</sub>
 _______________________
 
 # Contributing content
@@ -873,7 +883,9 @@ A BASIC COLLABORATIVE WORKFLOW
 - commit your changes with git commit -m, and
 - upload the changes to GitHub with git push origin main
 It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.
-<!-->
+
+<sub> [Collaborating](https://swcarpentry.github.io/git-novice/08-collab.html)</sub>
+<!--
 ## Challenge
 
 1. Fork and clone [the repository for Github's Introduction to GitHub](https://github.com/skills/introduction-to-github)
@@ -891,4 +903,4 @@ After you've made and saved the changes, you'll know you've completed step three
 
 -->
 
-
+<sub>[Full Software Carpentry Git Workshop](https://swcarpentry.github.io/git-novice/)</sub>

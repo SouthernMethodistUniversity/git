@@ -20,6 +20,7 @@
 - Version Control system (VCS) vs. distributed version control system (DVCS)
 - Git was one of the first version control systems that followed a distributed revision control model (DRCS), in which it is no longer required to have a single server that all clients connect with.
    - [Read more about the version control system, Git, and how it works with GitHub.](https://docs.github.com/en/get-started/using-git/about-git)
+   - [Automated Version Control](https://swcarpentry.github.io/git-novice/01-basics.html)
 
 
 # What is GitHub? (*web based*) 
