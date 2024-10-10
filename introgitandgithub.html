@@ -462,7 +462,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-use-the-m-flag">Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github">Github</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-remotes">GitHub (Remotes)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
 </ul>
 </li>
@@ -477,13 +477,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conflicts">Conflicts</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Challenge</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a></li>
 </ul>
 
             </nav>
@@ -522,6 +516,7 @@ document.write(`
 </pre></div>
 </div>
 <p>If you see a version number, you’re all set. If not, <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">go here to download and install</a></p>
+<p><Sub><a class="reference external" href="https://swcarpentry.github.io/git-novice/#multi-factor-authentication">GitHub has a requirement for all accounts to have multi-factor authentication (2FA) configured for extra security.</a></sub></p>
 <p><strong>IDE (integrated development environment)</strong> <em>(required)</em></p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://code.visualstudio.com/">Download and Install VSCode</a></p></li>
@@ -789,19 +784,16 @@ the following workshops: <a class="reference external" href="https://gc-dri.gith
 <p>Now Git is tracking our directory. However, it has not done any versioning yet. This is because 1) we haven’t told Git to take a snapshot yet, and 2) there are no files in the folder to take a snapshot of. For now, Git knows this folder exists and is prepared to take a snapshot of the files when you tell it to.</p>
 <p>Before version control is useful, we’ll have to create a text file for Git to track. For this session, the file we will track will be a course syllabus—we’ll create that next.</p>
 <p><sub><a class="reference external" href="https://swcarpentry.github.io/git-novice/03-create.html">More about creating a repository</a></sub></p>
-<p><em><strong>Authenticating to Remote Git Repositories</strong></em><br />
-“Git provides multiple protocols for authenticating to and interacting with remote Git repositories.</p>
-<p>There are three main approaches you can take:</p>
-<ul class="simple">
-<li><p>Using a personal authentication token or password</p></li>
-<li><p>Using an SSH key</p></li>
-<li><p>Using your GitHub password with 2-factor authentication”</p></li>
-<li><p><a class="reference external" href="https://statistics.berkeley.edu/computing/faqs/git-auth">See these directions from Berkeley Statistics</a></p>
-<ul>
-<li><p>For additional directions, <a class="reference external" href="https://docs.github.com/authentication">see Github’s Authentication documentation</a></p></li>
-</ul>
-</li>
-</ul>
+<!--***Authenticating to Remote Git Repositories***  
+"Git provides multiple protocols for authenticating to and interacting with remote Git repositories. 
+  
+There are three main approaches you can take:
+- Using a personal authentication token or password
+- Using an SSH key
+- Using your GitHub password with 2-factor authentication"
+- [See these directions from Berkeley Statistics](https://statistics.berkeley.edu/computing/faqs/git-auth)
+    - For additional directions, [see Github's Authentication documentation](https://docs.github.com/authentication)
+-->
 </section>
 </section>
 <hr class="docutils" />
@@ -953,6 +945,11 @@ This is a second paragraph in markdown, which I&#39;ll use to tell you what I li
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>log
 </pre></div>
 </div>
+<p><sub> to see the difference between the differences between the current state of the file and the most recently saved version use:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>diff
+</pre></div>
+</div>
+</sub>
 <p>We will go ahead and add <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> by writing the following in the terminal:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>add<span class="w"> </span>syllabus.md
 </pre></div>
@@ -1018,12 +1015,13 @@ nothing to commit, working tree clean
 </div>
 <p>If you make a mistake where you include an opening quotation mark but forget a closing one, you might accidentally end up inside a “quote prompt.” You will know you’re there when your command prompt changes to <code class="docutils literal notranslate"><span class="pre">quote&gt;</span></code>. If this happens, you can just keep writing as much of your commit message as you want, and then end it with the same quotation mark that you opened the commit message with.</p>
 <p>Another option is to press <kbd>control</kbd> + <kbd>c</kbd> on your keyboard, which will exit the quote prompt and cancel any commits you were trying to perform.</p>
-<p><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/04-changes.html">More about Tracking changes</a> </sub></p>
+<p><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/04-changes.html">More about Tracking changes</a> </sub>
+<sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/06-ignore.html">Ignoring Things</a></sub></p>
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="github">
-<h1>Github<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="github-remotes">
+<h1>GitHub (Remotes)<a class="headerlink" href="#github-remotes" title="Permalink to this heading">#</a></h1>
 <section id="pushing-to-github">
 <h2>Pushing to GitHub<a class="headerlink" href="#pushing-to-github" title="Permalink to this heading">#</a></h2>
 <p>-Now we will push the repo you made on your local machine to the cloud (Github)</p>
@@ -1040,8 +1038,7 @@ nothing to commit, working tree clean
 <ul class="simple">
 <li><p>Using a personal authentication token or password</p></li>
 <li><p>Using an SSH key</p></li>
-<li><p>Using your GitHub password with 2-factor authentication”</p></li>
-<li><p><a class="reference external" href="https://statistics.berkeley.edu/computing/faqs/git-auth">See these directions from Berkeley Statistics</a></p>
+<li><p>Using your GitHub password with 2-factor authentication</p>
 <ul>
 <li><p>For additional directions, <a class="reference external" href="https://docs.github.com/authentication">see Github’s Authentication documentation</a></p></li>
 </ul>
@@ -1089,6 +1086,7 @@ nothing to commit, working tree clean
 </pre></div>
 </div>
 <p>If you see output like this, go back to your new repository page in the browser and click the <code class="docutils literal notranslate"><span class="pre">Refresh</span></code> button. You should see your <code class="docutils literal notranslate"><span class="pre">syllabus.md</span></code> file on GitHub! Your git credentials are also now stored locally, so you should not need to authorize the credential manager again from that computer.</p>
+<p><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/07-github.html">Remotes in GitHubs</a></sub></p>
 </section>
 </section>
 <hr class="docutils" />
@@ -1224,23 +1222,25 @@ git<span class="w"> </span>push
 <li><p>upload the changes to GitHub with git push origin main
 It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.</p></li>
 </ul>
-<!-->
-<section id="id1">
-<h2>Challenge<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Fork and clone <a class="reference external" href="https://github.com/skills/introduction-to-github">the repository for Github’s Introduction to GitHub</a></p></li>
-<li><p>Note not only <em>what</em> you are doing, but also <em>where</em> you are working when completing these two different tasks.</p></li>
-<li><p>Make changes to the files on your local machine. Remember to save them!</p></li>
-<li><p>Use the 3-step process of stage, commit and push to return the amended files to the repository on GitHub.</p></li>
-</ol>
-<section id="solution">
-<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">#</a></h3>
-<p>Rather than write out the solution here, I want to encourage you to go back through the lessons as needed.</p>
-<p>You’ll know you’ve completed step one when the project folder (called <code class="docutils literal notranslate"><span class="pre">\introduction-to-github-main</span></code>) shows up on your local machine.</p>
-<p>After you’ve made and saved the changes, you’ll know you’ve completed step three when your changes appear in the project folder on <em>your</em> GitHub account.</p>
-<p>–&gt;</p>
-</section>
-</section>
+<p><sub> <a class="reference external" href="https://swcarpentry.github.io/git-novice/08-collab.html">Collaborating</a></sub></p>
+<!--
+## Challenge
+
+1. Fork and clone [the repository for Github's Introduction to GitHub](https://github.com/skills/introduction-to-github)
+2. Note not only _what_ you are doing, but also _where_ you are working when completing these two different tasks.
+3. Make changes to the files on your local machine. Remember to save them!
+4. Use the 3-step process of stage, commit and push to return the amended files to the repository on GitHub.
+
+### Solution
+
+Rather than write out the solution here, I want to encourage you to go back through the lessons as needed.
+
+You'll know you've completed step one when the project folder (called `\introduction-to-github-main`) shows up on your local machine.
+
+After you've made and saved the changes, you'll know you've completed step three when your changes appear in the project folder on _your_ GitHub account.
+
+-->
+<p><sub><a class="reference external" href="https://swcarpentry.github.io/git-novice/">Full Software Carpentry Git Workshop</a></sub></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1355,7 +1355,7 @@ It is better to make many commits with smaller changes rather than of one commit
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-to-use-the-m-flag">Why Do We Need to Use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> Flag?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github">Github</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-remotes">GitHub (Remotes)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-github">Pushing to GitHub</a></li>
 </ul>
 </li>
@@ -1370,13 +1370,7 @@ It is better to make many commits with smaller changes rather than of one commit
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conflicts">Conflicts</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Challenge</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborating">Collaborating</a></li>
 </ul>
 
   </nav></div>
